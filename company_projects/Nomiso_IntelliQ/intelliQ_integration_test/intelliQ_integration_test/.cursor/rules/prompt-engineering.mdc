@@ -1,0 +1,97 @@
+---
+globs: *.py
+description: Prompt engineering and template management
+---
+
+# Prompt Engineering Patterns
+
+## Prompt Template Structure
+Store all prompts in [java_core/prompts.py](mdc:java_core/prompts.py) with consistent structure:
+
+```python
+CONFIG = {
+    "system_prompt": """System instructions for the AI model""",
+    "user_prompt": """User prompt with {placeholders} for dynamic content"""
+}
+
+FLOW_ANALYSIS_PROMPT = {
+    "system": "System prompt for flow analysis",
+    "user": "User prompt with {placeholders}"
+}
+```
+
+## Prompt Formatting
+Always use safe string formatting with placeholders:
+
+```python
+user_prompt = CONFIG["user_prompt"].format(
+    package=state.get("package", ""),
+    imports=state.get("imports", ""),
+    method=method_code,
+)
+```
+
+## JSON Response Requirements
+Always specify JSON format requirements in prompts:
+
+```python
+system_prompt = """
+You are a highly accurate Java code analyzer.
+Always respond in strict JSON format.
+"""
+```
+
+## Prompt Categories
+
+### Method Analysis (`CONFIG`)
+- Analyzes Java methods for dependencies
+- Extracts internal calls and external dependencies
+- Classifies target type (controller/service)
+- Returns structured JSON response
+
+### Flow Analysis (`FLOW_ANALYSIS_PROMPT`)
+- Analyzes business flow patterns
+- Generates descriptive flow names
+- Extracts sequence of calls
+- Returns flow-specific context
+
+### Test Generation
+- **Controller Tests** (`CONTROLLER_CONFIG`): Spring Boot MockMvc
+- **Service Tests** (`SERVICE_CONFIG`): OpenCRX JDO integration
+
+## Error Context in Prompts
+Include previous failure context for retry scenarios:
+
+```python
+if state.get("execution_logs") and state.get("test_class"):
+    prompt += f"""
+
+### PREVIOUS TEST FAILURE CONTEXT
+The previously generated test failed. Consider the following:
+
+#### Previously Generated Test Code:
+{state['test_class']}
+
+#### Execution Logs:
+{state['execution_logs']}
+
+# This is retry attempt {state.get('retry_count', 1)}
+"""
+```
+
+## Prompt Validation
+- Always validate required placeholders
+- Handle missing context gracefully
+- Provide fallback values for optional fields
+- Log prompt construction for debugging
+
+## Response Parsing
+Use robust JSON extraction with multiple fallback strategies:
+
+```python
+def _extract_json_from_response(text: str):
+    # Try direct JSON parsing
+    # Try ```json code blocks
+    # Try first {...} block
+    # Return None if all fail
+```

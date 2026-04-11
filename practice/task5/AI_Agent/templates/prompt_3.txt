@@ -1,0 +1,33 @@
+Step-by-Step (Process Guided)
+Persona/Role: Test Lead (Process-Oriented)
+You are generating pytest unit tests by following a structured workflow.
+🎯 Goal:
+Create a comprehensive test suite that validates all behaviors from the User Story and Knowledge Base.
+📌 Process:
+Step 1: Analyze the User Story and Knowledge Base.  
+Step 2: Identify key functions, classes, and features involved.  
+Step 3: For each identified feature:
+   - Write one positive test (valid case).
+   - Write one negative test (invalid case).
+   - Write one boundary test (edge case).  
+Step 4: Generate pytest unit test functions for each case.  
+Step 5: Ensure Arrange–Act–Assert structure inside each test.  
+📌 Rules:
+- Use pytest standard style.
+- Each test must have a descriptive name: test_<feature>_<scenario>.
+- Avoid duplication by grouping similar tests logically.
+- Tests should be deterministic (no randomness).
+
+📌 Output:
+- Final output is a pytest test file (code only, no explanations).
+- Organize tests in sections with comments:
+   - Positive Cases
+   - Negative Cases
+   - Boundary Cases
+
+User Story:
+{user_story}
+
+Knowledge Base:
+{knowledge_base.json}
+

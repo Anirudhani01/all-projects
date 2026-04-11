@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Management - MediCare Hospital</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>MediCare Admin</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">Main</div>
+                    <div class="nav-item">
+                        <a href="../dashboard.html" class="nav-link">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="doctors.html" class="nav-link active">
+                            <i class="fas fa-user-md"></i>
+                            Doctors
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="appointments.html" class="nav-link">
+                            <i class="fas fa-calendar-alt"></i>
+                            Appointments
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="patients.html" class="nav-link">
+                            <i class="fas fa-users"></i>
+                            Patients
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Content</div>
+                    <div class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            <i class="fas fa-blog"></i>
+                            Blog Posts
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <i class="fas fa-envelope"></i>
+                            Messages
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Settings</div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link" onclick="logout()">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content" id="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="menu-toggle" onclick="toggleSidebar()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 class="header-title">Doctors Management</h1>
+                </div>
+                
+                <div class="header-right">
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    
+                    <div class="user-menu">
+                        <button class="user-btn">
+                            <div class="user-avatar" id="user-avatar">A</div>
+                            <div class="user-info">
+                                <div class="user-name" id="user-name">Admin</div>
+                                <div class="user-role" id="user-role">Administrator</div>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Add Doctor Form -->
+                <div class="form-container" id="add-doctor-form" style="display: none;">
+                    <div class="form-title">Add New Doctor</div>
+                    <form id="doctor-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="doctor-name">Full Name *</label>
+                                <input type="text" id="doctor-name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="doctor-specialization">Specialization *</label>
+                                <select id="doctor-specialization" name="specialization" required>
+                                    <option value="">Select specialization...</option>
+                                    <option value="Cardiology">Cardiology</option>
+                                    <option value="Neurology">Neurology</option>
+                                    <option value="Orthopedics">Orthopedics</option>
+                                    <option value="Dermatology">Dermatology</option>
+                                    <option value="Pulmonology">Pulmonology</option>
+                                    <option value="Pediatrics">Pediatrics</option>
+                                    <option value="Gynecology">Gynecology</option>
+                                    <option value="General Medicine">General Medicine</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="doctor-education">Education *</label>
+                                <input type="text" id="doctor-education" name="education" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="doctor-experience">Years of Experience *</label>
+                                <input type="number" id="doctor-experience" name="experience" min="0" max="50" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="doctor-image">Image URL</label>
+                                <input type="url" id="doctor-image" name="image_url" placeholder="https://example.com/image.jpg">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="doctor-active">Status</label>
+                                <select id="doctor-active" name="is_active">
+                                    <option value="true">Active</option>
+                                    <option value="false">Inactive</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline" onclick="cancelAddDoctor()">Cancel</button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i>
+                                Save Doctor
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Doctors Table -->
+                <div class="data-table-container">
+                    <div class="table-header">
+                        <h3 class="table-title">Doctors List</h3>
+                        <div class="table-actions">
+                            <button class="btn btn-primary" onclick="showAddDoctorForm()">
+                                <i class="fas fa-plus"></i>
+                                Add Doctor
+                            </button>
+                            <button class="btn btn-outline" onclick="refreshDoctors()">
+                                <i class="fas fa-sync-alt"></i>
+                                Refresh
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="table-content">
+                        <table class="data-table" id="doctors-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Specialization</th>
+                                    <th>Education</th>
+                                    <th>Experience</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="6" class="loading">
+                                        <i class="fas fa-spinner fa-spin"></i>
+                                        Loading doctors...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Edit Doctor Modal -->
+    <div class="modal-overlay" id="edit-modal" style="display: none;">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Edit Doctor</h3>
+                <button class="modal-close" onclick="closeEditModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="edit-doctor-form">
+                    <input type="hidden" id="edit-doctor-id" name="id">
+                    
+                    <div class="form-group">
+                        <label for="edit-doctor-name">Full Name *</label>
+                        <input type="text" id="edit-doctor-name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-doctor-specialization">Specialization *</label>
+                        <select id="edit-doctor-specialization" name="specialization" required>
+                            <option value="">Select specialization...</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Pulmonology">Pulmonology</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="Gynecology">Gynecology</option>
+                            <option value="General Medicine">General Medicine</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-doctor-education">Education *</label>
+                        <input type="text" id="edit-doctor-education" name="education" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-doctor-experience">Years of Experience *</label>
+                        <input type="number" id="edit-doctor-experience" name="experience" min="0" max="50" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-doctor-image">Image URL</label>
+                        <input type="url" id="edit-doctor-image" name="image_url" placeholder="https://example.com/image.jpg">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-doctor-active">Status</label>
+                        <select id="edit-doctor-active" name="is_active">
+                            <option value="true">Active</option>
+                            <option value="false">Inactive</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeEditModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="saveDoctorEdit()">
+                    <i class="fas fa-save"></i>
+                    Save Changes
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/admin-auth.js"></script>
+    <script src="../js/admin-doctors.js"></script>
+</body>
+</html>

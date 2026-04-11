@@ -1,0 +1,1082 @@
+{
+  "form": {
+    "template": {
+      "page": {
+        "name": "FormPage",
+        "description": "Top-level container representing the screen of a form.",
+        "form_mode": "create | edit | view — Only if visually confirmable.",
+        "state": "expanded | collapsed",
+        "validation_rules": "Only if visible near fields.",
+        "layout": "vertical | horizontal | grid",
+        "visual_grouping": "card | bordered | plain",
+        "sections": [
+          {
+            "id": "form_00_userinfo",
+            "name": "User Information",
+            "description": "This section contains user profile details.",
+            "label_position": "top",
+            "group_type": "card",
+            "is_collapsible": false,
+            "default_expanded": true,
+            "section_border": "visible",
+            "height": "",
+            "width": "",
+            "groups": [
+              {
+                "id": "form_00_userinfo_basicinfo",
+                "name": "Basic Info",
+                "description": "Fields grouped visually under a title.",
+                "elements": [
+                  {
+                    "id": "form_00_userinfo_basicinfo_username",
+                    "name": "username",
+                    "type": "input",
+                    "description": "Single-line input.",
+                    "label": "Username",
+                    "label_position": "above",
+                    "alignment": "left",
+                    "is_mandatory": true,
+                    "required_indicator": true,
+                    "readonly": false,
+                    "value": "",
+                    "placeholder": "",
+                    "helper_text": "",
+                    "icon_present": false,
+                    "error_state": false,
+                    "metadata": {
+                      "maxLength": "",
+                      "pattern": "",
+                      "font_size": "px",
+                      "font_color": "#Hex",
+                      "background_color": "#Hex",
+                      "border_color": "#Hex",
+                      "x": "",  
+                      "y": "",  
+                      "width": "",  
+                      "height": ""  
+                    }
+                  },
+                  {
+                    "id": "form_00_userinfo_basicinfo_email",
+                    "name": "email",
+                    "type": "input",
+                    "description": "Input for email addresses.",
+                    "label": "Email",
+                    "label_position": "above",
+                    "alignment": "left",
+                    "is_mandatory": true,
+                    "required_indicator": true,
+                    "readonly": false,
+                    "value": "",
+                    "placeholder": "example@domain.com",
+                    "helper_text": "Must be a valid email.",
+                    "icon_present": false,
+                    "error_state": false,
+                    "metadata": {
+                      "pattern": "email",
+                      "font_size": "",
+                      "font_color": "#333333",
+                      "background_color": "#FFFFFF",
+                      "border_color": "#CCCCCC",
+                      "x": "",
+                      "y": "",
+                      "width": "",
+                      "height": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "form_00_userinfo_optional",
+                "name": "Optional Details",
+                "description": "Optional fields not marked required.",
+                "elements": [
+                  {
+                    "id": "form_00_userinfo_optional_nickname",
+                    "name": "nickname",
+                    "type": "input",
+                    "description": "Non-mandatory input field.",
+                    "label": "Nickname",
+                    "label_position": "above",
+                    "alignment": "left",
+                    "is_mandatory": false,
+                    "required_indicator": false,
+                    "readonly": false,
+                    "value": "",
+                    "placeholder": "Enter nickname",
+                    "icon_present": false,
+                    "error_state": false,
+                    "metadata": {
+                      "font_size": "",
+                      "font_color": "",
+                      "background_color": "",
+                      "border_color": "",
+                      "x": "",
+                      "y": "",
+                      "width": "",
+                      "height": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "form_00_preferences",
+            "name": "Preferences",
+            "description": "Toggles, dropdowns, or user preference fields.",
+            "label_position": "top",
+            "group_type": "border-boxed",
+            "is_collapsible": true,
+            "default_expanded": true,
+            "section_border": "visible",
+            "height": "",
+            "width": "",
+            "groups": [
+              {
+                "id": "form_00_preferences_ui",
+                "name": "UI Settings",
+                "description": "Theme, dark mode, notifications.",
+                "elements": [
+                  {
+                    "id": "form_00_preferences_ui_newsletter_optin",
+                    "name": "newsletter_optin",
+                    "type": "checkbox",
+                    "description": "Checkbox input.",
+                    "label": "Subscribe",
+                    "label_position": "right",
+                    "alignment": "left",
+                    "is_mandatory": false,
+                    "required_indicator": false,
+                    "readonly": false,
+                    "value": "true | false",
+                    "icon_present": false,
+                    "error_state": false,
+                    "metadata": {
+                      "font_color": "#000",
+                      "border_color": "#CCC",
+                      "checked_color": "#0A84FF",
+                      "x": "",
+                      "y": "",
+                      "width": "",
+                      "height": ""
+                    }
+                  },
+                  {
+                    "id": "form_00_preferences_ui_theme",
+                    "name": "theme",
+                    "type": "dropdown",
+                    "description": "Dropdown with visible icon and label.",
+                    "label": "Theme",
+                    "label_position": "above",
+                    "alignment": "left",
+                    "is_mandatory": false,
+                    "required_indicator": false,
+                    "readonly": false,
+                    "value": "Dark",
+                    "placeholder": "Select theme",
+                    "icon_present": true,
+                    "error_state": false,
+                    "metadata": {
+                      "font_color": "#222",
+                      "background_color": "#FFF",
+                      "border_color": "#BEBEBE",
+                      "arrow_icon_position": "right",
+                      "x": "",
+                      "y": "",
+                      "width": "",
+                      "height": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "elements": []
+      }
+    }
+  },
+  "table": {
+    "template": {
+      "page": {
+        "id": "table_page_00",
+        "name": "Multi-Section Table Page",
+        "description": "A screen with one or more grouped table sections. Fill only data visible in image. Leave blank or null if not seen.",
+        "state": "loading | empty | populated",
+        "table_mode": "static | interactive",
+        "layout": "tabular | carded | listlike — Based on row/column structure.",
+        "visual_grouping": "striped | bordered | shadowed | flat — Extract from row/box styling.",
+        "section_groups": [
+          {
+            "section_id": "sec_00",
+            "title": "Billing Summary",
+            "description": "Visible section title or header bar. Leave blank if not seen.",
+            "is_collapsible": true,
+            "collapsed_state": "expanded",
+            "subtables": [
+              {
+                "table_id": "sec_00_table_00",
+                "name": "Charges Table",
+                "description": "Visible label or heading of the table (if present).",
+                "table_mode": "interactive",
+                "state": "populated",
+                "pagination": {
+                  "type": "numbered_buttons",
+                  "current_page": "1",
+                  "total_pages": "3"
+                },
+                "columns": [
+                  {
+                    "id": "col_charge_type",
+                    "name": "Charge Type",
+                    "key": "charge_type",
+                    "sortable": true,
+                    "filterable": false,
+                    "data_type": "text",
+                    "alignment": "left",
+                    "width": "Extract width if clearly visible.",
+                    "header_style": {
+                      "font_color": "#000",
+                      "background_color": "#EEE"
+                    }
+                  },
+                  {
+                    "id": "col_amount",
+                    "name": "Amount",
+                    "key": "amount",
+                    "data_type": "number",
+                    "alignment": "right"
+                  }
+                ],
+                "rows": [
+                  {
+                    "id": "row_00",
+                    "row_index": 0,
+                    "cells": [
+                      {
+                        "id": "cell_00_type",
+                        "column_key": "charge_type",
+                        "value": "Room Rent",
+                        "type": "text",
+                        "metadata": {
+                          "x": "Relative X from top-left (e.g., 0.15)",
+                          "y": "Relative Y from top-left (e.g., 0.30)",
+                          "width": "Relative width of cell (e.g., 0.35)",
+                          "height": "Relative height of cell (e.g., 0.05)"
+                        }
+                      },
+                      {
+                        "id": "cell_00_amount",
+                        "column_key": "amount",
+                        "value": "₹5,000",
+                        "type": "number",
+                        "metadata": {
+                          "x": "Relative X from top-left (e.g., 0.50)",
+                          "y": "Relative Y from top-left (e.g., 0.30)",
+                          "width": "Relative width of cell (e.g., 0.20)",
+                          "height": "Relative height of cell (e.g., 0.05)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "row_01",
+                    "row_index": 1,
+                    "cells": [
+                      {
+                        "column_key": "charge_type",
+                        "value": "Service Fee",
+                        "type": "text",
+                        "metadata": {
+                          "x": "Relative X from top-left",
+                          "y": "Relative Y from top-left",
+                          "width": "Relative width",
+                          "height": "Relative height"
+                        }
+                      },
+                      {
+                        "column_key": "amount",
+                        "value": "₹500",
+                        "type": "number",
+                        "metadata": {
+                          "x": "",
+                          "y": "",
+                          "width": "",
+                          "height": ""
+                        }
+                      }
+                    ],
+                    "nested_table": {
+                      "visible": true,
+                      "subtable_ref": "sec_00_table_00_nested_01",
+                      "description": "Breakdown of service fee — if an expand icon reveals a subtable."
+                    }
+                  }
+                ]
+              },
+              {
+                "table_id": "sec_00_table_00_nested_01",
+                "name": "Service Fee Details",
+                "description": "Nested table visible on expanding row 1 in Charges Table.",
+                "columns": [
+                  { "key": "item", "name": "Item" },
+                  { "key": "cost", "name": "Cost" }
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      {
+                        "column_key": "item",
+                        "value": "Cleaning",
+                        "metadata": {
+                          "x": "",
+                          "y": "",
+                          "width": "",
+                          "height": ""
+                        }
+                      },
+                      {
+                        "column_key": "cost",
+                        "value": "₹200",
+                        "metadata": {
+                          "x": "",
+                          "y": "",
+                          "width": "",
+                          "height": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "section_id": "sec_01",
+            "title": "Transaction History",
+            "is_collapsible": false,
+            "collapsed_state": null,
+            "subtables": [
+              {
+                "table_id": "sec_01_table_00",
+                "name": "Payments Table",
+                "description": "Table showing payment rows",
+                "state": "populated",
+                "columns": [
+                  { "key": "date", "name": "Payment Date" },
+                  { "key": "method", "name": "Method" },
+                  { "key": "amount", "name": "Amount" }
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      {
+                        "column_key": "date",
+                        "value": "2024-05-03",
+                        "metadata": {
+                          "x": "",
+                          "y": "",
+                          "width": "",
+                          "height": ""
+                        }
+                      },
+                      {
+                        "column_key": "method",
+                        "value": "UPI",
+                        "metadata": {
+                          "x": "",
+                          "y": "",
+                          "width": "",
+                          "height": ""
+                        }
+                      },
+                      {
+                        "column_key": "amount",
+                        "value": "₹5,000",
+                        "metadata": {
+                          "x": "",
+                          "y": "",
+                          "width": "",
+                          "height": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "list": {
+  "template": {
+    "page": {
+      "id": "list_00_root",
+      "name": "List Page",
+      "description": "Represents a screen that shows a collection of items in a scrollable or paginated view.",
+      "list_mode": "infinite_scroll | load_more | numbered_buttons — Based on controls at bottom.",
+      "state": "loading | empty | populated — Determined by visual cues like spinners or empty messages.",
+      "layout": "vertical | horizontal | grid — Based on visual arrangement of items.",
+      "visual_grouping": "plain | card | bordered — Deduced from shadow, outline, or grouping style.",
+
+      "filters": [
+        {
+          "id": "list_00_filter_search",
+          "name": "Search",
+          "type": "input",
+          "description": "Search field at top-left or top-center. Usually has a magnifier icon.",
+          "placeholder": "Search item...",
+          "icon_present": true,
+          "metadata": {
+            "x": "Relative X from top-left (e.g., 0.05)",
+            "y": "Relative Y from top-left (e.g., 0.02)",
+            "width": "Width of input as proportion of screen (e.g., 0.4)",
+            "height": "Height of input as proportion of screen (e.g., 0.06)"
+          }
+        },
+        {
+          "id": "list_00_filter_category",
+          "name": "Category",
+          "type": "dropdown",
+          "description": "Dropdown filter usually top-right or near filter area.",
+          "placeholder": "Select category",
+          "icon_present": true,
+          "metadata": {
+            "x": "Relative X from top-left",
+            "y": "Relative Y from top-left",
+            "width": "Width of dropdown in proportion (e.g., 0.3)",
+            "height": "Height of dropdown in proportion (e.g., 0.05)"
+          }
+        }
+      ],
+
+      "pagination": {
+        "type": "numbered_buttons | infinite_scroll | load_more — Based on scroll behavior or page controls.",
+        "current_page": "Text or highlight (e.g., 'Page 1 of 5').",
+        "total_pages": "Number of visible pages or derived from total items."
+      },
+
+      "empty_state": {
+        "message": "Text like 'No results found'.",
+        "icon": "Optional illustration if present."
+      },
+
+      "groups": [
+        {
+          "id": "list_00_group_popular",
+          "name": "Popular Items",
+          "description": "Grouped section labeled Popular or Trending.",
+          "collapsed": false,
+          "items": [
+            {
+              "id": "list_00_group_popular_00",
+              "name": "ItemCard",
+              "description": "Each repeating card/tile unit.",
+              "layout": "card | row | grid-item",
+              "group_type": "bordered | plain | shadowed",
+              "height": "Relative height of item block (e.g., 0.15)",
+              "width": "Relative width of item block (e.g., 0.9)",
+              "elements": [
+                {
+                  "id": "list_00_group_popular_00_img",
+                  "name": "product_image",
+                  "type": "image",
+                  "description": "Main thumbnail image.",
+                  "alt_text": "Alt tag or label if visible.",
+                  "metadata": {
+                    "x": "X position of image from top-left (e.g., 0.05)",
+                    "y": "Y position of image (e.g., 0.12)",
+                    "width": "Relative width of image block (e.g., 0.2)",
+                    "height": "Relative height of image block (e.g., 0.2)"
+                  }
+                },
+                {
+                  "id": "list_00_group_popular_00_name",
+                  "name": "product_name",
+                  "type": "label",
+                  "description": "Main product title or heading.",
+                  "value": "Visible name text.",
+                  "font_size": "16px",
+                  "font_color": "#222",
+                  "metadata": {
+                    "x": "Relative X from top-left",
+                    "y": "Relative Y from top-left",
+                    "width": "Width of text block",
+                    "height": "Height of text block"
+                  }
+                },
+                {
+                  "id": "list_00_group_popular_00_price",
+                  "name": "product_price",
+                  "type": "label",
+                  "description": "Price display, often colored.",
+                  "value": "Visible price (e.g., $499).",
+                  "font_size": "14px",
+                  "font_color": "#FF5722",
+                  "metadata": {
+                    "x": "X of price label",
+                    "y": "Y of price label",
+                    "width": "Width of price element",
+                    "height": "Height of price element"
+                  }
+                },
+                {
+                  "id": "list_00_group_popular_00_action",
+                  "name": "add_to_cart",
+                  "type": "button",
+                  "description": "Add to cart or similar action button.",
+                  "label": "Visible button text (e.g., 'Buy Now')",
+                  "label_position": "center",
+                  "icon_present": false,
+                  "metadata": {
+                    "x": "X of button",
+                    "y": "Y of button",
+                    "width": "Width of button relative to item (e.g., 0.25)",
+                    "height": "Height of button relative to item (e.g., 0.05)",
+                    "background_color": "#0A84FF",
+                    "font_color": "#FFF"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+},
+  "card": {
+  "template": {
+    "page": {
+      "id": "card_00_root",
+      "name": "Card Page",
+      "description": "Represents a UI screen with card-based content layout.",
+      "layout": "vertical | horizontal | grid | carousel — Based on card arrangement.",
+      "theme": "light | dark | mixed",
+      "grouping": "plain | shadowed | bordered — Inferred from styling.",
+      "scrollable": "true | false — Use scrollbar or overflow cues.",
+      "has_tabs": "true | false — If cards exist under tabbed views.",
+      "has_filter_controls": "true | false — If dropdowns/chips/buttons exist above cards.",
+
+      "filters": [
+        {
+          "id": "card_00_filter_status",
+          "name": "Status Filter",
+          "type": "dropdown | chip | segmented_control",
+          "description": "Used to filter cards by status like Active or Archived.",
+          "placeholder": "Select status",
+          "icon_present": true,
+          "metadata": {
+            "x": "Relative X from top-left (e.g., 0.05)",
+            "y": "Relative Y from top-left (e.g., 0.02)",
+            "width": "Width of filter component in proportion (e.g., 0.25)",
+            "height": "Height of filter component in proportion (e.g., 0.05)"
+          }
+        }
+      ],
+
+      "groups": [
+        {
+          "id": "card_00_group_active",
+          "name": "Active Cards Group",
+          "description": "Group of cards, typically filtered or categorized.",
+          "collapsed": false,
+          "cards": [
+            {
+              "id": "card_00_group_active_00",
+              "name": "UserCard",
+              "description": "Single card unit containing user information.",
+              "layout": "grid-item | vertical-stack | horizontal-stack",
+              "group_type": "shadowed | bordered | plain",
+              "height": "Relative height of card block (e.g., 0.15)",
+              "width": "Relative width of card block (e.g., 0.9)",
+
+              "elements": [
+                {
+                  "id": "card_00_group_active_00_avatar",
+                  "name": "user_image",
+                  "type": "image",
+                  "description": "Profile image in the card header.",
+                  "alt_text": "User avatar",
+                  "metadata": {
+                    "x": "X position of avatar (e.g., 0.04)",
+                    "y": "Y position of avatar (e.g., 0.03)",
+                    "width": "Width relative to card (e.g., 0.1)",
+                    "height": "Height relative to card (e.g., 0.1)",
+                    "shape": "circle | square"
+                  }
+                },
+                {
+                  "id": "card_00_group_active_00_title",
+                  "name": "user_name",
+                  "type": "label",
+                  "description": "Main title in card (e.g., user name).",
+                  "value": "Visible name string",
+                  "font_size": "16px",
+                  "font_weight": "bold",
+                  "font_color": "#000",
+                  "metadata": {
+                    "x": "Relative X from top-left",
+                    "y": "Relative Y from top-left",
+                    "width": "Relative width of label",
+                    "height": "Relative height of label"
+                  }
+                },
+                {
+                  "id": "card_00_group_active_00_subtitle",
+                  "name": "user_role",
+                  "type": "label",
+                  "description": "Subtitle like job role or status.",
+                  "value": "Visible subtitle string",
+                  "font_size": "14px",
+                  "font_color": "#666",
+                  "metadata": {
+                    "x": "X of subtitle label",
+                    "y": "Y of subtitle label",
+                    "width": "Width relative to card",
+                    "height": "Height relative to card"
+                  }
+                },
+                {
+                  "id": "card_00_group_active_00_action1",
+                  "name": "edit_button",
+                  "type": "button",
+                  "description": "Primary edit action.",
+                  "label": "Edit",
+                  "label_position": "center",
+                  "icon_present": true,
+                  "metadata": {
+                    "x": "Button X position",
+                    "y": "Button Y position",
+                    "width": "Width of button (e.g., 0.25)",
+                    "height": "Height of button (e.g., 0.05)",
+                    "background_color": "#007AFF",
+                    "font_color": "#FFF"
+                  }
+                },
+                {
+                  "id": "card_00_group_active_00_action2",
+                  "name": "delete_icon",
+                  "type": "icon_button",
+                  "description": "Icon button like delete.",
+                  "icon_name": "trash | remove | delete",
+                  "tooltip": "Delete this user",
+                  "metadata": {
+                    "x": "X of delete icon",
+                    "y": "Y of delete icon",
+                    "width": "Width of icon area",
+                    "height": "Height of icon area",
+                    "shape": "round | square",
+                    "color": "#FF3B30"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+
+      "empty_state": {
+        "message": "Shown when no cards are visible.",
+        "icon": "Optional icon near empty message."
+      }
+    }
+  }
+},
+  "menu": {
+  "template": {
+    "page": {
+      "id": "menu_00_root",
+      "name": "MenuPage",
+      "description": "Top-level container for navigation or contextual menus.",
+      "menu_type": "sidebar | topbar | dropdown | context | floating — Based on visual placement and trigger type.",
+      "state": "visible | hidden — Use visual visibility to confirm.",
+      "layout": "vertical | horizontal | grid — Inferred from menu item alignment.",
+      "visual_grouping": "card | plain | elevated — Based on shadows, borders, or background.",
+
+      "trigger": {
+        "id": "menu_00_trigger",
+        "type": "button | icon | hover | right-click — Based on what causes menu to appear.",
+        "label": "Extracted label text if visible.",
+        "icon_present": true,
+        "metadata": {
+          "x": "Relative X from top-left of screen (e.g., 0.95)",
+          "y": "Relative Y from top-left (e.g., 0.02)",
+          "width": "Width of trigger element (e.g., 0.05)",
+          "height": "Height of trigger element (e.g., 0.04)",
+          "icon_type": "hamburger | three-dots | custom — Based on icon shape.",
+          "color": "#333",
+          "size": "24px",
+          "background_color": "#FFF"
+        }
+      },
+
+      "menu_items": [
+        {
+          "id": "menu_00_dashboard",
+          "name": "Dashboard",
+          "description": "Top-level menu item.",
+          "type": "link | expandable | toggle | divider",
+          "icon_present": true,
+          "icon_type": "dashboard",
+          "is_selected": true,
+          "is_disabled": false,
+          "has_submenu": true,
+          "keyboard_shortcut": "Optional visible shortcut text.",
+          "metadata": {
+            "x": "X position of menu item relative to container",
+            "y": "Y position from top of container",
+            "width": "Width of item relative to full menu (e.g., 0.9)",
+            "height": "Height of item block (e.g., 0.05)",
+            "font_size": "14px",
+            "font_color": "#222",
+            "background_color": "#E0F7FA",
+            "hover_color": "#B2EBF2",
+            "selected_color": "#00ACC1"
+          },
+          "submenu": [
+            {
+              "id": "menu_00_dashboard_00",
+              "name": "Overview",
+              "type": "link",
+              "is_selected": false,
+              "is_disabled": false,
+              "icon_present": false,
+              "metadata": {
+                "x": "X of submenu item",
+                "y": "Y of submenu item",
+                "width": "Width relative to container",
+                "height": "Height of submenu item",
+                "font_size": "13px",
+                "font_color": "#333",
+                "background_color": "#FFF",
+                "hover_color": "#EEE"
+              }
+            },
+            {
+              "id": "menu_00_dashboard_01",
+              "name": "Analytics",
+              "type": "link",
+              "is_selected": false,
+              "is_disabled": false,
+              "icon_present": true,
+              "icon_type": "bar-chart",
+              "metadata": {
+                "x": "X of analytics submenu item",
+                "y": "Y of analytics submenu item",
+                "width": "Width of item",
+                "height": "Height of item",
+                "font_size": "13px",
+                "font_color": "#111",
+                "background_color": "#FFF",
+                "hover_color": "#EEE"
+              }
+            }
+          ]
+        },
+        {
+          "id": "menu_00_settings",
+          "name": "Settings",
+          "description": "Final item in vertical stack.",
+          "type": "link",
+          "icon_present": true,
+          "icon_type": "settings",
+          "is_selected": false,
+          "is_disabled": false,
+          "has_submenu": false,
+          "keyboard_shortcut": "",
+          "metadata": {
+            "x": "X of Settings item",
+            "y": "Y of Settings item",
+            "width": "Width of Settings item",
+            "height": "Height of Settings item",
+            "font_size": "14px",
+            "font_color": "#222",
+            "background_color": "#FFF",
+            "hover_color": "#F5F5F5",
+            "selected_color": "#CCC"
+          }
+        }
+      ]
+    }
+  }
+},
+  "general": {
+  "template": {
+    "page": {
+      "name": "GeneralPage",
+      "description": "Fallback layout used when the screen doesn't match known types (form, table, list, menu, card, etc.). Extracts content in a layout-agnostic way from visual blocks.",
+      "layout_description": "Describe general layout structure based on what is visible: is it centered text, side-by-side blocks, a document-like flow, etc.",
+      "content_type": "email | document | static_screen | banner | code | visual | unknown — Infer the dominant content type using visible clues.",
+
+      "visual_blocks": [
+        {
+          "id": "block_00",
+          "type": "text | image | banner | heading | icon | visual",
+          "label": "If a title, label, or heading is present for the block",
+          "value": "Extract visible content or text inside this block",
+          "size": "small | medium | large — estimate based on visual area",
+          "alignment": "left | center | right",
+          "highlighted": "true | false — If it stands out (e.g., bold, shadow, colored)",
+          "metadata": {
+            "x": "Relative X from top-left of screen",
+            "y": "Relative Y from top-left of screen",
+            "width": "Width of block as relative proportion",
+            "height": "Height of block as relative proportion",
+            "font_style": "bold | italic | monospace | regular",
+            "font_size": "in px or relative size if visible",
+            "background_color": "#Hex — background of block",
+            "text_color": "#Hex — visible font color",
+            "border_style": "solid | dashed | none",
+            "icon_present": "true | false",
+            "image_alt": "For images/logos: describe what the image shows if guessable"
+          }
+        }
+      ],
+
+      "images_or_icons": [
+        {
+          "type": "logo | inline_icon | background_image | decorative",
+          "metadata": {
+            "x": "Relative X position",
+            "y": "Relative Y position",
+            "width": "Width in relative terms",
+            "height": "Height in relative terms",
+            "dominant_color": "#Hex",
+            "size": "small | medium | large",
+            "alt_text": "Extract any visible or guessed label if relevant"
+          }
+        }
+      ],
+
+      "observed_indicators": [
+        {
+          "type": "error_banner | info_message | warning_box | status_text",
+          "message": "Text of the visible message if applicable",
+          "style": "alert | subtle | boxed",
+          "metadata": {
+            "x": "Relative X of indicator",
+            "y": "Relative Y of indicator",
+            "width": "Relative width of indicator",
+            "height": "Relative height of indicator",
+            "color": "#Hex",
+            "icon": "If any symbol is shown"
+          }
+        }
+      ],
+
+      "extra_metadata": {
+        "scrollbar_present": "true | false",
+        "timestamp_visible": "true | false",
+        "source_label": "If source app, URL, or brand is visible",
+        "code_detected": "true | false",
+        "logo_detected": "true | false",
+        "keyword_hints": ["invoice", "feedback", "preview", "locked", "success"]
+      }
+    }
+  }
+},
+  "diagram": {
+  "template": {
+    "page": {
+      "name": "FlowchartPage",
+      "description": "This screen represents a diagrammatic workflow or logical flow using shapes (e.g., rectangles, diamonds), connectors, arrows, and labeled nodes. Often used to visualize business logic, data pipelines, or process maps.",
+      "diagram_mode": "view | edit | interactive | static",
+      "state": "empty | loading | populated | error",
+      "grid_visible": true,
+      "snap_to_grid": true,
+      "flow_direction": "top-down",
+      "section_order": ["Authentication Flow", "Notifications"],
+      "directional_links": [
+        {
+          "from": "start_node",
+          "to": "decision_node",
+          "label": "Initiate",
+          "direction": "uni",
+          "style": "solid",
+          "description": "Primary entry path in the process."
+        },
+        {
+          "from": "decision_node",
+          "to": "success_node",
+          "label": "Yes",
+          "direction": "uni",
+          "style": "solid",
+          "description": "Path taken when condition is satisfied."
+        },
+        {
+          "from": "decision_node",
+          "to": "fail_node",
+          "label": "No",
+          "direction": "uni",
+          "style": "dotted",
+          "description": "Path taken when condition fails."
+        }
+      ],
+      "tools": [
+        {
+          "name": "zoom_control",
+          "type": "icon_button",
+          "description": "Magnifies or shrinks diagram area.",
+          "position": "top-right",
+          "metadata": {
+            "icon": "+",
+            "tooltip": "Zoom in",
+            "enabled": true
+          }
+        },
+        {
+          "name": "fit_to_screen",
+          "type": "button",
+          "description": "Rescales and centers entire diagram.",
+          "position": "top",
+          "metadata": {
+            "enabled": true,
+            "tooltip": "Reset view"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "name": "Authentication Flow",
+          "description": "Labeled section grouping related nodes.",
+          "highlighted": true,
+          "background_shade": "light-blue",
+          "flow_order": ["start_node", "decision_node", "success_node", "fail_node"],
+          "direction": "top-down",
+          "elements": [
+            {
+              "name": "start_node",
+              "type": "shape",
+              "shape": "circle",
+              "label": "Start",
+              "position": {
+                "x": 0.1,
+                "y": 0.1
+              },
+              "parent": null,
+              "children": ["decision_node"],
+              "operations": [],
+              "metadata": {
+                "color": "green",
+                "border_style": "solid",
+                "text_alignment": "center"
+              }
+            },
+            {
+              "name": "decision_node",
+              "type": "shape",
+              "shape": "diamond",
+              "label": "Check condition",
+              "position": {
+                "x": 0.5,
+                "y": 0.3
+              },
+              "parent": "start_node",
+              "children": ["success_node", "fail_node"],
+              "operations": ["Evaluate condition"],
+              "metadata": {
+                "color": "yellow",
+                "border_style": "solid",
+                "text_alignment": "center",
+                "icon": "❓"
+              }
+            },
+            {
+              "name": "success_node",
+              "type": "shape",
+              "shape": "rectangle",
+              "label": "Access Granted",
+              "position": {
+                "x": 0.8,
+                "y": 0.3
+              },
+              "parent": "decision_node",
+              "children": [],
+              "operations": ["Grant access"],
+              "metadata": {
+                "color": "#d4edda",
+                "border_style": "solid",
+                "text_alignment": "center"
+              }
+            },
+            {
+              "name": "fail_node",
+              "type": "shape",
+              "shape": "rectangle",
+              "label": "Access Denied",
+              "position": {
+                "x": 0.5,
+                "y": 0.6
+              },
+              "parent": "decision_node",
+              "children": [],
+              "operations": ["Reject user"],
+              "metadata": {
+                "color": "#f8d7da",
+                "border_style": "dashed",
+                "text_alignment": "center"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Notifications",
+          "description": "Floating area showing secondary flows.",
+          "highlighted": false,
+          "flow_order": ["note_box"],
+          "direction": "none",
+          "elements": [
+            {
+              "name": "note_box",
+              "type": "annotation",
+              "label": "Note",
+              "position": {
+                "x": 0.9,
+                "y": 0.9
+              },
+              "operations": [],
+              "metadata": {
+                "text": "This flow represents onboarding steps.",
+                "background_color": "#f8f9fa",
+                "border_color": "#ced4da",
+                "font_style": "italic"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

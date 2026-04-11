@@ -1,0 +1,16 @@
+
+import pymongo
+
+
+connection_str='mongodb://localhost:27017/'
+_mongo_client=pymongo.MongoClient(connection_str)
+
+
+app=Flask(__name__)
+@app.route('/insert_data_into_database/' ,methods=['PUT'])
+
+_data=list(_mongo_client['imdb_db']['imdb_collection'].find())
+   
+if __name__=='__main__':
+    app.run(port=5001,debug="True")
+        

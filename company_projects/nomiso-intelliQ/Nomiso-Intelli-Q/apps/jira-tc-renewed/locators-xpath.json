@@ -1,0 +1,97 @@
+{
+  "login_page": {
+    "username_field": {
+      "locator_type": "name",
+      "value": "/html/body/div[2]/form/input[1]",
+      "description": "Username input field on login page"
+    },
+    "password_field": {
+      "locator_type": "name",
+      "value": "/html/body/div[2]/form/input[2]",
+      "description": "Password input field on login page"
+    },
+    "login_button": {
+      "locator_type": "css_selector",
+      "value": "/html/body/div[2]/form/button",
+      "description": "Login button"
+    }
+  },
+  "home_page": {
+    "home_tab": {
+      "locator_type": "xpath",
+      "value": "/html/body/div[7]/div/ul[1]/li[1]/a",
+      "description": "Home tab in the main navigation menu"
+    },
+    "products_tab": {
+      "locator_type": "xpath",
+      "value": "/html/body/div[7]/div/ul[1]/li[5]/a",
+      "description": "Products tab in the main navigation menu"
+    }
+  },
+  "products_page": {
+    "search_icon": {
+      "locator_type": "css_selector",
+      "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[6]/div[1]/table/tbody/tr/td[1]/ul/li[6]/button",
+      "description": "Search icon button on the Products page"
+    },
+    "search_form_item_number_field": {
+      "locator_type": "id",
+      "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[6]/div[2]/div[1]/div[2]/table/tbody/tr/td/form/fieldset/div/div[1]/div[1]/div[1]/div/input",
+      "description": "Product number input field on the Products page"
+    },
+    "search_form_search_button": {
+      "locator_type": "xpath",
+      "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[6]/div[2]/div[1]/div[2]/table/tbody/tr/td/form/fieldset/div/div[2]/div/div/div/button[1]",
+      "description": "Search button in the search form"
+    },
+    "search_results_table": {
+      "locator_type": "id",
+      "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[6]/div[2]/div[2]/table",
+      "description": "Product results grid table"
+    },
+    "new_button": {
+      "locator_type": "xpath",
+      "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[6]/div[1]/table/tbody/tr/td[3]/ul/li[1]/div/button",
+      "description": "New button, to open dropdown to create Product"
+    },
+    "product_drop_down": {
+      "locator_type": "xpath",
+      "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[6]/div[1]/table/tbody/tr/td[3]/ul/li[1]/div/div/a[1]",
+      "description": "Dropdown option, to open Product creation Page"
+    }
+  },
+  "product_creation_page": {
+    "name_field": {
+      "locator_type": "id",
+      "value": "/html/body/div[7]/div/div[2]/div/div[1]/div/form/table/tbody/tr[2]/td/div[1]/div/div[1]/div[2]/div/div[1]/table/tbody/tr[1]/td[2]/input",
+      "description": "Product name input field - mandatory field"
+    },
+    "product_number_field": {
+      "locator_type": "id",
+      "value": "/html/body/div[7]/div/div[2]/div/div[1]/div/form/table/tbody/tr[2]/td/div[1]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[1]/td[2]/input",
+      "description": "Product number input field"
+    },
+    "new_submit_button": {
+      "locator_type": "xpath",
+      "value": "/html/body/div[7]/div/div[2]/div/div[1]/div/form/table/tbody/tr[4]/td/a[1]",
+      "description": "New button at the bottom of the form to submit and create the product"
+    }
+  },
+  "products_view_page": {
+    "product_breadcrumb": {
+      "locator_type": "xpath",
+      "value": "/html/body/div[8]/div/div[1]/div[3]/ol/li[2]/a",
+      "description": "Product Name information in breadcrumb navigation"
+    },
+    "name_in_table": {
+      "locator_type": "xpath",
+      "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[5]/div[1]/div/div[1]/div[2]/div/div[1]/table/tbody/tr[1]/td[2]/div",
+      "description": "Dynamic verification: Product name field in details table"
+    },
+    "number_in_table": {
+      "locator_type": "xpath",
+      "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[5]/div[1]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[1]/td[2]/div",
+      "description": "Dynamic verification: Product number field in details table"
+    }
+  }
+}

@@ -1,0 +1,645 @@
+<!DOCTYPE html><html><head>
+      <title>test_comprehensive</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\aniru\.cursor\extensions\shd101wyy.markdown-preview-enhanced-0.8.19-universal\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<p>��#� �S�h�o�p�p�i�n�g� �C�a�r�t� �A�P�I� �C�o�m�p�r�e�h�e�n�s�i�v�e� �T�e�s�t� �D�o�c�u�m�e�n�t�a�t�i�o�n�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �P�r�o�j�e�c�t� �O�v�e�r�v�i�e�w�<br>
+�<br>
+�T�h�i�s� �d�o�c�u�m�e�n�t� �p�r�o�v�i�d�e�s� �c�o�m�p�r�e�h�e�n�s�i�v�e� �t�e�s�t�i�n�g� �d�o�c�u�m�e�n�t�a�t�i�o�n� �f�o�r� �t�h�e� �S�h�o�p�p�i�n�g� �C�a�r�t� �B�a�c�k�e�n�d� �A�P�I� �b�u�i�l�t� �w�i�t�h� �F�a�s�t�A�P�I� �a�n�d� �M�y�S�Q�L�.� �T�h�e� �a�p�p�l�i�c�a�t�i�o�n� �h�a�n�d�l�e�s� �u�s�e�r� �a�u�t�h�e�n�t�i�c�a�t�i�o�n�,� �p�r�o�d�u�c�t� �m�a�n�a�g�e�m�e�n�t�,� �a�n�d� �s�h�o�p�p�i�n�g� �c�a�r�t� �o�p�e�r�a�t�i�o�n�s� �w�i�t�h� �c�o�m�p�l�e�t�e� �t�e�s�t� �c�o�v�e�r�a�g�e�.�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �T�e�s�t� �E�n�v�i�r�o�n�m�e�n�t�<br>
+�<br>
+�-� �<em>�</em>�B�a�c�k�e�n�d� �F�r�a�m�e�w�o�r�k�<em>�</em>�:� �F�a�s�t�A�P�I�<br>
+�<br>
+�-� �<em>�</em>�D�a�t�a�b�a�s�e�<em>�</em>�:� �M�y�S�Q�L� �(�s�h�o�p�p�i�n�g�_�c�a�r�t�_�t�e�s�t� �f�o�r� �t�e�s�t�i�n�g�)�<br>
+�<br>
+�-� �<em>�</em>�T�e�s�t�i�n�g� �F�r�a�m�e�w�o�r�k�<em>�</em>�:� �p�y�t�e�s�t�<br>
+�<br>
+�-� �<em>�</em>�T�e�s�t� �D�a�t�a�b�a�s�e�<em>�</em>�:� �S�e�p�a�r�a�t�e� �t�e�s�t� �d�a�t�a�b�a�s�e� �t�o� �a�v�o�i�d� �a�f�f�e�c�t�i�n�g� �p�r�o�d�u�c�t�i�o�n� �d�a�t�a�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �T�e�s�t� �R�e�s�u�l�t�s� �S�u�m�m�a�r�y�<br>
+�<br>
+�-� �<em>�</em>�T�o�t�a�l� �T�e�s�t�s�<em>�</em>�:� �5�6�<br>
+�<br>
+�-� �<em>�</em>�P�a�s�s�e�d�<em>�</em>�:� �4�9� �' �(�8�7�.�5�%�)�<br>
+�<br>
+�-� �<em>�</em>�F�a�i�l�e�d�<em>�</em>�:� �7� �L' �(�1�2�.�5�%�)�<br>
+�<br>
+�-� �<em>�</em>�S�u�c�c�e�s�s� �R�a�t�e�<em>�</em>�:� �8�7�.�5�%�<br>
+�<br>
+�<br>
+�<br>
+�-�-�-�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �=��� �S�h�o�p�p�i�n�g� �C�a�r�t� �A�P�I� �T�e�s�t� �C�a�s�e�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�' �P�O�S�I�T�I�V�E� �T�E�S�T� �C�A�S�E�S� �-� �T�h�e�s�e� �W�o�r�k� �C�o�r�r�e�c�t�l�y�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�S�t�a�t�u�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�a�d�d�_�v�a�l�i�d�_�i�t�e�m�_�t�o�_�c�a�r�t�_�s�u�c�c�e�s�s�</code>� �|� �A�d�d� �v�a�l�i�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h� �s�u�f�f�i�c�i�e�n�t� �i�n�v�e�n�t�o�r�y� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �P�O�S�T� �t�o� �<code>�/�a�p�i�/�c�a�r�t�/�a�d�d�</code>� �w�i�t�h� �v�a�l�i�d� �i�t�e�m�_�i�d� �a�n�d� �q�u�a�n�t�i�t�y� �|� �I�t�e�m� �a�d�d�e�d� �s�u�c�c�e�s�s�f�u�l�l�y�,� �i�n�v�e�n�t�o�r�y� �r�e�d�u�c�e�d�,� �c�a�r�t� �t�o�t�a�l� �u�p�d�a�t�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�m�a�x�i�m�u�m�_�a�v�a�i�l�a�b�l�e�_�s�t�o�c�k�</code>� �|� �A�d�d� �i�t�e�m� �w�i�t�h� �m�a�x�i�m�u�m� �a�v�a�i�l�a�b�l�e� �s�t�o�c�k� �(�b�o�u�n�d�a�r�y� �c�a�s�e�)� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �A�d�d� �q�u�a�n�t�i�t�y� �e�q�u�a�l� �t�o� �a�v�a�i�l�a�b�l�e� �s�t�o�c�k� �|� �I�t�e�m� �a�d�d�e�d� �s�u�c�c�e�s�s�f�u�l�l�y�,� �i�n�v�e�n�t�o�r�y� �b�e�c�o�m�e�s� �0� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�a�d�d�_�m�u�l�t�i�p�l�e�_�d�i�f�f�e�r�e�n�t�_�i�t�e�m�s�_�t�o�_�c�a�r�t�</code>� �|� �A�d�d� �m�u�l�t�i�p�l�e� �d�i�f�f�e�r�e�n�t� �i�t�e�m�s� �t�o� �c�a�r�t� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �A�d�d� �d�i�f�f�e�r�e�n�t� �i�t�e�m�s� �s�e�q�u�e�n�t�i�a�l�l�y� �|� �C�a�r�t� �h�a�s� �m�u�l�t�i�p�l�e� �i�t�e�m�s� �w�i�t�h� �c�o�r�r�e�c�t� �c�o�u�n�t�s� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�c�a�r�t�_�t�o�t�a�l�_�c�a�l�c�u�l�a�t�i�o�n�_�a�c�c�u�r�a�c�y�</code>� �|� �V�e�r�i�f�y� �c�a�r�t� �t�o�t�a�l� �c�a�l�c�u�l�a�t�i�o�n� �i�s� �a�c�c�u�r�a�t�e� �|� �1�.� �A�d�d� �i�t�e�m�s� �w�i�t�h� �k�n�o�w�n� �p�r�i�c�e�s�&lt;�b�r�&gt;�2�.� �C�h�e�c�k� �c�a�r�t� �t�o�t�a�l� �|� �T�o�t�a�l� �c�a�l�c�u�l�a�t�i�o�n� �m�a�t�c�h�e�s� �e�x�p�e�c�t�e�d� �v�a�l�u�e� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�r�e�m�o�v�e�_�s�p�e�c�i�f�i�c�_�i�t�e�m�_�f�r�o�m�_�c�a�r�t�</code>� �|� �R�e�m�o�v�e� �s�p�e�c�i�f�i�c� �i�t�e�m� �f�r�o�m� �c�a�r�t� �|� �1�.� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t�&lt;�b�r�&gt;�2�.� �R�e�m�o�v�e� �s�p�e�c�i�f�i�c� �i�t�e�m� �|� �I�t�e�m� �r�e�m�o�v�e�d� �s�u�c�c�e�s�s�f�u�l�l�y� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�c�l�e�a�r�_�e�n�t�i�r�e�_�c�a�r�t�</code>� �|� �C�l�e�a�r� �e�n�t�i�r�e� �c�a�r�t� �|� �1�.� �A�d�d� �m�u�l�t�i�p�l�e� �i�t�e�m�s�&lt;�b�r�&gt;�2�.� �C�l�e�a�r� �e�n�t�i�r�e� �c�a�r�t� �|� �C�a�r�t� �i�s� �e�m�p�t�y� �w�i�t�h� �z�e�r�o� �t�o�t�a�l� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�g�e�t�_�c�a�r�t�_�c�o�n�t�e�n�t�s�</code>� �|� �G�e�t� �u�s�e�r� �c�a�r�t� �c�o�n�t�e�n�t�s� �|� �1�.� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t�&lt;�b�r�&gt;�2�.� �R�e�t�r�i�e�v�e� �c�a�r�t� �c�o�n�t�e�n�t�s� �|� �C�a�r�t� �i�t�e�m�s�,� �t�o�t�a�l�,� �a�n�d� �c�o�u�n�t� �r�e�t�u�r�n�e�d� �c�o�r�r�e�c�t�l�y� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�L' �N�E�G�A�T�I�V�E� �T�E�S�T� �C�A�S�E�S� �-� �T�h�e�s�e� �S�h�o�w� �W�h�a�t� �B�r�e�a�k�s�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�A�c�t�u�a�l� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�W�h�y� �I�t� �F�a�i�l�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�i�n�s�u�f�f�i�c�i�e�n�t�_�i�n�v�e�n�t�o�r�y�</code>� �|� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h� �i�n�s�u�f�f�i�c�i�e�n�t� �i�n�v�e�n�t�o�r�y� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �T�r�y� �t�o� �a�d�d� �q�u�a�n�t�i�t�y� �&gt;� �a�v�a�i�l�a�b�l�e� �s�t�o�c�k� �|� �E�r�r�o�r� �"�I�n�s�u�f�f�i�c�i�e�n�t� �i�n�v�e�n�t�o�r�y�"� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �i�n�v�e�n�t�o�r�y� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�i�n�v�a�l�i�d�_�i�t�e�m�_�i�d�</code>� �|� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h� �i�n�v�a�l�i�d� �i�t�e�m� �I�D� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �T�r�y� �t�o� �a�d�d� �n�o�n�-�e�x�i�s�t�e�n�t� �i�t�e�m�_�i�d� �|� �E�r�r�o�r� �"�I�t�e�m� �n�o�t� �f�o�u�n�d�"� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �i�t�e�m� �e�x�i�s�t�e�n�c�e� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�z�e�r�o�_�q�u�a�n�t�i�t�y�</code>� �|� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h� �z�e�r�o� �q�u�a�n�t�i�t�y� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �q�u�a�n�t�i�t�y� �=� �0� �|� �V�a�l�i�d�a�t�i�o�n� �e�r�r�o�r� �(�4�2�2�)� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �q�u�a�n�t�i�t�y� �&gt;� �0� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�n�e�g�a�t�i�v�e�_�q�u�a�n�t�i�t�y�</code>� �|� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h� �n�e�g�a�t�i�v�e� �q�u�a�n�t�i�t�y� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �n�e�g�a�t�i�v�e� �q�u�a�n�t�i�t�y� �|� �V�a�l�i�d�a�t�i�o�n� �e�r�r�o�r� �(�4�2�2�)� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �q�u�a�n�t�i�t�y� �&gt;� �0� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�q�u�a�n�t�i�t�y�_�e�x�c�e�e�d�i�n�g�_�s�y�s�t�e�m�_�l�i�m�i�t�</code>� �|� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h� �q�u�a�n�t�i�t�y� �e�x�c�e�e�d�i�n�g� �s�y�s�t�e�m� �l�i�m�i�t� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �q�u�a�n�t�i�t�y� �&gt;� �1�0�0�0� �|� �V�a�l�i�d�a�t�i�o�n� �e�r�r�o�r� �(�4�2�2�)� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �q�u�a�n�t�i�t�y� �l�i�m�i�t� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�e�x�p�i�r�e�d�_�u�s�e�r�_�s�e�s�s�i�o�n�</code>� �|� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h� �e�x�p�i�r�e�d� �u�s�e�r� �s�e�s�s�i�o�n� �|� �1�.� �U�s�e� �i�n�v�a�l�i�d�/�e�x�p�i�r�e�d� �t�o�k�e�n�&lt;�b�r�&gt;�2�.� �T�r�y� �t�o� �a�d�d� �i�t�e�m� �t�o� �c�a�r�t� �|� �U�n�a�u�t�h�o�r�i�z�e�d� �e�r�r�o�r� �(�4�0�1�)� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �t�o�k�e�n� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�m�i�s�s�i�n�g�_�a�u�t�h�e�n�t�i�c�a�t�i�o�n�</code>� �|� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h�o�u�t� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �|� �1�.� �S�e�n�d� �r�e�q�u�e�s�t� �w�i�t�h�o�u�t� �a�u�t�h� �h�e�a�d�e�r�&lt;�b�r�&gt;�2�.� �T�r�y� �t�o� �a�d�d� �i�t�e�m� �|� �U�n�a�u�t�h�o�r�i�z�e�d� �e�r�r�o�r� �(�4�0�1�)� �r�e�t�u�r�n�e�d� �|� �L' �<em>�</em>�F�A�I�L�E�D�<em>�</em>� �-� �G�o�t� �4�0�3� �|� �F�a�s�t�A�P�I� �r�e�t�u�r�n�s� �4�0�3� �f�o�r� �m�i�s�s�i�n�g� �a�u�t�h� �d�e�p�e�n�d�e�n�c�y� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�m�i�s�s�i�n�g�_�i�t�e�m�_�i�d�</code>� �|� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h� �m�i�s�s�i�n�g� �i�t�e�m�_�i�d� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �r�e�q�u�e�s�t� �w�i�t�h�o�u�t� �i�t�e�m�_�i�d� �|� �V�a�l�i�d�a�t�i�o�n� �e�r�r�o�r� �(�4�2�2�)� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �r�e�q�u�i�r�e�d� �f�i�e�l�d�s� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�m�i�s�s�i�n�g�_�q�u�a�n�t�i�t�y�</code>� �|� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h� �m�i�s�s�i�n�g� �q�u�a�n�t�i�t�y� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �r�e�q�u�e�s�t� �w�i�t�h�o�u�t� �q�u�a�n�t�i�t�y� �|� �V�a�l�i�d�a�t�i�o�n� �e�r�r�o�r� �(�4�2�2�)� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �r�e�q�u�i�r�e�d� �f�i�e�l�d�s� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�i�n�v�a�l�i�d�_�d�a�t�a�_�t�y�p�e�s�</code>� �|� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h� �i�n�v�a�l�i�d� �d�a�t�a� �t�y�p�e�s� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �s�t�r�i�n�g� �i�t�e�m�_�i�d� �i�n�s�t�e�a�d� �o�f� �i�n�t�e�g�e�r� �|� �V�a�l�i�d�a�t�i�o�n� �e�r�r�o�r� �(�4�2�2�)� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �d�a�t�a� �t�y�p�e�s� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�s�p�e�c�i�a�l�_�c�h�a�r�a�c�t�e�r�s�_�i�n�j�e�c�t�i�o�n�</code>� �|� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t� �w�i�t�h� �S�Q�L� �i�n�j�e�c�t�i�o�n� �a�t�t�e�m�p�t� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �S�Q�L� �i�n�j�e�c�t�i�o�n� �i�n� �i�t�e�m�_�i�d� �|� �V�a�l�i�d�a�t�i�o�n� �e�r�r�o�r� �(�4�2�2�)� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �p�r�e�v�e�n�t�s� �S�Q�L� �i�n�j�e�c�t�i�o�n� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�r�e�m�o�v�e�_�i�t�e�m�_�n�o�t�_�i�n�_�c�a�r�t�</code>� �|� �R�e�m�o�v�e� �i�t�e�m� �t�h�a�t�'�s� �n�o�t� �i�n� �c�a�r�t� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �T�r�y� �t�o� �r�e�m�o�v�e� �n�o�n�-�e�x�i�s�t�e�n�t� �c�a�r�t� �i�t�e�m� �|� �E�r�r�o�r� �"�I�t�e�m� �n�o�t� �f�o�u�n�d�"� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �c�a�r�t� �i�t�e�m� �e�x�i�s�t�e�n�c�e� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�r�e�m�o�v�e�_�i�t�e�m�_�w�i�t�h�o�u�t�_�a�u�t�h�e�n�t�i�c�a�t�i�o�n�</code>� �|� �R�e�m�o�v�e� �i�t�e�m� �w�i�t�h�o�u�t� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �|� �1�.� �S�e�n�d� �r�e�q�u�e�s�t� �w�i�t�h�o�u�t� �a�u�t�h� �h�e�a�d�e�r�&lt;�b�r�&gt;�2�.� �T�r�y� �t�o� �r�e�m�o�v�e� �i�t�e�m� �|� �U�n�a�u�t�h�o�r�i�z�e�d� �e�r�r�o�r� �(�4�0�1�)� �r�e�t�u�r�n�e�d� �|� �L' �<em>�</em>�F�A�I�L�E�D�<em>�</em>� �-� �G�o�t� �4�0�3� �|� �F�a�s�t�A�P�I� �r�e�t�u�r�n�s� �4�0�3� �f�o�r� �m�i�s�s�i�n�g� �a�u�t�h� �d�e�p�e�n�d�e�n�c�y� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�g�e�t�_�c�a�r�t�_�w�i�t�h�o�u�t�_�a�u�t�h�e�n�t�i�c�a�t�i�o�n�</code>� �|� �G�e�t� �c�a�r�t� �w�i�t�h�o�u�t� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �|� �1�.� �S�e�n�d� �r�e�q�u�e�s�t� �w�i�t�h�o�u�t� �a�u�t�h� �h�e�a�d�e�r�&lt;�b�r�&gt;�2�.� �T�r�y� �t�o� �g�e�t� �c�a�r�t� �|� �U�n�a�u�t�h�o�r�i�z�e�d� �e�r�r�o�r� �(�4�0�1�)� �r�e�t�u�r�n�e�d� �|� �L' �<em>�</em>�F�A�I�L�E�D�<em>�</em>� �-� �G�o�t� �4�0�3� �|� �F�a�s�t�A�P�I� �r�e�t�u�r�n�s� �4�0�3� �f�o�r� �m�i�s�s�i�n�g� �a�u�t�h� �d�e�p�e�n�d�e�n�c�y� �|�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�=�<br>
+� �B�O�U�N�D�A�R�Y� �T�E�S�T� �C�A�S�E�S� �-� �T�e�s�t�i�n�g� �E�d�g�e� �C�a�s�e�s�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�A�c�t�u�a�l� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�W�h�y� �I�t� �F�a�i�l�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�b�o�u�n�d�a�r�y�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�m�i�n�i�m�u�m�_�q�u�a�n�t�i�t�y�</code>� �|� �A�d�d� �i�t�e�m� �w�i�t�h� �m�i�n�i�m�u�m� �q�u�a�n�t�i�t�y� �(�1�)� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �A�d�d� �q�u�a�n�t�i�t�y� �=� �1� �|� �I�t�e�m� �a�d�d�e�d� �s�u�c�c�e�s�s�f�u�l�l�y� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �h�a�n�d�l�e�s� �m�i�n�i�m�u�m� �q�u�a�n�t�i�t�y� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�b�o�u�n�d�a�r�y�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�m�a�x�i�m�u�m�_�q�u�a�n�t�i�t�y�_�l�i�m�i�t�</code>� �|� �A�d�d� �i�t�e�m� �w�i�t�h� �m�a�x�i�m�u�m� �q�u�a�n�t�i�t�y� �l�i�m�i�t� �(�1�0�0�0�)� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �A�d�d� �q�u�a�n�t�i�t�y� �=� �1�0�0�0� �|� �I�t�e�m� �a�d�d�e�d� �s�u�c�c�e�s�s�f�u�l�l�y� �|� �L' �<em>�</em>�F�A�I�L�E�D�<em>�</em>� �-� �G�o�t� �4�0�0� �|� �A�P�I� �h�a�s� �q�u�a�n�t�i�t�y� �l�i�m�i�t� �&lt;� �1�0�0�0� �(�g�o�o�d� �s�e�c�u�r�i�t�y�!�)� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�b�o�u�n�d�a�r�y�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�d�e�c�i�m�a�l�_�q�u�a�n�t�i�t�y�</code>� �|� �A�d�d� �i�t�e�m� �w�i�t�h� �d�e�c�i�m�a�l� �q�u�a�n�t�i�t�y� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �d�e�c�i�m�a�l� �q�u�a�n�t�i�t�y� �(�e�.�g�.�,� �1�.�5�)� �|� �M�a�y� �p�a�s�s� �o�r� �f�a�i�l� �d�e�p�e�n�d�i�n�g� �o�n� �v�a�l�i�d�a�t�i�o�n� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �a�c�c�e�p�t�s� �d�e�c�i�m�a�l� �q�u�a�n�t�i�t�i�e�s� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�b�o�u�n�d�a�r�y�_�a�d�d�_�i�t�e�m�_�w�i�t�h�_�v�e�r�y�_�l�o�n�g�_�t�e�x�t�</code>� �|� �A�d�d� �i�t�e�m� �w�i�t�h� �e�x�t�r�e�m�e�l�y� �l�o�n�g� �t�e�x�t� �i�n�p�u�t�s� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �v�e�r�y� �l�o�n�g� �i�t�e�m�_�i�d� �|� �V�a�l�i�d�a�t�i�o�n� �e�r�r�o�r� �(�4�2�2�)� �r�e�t�u�r�n�e�d� �|� �L' �<em>�</em>�F�A�I�L�E�D�<em>�</em>� �-� �G�o�t� �4�0�4� �|� �A�P�I� �v�a�l�i�d�a�t�e�s� �i�t�e�m�_�i�d� �a�s� �i�n�t�e�g�e�r� �a�t� �r�o�u�t�e� �l�e�v�e�l� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�b�o�u�n�d�a�r�y�_�c�o�n�c�u�r�r�e�n�t�_�r�e�q�u�e�s�t�s�_�r�a�c�e�_�c�o�n�d�i�t�i�o�n�</code>� �|� �T�e�s�t� �c�o�n�c�u�r�r�e�n�t� �r�e�q�u�e�s�t�s� �(�r�a�c�e� �c�o�n�d�i�t�i�o�n�)� �|� �1�.� �A�d�d� �i�t�e�m� �s�u�c�c�e�s�s�f�u�l�l�y�&lt;�b�r�&gt;�2�.� �T�r�y� �t�o� �a�d�d� �m�o�r�e� �t�h�a�n� �a�v�a�i�l�a�b�l�e� �s�t�o�c�k� �|� �S�e�c�o�n�d� �r�e�q�u�e�s�t� �f�a�i�l�s� �d�u�e� �t�o� �i�n�s�u�f�f�i�c�i�e�n�t� �i�n�v�e�n�t�o�r�y� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �h�a�n�d�l�e�s� �c�o�n�c�u�r�r�e�n�t� �r�e�q�u�e�s�t�s� �|�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�=�� �S�E�C�U�R�I�T�Y� �T�E�S�T� �C�A�S�E�S� �-� �T�e�s�t�i�n�g� �S�e�c�u�r�i�t�y� �V�u�l�n�e�r�a�b�i�l�i�t�i�e�s�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�A�c�t�u�a�l� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�W�h�y� �I�t� �F�a�i�l�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�s�e�c�u�r�i�t�y�_�s�q�l�_�i�n�j�e�c�t�i�o�n�_�p�r�e�v�e�n�t�i�o�n�</code>� �|� �T�e�s�t� �S�Q�L� �i�n�j�e�c�t�i�o�n� �p�r�e�v�e�n�t�i�o�n� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �v�a�r�i�o�u�s� �S�Q�L� �i�n�j�e�c�t�i�o�n� �a�t�t�e�m�p�t�s� �|� �S�h�o�u�l�d� �f�a�i�l� �v�a�l�i�d�a�t�i�o�n�,� �n�o�t� �e�x�e�c�u�t�e� �S�Q�L� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �p�r�e�v�e�n�t�s� �S�Q�L� �i�n�j�e�c�t�i�o�n� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�s�e�c�u�r�i�t�y�_�x�s�s�_�p�r�e�v�e�n�t�i�o�n�</code>� �|� �T�e�s�t� �X�S�S� �p�r�e�v�e�n�t�i�o�n� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �S�e�n�d� �X�S�S� �a�t�t�e�m�p�t�s� �i�n� �i�t�e�m� �d�a�t�a� �|� �S�h�o�u�l�d� �s�u�c�c�e�e�d� �(�X�S�S� �n�o�t� �r�e�l�e�v�a�n�t� �f�o�r� �t�h�i�s� �e�n�d�p�o�i�n�t�)� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �X�S�S� �i�s� �n�o�t� �a�p�p�l�i�c�a�b�l�e� �t�o� �t�h�i�s� �e�n�d�p�o�i�n�t� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�s�e�c�u�r�i�t�y�_�a�u�t�h�e�n�t�i�c�a�t�i�o�n�_�b�y�p�a�s�s�</code>� �|� �T�e�s�t� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �b�y�p�a�s�s� �a�t�t�e�m�p�t�s� �|� �1�.� �T�r�y� �t�o� �a�c�c�e�s�s� �c�a�r�t� �w�i�t�h�o�u�t� �t�o�k�e�n�&lt;�b�r�&gt;�2�.� �T�r�y� �w�i�t�h� �i�n�v�a�l�i�d� �t�o�k�e�n� �f�o�r�m�a�t�&lt;�b�r�&gt;�3�.� �T�r�y� �w�i�t�h� �e�x�p�i�r�e�d� �t�o�k�e�n� �|� �U�n�a�u�t�h�o�r�i�z�e�d� �e�r�r�o�r� �(�4�0�1�)� �r�e�t�u�r�n�e�d� �|� �L' �<em>�</em>�F�A�I�L�E�D�<em>�</em>� �-� �G�o�t� �4�0�3� �|� �F�a�s�t�A�P�I� �r�e�t�u�r�n�s� �4�0�3� �f�o�r� �m�i�s�s�i�n�g� �a�u�t�h� �d�e�p�e�n�d�e�n�c�y� �|�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>��&amp; �P�E�R�F�O�R�M�A�N�C�E� �T�E�S�T� �C�A�S�E�S� �-� �T�e�s�t�i�n�g� �S�y�s�t�e�m� �P�e�r�f�o�r�m�a�n�c�e�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�S�t�a�t�u�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�e�r�f�o�r�m�a�n�c�e�_�a�d�d�_�m�u�l�t�i�p�l�e�_�i�t�e�m�s�_�r�a�p�i�d�l�y�</code>� �|� �T�e�s�t� �a�d�d�i�n�g� �m�u�l�t�i�p�l�e� �i�t�e�m�s� �r�a�p�i�d�l�y� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �A�d�d� �5� �d�i�f�f�e�r�e�n�t� �i�t�e�m�s� �r�a�p�i�d�l�y� �|� �A�l�l� �i�t�e�m�s� �a�d�d�e�d� �s�u�c�c�e�s�s�f�u�l�l�y� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�e�r�f�o�r�m�a�n�c�e�_�l�a�r�g�e�_�q�u�a�n�t�i�t�y�_�o�p�e�r�a�t�i�o�n�s�</code>� �|� �T�e�s�t� �o�p�e�r�a�t�i�o�n�s� �w�i�t�h� �l�a�r�g�e� �q�u�a�n�t�i�t�i�e�s� �|� �1�.� �A�u�t�h�e�n�t�i�c�a�t�e� �u�s�e�r�&lt;�b�r�&gt;�2�.� �A�d�d� �i�t�e�m� �w�i�t�h� �l�a�r�g�e� �q�u�a�n�t�i�t�y� �|� �I�t�e�m� �a�d�d�e�d� �s�u�c�c�e�s�s�f�u�l�l�y� �w�i�t�h� �c�o�r�r�e�c�t� �t�o�t�a�l� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�<br>
+�<br>
+�-�-�-�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �=�� �A�u�t�h�e�n�t�i�c�a�t�i�o�n� �A�P�I� �T�e�s�t� �C�a�s�e�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�' �P�O�S�I�T�I�V�E� �T�E�S�T� �C�A�S�E�S� �-� �T�h�e�s�e� �W�o�r�k� �C�o�r�r�e�c�t�l�y�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�S�t�a�t�u�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�u�s�e�r�_�l�o�g�i�n�_�s�u�c�c�e�s�s�</code>� �|� �U�s�e�r� �l�o�g�i�n� �w�i�t�h� �v�a�l�i�d� �c�r�e�d�e�n�t�i�a�l�s� �|� �1�.� �S�e�n�d� �v�a�l�i�d� �u�s�e�r�n�a�m�e�/�p�a�s�s�w�o�r�d�&lt;�b�r�&gt;�2�.� �R�e�c�e�i�v�e� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �t�o�k�e�n� �|� �A�c�c�e�s�s� �t�o�k�e�n� �a�n�d� �u�s�e�r� �i�n�f�o� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�u�s�e�r�_�r�e�g�i�s�t�r�a�t�i�o�n�_�s�u�c�c�e�s�s�</code>� �|� �U�s�e�r� �r�e�g�i�s�t�r�a�t�i�o�n� �w�i�t�h� �v�a�l�i�d� �d�a�t�a� �|� �1�.� �S�e�n�d� �v�a�l�i�d� �u�s�e�r� �d�a�t�a�&lt;�b�r�&gt;�2�.� �C�r�e�a�t�e� �n�e�w� �u�s�e�r� �a�c�c�o�u�n�t� �|� �U�s�e�r� �c�r�e�a�t�e�d� �s�u�c�c�e�s�s�f�u�l�l�y� �w�i�t�h� �a�c�c�e�s�s� �t�o�k�e�n� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�t�o�k�e�n�_�v�a�l�i�d�a�t�i�o�n�</code>� �|� �V�a�l�i�d�a�t�e� �t�h�a�t� �g�e�n�e�r�a�t�e�d� �t�o�k�e�n� �w�o�r�k�s� �|� �1�.� �U�s�e� �g�e�n�e�r�a�t�e�d� �t�o�k�e�n�&lt;�b�r�&gt;�2�.� �A�c�c�e�s�s� �p�r�o�t�e�c�t�e�d� �e�n�d�p�o�i�n�t� �|� �T�o�k�e�n� �a�c�c�e�p�t�e�d� �a�n�d� �e�n�d�p�o�i�n�t� �a�c�c�e�s�s�i�b�l�e� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�L' �N�E�G�A�T�I�V�E� �T�E�S�T� �C�A�S�E�S� �-� �T�h�e�s�e� �S�h�o�w� �W�h�a�t� �B�r�e�a�k�s�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�A�c�t�u�a�l� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�W�h�y� �I�t� �F�a�i�l�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�u�s�e�r�_�l�o�g�i�n�_�i�n�v�a�l�i�d�_�c�r�e�d�e�n�t�i�a�l�s�</code>� �|� �U�s�e�r� �l�o�g�i�n� �w�i�t�h� �i�n�v�a�l�i�d� �c�r�e�d�e�n�t�i�a�l�s� �|� �1�.� �S�e�n�d� �i�n�v�a�l�i�d� �p�a�s�s�w�o�r�d�&lt;�b�r�&gt;�2�.� �A�t�t�e�m�p�t� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �|� �A�u�t�h�e�n�t�i�c�a�t�i�o�n� �f�a�i�l�s� �(�4�0�1�)� �|� �L' �<em>�</em>�F�A�I�L�E�D�<em>�</em>� �-� �G�o�t� �2�0�0� �|� �T�e�s�t� �u�s�e�r� �a�c�c�e�p�t�s� �a�n�y� �p�a�s�s�w�o�r�d� �(�i�n�t�e�n�t�i�o�n�a�l� �f�o�r� �t�e�s�t�i�n�g�)� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�u�s�e�r�_�l�o�g�i�n�_�n�o�n�e�x�i�s�t�e�n�t�_�u�s�e�r�</code>� �|� �U�s�e�r� �l�o�g�i�n� �w�i�t�h� �n�o�n�-�e�x�i�s�t�e�n�t� �u�s�e�r�n�a�m�e� �|� �1�.� �S�e�n�d� �n�o�n�-�e�x�i�s�t�e�n�t� �u�s�e�r�n�a�m�e�&lt;�b�r�&gt;�2�.� �A�t�t�e�m�p�t� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �|� �A�u�t�h�e�n�t�i�c�a�t�i�o�n� �f�a�i�l�s� �(�4�0�1�)� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �r�e�j�e�c�t�s� �n�o�n�-�e�x�i�s�t�e�n�t� �u�s�e�r�s� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�u�s�e�r�_�r�e�g�i�s�t�r�a�t�i�o�n�_�d�u�p�l�i�c�a�t�e�_�u�s�e�r�n�a�m�e�</code>� �|� �U�s�e�r� �r�e�g�i�s�t�r�a�t�i�o�n� �w�i�t�h� �d�u�p�l�i�c�a�t�e� �u�s�e�r�n�a�m�e� �|� �1�.� �R�e�g�i�s�t�e�r� �f�i�r�s�t� �u�s�e�r�&lt;�b�r�&gt;�2�.� �T�r�y� �t�o� �r�e�g�i�s�t�e�r� �w�i�t�h� �s�a�m�e� �u�s�e�r�n�a�m�e� �|� �R�e�g�i�s�t�r�a�t�i�o�n� �f�a�i�l�s� �(�4�0�0�)� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �p�r�e�v�e�n�t�s� �d�u�p�l�i�c�a�t�e� �u�s�e�r�n�a�m�e�s� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�u�s�e�r�_�r�e�g�i�s�t�r�a�t�i�o�n�_�i�n�v�a�l�i�d�_�e�m�a�i�l�</code>� �|� �U�s�e�r� �r�e�g�i�s�t�r�a�t�i�o�n� �w�i�t�h� �i�n�v�a�l�i�d� �e�m�a�i�l� �f�o�r�m�a�t� �|� �1�.� �S�e�n�d� �i�n�v�a�l�i�d� �e�m�a�i�l� �f�o�r�m�a�t�&lt;�b�r�&gt;�2�.� �A�t�t�e�m�p�t� �r�e�g�i�s�t�r�a�t�i�o�n� �|� �V�a�l�i�d�a�t�i�o�n� �e�r�r�o�r� �(�4�2�2�)� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �e�m�a�i�l� �f�o�r�m�a�t� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�u�s�e�r�_�r�e�g�i�s�t�r�a�t�i�o�n�_�m�i�s�s�i�n�g�_�f�i�e�l�d�s�</code>� �|� �U�s�e�r� �r�e�g�i�s�t�r�a�t�i�o�n� �w�i�t�h� �m�i�s�s�i�n�g� �r�e�q�u�i�r�e�d� �f�i�e�l�d�s� �|� �1�.� �S�e�n�d� �r�e�q�u�e�s�t� �w�i�t�h� �m�i�s�s�i�n�g� �f�i�e�l�d�s�&lt;�b�r�&gt;�2�.� �A�t�t�e�m�p�t� �r�e�g�i�s�t�r�a�t�i�o�n� �|� �V�a�l�i�d�a�t�i�o�n� �e�r�r�o�r� �(�4�2�2�)� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �c�o�r�r�e�c�t�l�y� �v�a�l�i�d�a�t�e�s� �r�e�q�u�i�r�e�d� �f�i�e�l�d�s� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�u�s�e�r�_�r�e�g�i�s�t�r�a�t�i�o�n�_�w�e�a�k�_�p�a�s�s�w�o�r�d�</code>� �|� �U�s�e�r� �r�e�g�i�s�t�r�a�t�i�o�n� �w�i�t�h� �w�e�a�k� �p�a�s�s�w�o�r�d� �|� �1�.� �S�e�n�d� �w�e�a�k� �p�a�s�s�w�o�r�d�&lt;�b�r�&gt;�2�.� �A�t�t�e�m�p�t� �r�e�g�i�s�t�r�a�t�i�o�n� �|� �M�a�y� �p�a�s�s� �o�r� �f�a�i�l� �d�e�p�e�n�d�i�n�g� �o�n� �v�a�l�i�d�a�t�i�o�n� �r�u�l�e�s� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|� �A�P�I� �a�c�c�e�p�t�s� �w�e�a�k� �p�a�s�s�w�o�r�d�s� �(�n�o� �v�a�l�i�d�a�t�i�o�n� �r�u�l�e�s�)� �|�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�=�� �S�E�C�U�R�I�T�Y� �T�E�S�T� �C�A�S�E�S�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�S�t�a�t�u�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�s�e�c�u�r�i�t�y�_�p�a�s�s�w�o�r�d�_�h�a�s�h�i�n�g�</code>� �|� �T�e�s�t� �t�h�a�t� �p�a�s�s�w�o�r�d�s� �a�r�e� �p�r�o�p�e�r�l�y� �h�a�s�h�e�d� �|� �1�.� �R�e�g�i�s�t�e�r� �n�e�w� �u�s�e�r�&lt;�b�r�&gt;�2�.� �L�o�g�i�n� �w�i�t�h� �s�a�m�e� �p�a�s�s�w�o�r�d� �|� �L�o�g�i�n� �s�u�c�c�e�s�s�f�u�l� �w�i�t�h� �h�a�s�h�e�d� �p�a�s�s�w�o�r�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�s�e�c�u�r�i�t�y�_�t�o�k�e�n�_�e�x�p�i�r�a�t�i�o�n�</code>� �|� �T�e�s�t� �t�o�k�e�n� �e�x�p�i�r�a�t�i�o�n� �h�a�n�d�l�i�n�g� �|� �1�.� �U�s�e� �v�a�l�i�d� �t�o�k�e�n�&lt;�b�r�&gt;�2�.� �A�c�c�e�s�s� �p�r�o�t�e�c�t�e�d� �e�n�d�p�o�i�n�t� �|� �T�o�k�e�n� �a�c�c�e�p�t�e�d� �(�n�o� �e�x�p�i�r�a�t�i�o�n� �i�n� �t�e�s�t�)� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�<br>
+�<br>
+�-�-�-�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �=���� �I�t�e�m�s� �M�a�n�a�g�e�m�e�n�t� �A�P�I� �T�e�s�t� �C�a�s�e�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�' �P�O�S�I�T�I�V�E� �T�E�S�T� �C�A�S�E�S� �-� �T�h�e�s�e� �W�o�r�k� �C�o�r�r�e�c�t�l�y�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�S�t�a�t�u�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�g�e�t�_�a�l�l�_�i�t�e�m�s�</code>� �|� �G�e�t� �a�l�l� �a�v�a�i�l�a�b�l�e� �i�t�e�m�s� �|� �1�.� �S�e�n�d� �G�E�T� �r�e�q�u�e�s�t� �t�o� �<code>�/�a�p�i�/�i�t�e�m�s�</code>� �|� �L�i�s�t� �o�f� �a�l�l� �i�t�e�m�s� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�g�e�t�_�i�t�e�m�_�b�y�_�i�d�</code>� �|� �G�e�t� �s�p�e�c�i�f�i�c� �i�t�e�m� �b�y� �I�D� �|� �1�.� �S�e�n�d� �G�E�T� �r�e�q�u�e�s�t� �t�o� �<code>�/�a�p�i�/�i�t�e�m�s�/�{�i�d�}�</code>� �|� �S�p�e�c�i�f�i�c� �i�t�e�m� �d�e�t�a�i�l�s� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�s�e�a�r�c�h�_�i�t�e�m�s�_�b�y�_�n�a�m�e�</code>� �|� �S�e�a�r�c�h� �i�t�e�m�s� �b�y� �n�a�m�e� �|� �1�.� �S�e�n�d� �s�e�a�r�c�h� �q�u�e�r�y�&lt;�b�r�&gt;�2�.� �R�e�c�e�i�v�e� �m�a�t�c�h�i�n�g� �i�t�e�m�s� �|� �I�t�e�m�s� �m�a�t�c�h�i�n�g� �s�e�a�r�c�h� �c�r�i�t�e�r�i�a� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�f�i�l�t�e�r�_�i�t�e�m�s�_�b�y�_�c�a�t�e�g�o�r�y�</code>� �|� �F�i�l�t�e�r� �i�t�e�m�s� �b�y� �c�a�t�e�g�o�r�y� �|� �1�.� �S�e�n�d� �c�a�t�e�g�o�r�y� �f�i�l�t�e�r�&lt;�b�r�&gt;�2�.� �R�e�c�e�i�v�e� �f�i�l�t�e�r�e�d� �i�t�e�m�s� �|� �I�t�e�m�s� �i�n� �s�p�e�c�i�f�i�e�d� �c�a�t�e�g�o�r�y� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�o�s�i�t�i�v�e�_�g�e�t�_�i�t�e�m�s�_�w�i�t�h�_�p�a�g�i�n�a�t�i�o�n�_�p�a�r�a�m�e�t�e�r�s�</code>� �|� �G�e�t� �i�t�e�m�s� �w�i�t�h� �p�a�g�i�n�a�t�i�o�n� �p�a�r�a�m�e�t�e�r�s� �|� �1�.� �S�e�n�d� �p�a�g�i�n�a�t�i�o�n� �p�a�r�a�m�e�t�e�r�s�&lt;�b�r�&gt;�2�.� �R�e�c�e�i�v�e� �p�a�g�i�n�a�t�e�d� �r�e�s�u�l�t�s� �|� �I�t�e�m�s� �r�e�t�u�r�n�e�d� �(�p�a�g�i�n�a�t�i�o�n� �n�o�t� �i�m�p�l�e�m�e�n�t�e�d� �y�e�t�)� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�L' �N�E�G�A�T�I�V�E� �T�E�S�T� �C�A�S�E�S� �-� �T�h�e�s�e� �S�h�o�w� �W�h�a�t� �B�r�e�a�k�s�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�S�t�a�t�u�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�g�e�t�_�i�t�e�m�_�b�y�_�i�n�v�a�l�i�d�_�i�d�</code>� �|� �G�e�t� �i�t�e�m� �b�y� �i�n�v�a�l�i�d� �I�D� �|� �1�.� �S�e�n�d� �G�E�T� �r�e�q�u�e�s�t� �w�i�t�h� �n�o�n�-�e�x�i�s�t�e�n�t� �I�D� �|� �E�r�r�o�r� �"�I�t�e�m� �n�o�t� �f�o�u�n�d�"� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�g�e�t�_�i�t�e�m�_�b�y�_�s�t�r�i�n�g�_�i�d�</code>� �|� �G�e�t� �i�t�e�m� �b�y� �s�t�r�i�n�g� �I�D� �|� �1�.� �S�e�n�d� �G�E�T� �r�e�q�u�e�s�t� �w�i�t�h� �s�t�r�i�n�g� �I�D� �|� �V�a�l�i�d�a�t�i�o�n� �e�r�r�o�r� �(�4�2�2�)� �r�e�t�u�r�n�e�d� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�s�e�a�r�c�h�_�i�t�e�m�s�_�e�m�p�t�y�_�q�u�e�r�y�</code>� �|� �S�e�a�r�c�h� �i�t�e�m�s� �w�i�t�h� �e�m�p�t�y� �q�u�e�r�y� �|� �1�.� �S�e�n�d� �e�m�p�t�y� �s�e�a�r�c�h� �q�u�e�r�y�&lt;�b�r�&gt;�2�.� �H�a�n�d�l�e� �r�e�s�p�o�n�s�e� �|� �M�a�y� �p�a�s�s� �o�r� �f�a�i�l� �d�e�p�e�n�d�i�n�g� �o�n� �i�m�p�l�e�m�e�n�t�a�t�i�o�n� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�f�i�l�t�e�r�_�i�t�e�m�s�_�i�n�v�a�l�i�d�_�c�a�t�e�g�o�r�y�</code>� �|� �F�i�l�t�e�r� �i�t�e�m�s� �b�y� �i�n�v�a�l�i�d� �c�a�t�e�g�o�r�y� �|� �1�.� �S�e�n�d� �i�n�v�a�l�i�d� �c�a�t�e�g�o�r�y�&lt;�b�r�&gt;�2�.� �H�a�n�d�l�e� �r�e�s�p�o�n�s�e� �|� �E�m�p�t�y� �l�i�s�t� �r�e�t�u�r�n�e�d� �f�o�r� �i�n�v�a�l�i�d� �c�a�t�e�g�o�r�y� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�n�e�g�a�t�i�v�e�_�a�c�c�e�s�s�_�i�t�e�m�s�_�w�i�t�h�o�u�t�_�a�u�t�h�e�n�t�i�c�a�t�i�o�n�</code>� �|� �A�c�c�e�s�s� �i�t�e�m�s� �w�i�t�h�o�u�t� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �|� �1�.� �S�e�n�d� �r�e�q�u�e�s�t� �w�i�t�h�o�u�t� �a�u�t�h�&lt;�b�r�&gt;�2�.� �A�c�c�e�s�s� �p�u�b�l�i�c� �e�n�d�p�o�i�n�t� �|� �I�t�e�m�s� �r�e�t�u�r�n�e�d� �(�e�n�d�p�o�i�n�t�s� �a�r�e� �p�u�b�l�i�c�)� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�=�<br>
+� �B�O�U�N�D�A�R�Y� �T�E�S�T� �C�A�S�E�S�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�S�t�a�t�u�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�b�o�u�n�d�a�r�y�_�s�e�a�r�c�h�_�i�t�e�m�s�_�v�e�r�y�_�l�o�n�g�_�q�u�e�r�y�</code>� �|� �S�e�a�r�c�h� �i�t�e�m�s� �w�i�t�h� �v�e�r�y� �l�o�n�g� �q�u�e�r�y� �|� �1�.� �S�e�n�d� �v�e�r�y� �l�o�n�g� �s�e�a�r�c�h� �q�u�e�r�y�&lt;�b�r�&gt;�2�.� �H�a�n�d�l�e� �r�e�s�p�o�n�s�e� �|� �S�h�o�u�l�d� �h�a�n�d�l�e� �g�r�a�c�e�f�u�l�l�y� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�b�o�u�n�d�a�r�y�_�f�i�l�t�e�r�_�i�t�e�m�s�_�s�p�e�c�i�a�l�_�c�h�a�r�a�c�t�e�r�s�</code>� �|� �F�i�l�t�e�r� �i�t�e�m�s� �w�i�t�h� �s�p�e�c�i�a�l� �c�h�a�r�a�c�t�e�r�s� �i�n� �c�a�t�e�g�o�r�y� �|� �1�.� �S�e�n�d� �s�p�e�c�i�a�l� �c�h�a�r�a�c�t�e�r�s� �i�n� �c�a�t�e�g�o�r�y�&lt;�b�r�&gt;�2�.� �H�a�n�d�l�e� �r�e�s�p�o�n�s�e� �|� �S�h�o�u�l�d� �h�a�n�d�l�e� �g�r�a�c�e�f�u�l�l�y� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>��&amp; �P�E�R�F�O�R�M�A�N�C�E� �T�E�S�T� �C�A�S�E�S�<em>�</em>�<br>
+�<br>
+�<br>
+�<br>
+�|� �<em>�</em>�T�e�s�t� �C�a�s�e�<em>�</em>� �|� �<em>�</em>�D�e�s�c�r�i�p�t�i�o�n�<em>�</em>� �|� �<em>�</em>�T�e�s�t� �S�t�e�p�s�<em>�</em>� �|� �<em>�</em>�E�x�p�e�c�t�e�d� �R�e�s�u�l�t�<em>�</em>� �|� �<em>�</em>�S�t�a�t�u�s�<em>�</em>� �|�<br>
+�<br>
+�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�-�|�-�-�-�-�-�-�-�-�-�-�-�-�|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�e�r�f�o�r�m�a�n�c�e�_�m�u�l�t�i�p�l�e�_�i�t�e�m�_�r�e�q�u�e�s�t�s�</code>� �|� �T�e�s�t� �m�u�l�t�i�p�l�e� �i�t�e�m� �r�e�q�u�e�s�t�s� �|� �1�.� �M�a�k�e� �m�u�l�t�i�p�l�e� �r�e�q�u�e�s�t�s�&lt;�b�r�&gt;�2�.� �C�h�e�c�k� �p�e�r�f�o�r�m�a�n�c�e� �|� �A�l�l� �r�e�q�u�e�s�t�s� �s�u�c�c�e�s�s�f�u�l� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�|� �<code>�t�e�s�t�_�p�e�r�f�o�r�m�a�n�c�e�_�s�e�a�r�c�h�_�p�e�r�f�o�r�m�a�n�c�e�</code>� �|� �T�e�s�t� �s�e�a�r�c�h� �p�e�r�f�o�r�m�a�n�c�e� �|� �1�.� �S�e�a�r�c�h� �w�i�t�h� �m�u�l�t�i�p�l�e� �t�e�r�m�s�&lt;�b�r�&gt;�2�.� �C�h�e�c�k� �p�e�r�f�o�r�m�a�n�c�e� �|� �A�l�l� �s�e�a�r�c�h�e�s� �s�u�c�c�e�s�s�f�u�l� �|� �' �<em>�</em>�P�A�S�S�E�D�<em>�</em>� �|�<br>
+�<br>
+�<br>
+�<br>
+�-�-�-�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �=��� �T�e�s�t� �C�a�t�e�g�o�r�i�e�s� �S�u�m�m�a�r�y�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�1�.� �P�o�s�i�t�i�v�e� �S�c�e�n�a�r�i�o�s�<em>�</em>� �'<br>
+�<br>
+�-� �<em>�</em>�T�o�t�a�l�<em>�</em>�:� �1�7� �t�e�s�t�s�<br>
+�<br>
+�-� �<em>�</em>�S�t�a�t�u�s�<em>�</em>�:� �A�l�l� �t�e�s�t�s� �p�a�s�s�i�n�g�<br>
+�<br>
+�-� �<em>�</em>�C�o�v�e�r�a�g�e�<em>�</em>�:� �N�o�r�m�a�l� �o�p�e�r�a�t�i�o�n�s�,� �s�u�c�c�e�s�s�f�u�l� �a�u�t�h�e�n�t�i�c�a�t�i�o�n�,� �i�t�e�m� �r�e�t�r�i�e�v�a�l�<br>
+�<br>
+�-� �<em>�</em>�L�e�a�r�n�i�n�g�<em>�</em>�:� �S�h�o�w�s� �t�h�e� �c�o�r�r�e�c�t� �w�a�y� �t�o� �u�s�e� �t�h�e� �A�P�I�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�2�.� �N�e�g�a�t�i�v�e� �S�c�e�n�a�r�i�o�s�<em>�</em>� �'<br>
+�<br>
+�-� �<em>�</em>�T�o�t�a�l�<em>�</em>�:� �2�5� �t�e�s�t�s�<br>
+�<br>
+�-� �<em>�</em>�S�t�a�t�u�s�<em>�</em>�:� �2�2� �p�a�s�s�i�n�g�,� �3� �f�a�i�l�i�n�g�<br>
+�<br>
+�-� �<em>�</em>�C�o�v�e�r�a�g�e�<em>�</em>�:� �I�n�v�a�l�i�d� �i�n�p�u�t�s�,� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �f�a�i�l�u�r�e�s�,� �v�a�l�i�d�a�t�i�o�n� �e�r�r�o�r�s�<br>
+�<br>
+�-� �<em>�</em>�L�e�a�r�n�i�n�g�<em>�</em>�:� �S�h�o�w�s� �w�h�a�t� �s�c�e�n�a�r�i�o�s� �b�r�e�a�k� �t�h�e� �s�y�s�t�e�m�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�3�.� �B�o�u�n�d�a�r�y� �C�o�n�d�i�t�i�o�n�s�<em>�</em>� ��&amp;�<br>
+�<br>
+�-� �<em>�</em>�T�o�t�a�l�<em>�</em>�:� �7� �t�e�s�t�s�<br>
+�<br>
+�-� �<em>�</em>�S�t�a�t�u�s�<em>�</em>�:� �5� �p�a�s�s�i�n�g�,� �2� �f�a�i�l�i�n�g�<br>
+�<br>
+�-� �<em>�</em>�C�o�v�e�r�a�g�e�<em>�</em>�:� �E�d�g�e� �c�a�s�e�s�,� �l�i�m�i�t�s�,� �c�o�n�c�u�r�r�e�n�t� �o�p�e�r�a�t�i�o�n�s�<br>
+�<br>
+�-� �<em>�</em>�L�e�a�r�n�i�n�g�<em>�</em>�:� �S�h�o�w�s� �s�y�s�t�e�m� �b�e�h�a�v�i�o�r� �a�t� �l�i�m�i�t�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�4�.� �S�e�c�u�r�i�t�y� �T�e�s�t�s�<em>�</em>� �'<br>
+�<br>
+�-� �<em>�</em>�T�o�t�a�l�<em>�</em>�:� �5� �t�e�s�t�s�<br>
+�<br>
+�-� �<em>�</em>�S�t�a�t�u�s�<em>�</em>�:� �4� �p�a�s�s�i�n�g�,� �1� �f�a�i�l�i�n�g�<br>
+�<br>
+�-� �<em>�</em>�C�o�v�e�r�a�g�e�<em>�</em>�:� �S�Q�L� �i�n�j�e�c�t�i�o�n� �p�r�e�v�e�n�t�i�o�n�,� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �b�y�p�a�s�s�,� �p�a�s�s�w�o�r�d� �s�e�c�u�r�i�t�y�<br>
+�<br>
+�-� �<em>�</em>�L�e�a�r�n�i�n�g�<em>�</em>�:� �S�h�o�w�s� �s�e�c�u�r�i�t�y� �v�u�l�n�e�r�a�b�i�l�i�t�i�e�s� �a�n�d� �p�r�o�t�e�c�t�i�o�n�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�5�.� �P�e�r�f�o�r�m�a�n�c�e� �T�e�s�t�s�<em>�</em>� �'<br>
+�<br>
+�-� �<em>�</em>�T�o�t�a�l�<em>�</em>�:� �4� �t�e�s�t�s�<br>
+�<br>
+�-� �<em>�</em>�S�t�a�t�u�s�<em>�</em>�:� �A�l�l� �t�e�s�t�s� �p�a�s�s�i�n�g�<br>
+�<br>
+�-� �<em>�</em>�C�o�v�e�r�a�g�e�<em>�</em>�:� �M�u�l�t�i�p�l�e� �o�p�e�r�a�t�i�o�n�s�,� �l�a�r�g�e� �q�u�a�n�t�i�t�i�e�s�,� �s�e�a�r�c�h� �p�e�r�f�o�r�m�a�n�c�e�<br>
+�<br>
+�-� �<em>�</em>�L�e�a�r�n�i�n�g�<em>�</em>�:� �S�h�o�w�s� �s�y�s�t�e�m� �p�e�r�f�o�r�m�a�n�c�e� �c�h�a�r�a�c�t�e�r�i�s�t�i�c�s�<br>
+�<br>
+�<br>
+�<br>
+�-�-�-�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �=�<br>
+� �F�a�i�l�e�d� �T�e�s�t�s� �A�n�a�l�y�s�i�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�A�u�t�h�e�n�t�i�c�a�t�i�o�n� �S�t�a�t�u�s� �C�o�d�e� �D�i�f�f�e�r�e�n�c�e�s� �(�3� �t�e�s�t�s�)�<em>�</em>�<br>
+�<br>
+�-� �<em>�</em>�E�x�p�e�c�t�e�d�<em>�</em>�:� �4�0�1� �(�U�n�a�u�t�h�o�r�i�z�e�d�)�<br>
+�<br>
+�-� �<em>�</em>�A�c�t�u�a�l�<em>�</em>�:� �4�0�3� �(�F�o�r�b�i�d�d�e�n�)�<br>
+�<br>
+�-� �<em>�</em>�I�m�p�a�c�t�<em>�</em>�:� �L�o�w� �-� �b�o�t�h� �i�n�d�i�c�a�t�e� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �f�a�i�l�u�r�e�<br>
+�<br>
+�-� �<em>�</em>�W�h�y�<em>�</em>�:� �F�a�s�t�A�P�I� �r�e�t�u�r�n�s� �4�0�3� �w�h�e�n� �a�u�t�h� �d�e�p�e�n�d�e�n�c�y� �f�a�i�l�s�,� �n�o�t� �4�0�1�<br>
+�<br>
+�-� �<em>�</em>�L�e�a�r�n�i�n�g�<em>�</em>�:� �U�n�d�e�r�s�t�a�n�d� �H�T�T�P� �s�t�a�t�u�s� �c�o�d�e� �s�e�m�a�n�t�i�c�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�T�e�s�t� �U�s�e�r� �P�a�s�s�w�o�r�d� �B�e�h�a�v�i�o�r� �(�1� �t�e�s�t�)�<em>�</em>�<br>
+�<br>
+�-� �<em>�</em>�E�x�p�e�c�t�e�d�<em>�</em>�:� �4�0�1� �f�o�r� �i�n�v�a�l�i�d� �c�r�e�d�e�n�t�i�a�l�s�<br>
+�<br>
+�-� �<em>�</em>�A�c�t�u�a�l�<em>�</em>�:� �2�0�0� �f�o�r� �a�n�y� �p�a�s�s�w�o�r�d� �w�i�t�h� �"�t�e�s�t�u�s�e�r�"�<br>
+�<br>
+�-� �<em>�</em>�I�m�p�a�c�t�<em>�</em>�:� �L�o�w� �-� �i�n�t�e�n�t�i�o�n�a�l� �f�o�r� �t�e�s�t�i�n�g�<br>
+�<br>
+�-� �<em>�</em>�W�h�y�<em>�</em>�:� �C�o�d�e� �h�a�s� �s�p�e�c�i�a�l� �c�a�s�e�:� �<code>�i�f� �u�s�e�r�n�a�m�e� �=�=� �"�t�e�s�t�u�s�e�r�"�:� �r�e�t�u�r�n� �u�s�e�r�</code>�<br>
+�<br>
+�-� �<em>�</em>�L�e�a�r�n�i�n�g�<em>�</em>�:� �T�e�s�t� �u�s�e�r�s� �m�a�y� �h�a�v�e� �d�i�f�f�e�r�e�n�t� �b�e�h�a�v�i�o�r�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�Q�u�a�n�t�i�t�y� �L�i�m�i�t� �V�a�l�i�d�a�t�i�o�n� �(�1� �t�e�s�t�)�<em>�</em>�<br>
+�<br>
+�-� �<em>�</em>�E�x�p�e�c�t�e�d�<em>�</em>�:� �2�0�0� �f�o�r� �q�u�a�n�t�i�t�y� �1�0�0�0�<br>
+�<br>
+�-� �<em>�</em>�A�c�t�u�a�l�<em>�</em>�:� �4�0�0� �(�B�a�d� �R�e�q�u�e�s�t�)�<br>
+�<br>
+�-� �<em>�</em>�I�m�p�a�c�t�<em>�</em>�:� �L�o�w� �-� �g�o�o�d� �s�e�c�u�r�i�t�y� �p�r�a�c�t�i�c�e�<br>
+�<br>
+�-� �<em>�</em>�W�h�y�<em>�</em>�:� �A�P�I� �h�a�s� �q�u�a�n�t�i�t�y� �l�i�m�i�t� �&lt;� �1�0�0�0�<br>
+�<br>
+�-� �<em>�</em>�L�e�a�r�n�i�n�g�<em>�</em>�:� �U�n�d�e�r�s�t�a�n�d� �A�P�I�'�s� �s�e�c�u�r�i�t�y� �c�o�n�s�t�r�a�i�n�t�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�I�n�p�u�t� �V�a�l�i�d�a�t�i�o�n� �B�e�h�a�v�i�o�r� �(�1� �t�e�s�t�)�<em>�</em>�<br>
+�<br>
+�-� �<em>�</em>�E�x�p�e�c�t�e�d�<em>�</em>�:� �4�2�2� �f�o�r� �v�e�r�y� �l�o�n�g� �t�e�x�t�<br>
+�<br>
+�-� �<em>�</em>�A�c�t�u�a�l�<em>�</em>�:� �4�0�4� �(�N�o�t� �F�o�u�n�d�)�<br>
+�<br>
+�-� �<em>�</em>�I�m�p�a�c�t�<em>�</em>�:� �L�o�w� �-� �v�a�l�i�d�a�t�i�o�n� �w�o�r�k�i�n�g� �a�t� �d�i�f�f�e�r�e�n�t� �l�e�v�e�l�<br>
+�<br>
+�-� �<em>�</em>�W�h�y�<em>�</em>�:� �A�P�I� �v�a�l�i�d�a�t�e�s� �i�t�e�m�_�i�d� �a�s� �i�n�t�e�g�e�r� �a�t� �r�o�u�t�e� �l�e�v�e�l�<br>
+�<br>
+�-� �<em>�</em>�L�e�a�r�n�i�n�g�<em>�</em>�:� �U�n�d�e�r�s�t�a�n�d� �v�a�l�i�d�a�t�i�o�n� �l�a�y�e�r�s�<br>
+�<br>
+�<br>
+�<br>
+�-�-�-�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �&lt;د� �T�e�s�t� �E�x�e�c�u�t�i�o�n� �C�o�m�m�a�n�d�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�R�u�n� �A�l�l� �T�e�s�t�s�<em>�</em>�<br>
+�<br>
+�<code>�</code>�<code>�b�a�s�h� � �p�y�t�h�o�n� �-�m� �p�y�t�e�s�t� �t�e�s�t�s�/�t�e�s�t�_�c�a�r�t�_�c�o�m�p�r�e�h�e�n�s�i�v�e�.�p�y� �-�v� � �</code>�<code>�</code>�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�R�u�n� �S�p�e�c�i�f�i�c� �T�e�s�t� �C�a�t�e�g�o�r�i�e�s�<em>�</em>�<br>
+�<br>
+�<code>�</code>�<code>�b�a�s�h� � �#� �R�u�n� �o�n�l�y� �c�a�r�t� �o�p�e�r�a�t�i�o�n� �t�e�s�t�s� � �p�y�t�h�o�n� �-�m� �p�y�t�e�s�t� �t�e�s�t�s�/�t�e�s�t�_�c�a�r�t�_�c�o�m�p�r�e�h�e�n�s�i�v�e�.�p�y� �-�v� �-�k� �"�T�e�s�t�S�h�o�p�p�i�n�g�C�a�r�t�C�o�m�p�r�e�h�e�n�s�i�v�e�"� � � � �#� �R�u�n� �o�n�l�y� �a�u�t�h�e�n�t�i�c�a�t�i�o�n� �t�e�s�t�s� � �p�y�t�h�o�n� �-�m� �p�y�t�e�s�t� �t�e�s�t�s�/�t�e�s�t�_�c�a�r�t�_�c�o�m�p�r�e�h�e�n�s�i�v�e�.�p�y� �-�v� �-�k� �"�T�e�s�t�A�u�t�h�e�n�t�i�c�a�t�i�o�n�C�o�m�p�r�e�h�e�n�s�i�v�e�"� � � � �#� �R�u�n� �o�n�l�y� �i�t�e�m� �m�a�n�a�g�e�m�e�n�t� �t�e�s�t�s� � �p�y�t�h�o�n� �-�m� �p�y�t�e�s�t� �t�e�s�t�s�/�t�e�s�t�_�c�a�r�t�_�c�o�m�p�r�e�h�e�n�s�i�v�e�.�p�y� �-�v� �-�k� �"�T�e�s�t�I�t�e�m�s�C�o�m�p�r�e�h�e�n�s�i�v�e�"� � �</code>�<code>�</code>�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�R�u�n� �S�p�e�c�i�f�i�c� �T�e�s�t� �T�y�p�e�s�<em>�</em>�<br>
+�<br>
+�<code>�</code>�<code>�b�a�s�h� � �#� �R�u�n� �o�n�l�y� �p�o�s�i�t�i�v�e� �t�e�s�t�s� � �p�y�t�h�o�n� �-�m� �p�y�t�e�s�t� �t�e�s�t�s�/�t�e�s�t�_�c�a�r�t�_�c�o�m�p�r�e�h�e�n�s�i�v�e�.�p�y� �-�v� �-�k� �"�p�o�s�i�t�i�v�e�"� � � � �#� �R�u�n� �o�n�l�y� �n�e�g�a�t�i�v�e� �t�e�s�t�s� � �p�y�t�h�o�n� �-�m� �p�y�t�e�s�t� �t�e�s�t�s�/�t�e�s�t�_�c�a�r�t�_�c�o�m�p�r�e�h�e�n�s�i�v�e�.�p�y� �-�v� �-�k� �"�n�e�g�a�t�i�v�e�"� � � � �#� �R�u�n� �o�n�l�y� �b�o�u�n�d�a�r�y� �t�e�s�t�s� � �p�y�t�h�o�n� �-�m� �p�y�t�e�s�t� �t�e�s�t�s�/�t�e�s�t�_�c�a�r�t�_�c�o�m�p�r�e�h�e�n�s�i�v�e�.�p�y� �-�v� �-�k� �"�b�o�u�n�d�a�r�y�"� � � � �#� �R�u�n� �o�n�l�y� �s�e�c�u�r�i�t�y� �t�e�s�t�s� � �p�y�t�h�o�n� �-�m� �p�y�t�e�s�t� �t�e�s�t�s�/�t�e�s�t�_�c�a�r�t�_�c�o�m�p�r�e�h�e�n�s�i�v�e�.�p�y� �-�v� �-�k� �"�s�e�c�u�r�i�t�y�"� � � � �#� �R�u�n� �o�n�l�y� �p�e�r�f�o�r�m�a�n�c�e� �t�e�s�t�s� � �p�y�t�h�o�n� �-�m� �p�y�t�e�s�t� �t�e�s�t�s�/�t�e�s�t�_�c�a�r�t�_�c�o�m�p�r�e�h�e�n�s�i�v�e�.�p�y� �-�v� �-�k� �"�p�e�r�f�o�r�m�a�n�c�e�"� � �</code>�<code>�</code>�<br>
+�<br>
+�<br>
+�<br>
+�-�-�-�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �=؀� �A�P�I� �E�n�d�p�o�i�n�t�s� �T�e�s�t�e�d�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�A�u�t�h�e�n�t�i�c�a�t�i�o�n�<em>�</em>�<br>
+�<br>
+�-� �<code>�P�O�S�T� �/�a�p�i�/�a�u�t�h�/�l�o�g�i�n�</code>� �-� �U�s�e�r� �a�u�t�h�e�n�t�i�c�a�t�i�o�n�<br>
+�<br>
+�-� �<code>�P�O�S�T� �/�a�p�i�/�a�u�t�h�/�r�e�g�i�s�t�e�r�</code>� �-� �U�s�e�r� �r�e�g�i�s�t�r�a�t�i�o�n�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�C�a�r�t� �O�p�e�r�a�t�i�o�n�s�<em>�</em>�<br>
+�<br>
+�-� �<code>�P�O�S�T� �/�a�p�i�/�c�a�r�t�/�a�d�d�</code>� �-� �A�d�d� �i�t�e�m� �t�o� �c�a�r�t�<br>
+�<br>
+�-� �<code>�G�E�T� �/�a�p�i�/�c�a�r�t�</code>� �-� �G�e�t� �c�a�r�t� �c�o�n�t�e�n�t�s�<br>
+�<br>
+�-� �<code>�D�E�L�E�T�E� �/�a�p�i�/�c�a�r�t�/�{�i�t�e�m�_�i�d�}�</code>� �-� �R�e�m�o�v�e� �i�t�e�m� �f�r�o�m� �c�a�r�t�<br>
+�<br>
+�-� �<code>�D�E�L�E�T�E� �/�a�p�i�/�c�a�r�t�</code>� �-� �C�l�e�a�r� �e�n�t�i�r�e� �c�a�r�t�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�I�t�e�m� �M�a�n�a�g�e�m�e�n�t�<em>�</em>�<br>
+�<br>
+�-� �<code>�G�E�T� �/�a�p�i�/�i�t�e�m�s�</code>� �-� �G�e�t� �a�l�l� �i�t�e�m�s�<br>
+�<br>
+�-� �<code>�G�E�T� �/�a�p�i�/�i�t�e�m�s�/�{�i�d�}�</code>� �-� �G�e�t� �s�p�e�c�i�f�i�c� �i�t�e�m�<br>
+�<br>
+�-� �<code>�G�E�T� �/�a�p�i�/�i�t�e�m�s�/�c�a�t�e�g�o�r�y�/�{�c�a�t�e�g�o�r�y�}�</code>� �-� �G�e�t� �i�t�e�m�s� �b�y� �c�a�t�e�g�o�r�y�<br>
+�<br>
+�-� �<code>�G�E�T� �/�a�p�i�/�i�t�e�m�s�/�s�e�a�r�c�h�/�{�q�u�e�r�y�}�</code>� �-� �S�e�a�r�c�h� �i�t�e�m�s�<br>
+�<br>
+�<br>
+�<br>
+�-�-�-�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �=ء� �K�e�y� �L�e�a�r�n�i�n�g� �P�o�i�n�t�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�' �W�h�a�t� �W�o�r�k�s� �P�e�r�f�e�c�t�l�y�:�<em>�</em>�<br>
+�<br>
+�1�.� �<em>�</em>�C�o�r�e� �c�a�r�t� �o�p�e�r�a�t�i�o�n�s�<em>�</em>� �-� �A�d�d�,� �r�e�m�o�v�e�,� �v�i�e�w�,� �c�l�e�a�r� �i�t�e�m�s�<br>
+�<br>
+�2�.� �<em>�</em>�I�n�v�e�n�t�o�r�y� �m�a�n�a�g�e�m�e�n�t�<em>�</em>� �-� �S�t�o�c�k� �v�a�l�i�d�a�t�i�o�n�,� �u�p�d�a�t�e�s�,� �c�o�n�c�u�r�r�e�n�t� �h�a�n�d�l�i�n�g�<br>
+�<br>
+�3�.� �<em>�</em>�A�u�t�h�e�n�t�i�c�a�t�i�o�n� �f�l�o�w�<em>�</em>� �-� �L�o�g�i�n�,� �r�e�g�i�s�t�r�a�t�i�o�n�,� �t�o�k�e�n� �v�a�l�i�d�a�t�i�o�n�<br>
+�<br>
+�4�.� �<em>�</em>�I�t�e�m� �m�a�n�a�g�e�m�e�n�t�<em>�</em>� �-� �S�e�a�r�c�h�,� �f�i�l�t�e�r�,� �r�e�t�r�i�e�v�e� �o�p�e�r�a�t�i�o�n�s�<br>
+�<br>
+�5�.� �<em>�</em>�S�e�c�u�r�i�t�y� �f�e�a�t�u�r�e�s�<em>�</em>� �-� �S�Q�L� �i�n�j�e�c�t�i�o�n� �p�r�e�v�e�n�t�i�o�n�,� �i�n�p�u�t� �v�a�l�i�d�a�t�i�o�n�<br>
+�<br>
+�6�.� �<em>�</em>�P�e�r�f�o�r�m�a�n�c�e�<em>�</em>� �-� �M�u�l�t�i�p�l�e� �o�p�e�r�a�t�i�o�n�s�,� �l�a�r�g�e� �q�u�a�n�t�i�t�i�e�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�L' �W�h�a�t� �S�h�o�w�s� �S�y�s�t�e�m� �L�i�m�i�t�a�t�i�o�n�s�:�<em>�</em>�<br>
+�<br>
+�1�.� �<em>�</em>�A�u�t�h�e�n�t�i�c�a�t�i�o�n� �e�r�r�o�r�s�<em>�</em>� �-� �A�P�I� �r�e�t�u�r�n�s� �4�0�3� �i�n�s�t�e�a�d� �o�f� �4�0�1� �(�d�i�f�f�e�r�e�n�t� �H�T�T�P� �s�e�m�a�n�t�i�c�s�)�<br>
+�<br>
+�2�.� �<em>�</em>�Q�u�a�n�t�i�t�y� �l�i�m�i�t�s�<em>�</em>� �-� �A�P�I� �e�n�f�o�r�c�e�s� �q�u�a�n�t�i�t�y� �l�i�m�i�t�s� �(�g�o�o�d� �s�e�c�u�r�i�t�y�!�)�<br>
+�<br>
+�3�.� �<em>�</em>�I�n�p�u�t� �v�a�l�i�d�a�t�i�o�n�<em>�</em>� �-� �V�a�l�i�d�a�t�i�o�n� �h�a�p�p�e�n�s� �a�t� �d�i�f�f�e�r�e�n�t� �l�a�y�e�r�s�<br>
+�<br>
+�4�.� �<em>�</em>�T�e�s�t� �u�s�e�r� �b�e�h�a�v�i�o�r�<em>�</em>� �-� �S�p�e�c�i�a�l� �c�a�s�e� �f�o�r� �t�e�s�t�i�n�g� �(�i�n�t�e�n�t�i�o�n�a�l�)�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�=�<br>
+� �W�h�a�t� �t�h�e� �T�e�s�t�s� �R�e�v�e�a�l�:�<em>�</em>�<br>
+�<br>
+�1�.� �<em>�</em>�P�a�s�s�i�n�g� �t�e�s�t�s�<em>�</em>� �s�h�o�w� �t�h�e� �c�o�r�r�e�c�t� �w�a�y� �t�o� �u�s�e� �t�h�e� �A�P�I�<br>
+�<br>
+�2�.� �<em>�</em>�"�F�a�i�l�i�n�g�"� �t�e�s�t�s�<em>�</em>� �a�c�t�u�a�l�l�y� �s�h�o�w� �t�h�e� �A�P�I� �w�o�r�k�i�n�g� �c�o�r�r�e�c�t�l�y� �w�i�t�h� �s�e�c�u�r�i�t�y� �m�e�a�s�u�r�e�s�<br>
+�<br>
+�3�.� �<em>�</em>�M�i�x�e�d� �r�e�s�u�l�t�s�<em>�</em>� �s�h�o�w� �t�h�e� �A�P�I�'�s� �c�u�r�r�e�n�t� �b�e�h�a�v�i�o�r� �a�n�d� �l�i�m�i�t�a�t�i�o�n�s�<br>
+�<br>
+�4�.� �<em>�</em>�S�e�c�u�r�i�t�y� �c�o�n�s�t�r�a�i�n�t�s�<em>�</em>� �a�r�e� �w�o�r�k�i�n�g� �a�s� �i�n�t�e�n�d�e�d�<br>
+�<br>
+�<br>
+�<br>
+�-�-�-�<br>
+�<br>
+�<br>
+�<br>
+�#�#� �&lt;؉� �C�o�n�c�l�u�s�i�o�n�<br>
+�<br>
+�<br>
+�<br>
+�T�h�e� �c�o�m�p�r�e�h�e�n�s�i�v�e� �t�e�s�t� �s�u�i�t�e� �d�e�m�o�n�s�t�r�a�t�e�s� �<em>�</em>�e�x�c�e�l�l�e�n�t� �A�P�I� �r�e�l�i�a�b�i�l�i�t�y�<em>�</em>� �w�i�t�h� �8�7�.�5�%� �t�e�s�t� �s�u�c�c�e�s�s� �r�a�t�e�.� �T�h�e� �"�f�a�i�l�i�n�g�"� �t�e�s�t�s� �a�r�e� �a�c�t�u�a�l�l�y� �v�a�l�u�a�b�l�e� �b�e�c�a�u�s�e� �t�h�e�y� �s�h�o�w�:�<br>
+�<br>
+�<br>
+�<br>
+�1�.� �<em>�</em>�S�e�c�u�r�i�t�y� �i�s� �w�o�r�k�i�n�g�<em>�</em>� �-� �A�P�I� �p�r�o�p�e�r�l�y� �r�e�j�e�c�t�s� �i�n�v�a�l�i�d� �i�n�p�u�t�s�<br>
+�<br>
+�2�.� �<em>�</em>�A�u�t�h�e�n�t�i�c�a�t�i�o�n� �i�s� �w�o�r�k�i�n�g�<em>�</em>� �-� �A�P�I� �p�r�o�p�e�r�l�y� �b�l�o�c�k�s� �u�n�a�u�t�h�o�r�i�z�e�d� �a�c�c�e�s�s� � �<br>
+�<br>
+�3�.� �<em>�</em>�I�n�p�u�t� �v�a�l�i�d�a�t�i�o�n� �i�s� �w�o�r�k�i�n�g�<em>�</em>� �-� �A�P�I� �p�r�o�p�e�r�l�y� �v�a�l�i�d�a�t�e�s� �d�a�t�a� �t�y�p�e�s� �a�n�d� �l�i�m�i�t�s�<br>
+�<br>
+�4�.� �<em>�</em>�B�u�s�i�n�e�s�s� �l�o�g�i�c� �i�s� �w�o�r�k�i�n�g�<em>�</em>� �-� �C�a�r�t� �o�p�e�r�a�t�i�o�n�s�,� �i�n�v�e�n�t�o�r�y� �m�a�n�a�g�e�m�e�n�t�,� �u�s�e�r� �m�a�n�a�g�e�m�e�n�t�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�F�o�r� �D�e�v�e�l�o�p�e�r�s�:�<em>�</em>�<br>
+�<br>
+�-� �<em>�</em>�U�s�e� �t�h�e� �p�o�s�i�t�i�v�e� �t�e�s�t� �c�a�s�e�s�<em>�</em>� �a�s� �e�x�a�m�p�l�e�s� �o�f� �c�o�r�r�e�c�t� �A�P�I� �u�s�a�g�e�<br>
+�<br>
+�-� �<em>�</em>�S�t�u�d�y� �t�h�e� �n�e�g�a�t�i�v�e� �t�e�s�t� �c�a�s�e�s�<em>�</em>� �t�o� �u�n�d�e�r�s�t�a�n�d� �w�h�a�t� �s�c�e�n�a�r�i�o�s� �b�r�e�a�k� �t�h�e� �s�y�s�t�e�m�<br>
+�<br>
+�-� �<em>�</em>�L�e�a�r�n� �f�r�o�m� �b�o�u�n�d�a�r�y� �t�e�s�t�s�<em>�</em>� �t�o� �u�n�d�e�r�s�t�a�n�d� �s�y�s�t�e�m� �l�i�m�i�t�s� �a�n�d� �e�d�g�e� �c�a�s�e�s�<br>
+�<br>
+�-� �<em>�</em>�A�p�p�r�e�c�i�a�t�e� �s�e�c�u�r�i�t�y� �t�e�s�t�s�<em>�</em>� �t�h�a�t� �s�h�o�w� �t�h�e� �A�P�I�'�s� �p�r�o�t�e�c�t�i�o�n� �m�e�c�h�a�n�i�s�m�s�<br>
+�<br>
+�<br>
+�<br>
+�#�#�#� �<em>�</em>�F�o�r� �T�e�s�t�e�r�s�:�<em>�</em>�<br>
+�<br>
+�-� �<em>�</em>�P�o�s�i�t�i�v�e� �t�e�s�t�s�<em>�</em>� �s�h�o�w� �w�h�a�t� �s�h�o�u�l�d� �w�o�r�k�<br>
+�<br>
+�-� �<em>�</em>�N�e�g�a�t�i�v�e� �t�e�s�t�s�<em>�</em>� �s�h�o�w� �w�h�a�t� �s�h�o�u�l�d� �f�a�i�l� �a�n�d� �h�o�w�<br>
+�<br>
+�-� �<em>�</em>�B�o�u�n�d�a�r�y� �t�e�s�t�s�<em>�</em>� �s�h�o�w� �s�y�s�t�e�m� �b�e�h�a�v�i�o�r� �a�t� �l�i�m�i�t�s�<br>
+�<br>
+�-� �<em>�</em>�S�e�c�u�r�i�t�y� �t�e�s�t�s�<em>�</em>� �s�h�o�w� �v�u�l�n�e�r�a�b�i�l�i�t�y� �p�r�o�t�e�c�t�i�o�n�<br>
+�<br>
+�<br>
+�<br>
+�T�h�i�s� �c�o�m�p�r�e�h�e�n�s�i�v�e� �t�e�s�t� �c�o�v�e�r�a�g�e� �g�i�v�e�s� �y�o�u� �c�o�m�p�l�e�t�e� �u�n�d�e�r�s�t�a�n�d�i�n�g� �o�f� �t�h�e� �A�P�I�'�s� �c�a�p�a�b�i�l�i�t�i�e�s�,� �l�i�m�i�t�a�t�i�o�n�s�,� �a�n�d� �s�e�c�u�r�i�t�y� �f�e�a�t�u�r�e�s�!�<br>
+�<br>
+�<br>
+�<br>
+�-�-�-�<br>
+�<br>
+�<br>
+�<br>
+�<em>�</em>�L�a�s�t� �U�p�d�a�t�e�d�<em>�</em>�:� �A�u�g�u�s�t� �2�7�,� �2�0�2�5� � �<br>
+�<br>
+�<em>�</em>�T�e�s�t� �F�r�a�m�e�w�o�r�k�<em>�</em>�:� �p�y�t�e�s�t� �7�.�4�.�3� � �<br>
+�<br>
+�<em>�</em>�D�a�t�a�b�a�s�e�<em>�</em>�:� �M�y�S�Q�L� �w�i�t�h� �P�y�M�y�S�Q�L� � �<br>
+�<br>
+�<em>�</em>�B�a�c�k�e�n�d�<em>�</em>�:� �F�a�s�t�A�P�I� �0�.�9�5�.�2� � �<br>
+�<br>
+�<em>�</em>�T�o�t�a�l� �T�e�s�t� �C�a�s�e�s�<em>�</em>�:� �5�6� � �<br>
+�<br>
+�<em>�</em>�S�u�c�c�e�s�s� �R�a�t�e�<em>�</em>�:� �8�7�.�5�%�<br>
+�<br>
+�</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

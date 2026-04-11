@@ -1,0 +1,2847 @@
+{
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:18 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n15-05-2024 05:21 AM\nHAEMATOLOGY\nCOMPLETE BLOOD COUNT\nInvestigation\nResult\nNormal Reference Range\nSpecimen:Blood (K2EDTA)\nTotal Leukocyte Count\n(Method: Flowcytometry)\n6.47 X 10³/uL\n4.0-10.0 X 10³/uL\nTotal Red Blood Cell Count\n(Method: Hydrodynamic Focussing Method)\n4.71 X10¹²/L\n3.8 - 4.8 X 10¹²/L\nHb\n(Method: SLS - HB)\n8.7 g/dL\n12.0 - 15.0 g/dL\nHCT\n(Method: Calculated)\n30.7 %\n36 - 46 %\nMean Corpuscular Volume (MCV)\n(Method: RBC Histogram)\n65.2 fl\n83 - 101 fl\nMean Corpuscular Hemoglobin (MCH)\n(Method: Calculated)\n18.5 pg\n27 - 32 pg\nMCHC\n(Method: Calculated)\n28.3 g/dl\n31.5 - 34.5 g/dl\nPlatelet Count\n(Method: Hydrodynamic Focussing Method)\n422 X 10³/uL\n150 - 410 X 10³/uL\nDIFFERENTIAL LEUKOCYTE COUNT\nNeutrophils\n47.2 %\n2.0-7.5 X 10³/uL (40 - 80%)\nLymphocytes\n43.3 %\n1.0-4.0 X 10³/uL (20 - 40%)\nMonocytes\n8.2 %\n0.2-1.0 X 10³/uL(2 - 10%)\nEosinophils\n0.8 %\n0.02-0.5 X 10³/uL (1-6%)\nBasophils\n0.5 %\n0.02 - 0.1 X 10³/uL (1-2%)\nMethod\nFlowcytometry\nNotes\n--\n*** END OF REPORT ***\nTest Performed By : Clpath\nConsultant Pathologist\nLab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            187.75001525878906,
+            40.74999237060547,
+            424.00006103515625,
+            97.0
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:18 AM",
+          "bbox": [
+            40.75,
+            108.90039825439453,
+            561.8563842773438,
+            146.447265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Age/Gender:\n47 Years/Female\nReporting Date & time:\n15-05-2024 05:21 AM",
+          "bbox": [
+            40.75,
+            149.40040588378906,
+            561.8563842773438,
+            159.94728088378906
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "HAEMATOLOGY",
+          "bbox": [
+            250.70314025878906,
+            169.22560119628906,
+            361.03179931640625,
+            185.04591369628906
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              13.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "COMPLETE BLOOD COUNT",
+          "bbox": [
+            230.00782775878906,
+            188.56300354003906,
+            381.747802734375,
+            201.74659729003906
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              11.250000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Investigation\nResult                         \nNormal Reference Range",
+          "bbox": [
+            40.75,
+            211.65040588378906,
+            518.427734375,
+            222.19728088378906
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Specimen:Blood (K2EDTA)\nTotal Leukocyte Count\n(Method: Flowcytometry)\n6.47  X 10³/uL\n4.0-10.0 X 10³/uL",
+          "bbox": [
+            38.5,
+            231.20460510253906,
+            506.19598388671875,
+            267.5810546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316,
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Total Red Blood Cell Count\n(Method: Hydrodynamic Focussing Method)",
+          "bbox": [
+            38.5,
+            271.06298828125,
+            195.1158905029297,
+            292.3310852050781
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "4.71  X10¹²/L\n3.8 - 4.8 X 10¹²/L",
+          "bbox": [
+            259.5625,
+            271.06298828125,
+            503.1134948730469,
+            288.7466125488281
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Hb\n(Method: SLS - HB)\n8.7  g/dL\n12.0 - 15.0 g/dL",
+          "bbox": [
+            38.5,
+            295.8130187988281,
+            496.7234802246094,
+            317.0810852050781
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "HCT\n(Method: Calculated)\n30.7  %\n36 - 46 %",
+          "bbox": [
+            38.5,
+            320.5630187988281,
+            465.39215087890625,
+            341.8310852050781
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Mean Corpuscular Volume (MCV)\n(Method: RBC Histogram)\n65.2  fl\n83 - 101 fl",
+          "bbox": [
+            38.5,
+            345.3130187988281,
+            469.17218017578125,
+            366.5810852050781
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Mean Corpuscular Hemoglobin (MCH)\n(Method: Calculated)\n18.5  pg\n27 - 32 pg",
+          "bbox": [
+            38.5,
+            370.0630187988281,
+            468.2721862792969,
+            391.3310852050781
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "MCHC\n(Method: Calculated)\n28.3  g/dl\n31.5 - 34.5 g/dl",
+          "bbox": [
+            38.5,
+            394.8130187988281,
+            493.20220947265625,
+            416.0810852050781
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Platelet Count\n(Method: Hydrodynamic Focussing Method)\n422  X 10³/uL\n150 - 410 X 10³/uL",
+          "bbox": [
+            38.5,
+            419.5630187988281,
+            512.7097778320312,
+            440.8310852050781
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "DIFFERENTIAL LEUKOCYTE COUNT\nNeutrophils\n47.2  %\n2.0-7.5 X 10³/uL (40 - 80%)\nLymphocytes\n43.3  %\n1.0-4.0 X 10³/uL (20 - 40%)\nMonocytes\n8.2  %\n0.2-1.0 X 10³/uL(2 - 10%)\nEosinophils\n0.8  %\n0.02-0.5 X 10³/uL (1-6%)\nBasophils\n0.5  %\n0.02 - 0.1 X 10³/uL (1-2%)\nMethod\nFlowcytometry\nNotes\n--",
+          "bbox": [
+            38.5,
+            444.3130187988281,
+            555.1898193359375,
+            572.9966430664062
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "*** END OF REPORT ***",
+          "bbox": [
+            261.6484375,
+            576.7920532226562,
+            350.09246826171875,
+            585.5811157226562
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "bbox": [
+            390.25,
+            589.0000610351562,
+            540.25,
+            626.5000610351562
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Test Performed By : Clpath          \nConsultant Pathologist",
+          "bbox": [
+            38.5,
+            619.5420532226562,
+            573.2708740234375,
+            642.1973266601562
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7588500976562,
+            548.05859375,
+            761.0635375976562
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "tables": [
+        {
+          "type": "medical_table",
+          "data": [
+            [
+              "Field",
+              "Value"
+            ],
+            [
+              "Patient Name",
+              ""
+            ],
+            [
+              "Ref. Doctor",
+              ""
+            ],
+            [
+              "Patient ID",
+              ""
+            ],
+            [
+              "Lab ID",
+              ""
+            ],
+            [
+              "OP ID",
+              ""
+            ],
+            [
+              "Sample Collection Date",
+              ""
+            ],
+            [
+              "Age/Gender",
+              ""
+            ],
+            [
+              "Reporting Date",
+              "Reporting Date & time:"
+            ]
+          ],
+          "confidence": 0.9,
+          "method": "patient_info_extraction",
+          "title": "Patient Information"
+        }
+      ],
+      "text_stats": {
+        "char_count": 1344,
+        "word_count": 217,
+        "line_count": 78,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 2,
+      "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7588500976562,
+            548.05859375,
+            761.0635375976562
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "text_stats": {
+        "char_count": 90,
+        "word_count": 14,
+        "line_count": 1,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 3,
+      "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:18 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n15-05-2024 05:56 AM\nCLINICAL BIOCHEMISTRY\nInvestigation\nResult\nBiological Reference Interval\nSpecimen:Whole Blood\nHbA1c\n(Method: Immunoturbidimetry)\n5.9 %\n4 - 6 %\nInterpretation : HbA1c is a form of hemoglobin that is measured primarily to identify the three-month average\nplasma glucose concentration\n*** END OF REPORT ***\nPlease correlate clinically\nTest Performed By : cljyothi\nConsultant Biochemist\nLab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            187.75001525878906,
+            33.999961853027344,
+            424.00006103515625,
+            90.24996948242188
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:18 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n15-05-2024 05:56 AM",
+          "bbox": [
+            40.75,
+            102.150390625,
+            561.8563842773438,
+            153.197265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "CLINICAL BIOCHEMISTRY",
+          "bbox": [
+            216.85939025878906,
+            162.4755859375,
+            394.89239501953125,
+            178.2958984375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              13.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Investigation\nResult                         \nBiological Reference Interval",
+          "bbox": [
+            40.75,
+            188.400390625,
+            537.7867431640625,
+            198.947265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Specimen:Whole Blood\nHbA1c\n(Method: Immunoturbidimetry)\n5.9  %\n4 - 6 %",
+          "bbox": [
+            38.5,
+            207.95458984375,
+            452.81463623046875,
+            244.3310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316,
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Interpretation : HbA1c is a form of hemoglobin that is measured primarily to identify the three-month average",
+          "bbox": [
+            40.75,
+            249.20458984375,
+            554.7724609375,
+            260.63037109375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "plasma glucose concentration",
+          "bbox": [
+            110.05469512939453,
+            260.45458984375,
+            248.02548217773438,
+            271.88037109375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "*** END OF REPORT ***",
+          "bbox": [
+            261.6484375,
+            278.2919921875,
+            350.09246826171875,
+            287.0810546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Please correlate clinically",
+          "bbox": [
+            38.5,
+            305.2919921875,
+            129.6324920654297,
+            314.0810546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "bbox": [
+            390.25,
+            290.49993896484375,
+            540.25,
+            327.99993896484375
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Test Performed By : cljyothi          \nConsultant Biochemist",
+          "bbox": [
+            38.5,
+            321.0419921875,
+            573.2708740234375,
+            343.697265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7588500976562,
+            548.05859375,
+            761.0635375976562
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "tables": [
+        {
+          "type": "medical_table",
+          "data": [
+            [
+              "Test Parameter",
+              "Result",
+              "Reference Range",
+              "Status"
+            ],
+            [
+              "HbA1c",
+              "5.9 %",
+              "4 - 6 %",
+              "Normal"
+            ],
+            [
+              "HbA1c",
+              "6 %",
+              "4 - 6 %",
+              "Normal"
+            ]
+          ],
+          "confidence": 0.8,
+          "method": "single_test_extraction",
+          "title": "Medical Test"
+        },
+        {
+          "type": "medical_table",
+          "data": [
+            [
+              "Field",
+              "Value"
+            ],
+            [
+              "Patient Name",
+              ""
+            ],
+            [
+              "Ref. Doctor",
+              ""
+            ],
+            [
+              "Patient ID",
+              ""
+            ],
+            [
+              "Lab ID",
+              ""
+            ],
+            [
+              "OP ID",
+              ""
+            ],
+            [
+              "Sample Collection Date",
+              ""
+            ],
+            [
+              "Age/Gender",
+              ""
+            ],
+            [
+              "Reporting Date",
+              "Reporting Date & time:"
+            ]
+          ],
+          "confidence": 0.9,
+          "method": "patient_info_extraction",
+          "title": "Patient Information"
+        }
+      ],
+      "text_stats": {
+        "char_count": 718,
+        "word_count": 103,
+        "line_count": 32,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 4,
+      "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7588500976562,
+            548.05859375,
+            761.0635375976562
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "text_stats": {
+        "char_count": 90,
+        "word_count": 14,
+        "line_count": 1,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 5,
+      "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:23 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n14-05-2024 08:17 PM\nCLINICAL BIOCHEMISTRY\nLIPID PROFILE\nInvestigation\nResult\nBiological Reference Interval\nSpecimen:Serum\nS.Total Cholesterol\n(Method: CHOD-POD)\n135 mg/dL\nDesirable Level : <200 mg/dL\nBorderline : 200 - 239 mg/dL\nUndesirable : > 240 mg/dL\nS.Triglycerides\n(Method: GPO-POD)\n386 mg/dL\nDesirable Level : <150 mg/dL\nBorderline : 150 - 199 mg/dL\nHigh : 200 - 499 mg/dL\nVery High : >500 mg/dL\nS.HDL\n(Method: Enzyme Selective Inhibition)\n33 mg/dL\nDesirable Level : >60 mg/dL\nBorderline : 40 - 59 mg/dL\nUndesirable : <40 mg/dL\nVLDL\n(Method: Calculated)\n77 mg/dL\n<30 mg/dL\nS.LDL\n(Method: Calculated)\n25 mg/dL\nOptimal : <100 mg/dL\nNear Optimal : 100 - 129\nmg/dL\nBorderline High : 130 - 159\nmg/dL\nHigh : 160 - 189 mg/dL\nVery High : >190 mg/dL\nT.Chol/HDL\n(Method: Calculated)\n4.1\nLow Risk: 3.3-4.4\nAverage Risk: 4.5-7.1\nModerate Risk: 7.2-11.0\nLDL/HDL\n(Method: Calculated)\n0.8\nDesirable Level: 0.5-3.0\nBorderline Risk: 3.0-6.0\nHigh Risk: >6.0\nInterpretation : The results of this test can identify certain genetic diseases and can determine approximate risks\nfor cardiovascular disease, certain forms of pancreatitis, and other diseases\n*** END OF REPORT ***\nPlease correlate clinically\nTest Performed By : cldakshyyani\nConsultant Biochemist\nLab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            187.75001525878906,
+            34.00007629394531,
+            424.00006103515625,
+            90.25008392333984
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:23 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n14-05-2024 08:17 PM",
+          "bbox": [
+            40.75,
+            102.150634765625,
+            561.8563842773438,
+            153.197509765625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "CLINICAL BIOCHEMISTRY",
+          "bbox": [
+            216.85939025878906,
+            162.475830078125,
+            394.89239501953125,
+            178.296142578125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              13.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "LIPID PROFILE",
+          "bbox": [
+            263.3359375,
+            181.813232421875,
+            348.4062194824219,
+            194.996826171875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              11.250000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Investigation\nResult                         \nBiological Reference Interval",
+          "bbox": [
+            40.75,
+            204.900634765625,
+            537.7867431640625,
+            215.447509765625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Specimen:Serum\nS.Total Cholesterol\n(Method: CHOD-POD)\n135  mg/dL\nDesirable Level : <200 mg/dL\nBorderline : 200 - 239 mg/dL\nUndesirable : > 240 mg/dL\nS.Triglycerides\n(Method: GPO-POD)\n386  mg/dL\nDesirable Level : <150 mg/dL\nBorderline : 150 - 199 mg/dL\nHigh : 200 - 499 mg/dL\nVery High : >500 mg/dL\nS.HDL\n(Method: Enzyme Selective Inhibition)\n33  mg/dL\nDesirable Level : >60 mg/dL\nBorderline : 40 - 59 mg/dL\nUndesirable : <40 mg/dL\nVLDL\n(Method: Calculated)\n77  mg/dL\n<30 mg/dL",
+          "bbox": [
+            38.5,
+            224.454833984375,
+            571.5514526367188,
+            404.831298828125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316,
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "S.LDL\n(Method: Calculated)\n25  mg/dL\nOptimal : <100 mg/dL\nNear Optimal : 100 - 129\nmg/dL\nBorderline High : 130 - 159\nmg/dL\nHigh : 160 - 189 mg/dL\nVery High : >190 mg/dL\nT.Chol/HDL\n(Method: Calculated)\n4.1  \nLow Risk: 3.3-4.4\nAverage Risk: 4.5-7.1\nModerate Risk: 7.2-11.0\nLDL/HDL\n(Method: Calculated)\n0.8  \nDesirable Level: 0.5-3.0\nBorderline Risk: 3.0-6.0\nHigh Risk: >6.0",
+          "bbox": [
+            38.5,
+            408.313232421875,
+            560.4097900390625,
+            589.496826171875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Interpretation : The results of this test can identify certain genetic diseases and can determine approximate risks",
+          "bbox": [
+            40.75,
+            607.704833984375,
+            564.27783203125,
+            619.130615234375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "for cardiovascular disease, certain forms of pancreatitis, and other diseases",
+          "bbox": [
+            110.05469512939453,
+            618.954833984375,
+            460.6061706542969,
+            630.380615234375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "*** END OF REPORT ***",
+          "bbox": [
+            261.6484375,
+            636.792236328125,
+            350.09246826171875,
+            645.581298828125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Please correlate clinically",
+          "bbox": [
+            38.5,
+            663.792236328125,
+            129.6324920654297,
+            672.581298828125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "bbox": [
+            390.25,
+            649.0000610351562,
+            540.25,
+            686.5000610351562
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Test Performed By : cldakshyyani          \nConsultant Biochemist",
+          "bbox": [
+            38.5,
+            679.542236328125,
+            573.2708740234375,
+            702.197509765625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7588500976562,
+            548.05859375,
+            761.0635375976562
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "tables": [
+        {
+          "type": "medical_table",
+          "data": [
+            [
+              "Field",
+              "Value"
+            ],
+            [
+              "Patient Name",
+              ""
+            ],
+            [
+              "Ref. Doctor",
+              ""
+            ],
+            [
+              "Patient ID",
+              ""
+            ],
+            [
+              "Lab ID",
+              ""
+            ],
+            [
+              "OP ID",
+              ""
+            ],
+            [
+              "Sample Collection Date",
+              ""
+            ],
+            [
+              "Age/Gender",
+              ""
+            ],
+            [
+              "Reporting Date",
+              "Reporting Date & time:"
+            ]
+          ],
+          "confidence": 0.9,
+          "method": "patient_info_extraction",
+          "title": "Patient Information"
+        }
+      ],
+      "text_stats": {
+        "char_count": 1561,
+        "word_count": 240,
+        "line_count": 74,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 6,
+      "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7590942382812,
+            548.05859375,
+            761.0637817382812
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "text_stats": {
+        "char_count": 90,
+        "word_count": 14,
+        "line_count": 1,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 7,
+      "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:23 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n14-05-2024 09:30 PM\nCLINICAL BIOCHEMISTRY\nLIVER FUNCTION TEST\nInvestigation\nResult\nBiological Reference Interval\nSpecimen:Serum\nS. Bilirubin T\n(Method: DPD)\n0.38 mg/dL\n0.3 - 1.2 mg/dL\nS. Bilirubin D\n(Method: DPD)\n0.06 mg/dL\n<0.2 mg/dL\nS.Total Protein\n(Method: Biuret)\n6.99 gm/dL\n6.6 - 8.3 gm/dL\nS.Albumin\n(Method: BCG)\n3.79 gm/dL\n3.5 - 5.2 gm/dL\nGlobulin\n(Method: Calculated)\n3.20 gm/dL\n2.6-3.9 gm/dL\nA/G Ratio\n(Method: Calculated)\n1.18\n1.0 - 1.7\nSGOT/AST\n(Method: UV without P5P)\n41 U/L\n< 35 U/L\nSGPT /ALT\n(Method: UV without P5P)\n48 U/L\n< 35 U/L\nS.Alkaline Phosphatase\n(Method: IFCC)\n61 U/L\n30 - 120 U/L\nInterpretation : Liver function tests (LFTs or LFs) are groups of blood tests that give information about the state of\na patient's liver. Liver transaminases (AST or SGOT and ALT or SGPT) are useful biomarkers of liver\ninjury in a patient with some degree of intact liver function. Some tests are associated with\nfunctionality (e.g., albumin), some with cellular integrity (e.g., transaminase), and some with\nconditions linked to the biliary tract (gamma-glutamyl transferase and alkaline phosphatase). GGT\nplays a role in the detection of alcoholism, alcoholic liver damage and in monitoring alcohol\nabstinence.\n*** END OF REPORT ***\nPlease correlate clinically\nTest Performed By : cljyothi\nConsultant Biochemist\nLab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            187.75001525878906,
+            33.999839782714844,
+            424.00006103515625,
+            90.24984741210938
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:23 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n14-05-2024 09:30 PM",
+          "bbox": [
+            40.75,
+            102.150390625,
+            561.8563842773438,
+            153.197265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "CLINICAL BIOCHEMISTRY",
+          "bbox": [
+            216.85939025878906,
+            162.4755859375,
+            394.89239501953125,
+            178.2958984375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              13.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "LIVER FUNCTION TEST",
+          "bbox": [
+            240.56642150878906,
+            181.81298828125,
+            371.1792907714844,
+            194.99658203125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              11.250000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Investigation\nResult                         \nBiological Reference Interval",
+          "bbox": [
+            40.75,
+            204.900390625,
+            537.7867431640625,
+            215.447265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Specimen:Serum\nS. Bilirubin T\n(Method: DPD)\n0.38  mg/dL\n0.3 - 1.2 mg/dL",
+          "bbox": [
+            38.5,
+            224.45458984375,
+            494.7771911621094,
+            260.8310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316,
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "S. Bilirubin D\n(Method: DPD)\n0.06  mg/dL\n<0.2 mg/dL",
+          "bbox": [
+            38.5,
+            264.31298828125,
+            476.33837890625,
+            285.5810546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "S.Total Protein\n(Method: Biuret)\n6.99  gm/dL\n6.6 - 8.3 gm/dL",
+          "bbox": [
+            38.5,
+            289.06298828125,
+            494.7771911621094,
+            310.3310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "S.Albumin\n(Method: BCG)\n3.79  gm/dL\n3.5 - 5.2 gm/dL",
+          "bbox": [
+            38.5,
+            313.81298828125,
+            494.7771911621094,
+            335.0810546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Globulin\n(Method: Calculated)\n3.20  gm/dL\n2.6-3.9 gm/dL",
+          "bbox": [
+            38.5,
+            338.56298828125,
+            488.9271545410156,
+            359.8310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "A/G Ratio\n(Method: Calculated)\n1.18  \n1.0 - 1.7",
+          "bbox": [
+            38.5,
+            363.31298828125,
+            458.01214599609375,
+            384.5810546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "SGOT/AST\n(Method: UV without P5P)\n41  U/L\n< 35 U/L",
+          "bbox": [
+            38.5,
+            388.06298828125,
+            460.9259033203125,
+            409.3310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "SGPT /ALT\n(Method: UV without P5P)\n48  U/L\n< 35 U/L",
+          "bbox": [
+            38.5,
+            412.81298828125,
+            460.9259033203125,
+            434.0810546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "S.Alkaline Phosphatase\n(Method: IFCC)\n61  U/L\n30 - 120 U/L",
+          "bbox": [
+            38.5,
+            437.56298828125,
+            479.91595458984375,
+            458.8310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Interpretation : Liver function tests (LFTs or LFs) are groups of blood tests that give information about the state of",
+          "bbox": [
+            40.75,
+            463.70458984375,
+            569.3283081054688,
+            475.13037109375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "a patient's liver. Liver transaminases (AST or SGOT and ALT or SGPT) are useful biomarkers of liver\ninjury in a patient with some degree of intact liver function. Some tests are associated with\nfunctionality (e.g., albumin), some with cellular integrity (e.g., transaminase), and some with\nconditions linked to the biliary tract (gamma-glutamyl transferase and alkaline phosphatase). GGT\nplays a role in the detection of alcoholism, alcoholic liver damage and in monitoring alcohol\nabstinence.",
+          "bbox": [
+            110.05469512939453,
+            474.95458984375,
+            570.9307861328125,
+            542.63037109375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "*** END OF REPORT ***",
+          "bbox": [
+            261.6484375,
+            549.0419921875,
+            350.09246826171875,
+            557.8310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Please correlate clinically",
+          "bbox": [
+            38.5,
+            576.0419921875,
+            129.6324920654297,
+            584.8310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "bbox": [
+            390.25,
+            561.2498168945312,
+            540.25,
+            598.7498168945312
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Test Performed By : cljyothi          \nConsultant Biochemist",
+          "bbox": [
+            38.5,
+            591.7919921875,
+            573.2708740234375,
+            614.447265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7586059570312,
+            548.05859375,
+            761.0632934570312
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "tables": [
+        {
+          "type": "medical_table",
+          "data": [
+            [
+              "Field",
+              "Value"
+            ],
+            [
+              "Patient Name",
+              ""
+            ],
+            [
+              "Ref. Doctor",
+              ""
+            ],
+            [
+              "Patient ID",
+              ""
+            ],
+            [
+              "Lab ID",
+              ""
+            ],
+            [
+              "OP ID",
+              ""
+            ],
+            [
+              "Sample Collection Date",
+              ""
+            ],
+            [
+              "Age/Gender",
+              ""
+            ],
+            [
+              "Reporting Date",
+              "Reporting Date & time:"
+            ]
+          ],
+          "confidence": 0.9,
+          "method": "patient_info_extraction",
+          "title": "Patient Information"
+        }
+      ],
+      "text_stats": {
+        "char_count": 1635,
+        "word_count": 254,
+        "line_count": 70,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 8,
+      "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7586059570312,
+            548.05859375,
+            761.0632934570312
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "text_stats": {
+        "char_count": 90,
+        "word_count": 14,
+        "line_count": 1,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 9,
+      "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:23 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n15-05-2024 06:59 AM\nCLINICAL BIOCHEMISTRY\nTHYROID PROFILE\nInvestigation\nResult\nBiological Reference Interval\nSpecimen:Serum\nT3 - Total\n(Method: CLIA)\n1.02 ng/mL\n0.60-1.81 ng/mL\nT4 -Total\n(Method: CLIA)\n8.9 µg/dL\n4.5-10.9 µg/dL\nThyroid stimulating hormone (TSH)\n(Method: CLIA)\n3.209 µIU/mL\n0.35 – 5.5 µIU/mL\nPregnancy:\n1st trimester: 0.32 - 4.5\nµIU/mL\n2nd trimester: 0.52 - 4.6\nµIU/mL\n3rd trimester: 0.82 - 5.2\nµIU/mL\nInterpretation\n*** END OF REPORT ***\nPlease correlate clinically\nTest Performed By : cljyothi\nConsultant Biochemist\nLab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            187.75001525878906,
+            33.999839782714844,
+            424.00006103515625,
+            90.24984741210938
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:23 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n15-05-2024 06:59 AM",
+          "bbox": [
+            40.75,
+            102.150390625,
+            561.8563842773438,
+            153.197265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "CLINICAL BIOCHEMISTRY",
+          "bbox": [
+            216.85939025878906,
+            162.4755859375,
+            394.89239501953125,
+            178.2958984375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              13.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "THYROID PROFILE",
+          "bbox": [
+            252.39064025878906,
+            181.81298828125,
+            359.3511657714844,
+            194.99658203125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              11.250000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Investigation\nResult                         \nBiological Reference Interval",
+          "bbox": [
+            40.75,
+            204.900390625,
+            537.7867431640625,
+            215.447265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Specimen:Serum\nT3 - Total\n(Method: CLIA)\n1.02  ng/mL\n0.60-1.81 ng/mL",
+          "bbox": [
+            38.5,
+            224.45458984375,
+            501.8533935546875,
+            260.8310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316,
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "T4 -Total\n(Method: CLIA)\n8.9  µg/dL\n4.5-10.9 µg/dL",
+          "bbox": [
+            38.5,
+            264.31298828125,
+            491.50341796875,
+            285.5810546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Thyroid stimulating hormone (TSH)\n(Method: CLIA)\n3.209  µIU/mL\n0.35 – 5.5 µIU/mL\nPregnancy:",
+          "bbox": [
+            38.5,
+            289.06298828125,
+            509.3571472167969,
+            315.74658203125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "1st trimester: 0.32 - 4.5\nµIU/mL",
+          "bbox": [
+            417.8945617675781,
+            329.56298828125,
+            538.5510864257812,
+            356.24658203125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "2nd trimester: 0.52 - 4.6\nµIU/mL",
+          "bbox": [
+            417.8945617675781,
+            370.06298828125,
+            543.6810302734375,
+            396.74658203125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "3rd trimester: 0.82 - 5.2\nµIU/mL",
+          "bbox": [
+            417.8945617675781,
+            410.56298828125,
+            541.7235717773438,
+            437.24658203125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Interpretation",
+          "bbox": [
+            40.75,
+            441.95458984375,
+            107.04027557373047,
+            453.38037109375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "*** END OF REPORT ***",
+          "bbox": [
+            261.6484375,
+            469.5419921875,
+            350.09246826171875,
+            478.3310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Please correlate clinically",
+          "bbox": [
+            38.5,
+            496.5419921875,
+            129.6324920654297,
+            505.3310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "bbox": [
+            390.25,
+            481.74981689453125,
+            540.25,
+            519.2498168945312
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Test Performed By : cljyothi          \nConsultant Biochemist",
+          "bbox": [
+            38.5,
+            512.2919921875,
+            573.2708740234375,
+            534.947265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7586059570312,
+            548.05859375,
+            761.0632934570312
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "tables": [
+        {
+          "type": "medical_table",
+          "data": [
+            [
+              "Field",
+              "Value"
+            ],
+            [
+              "Patient Name",
+              ""
+            ],
+            [
+              "Ref. Doctor",
+              ""
+            ],
+            [
+              "Patient ID",
+              ""
+            ],
+            [
+              "Lab ID",
+              ""
+            ],
+            [
+              "OP ID",
+              ""
+            ],
+            [
+              "Sample Collection Date",
+              ""
+            ],
+            [
+              "Age/Gender",
+              ""
+            ],
+            [
+              "Reporting Date",
+              "Reporting Date & time:"
+            ]
+          ],
+          "confidence": 0.9,
+          "method": "patient_info_extraction",
+          "title": "Patient Information"
+        }
+      ],
+      "text_stats": {
+        "char_count": 848,
+        "word_count": 124,
+        "line_count": 47,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 10,
+      "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7586059570312,
+            548.05859375,
+            761.0632934570312
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "text_stats": {
+        "char_count": 90,
+        "word_count": 14,
+        "line_count": 1,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 11,
+      "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:23 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n15-05-2024 05:37 AM\nCLINICAL BIOCHEMISTRY\nRENAL FUNCTION TEST\nInvestigation\nResult\nBiological Reference Interval\nSpecimen:Serum\nBlood Urea\n(Method: Urease)\n13 mg/dL\n17 - 43 mg/dL\nS.Creatinine\n(Method: Enzymatic)\n0.5 mg/dL\n0.55 - 1.02 mg/dL\nInterpretation\n*** END OF REPORT ***\nPlease correlate clinically\nTest Performed By : cljyothi\nConsultant Biochemist\nLab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            187.75001525878906,
+            33.999839782714844,
+            424.00006103515625,
+            90.24984741210938
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:23 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n15-05-2024 05:37 AM",
+          "bbox": [
+            40.75,
+            102.150390625,
+            561.8563842773438,
+            153.197265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "CLINICAL BIOCHEMISTRY",
+          "bbox": [
+            216.85939025878906,
+            162.4755859375,
+            394.89239501953125,
+            178.2958984375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              13.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "RENAL FUNCTION TEST",
+          "bbox": [
+            238.08204650878906,
+            181.81298828125,
+            373.6662292480469,
+            194.99658203125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              11.250000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Investigation\nResult                         \nBiological Reference Interval",
+          "bbox": [
+            40.75,
+            204.900390625,
+            537.7867431640625,
+            215.447265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Specimen:Serum\nBlood Urea\n(Method: Urease)\n13  mg/dL\n17 - 43 mg/dL",
+          "bbox": [
+            38.5,
+            224.45458984375,
+            489.1521911621094,
+            260.8310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316,
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "S.Creatinine\n(Method: Enzymatic)\n0.5  mg/dL\n0.55 - 1.02 mg/dL",
+          "bbox": [
+            38.5,
+            264.31298828125,
+            507.3547058105469,
+            285.5810546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Interpretation",
+          "bbox": [
+            40.75,
+            290.45458984375,
+            107.04027557373047,
+            301.88037109375
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "*** END OF REPORT ***",
+          "bbox": [
+            261.6484375,
+            318.0419921875,
+            350.09246826171875,
+            326.8310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Please correlate clinically",
+          "bbox": [
+            38.5,
+            345.0419921875,
+            129.6324920654297,
+            353.8310546875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "bbox": [
+            390.25,
+            330.2498474121094,
+            540.25,
+            367.7498474121094
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Test Performed By : cljyothi          \nConsultant Biochemist",
+          "bbox": [
+            38.5,
+            360.7919921875,
+            573.2708740234375,
+            383.447265625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7590942382812,
+            548.05859375,
+            761.0637817382812
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "tables": [
+        {
+          "type": "medical_table",
+          "data": [
+            [
+              "Field",
+              "Value"
+            ],
+            [
+              "Patient Name",
+              ""
+            ],
+            [
+              "Ref. Doctor",
+              ""
+            ],
+            [
+              "Patient ID",
+              ""
+            ],
+            [
+              "Lab ID",
+              ""
+            ],
+            [
+              "OP ID",
+              ""
+            ],
+            [
+              "Sample Collection Date",
+              ""
+            ],
+            [
+              "Age/Gender",
+              ""
+            ],
+            [
+              "Reporting Date",
+              "Reporting Date & time:"
+            ]
+          ],
+          "confidence": 0.9,
+          "method": "patient_info_extraction",
+          "title": "Patient Information"
+        }
+      ],
+      "text_stats": {
+        "char_count": 671,
+        "word_count": 96,
+        "line_count": 36,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 12,
+      "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7590942382812,
+            548.05859375,
+            761.0637817382812
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "text_stats": {
+        "char_count": 90,
+        "word_count": 14,
+        "line_count": 1,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 13,
+      "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:23 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n14-05-2024 09:45 PM\nCLINICAL BIOCHEMISTRY\nInvestigation\nResult\nBiological Reference Interval\nSpecimen:Serum\nS.Uric Acid\n(Method: Uricase)\n3.7 mg/dL\n2.6 - 6.0 mg/dL\n*** END OF REPORT ***\nPlease correlate clinically\nTest Performed By : cldakshyyani\nConsultant Biochemist\nLab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+      "width": 612.0,
+      "height": 792.0,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            187.75001525878906,
+            34.00031280517578,
+            424.00006103515625,
+            90.25032043457031
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Patient Name:\nK ANURADHA\nRef. Doctor:\nDr. Y.LATHA DEVI\nPatient Id:\n0001185507\nLab Id:\n05243072085\nOP Id:\nHY-KPH-0524-00064\nSample Collection Date & Time:\n14-05-2024 10:23 AM\nAge/Gender:\n47 Years/Female\nReporting Date & time:\n14-05-2024 09:45 PM",
+          "bbox": [
+            40.75,
+            102.1513671875,
+            561.8563842773438,
+            153.1982421875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "CLINICAL BIOCHEMISTRY",
+          "bbox": [
+            216.85939025878906,
+            162.4765625,
+            394.89239501953125,
+            178.296875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              13.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Investigation\nResult                         \nBiological Reference Interval",
+          "bbox": [
+            40.75,
+            188.4013671875,
+            537.7867431640625,
+            198.9482421875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              9.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Specimen:Serum\nS.Uric Acid\n(Method: Uricase)\n3.7  mg/dL\n2.6 - 6.0 mg/dL",
+          "bbox": [
+            38.5,
+            207.95556640625,
+            494.7771911621094,
+            244.33203125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.750000953674316,
+              11.250000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "*** END OF REPORT ***",
+          "bbox": [
+            261.6484375,
+            248.29296875,
+            350.09246826171875,
+            257.08203125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Please correlate clinically",
+          "bbox": [
+            38.5,
+            275.29296875,
+            129.6324920654297,
+            284.08203125
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "bbox": [
+            390.25,
+            260.50030517578125,
+            540.25,
+            298.00030517578125
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Test Performed By : cldakshyyani          \nConsultant Biochemist",
+          "bbox": [
+            38.5,
+            291.04296875,
+            573.2708740234375,
+            313.6982421875
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif-Bold",
+              "NotoSerif"
+            ],
+            "sizes": [
+              9.000000953674316,
+              7.500000476837158
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "",
+          "bbox": [
+            34.0,
+            319.8681640625,
+            37.119998931884766,
+            333.9306640625
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              12.000000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",
+          "bbox": [
+            80.18359375,
+            748.7590942382812,
+            548.05859375,
+            761.0637817382812
+          ],
+          "font_info": {
+            "fonts": [
+              "NotoSerif"
+            ],
+            "sizes": [
+              10.500000953674316
+            ],
+            "colors": [
+              0
+            ]
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "tables": [
+        {
+          "type": "medical_table",
+          "data": [
+            [
+              "Field",
+              "Value"
+            ],
+            [
+              "Patient Name",
+              ""
+            ],
+            [
+              "Ref. Doctor",
+              ""
+            ],
+            [
+              "Patient ID",
+              ""
+            ],
+            [
+              "Lab ID",
+              ""
+            ],
+            [
+              "OP ID",
+              ""
+            ],
+            [
+              "Sample Collection Date",
+              ""
+            ],
+            [
+              "Age/Gender",
+              ""
+            ],
+            [
+              "Reporting Date",
+              "Reporting Date & time:"
+            ]
+          ],
+          "confidence": 0.9,
+          "method": "patient_info_extraction",
+          "title": "Patient Information"
+        }
+      ],
+      "text_stats": {
+        "char_count": 584,
+        "word_count": 83,
+        "line_count": 30,
+        "paragraph_count": 1
+      }
+    }
+  ],
+  "metadata": {
+    "processor": "PyMuPDF",
+    "total_pages": 13,
+    "file_info": {
+      "filename": "lab-tests-report.pdf",
+      "file_size": 553832
+    },
+    "extraction_stats": {
+      "total_characters": 7901,
+      "total_words": 1201,
+      "total_lines": 373,
+      "average_chars_per_page": 607.7692307692307,
+      "average_words_per_page": 92.38461538461539
+    }
+  }
+}

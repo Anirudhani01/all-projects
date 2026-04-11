@@ -1,0 +1,9 @@
+# Environment Variables for LazyPay FastAPI Application
+# Copy this content to a file named .env in the project root
+
+MONGODB_URI=mongodb://localhost:27017
+MONGODB_DB=lazypay
+APP_ENV=local
+PORT=8000
+LOG_LEVEL=INFO
+IDEMPOTENCY_TTL_HOURS=24

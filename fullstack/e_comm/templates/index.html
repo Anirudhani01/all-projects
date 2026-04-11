@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Electronics Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .options {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .option-box {
+      border: 2px solid #333;
+      padding: 20px;
+      width: 150px;
+      border-radius: 10px;
+      background-color: #f5f5f5;
+      cursor: pointer;
+    }
+    .option-box:hover {
+      background-color: #ddd;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+    <nav style="background-color: #333; padding: 10px;">
+        <a href="/" style="color: white; margin-right: 20px;">Home</a>
+        <a href="/cart" style="color: white;">View Cart</a>
+    </nav>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 30px;">
+        <h1>Welcome to the Electronics Store</h1>
+        
+      </div>
+    <div class="options">
+        <a href="/products/laptops"><div class="option-box">Laptops</div></a>
+        <a href="/products/mobiles"><div class="option-box">Mobiles</div></a>
+        <a href="/products/smartwatch"><div class="option-box">Smartwatch</div></a>
+        <a href="/products/tv"><div class="option-box">TV</div></a>
+    </div>
+</body>
+</html>

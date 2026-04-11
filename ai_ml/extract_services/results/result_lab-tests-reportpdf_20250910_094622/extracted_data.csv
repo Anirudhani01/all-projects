@@ -1,0 +1,406 @@
+page_number,text,page_width,page_height,table_number,table_data,table_confidence
+1,"Patient Name:
+K ANURADHA
+Ref. Doctor:
+Dr. Y.LATHA DEVI
+Patient Id:
+0001185507
+Lab Id:
+05243072085
+OP Id:
+HY-KPH-0524-00064
+Sample Collection Date & Time:
+14-05-2024 10:18 AM
+Age/Gender:
+47 Years/Female
+Reporting Date & time:
+15-05-2024 05:21 AM
+HAEMATOLOGY
+COMPLETE BLOOD COUNT
+Investigation
+Result
+Normal Reference Range
+Specimen:Blood (K2EDTA)
+Total Leukocyte Count
+(Method: Flowcytometry)
+6.47 X 10³/uL
+4.0-10.0 X 10³/uL
+Total Red Blood Cell Count
+(Method: Hydrodynamic Focussing Method)
+4.71 X10¹²/L
+3.8 - 4.8 X 10¹²/L
+Hb
+(Method: SLS - HB)
+8.7 g/dL
+12.0 - 15.0 g/dL
+HCT
+(Method: Calculated)
+30.7 %
+36 - 46 %
+Mean Corpuscular Volume (MCV)
+(Method: RBC Histogram)
+65.2 fl
+83 - 101 fl
+Mean Corpuscular Hemoglobin (MCH)
+(Method: Calculated)
+18.5 pg
+27 - 32 pg
+MCHC
+(Method: Calculated)
+28.3 g/dl
+31.5 - 34.5 g/dl
+Platelet Count
+(Method: Hydrodynamic Focussing Method)
+422 X 10³/uL
+150 - 410 X 10³/uL
+DIFFERENTIAL LEUKOCYTE COUNT
+Neutrophils
+47.2 %
+2.0-7.5 X 10³/uL (40 - 80%)
+Lymphocytes
+43.3 %
+1.0-4.0 X 10³/uL (20 - 40%)
+Monocytes
+8.2 %
+0.2-1.0 X 10³/uL(2 - 10%)
+Eosinophils
+0.8 %
+0.02-0.5 X 10³/uL (1-6%)
+Basophils
+0.5 %
+0.02 - 0.1 X 10³/uL (1-2%)
+Method
+Flowcytometry
+Notes
+--
+*** END OF REPORT ***
+Test Performed By : Clpath
+Consultant Pathologist
+Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,1.0,"[['Field', 'Value'], ['Patient Name', ''], ['Ref. Doctor', ''], ['Patient ID', ''], ['Lab ID', ''], ['OP ID', ''], ['Sample Collection Date', ''], ['Age/Gender', ''], ['Reporting Date', 'Reporting Date & time:']]",0.9
+2,"Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,,,
+3,"Patient Name:
+K ANURADHA
+Ref. Doctor:
+Dr. Y.LATHA DEVI
+Patient Id:
+0001185507
+Lab Id:
+05243072085
+OP Id:
+HY-KPH-0524-00064
+Sample Collection Date & Time:
+14-05-2024 10:18 AM
+Age/Gender:
+47 Years/Female
+Reporting Date & time:
+15-05-2024 05:56 AM
+CLINICAL BIOCHEMISTRY
+Investigation
+Result
+Biological Reference Interval
+Specimen:Whole Blood
+HbA1c
+(Method: Immunoturbidimetry)
+5.9 %
+4 - 6 %
+Interpretation : HbA1c is a form of hemoglobin that is measured primarily to identify the three-month average
+plasma glucose concentration
+*** END OF REPORT ***
+Please correlate clinically
+Test Performed By : cljyothi
+Consultant Biochemist
+Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,1.0,"[['Test Parameter', 'Result', 'Reference Range', 'Status'], ['HbA1c', '5.9 %', '4 - 6 %', 'Normal'], ['HbA1c', '6 %', '4 - 6 %', 'Normal']]",0.8
+3,"Patient Name:
+K ANURADHA
+Ref. Doctor:
+Dr. Y.LATHA DEVI
+Patient Id:
+0001185507
+Lab Id:
+05243072085
+OP Id:
+HY-KPH-0524-00064
+Sample Collection Date & Time:
+14-05-2024 10:18 AM
+Age/Gender:
+47 Years/Female
+Reporting Date & time:
+15-05-2024 05:56 AM
+CLINICAL BIOCHEMISTRY
+Investigation
+Result
+Biological Reference Interval
+Specimen:Whole Blood
+HbA1c
+(Method: Immunoturbidimetry)
+5.9 %
+4 - 6 %
+Interpretation : HbA1c is a form of hemoglobin that is measured primarily to identify the three-month average
+plasma glucose concentration
+*** END OF REPORT ***
+Please correlate clinically
+Test Performed By : cljyothi
+Consultant Biochemist
+Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,2.0,"[['Field', 'Value'], ['Patient Name', ''], ['Ref. Doctor', ''], ['Patient ID', ''], ['Lab ID', ''], ['OP ID', ''], ['Sample Collection Date', ''], ['Age/Gender', ''], ['Reporting Date', 'Reporting Date & time:']]",0.9
+4,"Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,,,
+5,"Patient Name:
+K ANURADHA
+Ref. Doctor:
+Dr. Y.LATHA DEVI
+Patient Id:
+0001185507
+Lab Id:
+05243072085
+OP Id:
+HY-KPH-0524-00064
+Sample Collection Date & Time:
+14-05-2024 10:23 AM
+Age/Gender:
+47 Years/Female
+Reporting Date & time:
+14-05-2024 08:17 PM
+CLINICAL BIOCHEMISTRY
+LIPID PROFILE
+Investigation
+Result
+Biological Reference Interval
+Specimen:Serum
+S.Total Cholesterol
+(Method: CHOD-POD)
+135 mg/dL
+Desirable Level : <200 mg/dL
+Borderline : 200 - 239 mg/dL
+Undesirable : > 240 mg/dL
+S.Triglycerides
+(Method: GPO-POD)
+386 mg/dL
+Desirable Level : <150 mg/dL
+Borderline : 150 - 199 mg/dL
+High : 200 - 499 mg/dL
+Very High : >500 mg/dL
+S.HDL
+(Method: Enzyme Selective Inhibition)
+33 mg/dL
+Desirable Level : >60 mg/dL
+Borderline : 40 - 59 mg/dL
+Undesirable : <40 mg/dL
+VLDL
+(Method: Calculated)
+77 mg/dL
+<30 mg/dL
+S.LDL
+(Method: Calculated)
+25 mg/dL
+Optimal : <100 mg/dL
+Near Optimal : 100 - 129
+mg/dL
+Borderline High : 130 - 159
+mg/dL
+High : 160 - 189 mg/dL
+Very High : >190 mg/dL
+T.Chol/HDL
+(Method: Calculated)
+4.1
+Low Risk: 3.3-4.4
+Average Risk: 4.5-7.1
+Moderate Risk: 7.2-11.0
+LDL/HDL
+(Method: Calculated)
+0.8
+Desirable Level: 0.5-3.0
+Borderline Risk: 3.0-6.0
+High Risk: >6.0
+Interpretation : The results of this test can identify certain genetic diseases and can determine approximate risks
+for cardiovascular disease, certain forms of pancreatitis, and other diseases
+*** END OF REPORT ***
+Please correlate clinically
+Test Performed By : cldakshyyani
+Consultant Biochemist
+Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,1.0,"[['Field', 'Value'], ['Patient Name', ''], ['Ref. Doctor', ''], ['Patient ID', ''], ['Lab ID', ''], ['OP ID', ''], ['Sample Collection Date', ''], ['Age/Gender', ''], ['Reporting Date', 'Reporting Date & time:']]",0.9
+6,"Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,,,
+7,"Patient Name:
+K ANURADHA
+Ref. Doctor:
+Dr. Y.LATHA DEVI
+Patient Id:
+0001185507
+Lab Id:
+05243072085
+OP Id:
+HY-KPH-0524-00064
+Sample Collection Date & Time:
+14-05-2024 10:23 AM
+Age/Gender:
+47 Years/Female
+Reporting Date & time:
+14-05-2024 09:30 PM
+CLINICAL BIOCHEMISTRY
+LIVER FUNCTION TEST
+Investigation
+Result
+Biological Reference Interval
+Specimen:Serum
+S. Bilirubin T
+(Method: DPD)
+0.38 mg/dL
+0.3 - 1.2 mg/dL
+S. Bilirubin D
+(Method: DPD)
+0.06 mg/dL
+<0.2 mg/dL
+S.Total Protein
+(Method: Biuret)
+6.99 gm/dL
+6.6 - 8.3 gm/dL
+S.Albumin
+(Method: BCG)
+3.79 gm/dL
+3.5 - 5.2 gm/dL
+Globulin
+(Method: Calculated)
+3.20 gm/dL
+2.6-3.9 gm/dL
+A/G Ratio
+(Method: Calculated)
+1.18
+1.0 - 1.7
+SGOT/AST
+(Method: UV without P5P)
+41 U/L
+< 35 U/L
+SGPT /ALT
+(Method: UV without P5P)
+48 U/L
+< 35 U/L
+S.Alkaline Phosphatase
+(Method: IFCC)
+61 U/L
+30 - 120 U/L
+Interpretation : Liver function tests (LFTs or LFs) are groups of blood tests that give information about the state of
+a patient's liver. Liver transaminases (AST or SGOT and ALT or SGPT) are useful biomarkers of liver
+injury in a patient with some degree of intact liver function. Some tests are associated with
+functionality (e.g., albumin), some with cellular integrity (e.g., transaminase), and some with
+conditions linked to the biliary tract (gamma-glutamyl transferase and alkaline phosphatase). GGT
+plays a role in the detection of alcoholism, alcoholic liver damage and in monitoring alcohol
+abstinence.
+*** END OF REPORT ***
+Please correlate clinically
+Test Performed By : cljyothi
+Consultant Biochemist
+Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,1.0,"[['Field', 'Value'], ['Patient Name', ''], ['Ref. Doctor', ''], ['Patient ID', ''], ['Lab ID', ''], ['OP ID', ''], ['Sample Collection Date', ''], ['Age/Gender', ''], ['Reporting Date', 'Reporting Date & time:']]",0.9
+8,"Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,,,
+9,"Patient Name:
+K ANURADHA
+Ref. Doctor:
+Dr. Y.LATHA DEVI
+Patient Id:
+0001185507
+Lab Id:
+05243072085
+OP Id:
+HY-KPH-0524-00064
+Sample Collection Date & Time:
+14-05-2024 10:23 AM
+Age/Gender:
+47 Years/Female
+Reporting Date & time:
+15-05-2024 06:59 AM
+CLINICAL BIOCHEMISTRY
+THYROID PROFILE
+Investigation
+Result
+Biological Reference Interval
+Specimen:Serum
+T3 - Total
+(Method: CLIA)
+1.02 ng/mL
+0.60-1.81 ng/mL
+T4 -Total
+(Method: CLIA)
+8.9 µg/dL
+4.5-10.9 µg/dL
+Thyroid stimulating hormone (TSH)
+(Method: CLIA)
+3.209 µIU/mL
+0.35 – 5.5 µIU/mL
+Pregnancy:
+1st trimester: 0.32 - 4.5
+µIU/mL
+2nd trimester: 0.52 - 4.6
+µIU/mL
+3rd trimester: 0.82 - 5.2
+µIU/mL
+Interpretation
+*** END OF REPORT ***
+Please correlate clinically
+Test Performed By : cljyothi
+Consultant Biochemist
+Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,1.0,"[['Field', 'Value'], ['Patient Name', ''], ['Ref. Doctor', ''], ['Patient ID', ''], ['Lab ID', ''], ['OP ID', ''], ['Sample Collection Date', ''], ['Age/Gender', ''], ['Reporting Date', 'Reporting Date & time:']]",0.9
+10,"Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,,,
+11,"Patient Name:
+K ANURADHA
+Ref. Doctor:
+Dr. Y.LATHA DEVI
+Patient Id:
+0001185507
+Lab Id:
+05243072085
+OP Id:
+HY-KPH-0524-00064
+Sample Collection Date & Time:
+14-05-2024 10:23 AM
+Age/Gender:
+47 Years/Female
+Reporting Date & time:
+15-05-2024 05:37 AM
+CLINICAL BIOCHEMISTRY
+RENAL FUNCTION TEST
+Investigation
+Result
+Biological Reference Interval
+Specimen:Serum
+Blood Urea
+(Method: Urease)
+13 mg/dL
+17 - 43 mg/dL
+S.Creatinine
+(Method: Enzymatic)
+0.5 mg/dL
+0.55 - 1.02 mg/dL
+Interpretation
+*** END OF REPORT ***
+Please correlate clinically
+Test Performed By : cljyothi
+Consultant Biochemist
+Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,1.0,"[['Field', 'Value'], ['Patient Name', ''], ['Ref. Doctor', ''], ['Patient ID', ''], ['Lab ID', ''], ['OP ID', ''], ['Sample Collection Date', ''], ['Age/Gender', ''], ['Reporting Date', 'Reporting Date & time:']]",0.9
+12,"Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,,,
+13,"Patient Name:
+K ANURADHA
+Ref. Doctor:
+Dr. Y.LATHA DEVI
+Patient Id:
+0001185507
+Lab Id:
+05243072085
+OP Id:
+HY-KPH-0524-00064
+Sample Collection Date & Time:
+14-05-2024 10:23 AM
+Age/Gender:
+47 Years/Female
+Reporting Date & time:
+14-05-2024 09:45 PM
+CLINICAL BIOCHEMISTRY
+Investigation
+Result
+Biological Reference Interval
+Specimen:Serum
+S.Uric Acid
+(Method: Uricase)
+3.7 mg/dL
+2.6 - 6.0 mg/dL
+*** END OF REPORT ***
+Please correlate clinically
+Test Performed By : cldakshyyani
+Consultant Biochemist
+Lab Address: Telangana Diagnostics , Central Lab , IPM Campus, Narayanaguda, Hyd - 500029.",612.0,792.0,1.0,"[['Field', 'Value'], ['Patient Name', ''], ['Ref. Doctor', ''], ['Patient ID', ''], ['Lab ID', ''], ['OP ID', ''], ['Sample Collection Date', ''], ['Age/Gender', ''], ['Reporting Date', 'Reporting Date & time:']]",0.9

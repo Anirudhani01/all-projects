@@ -1,0 +1,161 @@
+{
+  "login_page": {
+    "username_field": {
+      "locator_type": "name",
+      "value": "j_username",
+      "description": "Username input field on login page"
+    },
+    "password_field": {
+      "locator_type": "name",
+      "value": "j_password",
+      "description": "Password input field on login page"
+    },
+    "login_button": {
+      "locator_type": "css_selector",
+      "value": "button[type='submit']",
+      "description": "Login button"
+    }
+  },
+  "main_navigation": {
+    "products_tab": {
+      "locator_type": "xpath",
+      "value": "//a[contains(@class, 'nav-link') and contains(., 'Products')]",
+      "description": "Products tab in the main navigation menu"
+    },
+    "home_tab": {
+      "locator_type": "xpath",
+      "value": "//a[text()='Home'] | //span[text()='Home']",
+      "description": "Home tab in the main navigation menu"
+    }
+  },
+  "products_page": {
+    "search_icon": {
+      "locator_type": "css_selector",
+      "value": "button.btn.nav-link img[src*='search_panel.gif']",
+      "description": "Search icon button on the Products page"
+    },
+    "search_form_item_number_field": {
+      "locator_type": "id",
+      "value": "searchFormG_0_0.productNumber",
+      "description": "Product number input field on the Products page"
+    },
+    "search_form_search_button": {
+      "locator_type": "xpath",
+      "value": "//button[text()='Search']",
+      "description": "Search button in the search form"
+    },
+    "filter_area": {
+      "locator_type": "id",
+      "value": "G_0_0_filterArea",
+      "description": "Filter area that appears when search icon is clicked"
+    },
+    "search_results_table": {
+      "locator_type": "id",
+      "value": "G_0_0_gridTable",
+      "description": "Product results grid table"
+    },
+    "new_button": {
+      "locator_type": "xpath",
+      "value": "//button[contains(@class, 'btn-sm') and text()='New']",
+      "description": "New button to create a product; first click this"
+    }
+  },
+  "dropdown_menu": {
+    "product_option": {
+      "locator_type": "xpath", 
+      "value": "//a[contains(@href, 'AbstractProduct') and not(contains(@href, 'Provider'))]",
+      "description": "Product option in dropdown; click this after clicking New button"
+    },
+    "product_option_fallback_1": {
+      "locator_type": "xpath",
+      "value": "//div[contains(@class, 'dropdown-menu') and contains(@class, 'show')]//a[1]",
+      "description": "First link in dropdown menu as fallback"
+    },
+    "product_option_fallback_2": {
+      "locator_type": "xpath",
+      "value": "//div[contains(@class, 'dropdown-menu')]//a",
+      "description": "Any link in dropdown as fallback"
+    }
+  },
+  "product_form": {
+    "name_field": {
+      "locator_type": "id",
+      "value": "org:opencrx:kernel:product1:AbstractProduct:name[1100]",
+      "description": "Product name input field - mandatory field"
+    },
+    "product_number_field": {
+      "locator_type": "id",
+      "value": "org:opencrx:kernel:product1:AbstractProduct:productNumber[1200]",
+      "description": "Product number input field"
+    },
+    "new_submit_button": {
+      "locator_type": "xpath",
+      "value": "//a[text()='New']",
+      "description": "New button at the bottom of the form to submit and create the product"
+    }
+  },
+  "product_verification": {
+    "product_breadcrumb": {
+      "locator_type": "xpath",
+      "value": "//div[text()='Products / Prod_123 / 123 - Product']",
+      "description": "Successfully verified: Product breadcrumb in the page header. Proceed to next step."
+    },
+    "product_table": {
+      "locator_type": "xpath",
+      "value": "//table[contains(@class, 'fieldGroup')]",
+      "description": "Successfully verified: The product details table. Proceed to next step."
+    },
+    "name_in_table": {
+      "locator_type": "xpath",
+      "value": "//td[text()='Name:']/following-sibling::td[text()='Prod_123']",
+      "description": "Successfully verified: Product name in details table. Proceed to next step."
+    },
+    "number_in_table": {
+      "locator_type": "xpath",
+      "value": "//td[text()='Product number:']/following-sibling::td[text()='123']",
+      "description": "Successfully verified: Product number in details table. Proceed to next step."
+    },
+    "name_in_page": {
+      "locator_type": "xpath",
+      "value": "//*[contains(text(), 'Prod_123')]",
+      "description": "Successfully verified: Product name appears anywhere on the page. Proceed to next step."
+    },
+    "number_in_page": {
+      "locator_type": "xpath",
+      "value": "//*[contains(text(), '123')]",
+      "description": "Successfully verified: Product number appears anywhere on the page. Proceed to next step."
+    },
+    "title_in_page": {
+      "locator_type": "xpath",
+      "value": "//title[contains(text(), 'Prod_123') or contains(text(), '123')]",
+      "description": "Successfully verified: Product identifiers in page title. Proceed to next step."
+    },
+    "product_in_dom": {
+      "locator_type": "javascript",
+      "value": "return document.body.textContent.includes('Prod_123') && document.body.textContent.includes('123');",
+      "description": "Successfully verified: Product name and number exist in the DOM. Proceed to next step."
+    },
+    "product_details_visible": {
+      "locator_type": "xpath",
+      "value": "//td[contains(text(), 'Product status')]/following-sibling::td[contains(text(), '--none--')]",
+      "description": "Successfully verified: Product details table contains status information. Proceed to next step."
+    }
+  },
+  "verification_methods": {
+    "verify_product_creation": {
+      "description": "Multiple strategies to verify product was created successfully",
+      "steps": [
+        {
+          "action": "check_all",
+          "elements": [
+            "product_verification.product_in_dom",
+            "product_verification.name_in_page",
+            "product_verification.number_in_page"
+          ],
+          "at_least_one": true,
+          "message": "Successfully verified product creation: Product information found in page"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,371 @@
+{
+    "products": [
+        {
+            "id": "550e8400-e29b-41d4-a716-446655440001",
+            "name": "iPhone 15 Pro",
+            "description": "Latest Apple iPhone with advanced A17 Pro chip, titanium design, and professional camera system",
+            "price": "999.99",
+            "category": "electronics",
+            "stock_quantity": 50,
+            "sku": "IPHONE-15-PRO-256GB",
+            "brand": "Apple",
+            "tags": [
+                "smartphone",
+                "ios",
+                "camera",
+                "5g"
+            ],
+            "image_url": "https://example.com/iphone15pro.jpg",
+            "weight_kg": "0.187",
+            "dimensions": {
+                "length": "159.9",
+                "width": "76.7",
+                "height": "8.25"
+            },
+            "created_at": "2024-01-15T10:00:00Z",
+            "updated_at": "2024-01-15T10:00:00Z",
+            "is_active": true
+        },
+        {
+            "id": "550e8400-e29b-41d4-a716-446655440002",
+            "name": "Samsung Galaxy S24 Ultra",
+            "description": "Premium Android smartphone with S Pen, 200MP camera, and AI features",
+            "price": "1199.99",
+            "category": "electronics",
+            "stock_quantity": 30,
+            "sku": "GALAXY-S24-ULTRA-512GB",
+            "brand": "Samsung",
+            "tags": [
+                "smartphone",
+                "android",
+                "s-pen",
+                "camera"
+            ],
+            "image_url": "https://example.com/galaxys24ultra.jpg",
+            "weight_kg": "0.232",
+            "dimensions": {
+                "length": "162.3",
+                "width": "79.0",
+                "height": "8.6"
+            },
+            "created_at": "2024-01-15T10:05:00Z",
+            "updated_at": "2024-01-15T10:05:00Z",
+            "is_active": true
+        },
+        {
+            "id": "550e8400-e29b-41d4-a716-446655440003",
+            "name": "Nike Air Max 270",
+            "description": "Comfortable running shoes with Max Air technology for all-day comfort",
+            "price": "149.99",
+            "category": "sports",
+            "stock_quantity": 75,
+            "sku": "NIKE-AIRMAX-270-BLK-US10",
+            "brand": "Nike",
+            "tags": [
+                "shoes",
+                "running",
+                "comfort",
+                "air-max"
+            ],
+            "image_url": "https://example.com/nikeairmax270.jpg",
+            "weight_kg": "0.8",
+            "dimensions": {
+                "length": "31.0",
+                "width": "11.5",
+                "height": "12.0"
+            },
+            "created_at": "2024-01-15T10:10:00Z",
+            "updated_at": "2024-01-15T10:10:00Z",
+            "is_active": true
+        },
+        {
+            "id": "550e8400-e29b-41d4-a716-446655440004",
+            "name": "MacBook Pro 14-inch",
+            "description": "Professional laptop with M3 Pro chip, Liquid Retina XDR display, and advanced connectivity",
+            "price": "1999.99",
+            "category": "electronics",
+            "stock_quantity": 20,
+            "sku": "MACBOOK-PRO-14-M3PRO-512GB",
+            "brand": "Apple",
+            "tags": [
+                "laptop",
+                "m3",
+                "professional",
+                "retina"
+            ],
+            "image_url": "https://example.com/macbookpro14.jpg",
+            "weight_kg": "1.6",
+            "dimensions": {
+                "length": "312.6",
+                "width": "221.2",
+                "height": "15.5"
+            },
+            "created_at": "2024-01-15T10:15:00Z",
+            "updated_at": "2024-01-15T10:15:00Z",
+            "is_active": true
+        },
+        {
+            "id": "550e8400-e29b-41d4-a716-446655440005",
+            "name": "Levi's 501 Original Jeans",
+            "description": "Classic straight-fit jeans with iconic button fly and original design",
+            "price": "79.99",
+            "category": "clothing",
+            "stock_quantity": 100,
+            "sku": "LEVIS-501-ORIGINAL-32X32",
+            "brand": "Levi's",
+            "tags": [
+                "jeans",
+                "denim",
+                "classic",
+                "straight-fit"
+            ],
+            "image_url": "https://example.com/levis501.jpg",
+            "weight_kg": "0.6",
+            "dimensions": {
+                "waist": "32",
+                "length": "32",
+                "rise": "11.75"
+            },
+            "created_at": "2024-01-15T10:20:00Z",
+            "updated_at": "2024-01-15T10:20:00Z",
+            "is_active": true
+        }
+    ],
+    "users": [
+        {
+            "id": "660e8400-e29b-41d4-a716-446655440001",
+            "username": "john_doe",
+            "email": "john.doe@example.com",
+            "first_name": "John",
+            "last_name": "Doe",
+            "phone": "+1234567890",
+            "role": "customer",
+            "address": {
+                "street": "123 Main St",
+                "city": "New York",
+                "state": "NY",
+                "zip_code": "10001",
+                "country": "USA"
+            },
+            "date_of_birth": "1990-05-15T00:00:00Z",
+            "created_at": "2024-01-10T09:00:00Z",
+            "updated_at": "2024-01-10T09:00:00Z",
+            "is_active": true,
+            "last_login": "2024-01-15T08:30:00Z"
+        },
+        {
+            "id": "660e8400-e29b-41d4-a716-446655440002",
+            "username": "jane_smith",
+            "email": "jane.smith@example.com",
+            "first_name": "Jane",
+            "last_name": "Smith",
+            "phone": "+1987654321",
+            "role": "customer",
+            "address": {
+                "street": "456 Oak Avenue",
+                "city": "Los Angeles",
+                "state": "CA",
+                "zip_code": "90210",
+                "country": "USA"
+            },
+            "date_of_birth": "1985-11-22T00:00:00Z",
+            "created_at": "2024-01-12T14:30:00Z",
+            "updated_at": "2024-01-12T14:30:00Z",
+            "is_active": true,
+            "last_login": "2024-01-15T07:45:00Z"
+        },
+        {
+            "id": "660e8400-e29b-41d4-a716-446655440003",
+            "username": "admin_user",
+            "email": "admin@ecommerce.com",
+            "first_name": "Admin",
+            "last_name": "User",
+            "phone": "+1555123456",
+            "role": "admin",
+            "address": {
+                "street": "789 Business Blvd",
+                "city": "San Francisco",
+                "state": "CA",
+                "zip_code": "94105",
+                "country": "USA"
+            },
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z",
+            "is_active": true,
+            "last_login": "2024-01-15T09:00:00Z"
+        }
+    ],
+    "orders": [
+        {
+            "id": "770e8400-e29b-41d4-a716-446655440001",
+            "user_id": "660e8400-e29b-41d4-a716-446655440001",
+            "items": [
+                {
+                    "product_id": "550e8400-e29b-41d4-a716-446655440001",
+                    "quantity": 1,
+                    "unit_price": "999.99",
+                    "total_price": "999.99"
+                },
+                {
+                    "product_id": "550e8400-e29b-41d4-a716-446655440003",
+                    "quantity": 2,
+                    "unit_price": "149.99",
+                    "total_price": "299.98"
+                }
+            ],
+            "status": "confirmed",
+            "total_amount": "1349.96",
+            "shipping_address": {
+                "street": "123 Main St",
+                "city": "New York",
+                "state": "NY",
+                "zip_code": "10001",
+                "country": "USA"
+            },
+            "billing_address": {
+                "street": "123 Main St",
+                "city": "New York",
+                "state": "NY",
+                "zip_code": "10001",
+                "country": "USA"
+            },
+            "payment_method": "credit_card",
+            "shipping_cost": "29.99",
+            "tax_amount": "19.99",
+            "discount_amount": "0.00",
+            "created_at": "2024-01-14T15:30:00Z",
+            "updated_at": "2024-01-14T16:00:00Z",
+            "shipped_at": null,
+            "delivered_at": null,
+            "tracking_number": null,
+            "notes": "Express delivery requested"
+        },
+        {
+            "id": "770e8400-e29b-41d4-a716-446655440002",
+            "user_id": "660e8400-e29b-41d4-a716-446655440002",
+            "items": [
+                {
+                    "product_id": "550e8400-e29b-41d4-a716-446655440004",
+                    "quantity": 1,
+                    "unit_price": "1999.99",
+                    "total_price": "1999.99"
+                }
+            ],
+            "status": "shipped",
+            "total_amount": "2139.98",
+            "shipping_address": {
+                "street": "456 Oak Avenue",
+                "city": "Los Angeles",
+                "state": "CA",
+                "zip_code": "90210",
+                "country": "USA"
+            },
+            "payment_method": "paypal",
+            "shipping_cost": "0.00",
+            "tax_amount": "139.99",
+            "discount_amount": "0.00",
+            "created_at": "2024-01-13T10:15:00Z",
+            "updated_at": "2024-01-14T09:30:00Z",
+            "shipped_at": "2024-01-14T09:30:00Z",
+            "delivered_at": null,
+            "tracking_number": "TRK123456789",
+            "notes": "Standard delivery"
+        }
+    ],
+    "carts": [
+        {
+            "id": "880e8400-e29b-41d4-a716-446655440001",
+            "user_id": "660e8400-e29b-41d4-a716-446655440001",
+            "items": [
+                {
+                    "product_id": "550e8400-e29b-41d4-a716-446655440005",
+                    "quantity": 2,
+                    "unit_price": "79.99",
+                    "total_price": "159.98"
+                }
+            ],
+            "created_at": "2024-01-15T11:00:00Z",
+            "updated_at": "2024-01-15T11:15:00Z",
+            "expires_at": "2024-01-22T11:00:00Z"
+        }
+    ],
+    "inventory": [
+        {
+            "product_id": "550e8400-e29b-41d4-a716-446655440001",
+            "quantity_available": 48,
+            "quantity_reserved": 2,
+            "reorder_level": 10,
+            "max_stock_level": 100,
+            "location": "Warehouse A",
+            "last_restocked": "2024-01-10T08:00:00Z",
+            "supplier": "Apple Inc."
+        },
+        {
+            "product_id": "550e8400-e29b-41d4-a716-446655440002",
+            "quantity_available": 30,
+            "quantity_reserved": 0,
+            "reorder_level": 5,
+            "max_stock_level": 50,
+            "location": "Warehouse A",
+            "last_restocked": "2024-01-12T10:30:00Z",
+            "supplier": "Samsung Electronics"
+        },
+        {
+            "product_id": "550e8400-e29b-41d4-a716-446655440003",
+            "quantity_available": 73,
+            "quantity_reserved": 2,
+            "reorder_level": 20,
+            "max_stock_level": 200,
+            "location": "Warehouse B",
+            "last_restocked": "2024-01-08T14:00:00Z",
+            "supplier": "Nike Inc."
+        },
+        {
+            "product_id": "550e8400-e29b-41d4-a716-446655440004",
+            "quantity_available": 19,
+            "quantity_reserved": 1,
+            "reorder_level": 5,
+            "max_stock_level": 30,
+            "location": "Warehouse A",
+            "last_restocked": "2024-01-05T16:45:00Z",
+            "supplier": "Apple Inc."
+        },
+        {
+            "product_id": "550e8400-e29b-41d4-a716-446655440005",
+            "quantity_available": 98,
+            "quantity_reserved": 2,
+            "reorder_level": 15,
+            "max_stock_level": 150,
+            "location": "Warehouse C",
+            "last_restocked": "2024-01-13T12:20:00Z",
+            "supplier": "Levi Strauss & Co."
+        }
+    ],
+    "reviews": [
+        {
+            "id": "990e8400-e29b-41d4-a716-446655440001",
+            "product_id": "550e8400-e29b-41d4-a716-446655440001",
+            "user_id": "660e8400-e29b-41d4-a716-446655440001",
+            "order_id": "770e8400-e29b-41d4-a716-446655440001",
+            "rating": 5,
+            "title": "Excellent phone with amazing camera",
+            "comment": "The iPhone 15 Pro exceeded my expectations. The camera quality is outstanding, especially in low light conditions. The titanium build feels premium and the performance is incredibly smooth.",
+            "created_at": "2024-01-15T12:30:00Z",
+            "updated_at": "2024-01-15T12:30:00Z",
+            "is_verified_purchase": true,
+            "helpful_votes": 15
+        },
+        {
+            "id": "990e8400-e29b-41d4-a716-446655440002",
+            "product_id": "550e8400-e29b-41d4-a716-446655440003",
+            "user_id": "660e8400-e29b-41d4-a716-446655440002",
+            "rating": 4,
+            "title": "Comfortable and stylish",
+            "comment": "Great running shoes with excellent cushioning. Perfect for daily workouts and casual wear. Only downside is they can get a bit warm during long runs.",
+            "created_at": "2024-01-14T18:45:00Z",
+            "updated_at": "2024-01-14T18:45:00Z",
+            "is_verified_purchase": false,
+            "helpful_votes": 8
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+  "language": "python",
+  "framework": "fastapi",
+  "database": "mongodb",
+  "dependency_manager": "pip",
+  "rules": {
+    "do": [
+      "Use requirements.txt for managing dependencies and pin exact versions where stability matters.",
+      "Organize FastAPI project into app/ folder with submodules: routers, models, schemas, services, db.",
+      "Use Pydantic models for request/response validation.",
+      "Use environment variables (.env) for sensitive configs like MongoDB URI.",
+      "Implement async Motor client (motor.motor_asyncio.AsyncIOMotorClient) for MongoDB connections.",
+      "Include proper exception handling with FastAPI's exception handlers.",
+      "Write unit tests and integration tests under a tests/ directory.",
+      "Use uvicorn for local development server with reload flag in dev mode.",
+      "Follow RESTful API naming conventions (plural nouns, e.g., /users, /transactions).",
+      "Document APIs with FastAPI's built-in OpenAPI/Swagger support.",
+      "Use indexes in MongoDB collections for frequently queried fields.",
+      "Lint and format code with flake8 and black.",
+      "Containerize the app with Docker (python:3.12-slim base image recommended).",
+      "Add health-check endpoints for readiness/liveness probes when deploying.",
+      "Implement RBAC/JWT authentication for user security."
+    ],
+    "dont": [
+      "Don't hardcode database URIs, secrets, or API keys.",
+      "Don't use blocking MongoDB client (pymongo) inside async FastAPI routes.",
+      "Don't expose internal errors directly in API responses.",
+      "Don't commit .env, __pycache__, or *.pyc files to version control.",
+      "Don't keep business logic inside route functions — separate into services.",
+      "Don't install unused dependencies into requirements.txt.",
+      "Don't ignore schema validation — always validate inputs with Pydantic.",
+      "Don't use wildcard imports (e.g., from module import *).",
+      "Don't forget to close MongoDB connections on shutdown event.",
+      "Don't bypass logging — use structured logging for debugging and production."
+    ],
+    "prompt_logging": {
+      "trigger": {
+        "type": "onPrompt"
+      },
+      "action": {
+        "type": "appendToFile",
+        "file": "prompts.md",
+        "content": "## Prompt ({{timestamp}})\n**Prompt Text:** {{prompt}}\n**Changes Made:** {{changes}}\n\n"
+      }
+    }
+  },
+  "testing": {
+    "do": [
+      "Write pytest test cases with async support (pytest-asyncio).",
+      "Mock MongoDB calls for unit tests (e.g., mongomock or fixtures).",
+      "Use CI/CD pipelines to run tests automatically on push/PR."
+    ],
+    "dont": [
+      "Don't skip tests for database interactions.",
+      "Don't mix unit and integration tests in the same module."
+    ]
+  }
+}

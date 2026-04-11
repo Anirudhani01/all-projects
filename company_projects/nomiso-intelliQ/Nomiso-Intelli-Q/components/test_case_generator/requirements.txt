@@ -1,0 +1,10 @@
+langchain
+langchain-openai
+langchain-postgres
+langchain-community
+openai
+psycopg[binary]
+SQLAlchemy
+python-dotenv
+numpy
+greenlet

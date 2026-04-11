@@ -1,0 +1,87 @@
+from helper import *  //this is needed as there are several functions and variables in helper file.
+from helper import MOBILE_NUMBER // use for testing
+
+
+# ---------------- Launch ----------------
+# Call launch() to start or resume the app.
+# It automatically detects the correct start activity (detect_launchable_activity)
+# and applies all required capabilities such as permissions, device selection, and automation settings.
+driver = launch()
+# launch() returns an active Appium driver instance.
+
+
+
+
+# ---------------------- SCREEN TRANSITION DETECTION ----------------------
+# Wait until a unique element for the target screen is fully loaded and ready.
+# Returns the found WebElement if successful, None if timeout.
+element = wait_for_screen_transition(
+    driver,
+    unique_locator_dict,   # Dict of locator strategies for the screen's unique element
+    element_name,          # Name for logging (e.g., "Home Screen")
+    timeout=20,            # (Optional) max wait time for transition
+    check_interval=1.0,    # (Optional) time between retries
+    require_visible=True   # (Optional) ensure element is visible/clickable before returning
+)
+
+
+
+# -------------------------------- LOCATING ELEMENTS --------------------------------
+# Find an element using multiple locator strategies from a locator dict.
+# Falls back to AI (find_locator_using_openai) if all local locators fail.
+
+element = find_element_with_fallback(
+    driver,
+    locator_dict,                 # Dict containing locator types & values
+    element_name="UnknownElement",# Name for logging/debugging
+    timeout=5,                     # (Optional) time to wait per locator strategy
+    visible=True                   # (Optional) require element to be visible before returning
+)
+
+# Returns:
+#   WebElement if found
+#   None if not found — handle this in your calling code
+
+
+
+# ----------------- VALIDATING ELEMENTS USING AI -------------------------------
+# Use AI to check if a described field exists in the current screen's XML,
+# and get the best locator if found.
+
+result = validate_field_in_xml_using_openai(
+    xml,                # Full XML of the current screen (driver.page_source)
+    field_description   # String description of the element
+)
+
+# Returns (always a dict in this format):
+#   {"found": True,  "locator": {"locator_name": "text", "locator_value": "Login"}}
+#   {"found": False, "locator": {}}
+
+
+
+
+
+
+
+
+
+
+
+--------------------------- BUTTON SUBMIT------------------
+
+
+# 8. Scroll to an element with text 'Submit' using Android UIAutomator
+driver.find_element(
+    By.ANDROID_UIAUTOMATOR,
+    'new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text("Submit"))'
+)
+
+
+    # -------------------------------- CLEANUP --------------------------------
+
+    
+    driver.quit()   # End session
+
+# Only run if script is executed directly
+if __name__ == '__main__':
+    main()

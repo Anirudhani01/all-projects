@@ -1,0 +1,1697 @@
+[
+  {
+  "screen_name": "enter_mobile_number",
+  "screen_description": "Screen where users authenticate by entering their mobile number and requesting an OTP. Users  input their mobile number, and the system automatically handles the OTP submission and autofill process.",
+  "unique_identifier": "enter_mobile_number_heading",
+  "elements": [
+    {
+      "element_name": "airtel_logo_image",
+      "type": "image",
+      "locators": {
+        "resource_id": null,
+        "class": "android.widget.ImageView",
+        "content_desc": "Airtel logo at the top of the screen",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Brand logo image displayed at the top of the screen for branding purposes."
+    },
+    {
+      "element_name": "enter_mobile_number_heading",
+      "type": "text",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/subtitle_view_container",
+        "class": "android.view.View",
+        "text": "Enter mobile number",
+        "content_desc": "Heading prompting the user to enter their mobile number",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Label prompting the user to enter their mobile number. This serves as the unique identifier for the screen."
+    },
+    {
+      "element_name": "country_code_dropdown",
+      "type": "dropdown",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/input_prefix_container",
+        "class": "android.view.View",
+        "text": "+91",
+        "content_desc": "Dropdown for selecting the country code",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Dropdown for selecting the country code. Users can tap on this dropdown to choose their country code before entering their mobile number. The default value is '+91'."
+    },
+    {
+    "element_name": "mobile_number_input",
+    "type": "input",
+    "value": null,
+    "locators": {
+      "resource_id": "com.myairtelapp:id/input_text_container",
+      "content_desc": null,
+      "text": "your 10-digit number",
+      "placeholder": "your 10-digit number",
+      "class": "android.view.View"
+    },
+      "actionable": true,
+      "description": "Input field where users enter their 10-digit mobile number. The placeholder 'your 10-digit number' guides the user on what to input. This field is mandatory for authentication."
+    },
+    {
+      "element_name": "get_otp_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/get_otp_button",
+        "class": "android.view.View",
+        "text": "GET OTP",
+        "content_desc": "Button to request an OTP",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button for users to request an OTP after entering their mobile number and country code which is automatically clicked by the system itself. The OTP is auto-filled by the system, and users do not need to manually interact with it."
+    },
+    {
+      "element_name": "otp_input_field",
+      "type": "input",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/otp_input_container",
+        "class": "android.widget.EditText",
+        "text": null,
+        "content_desc": "Input field for OTP",
+        "placeholder": "Enter OTP (auto-filled)"
+      },
+      "actionable": false,
+      "description": "Input field where the OTP is auto-filled by the system. Users do not need to type into this field unless the autofill fails."
+    }
+  ]
+},
+  {
+  "screen_name": "enter_otp",
+  "screen_description": "Screen for entering a 4-digit OTP sent to the user's mobile number for authentication or login.",
+  "additional_info": {
+    "input_field_placeholders": [
+      "Please Enter OTP"
+    ],
+    "relative_locators": [
+      {
+        "relation": "below",
+        "reference_element": "otp_instruction_text",
+        "target_element": "otp_mobile_number"
+      },
+      {
+        "relation": "below",
+        "reference_element": "otp_mobile_number",
+        "target_element": "otp_fields"
+      },
+      {
+        "relation": "below",
+        "reference_element": "otp_fields",
+        "target_element": "resend_button"
+      },
+      {
+        "relation": "right_of",
+        "reference_element": "otp_box_1",
+        "target_element": "otp_box_2"
+      },
+      {
+        "relation": "right_of",
+        "reference_element": "otp_box_2",
+        "target_element": "otp_box_3"
+      },
+      {
+        "relation": "right_of",
+        "reference_element": "otp_box_3",
+        "target_element": "otp_box_4"
+      }
+    ],
+    "scenario_roles": [
+      "otp_login",
+      "authentication"
+    ]
+  },
+  "elements": [
+    {
+      "element_name": "back_button",
+      "type": "button",
+      "value": "",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/back_button",
+        "content_desc": "back",
+        "text": "",
+        "placeholder": "",
+        "class": "android.widget.Button",
+        "fallback_order": [
+          "resource_id",
+          "content_desc",
+          "class"
+        ]
+      },
+      "actionable": true,
+      "layout_info": {
+        "bounds": "[57,165][172,280]"
+      },
+      "wait_conditions": {
+        "type": "clickable",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [],
+      "description": "Navigates back to the previous screen"
+    },
+    {
+      "element_name": "header_navigation_button",
+      "type": "button",
+      "value": "",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/home_header_profile_messages_page_notification_cta",
+        "content_desc": "header navigation",
+        "text": "",
+        "placeholder": "",
+        "class": "android.widget.Button",
+        "fallback_order": [
+          "resource_id",
+          "content_desc",
+          "class"
+        ]
+      },
+      "actionable": true,
+      "layout_info": {
+        "bounds": "[911,165][1026,280]"
+      },
+      "wait_conditions": {
+        "type": "clickable",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [],
+      "description": "Header navigation button, possibly for notifications or profile"
+    },
+    {
+      "element_name": "otp_title",
+      "type": "text",
+      "value": "Enter OTP",
+      "locators": {
+        "resource_id": "_OTP_title",
+        "content_desc": "Enter Otp",
+        "text": "Enter OTP",
+        "placeholder": "",
+        "class": "android.view.View",
+        "fallback_order": [
+          "resource_id",
+          "text",
+          "content_desc",
+          "class"
+        ]
+      },
+      "actionable": false,
+      "layout_info": {
+        "bounds": "[71,451][1009,543]"
+      },
+      "wait_conditions": {
+        "type": "visible",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [],
+      "description": "Screen title for OTP entry"
+    },
+    {
+      "element_name": "otp_instruction_text",
+      "type": "text",
+      "value": "4-digit code sent to ",
+      "locators": {
+        "resource_id": "_OTP_subTitle",
+        "content_desc": "4-digit code sent to ",
+        "text": "4-digit code sent to ",
+        "placeholder": "",
+        "class": "android.widget.TextView",
+        "fallback_order": [
+          "resource_id",
+          "text",
+          "content_desc",
+          "class"
+        ]
+      },
+      "actionable": false,
+      "layout_info": {
+        "bounds": "[251,557][830,649]"
+      },
+      "wait_conditions": {
+        "type": "visible",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [],
+      "description": "Instruction text indicating OTP has been sent"
+    },
+    {
+      "element_name": "otp_mobile_number",
+      "type": "button",
+      "value": "9716006643",
+      "locators": {
+        "resource_id": "_OTP_changeNumberCta",
+        "content_desc": "9 7 1 6 0 0 6 6 4 3, Click to edit number",
+        "text": "",
+        "placeholder": "",
+        "class": "android.widget.Button",
+        "fallback_order": [
+          "resource_id",
+          "content_desc",
+          "class"
+        ]
+      },
+      "actionable": true,
+      "layout_info": {
+        "bounds": "[257,662][823,752]"
+      },
+      "wait_conditions": {
+        "type": "clickable",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [
+        {
+          "relation": "below",
+          "reference_element": "otp_instruction_text"
+        }
+      ],
+      "description": "Displays the mobile number to which OTP was sent; allows editing"
+    },
+    {
+      "element_name": "otp_fields",
+      "type": "section",
+      "value": "",
+      "locators": {
+        "resource_id": "_OTP_otpValue",
+        "content_desc": "",
+        "text": "",
+        "placeholder": "",
+        "class": "android.view.ViewGroup",
+        "fallback_order": [
+          "resource_id",
+          "class"
+        ]
+      },
+      "actionable": false,
+      "layout_info": {
+        "bounds": "[71,765][1009,1022]"
+      },
+      "wait_conditions": {
+        "type": "visible",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [
+        {
+          "relation": "below",
+          "reference_element": "otp_mobile_number"
+        }
+      ],
+      "description": "Section containing OTP input boxes"
+    },
+    {
+      "element_name": "otp_input",
+      "type": "input",
+      "value": "",
+      "locators": {
+        "resource_id": "_OTP_otpValue_optBoxes_inputBox",
+        "content_desc": "Please Enter OTP",
+        "text": "",
+        "placeholder": "Please Enter OTP",
+        "class": "android.widget.EditText",
+        "fallback_order": [
+          "resource_id",
+          "content_desc",
+          "placeholder",
+          "class"
+        ]
+      },
+      "actionable": true,
+      "layout_info": {
+        "bounds": "[213,806][1009,981]"
+      },
+      "wait_conditions": {
+        "type": "visible",
+        "timeout": 15
+      },
+      "input_type": "numeric",
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [
+        {
+          "relation": "inside",
+          "reference_element": "otp_fields"
+        }
+      ],
+      "description": "Main OTP input field for entering the 4-digit code"
+    },
+    {
+      "element_name": "otp_box_1",
+      "type": "button",
+      "value": "",
+      "locators": {
+        "resource_id": "_OTP_otpValue_optBoxes_0",
+        "content_desc": "OTP, text in OTP box number 1 out of 4 is empty",
+        "text": "",
+        "placeholder": "",
+        "class": "android.widget.Button",
+        "fallback_order": [
+          "resource_id",
+          "content_desc",
+          "class"
+        ]
+      },
+      "actionable": true,
+      "layout_info": {
+        "bounds": "[213,806][355,981]"
+      },
+      "wait_conditions": {
+        "type": "visible",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [
+        {
+          "relation": "inside",
+          "reference_element": "otp_fields"
+        }
+      ],
+      "description": "First OTP digit box"
+    },
+    {
+      "element_name": "otp_box_2",
+      "type": "button",
+      "value": "",
+      "locators": {
+        "resource_id": "_OTP_otpValue_optBoxes_1",
+        "content_desc": "OTP, text in OTP box number 2 out of 4 is empty",
+        "text": "",
+        "placeholder": "",
+        "class": "android.widget.Button",
+        "fallback_order": [
+          "resource_id",
+          "content_desc",
+          "class"
+        ]
+      },
+      "actionable": true,
+      "layout_info": {
+        "bounds": "[384,806][525,981]"
+      },
+      "wait_conditions": {
+        "type": "visible",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [
+        {
+          "relation": "right_of",
+          "reference_element": "otp_box_1"
+        }
+      ],
+      "description": "Second OTP digit box"
+    },
+    {
+      "element_name": "otp_box_3",
+      "type": "button",
+      "value": "",
+      "locators": {
+        "resource_id": "_OTP_otpValue_optBoxes_2",
+        "content_desc": "OTP, text in OTP box number 3 out of 4 is empty",
+        "text": "",
+        "placeholder": "",
+        "class": "android.widget.Button",
+        "fallback_order": [
+          "resource_id",
+          "content_desc",
+          "class"
+        ]
+      },
+      "actionable": true,
+      "layout_info": {
+        "bounds": "[555,806][696,981]"
+      },
+      "wait_conditions": {
+        "type": "visible",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [
+        {
+          "relation": "right_of",
+          "reference_element": "otp_box_2"
+        }
+      ],
+      "description": "Third OTP digit box"
+    },
+    {
+      "element_name": "otp_box_4",
+      "type": "button",
+      "value": "",
+      "locators": {
+        "resource_id": "_OTP_otpValue_optBoxes_3",
+        "content_desc": "OTP, text in OTP box number 4 out of 4 is empty",
+        "text": "",
+        "placeholder": "",
+        "class": "android.widget.Button",
+        "fallback_order": [
+          "resource_id",
+          "content_desc",
+          "class"
+        ]
+      },
+      "actionable": true,
+      "layout_info": {
+        "bounds": "[725,806][867,981]"
+      },
+      "wait_conditions": {
+        "type": "visible",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [
+        {
+          "relation": "right_of",
+          "reference_element": "otp_box_3"
+        }
+      ],
+      "description": "Fourth OTP digit box"
+    },
+    {
+      "element_name": "resend_button",
+      "type": "button",
+      "value": "Resend",
+      "locators": {
+        "resource_id": "ButtonWidgetContainer_leftCta",
+        "content_desc": "resend",
+        "text": "",
+        "placeholder": "",
+        "class": "android.widget.Button",
+        "fallback_order": [
+          "resource_id",
+          "content_desc",
+          "class"
+        ]
+      },
+      "actionable": true,
+      "layout_info": {
+        "bounds": "[409,1211][671,1301]"
+      },
+      "wait_conditions": {
+        "type": "clickable",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": true,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [
+        {
+          "relation": "below",
+          "reference_element": "otp_fields"
+        }
+      ],
+      "description": "Button to resend OTP"
+    },
+    {
+      "element_name": "login_button",
+      "type": "button",
+      "value": "Login",
+      "locators": {
+        "resource_id": "ButtonWidgetContainer_rightCta",
+        "content_desc": "",
+        "text": "",
+        "placeholder": "",
+        "class": "android.widget.Button",
+        "fallback_order": [
+          "resource_id",
+          "class"
+        ]
+      },
+      "actionable": true,
+      "layout_info": {
+        "bounds": "[71,1355][1009,1517]"
+      },
+      "wait_conditions": {
+        "type": "clickable",
+        "timeout": 15
+      },
+      "expected_state": {
+        "enabled": false,
+        "visible": true
+      },
+      "custom_actions": [],
+      "relative_locators": [
+        {
+          "relation": "below",
+          "reference_element": "resend_button"
+        }
+      ],
+      "description": "Button to submit OTP and login"
+    }
+  ]
+},
+  {
+  "screen_name": "home_page_after_login",
+  "screen_description": "The main dashboard screen of the Airtel app after login. This screen provides access to navigation options, search functionality, quick actions, and financial products, allowing users to manage their account and explore services.",
+  "unique_identifier": "menu_button",
+  "elements": [
+    {
+      "element_name": "menu_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/menu_button",
+        "class": "android.widget.Button",
+        "content_desc": "menu",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Hamburger menu button located at the top left of the screen. Users can tap this button to open the side navigation menu and access settings, profile, and other options."
+    },
+    {
+      "element_name": "search_bar",
+      "type": "input",
+      "locators": {
+        "resource_id": "search-bar",
+        "class": "android.view.ViewGroup",
+        "content_desc": "Search bar",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Search bar located at the top of the screen. Users can tap to enter a query to search for services, plans, or help topics."
+    },
+    {
+      "element_name": "notification_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/home_header_profile_messages_page_notification_cta",
+        "class": "android.widget.Button",
+        "content_desc": "header navigation",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Notification button located at the top right of the screen. Users can tap this button to view their notifications and messages."
+    },
+    {
+      "element_name": "services_nugget_card",
+      "type": "container",
+      "locators": {
+        "resource_id": "services nugget with half card_Services Nugget Platformised",
+        "class": "android.view.ViewGroup",
+        "content_desc": null,
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Card container displaying the user's active services. Users can tap this card to manage their services or view more details."
+    },
+    {
+      "element_name": "money_nugget_card",
+      "type": "container",
+      "locators": {
+        "resource_id": "services nugget with half card_money",
+        "class": "android.view.ViewGroup",
+        "content_desc": null,
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Card container showcasing Airtel Money and other financial services. Users can tap this card to explore financial products or offers."
+    },
+    {
+      "element_name": "bottom_nav_manage",
+      "type": "button",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/home_btnv",
+        "class": "android.widget.FrameLayout",
+        "content_desc": "manage",
+        "text": "manage",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Bottom navigation button labeled 'Manage'. Users can tap this button to navigate to the home/manage dashboard."
+    },
+    {
+      "element_name": "bottom_nav_pay",
+      "type": "button",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/pay_btnv",
+        "class": "android.widget.FrameLayout",
+        "content_desc": "pay",
+        "text": "pay",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Bottom navigation button labeled 'Pay'. Users can tap this button to navigate to the pay/bill section for recharges and bill payments."
+    },
+    {
+      "element_name": "bottom_nav_shop",
+      "type": "button",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/shop_btnv",
+        "class": "android.widget.FrameLayout",
+        "content_desc": "shop",
+        "text": "shop",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Bottom navigation button labeled 'Shop'. Users can tap this button to explore and purchase new products or services."
+    },
+    {
+      "element_name": "bottom_nav_help",
+      "type": "button",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/help_btnv",
+        "class": "android.widget.FrameLayout",
+        "content_desc": "help",
+        "text": "help",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Bottom navigation button labeled 'Help'. Users can tap this button to navigate to the help or support section."
+    }
+  ]
+},
+  {
+  "screen_name": "menu_screen",
+  "screen_description": "The menu screen in the Airtel app provides access to user profile, notifications, search, settings, chat support, financial services, new connections, quick actions, and an accordion menu for managing accounts and services.",
+  "unique_identifier": "menu_drawer_button",
+  "total_scroll_positions": 9,
+  "elements": [
+    {
+      "element_name": "menu_drawer_button",
+      "type": "button",
+      "locators": {
+        "resource_id": ":id/menu_button",
+        "class": "android.widget.Button",
+        "content_desc": "menu",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to open the navigation drawer, providing access to app-wide options."
+    },
+    {
+      "element_name": "header_notification_button",
+      "type": "button",
+      "locators": {
+        "resource_id": ":id/home_header_profile_messages_page_notification_cta",
+        "class": "android.widget.Button",
+        "content_desc": "header navigation",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to access notifications and messages, located at the top right of the screen."
+    },
+    {
+      "element_name": "search_bar_header",
+      "type": "container",
+      "locators": {
+        "resource_id": "search-bar",
+        "class": "android.view.ViewGroup",
+        "content_desc": null,
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Search bar for finding services, plans, or help topics. Users can tap to open search input."
+    },
+    {
+      "element_name": "accordion_my_active_services",
+      "type": "button",
+      "locators": {
+        "resource_id": "AccordionSection_dummy_accordionList_0",
+        "class": "android.widget.Button",
+        "content_desc": "My Active Services View and manage your plans & services, collapsed",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Accordion section to view and manage active services like plans and subscriptions."
+    },
+    {
+      "element_name": "accordion_new_connections",
+      "type": "button",
+      "locators": {
+        "resource_id": "AccordionSection_dummy_accordionList_1",
+        "class": "android.widget.Button",
+        "content_desc": "New Connections heading Buy new Postpaid, Prepaid, Wi-Fi & more, collapsed",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Accordion section for purchasing new connections such as SIM cards, Wi-Fi, and DTH."
+    },
+    {
+      "element_name": "accordion_airtel_financial_services",
+      "type": "button",
+      "locators": {
+        "resource_id": "AccordionSection_dummy_accordionList_2",
+        "class": "android.widget.Button",
+        "content_desc": "Airtel Financial Services heading Apply for instant loans, credit cards, FDs, collapsed",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Accordion section to explore financial services like loans, credit cards, and fixed deposits."
+    },
+    {
+      "element_name": "quickaction_recharge_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "manage_quickactions_section_manage_quickactions_widget_0",
+        "class": "android.view.View",
+        "content_desc": "Recharge has tooltip\u20b90 platform fee on recharges and bill payments, double tap to take action",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Quick action button to recharge accounts or services directly."
+    },
+    {
+      "element_name": "quickaction_pay_bills_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "manage_quickactions_section_manage_quickactions_widget_1",
+        "class": "android.view.View",
+        "content_desc": "Pay Bills , double tap to take action",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Quick action button to pay utility bills and other charges."
+    },
+    {
+      "element_name": "bottom_nav_manage_tab",
+      "type": "button",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/home_btnv",
+        "class": "android.widget.FrameLayout",
+        "content_desc": "manage",
+        "text": "manage",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Bottom navigation tab for accessing the home/manage dashboard."
+    },
+    {
+      "element_name": "bottom_nav_pay_tab",
+      "type": "button",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/pay_btnv",
+        "class": "android.widget.FrameLayout",
+        "content_desc": "pay",
+        "text": "pay",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Bottom navigation tab for accessing the bill payment section."
+    }
+  ],
+  "scroll_sections": [
+    {
+      "scroll_index": 0,
+      "section_description": "Header Area",
+      "key_elements": [
+        "menu_drawer_button",
+        "header_notification_button",
+        "search_bar_header"
+      ],
+      "main_functionality": "Navigation and search"
+    },
+    {
+      "scroll_index": 1,
+      "section_description": "Accordion Area",
+      "key_elements": [
+        "accordion_my_active_services",
+        "accordion_new_connections",
+        "accordion_airtel_financial_services"
+      ],
+      "main_functionality": "Service and financial management"
+    },
+    {
+      "scroll_index": 2,
+      "section_description": "Quick Actions Area",
+      "key_elements": [
+        "quickaction_recharge_button",
+        "quickaction_pay_bills_button"
+      ],
+      "main_functionality": "Quick access to recharge and bill payment"
+    },
+    {
+      "scroll_index": 8,
+      "section_description": "Bottom Navigation",
+      "key_elements": [
+        "bottom_nav_manage_tab",
+        "bottom_nav_pay_tab"
+      ],
+      "main_functionality": "Primary navigation tabs"
+    }
+  ],
+  "automation_guidance": {
+    "critical_elements": [
+      "menu_drawer_button",
+      "header_notification_button",
+      "search_bar_header",
+      "accordion_my_active_services",
+      "quickaction_recharge_button",
+      "quickaction_pay_bills_button",
+      "bottom_nav_manage_tab",
+      "bottom_nav_pay_tab"
+    ],
+    "wait_strategies": [
+      "element_to_be_clickable",
+      "element_to_be_visible",
+      "wait_for_navigation",
+      "wait_for_section_expanded"
+    ],
+    "test_scenarios": [
+      "Open navigation drawer and validate menu options",
+      "Access notifications/messages",
+      "Initiate a search and validate results",
+      "Expand/collapse accordion sections for active services, new connections, and financial services",
+      "Perform recharge and bill payment using quick actions",
+      "Navigate using bottom tabs and validate screen transitions"
+    ],
+    "fragile_locators": [
+      "resource_id with ambiguous names (e.g., Button)",
+      "content_desc with dynamic values (e.g., notification count)",
+      "elements relying only on coordinate fallback"
+    ]
+  },
+  "generation_metadata": {
+    "source_elements_found": 620,
+    "elements_in_schema": 10,
+    "coverage_percentage": 1.6
+  }
+},
+  {
+  "screen_name": "active_services_option_in_the_menu",
+  "screen_description": "This screen represents the side navigation drawer in the Airtel app, allowing users to manage their profile, active services, prepaid accounts, recharge, data usage, roaming, pack details, and explore new connections. It also provides access to notifications, settings, chat support, and quick actions for service management.",
+  "unique_identifier": "edit_profile_button",
+  "total_scroll_positions": 1,
+  "elements": [
+    {
+      "element_name": "notification_icon_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "ProfileCardSection_ProfileCardWidget_notification_icon",
+        "class": "android.widget.Button",
+        "content_desc": "2 unread notifications",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to access notifications and unread messages. Located in the top-right corner of the screen."
+    },
+    {
+      "element_name": "settings_icon_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "ProfileCardSection_ProfileCardWidget_setting_icon",
+        "class": "android.widget.Button",
+        "content_desc": "Settings",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to navigate to the app settings screen for managing preferences and account configurations."
+    },
+    {
+      "element_name": "edit_profile_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "ProfileCardSection_ProfileCardWidget_link_list_item_widget_metaInfoCta",
+        "class": "android.widget.Button",
+        "content_desc": "Edit Profile",
+        "text": "Edit Profile",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to edit the user's profile details such as name, phone number, and other personal information."
+    },
+    {
+      "element_name": "chat_with_us_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "ProfileCardSection_ProfileCardWidget_chat_button",
+        "class": "android.widget.Button",
+        "content_desc": null,
+        "text": "Chat With Us",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to initiate a chat with customer support for resolving issues or answering queries."
+    },
+    {
+      "element_name": "my_active_services_accordion",
+      "type": "button",
+      "locators": {
+        "resource_id": "AccordionSection_dummy_accordionList_0",
+        "class": "android.widget.Button",
+        "content_desc": "My Active Services View and manage your plans & services, expanded",
+        "text": "",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Accordion section to expand or collapse details about the user's active services, such as current plans."
+    },
+    {
+      "element_name": "prepaid_account_accordion",
+      "type": "button",
+      "locators": {
+        "resource_id": "",
+        "class": "android.widget.Button",
+        "content_desc": "Prepaid • ",
+        "text": "Prepaid • ",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Accordion section for managing prepaid account actions such as recharge and data tracking."
+    },
+    {
+      "element_name": "call_manager_link",
+      "type": "button",
+      "locators": {
+        "resource_id": "ScrollLinkListWidget_0",
+        "class": "android.view.ViewGroup",
+        "content_desc": "Call manager",
+        "text": "Call manager",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Link to navigate to the call manager feature, allowing users to manage call settings like blocking or forwarding."
+    },
+    {
+      "element_name": "recharge_link",
+      "type": "button",
+      "locators": {
+        "resource_id": "ScrollLinkListWidget_1",
+        "class": "android.view.ViewGroup",
+        "content_desc": "Recharge",
+        "text": "Recharge",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Link to navigate to the recharge screen, where users can top-up their prepaid account balance."
+    },
+    {
+      "element_name": "view_data_usage_link",
+      "type": "button",
+      "locators": {
+        "resource_id": "ScrollLinkListWidget_2",
+        "class": "android.view.ViewGroup",
+        "content_desc": "View data usage",
+        "text": "View data usage",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Link to view details about the user's data usage, helping them monitor their consumption."
+    },
+    {
+      "element_name": "activate_international_roaming_link",
+      "type": "button",
+      "locators": {
+        "resource_id": "ScrollLinkListWidget_3",
+        "class": "android.view.ViewGroup",
+        "content_desc": "Activate international roaming",
+        "text": "Activate international roaming",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Link to activate international roaming services for users traveling abroad."
+    },
+    {
+      "element_name": "view_pack_details_link",
+      "type": "button",
+      "locators": {
+        "resource_id": "ScrollLinkListWidget_4",
+        "class": "android.view.ViewGroup",
+        "content_desc": "View pack details",
+        "text": "View pack details",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Link to view details of the user's current pack or subscription plan from Active services menu under prepaid section."
+    },
+    {
+      "element_name": "new_connections_accordion",
+      "type": "button",
+      "locators": {
+        "resource_id": "AccordionSection_dummy_accordionList_1",
+        "class": "android.widget.Button",
+        "content_desc": "New Connections heading Buy new Postpaid, Prepaid, Wi-Fi & more, collapsed",
+        "text": "New Connections",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Accordion section for exploring new connection options such as SIM cards, Wi-Fi, and DTH services."
+    },
+    {
+      "element_name": "airtel_financial_services_accordion",
+      "type": "button",
+      "locators": {
+        "resource_id": "AccordionSection_dummy_accordionList_2",
+        "class": "android.widget.Button",
+        "content_desc": "Airtel Financial Services heading Apply for instant loans, credit cards, FDs, collapsed",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Accordion section for accessing financial services like loans, credit cards, and fixed deposits offered by Airtel."
+    }
+  ],
+  "scroll_sections": [
+    {
+      "scroll_index": 0,
+      "section_description": "Side Navigation Drawer",
+      "key_elements": [
+        "notification_icon_button",
+        "settings_icon_button",
+        "edit_profile_button",
+        "chat_with_us_button",
+        "my_active_services_accordion",
+        "prepaid_account_accordion",
+        "call_manager_link",
+        "recharge_link",
+        "view_data_usage_link",
+        "activate_international_roaming_link",
+        "view_pack_details_link",
+        "new_connections_accordion",
+        "airtel_financial_services_accordion"
+      ],
+      "main_functionality": "Allows users to manage their Airtel account, view notifications, edit profile, access support, and navigate to service management and purchase flows."
+    }
+  ],
+  "automation_guidance": {
+    "critical_elements": [
+      "edit_profile_button",
+      "recharge_link",
+      "chat_with_us_button",
+      "notification_icon_button"
+    ],
+    "wait_strategies": [
+      "element_to_be_clickable",
+      "element_to_be_visible",
+      "element_to_be_present"
+    ],
+    "test_scenarios": [
+      "Edit profile and verify changes",
+      "Initiate recharge and validate payment flow",
+      "Open chat support and send a message",
+      "Expand/collapse all accordion sections and verify content",
+      "Navigate to call manager, data usage, and pack details"
+    ],
+    "fragile_locators": [
+      "call_manager_link",
+      "recharge_link",
+      "view_data_usage_link",
+      "activate_international_roaming_link",
+      "view_pack_details_link"
+    ]
+  },
+  "generation_metadata": {
+    "source_elements_found": 310,
+    "elements_in_schema": 13,
+    "coverage_percentage": 4.2
+  }
+},
+  {
+  "screen_name": "what_my_package_is",
+  "screen_description": "This screen provides a detailed view of the user's current prepaid plan, including plan validity, remaining days, and included features such as calls, SMS, and data. Users can also navigate to the full pack details for general information, total validity, and additional features.",
+  "unique_identifier": "view_details_button",
+  "total_scroll_positions": 3,
+  "elements": [
+    {
+      "element_name": "back_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/back_button",
+        "class": "android.widget.Button",
+        "content_desc": "back",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to navigate back to the previous screen. Ensures smooth navigation for the user."
+    },
+    {
+      "element_name": "get_help_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/home_header_profile_messages_page_notification_cta",
+        "class": "android.widget.Button",
+        "content_desc": "get help",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to access customer support for resolving issues quickly."
+    },
+    {
+      "element_name": "current_plan_section",
+      "type": "container",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/current_plan_section",
+        "class": "android.view.ViewGroup",
+        "content_desc": "Current Plan",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Section displaying the user's current prepaid plan, including plan name, total validity, and remaining days."
+    },
+    {
+      "element_name": "plan_validity_info",
+      "type": "text",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/plan_validity_info",
+        "class": "android.widget.TextView",
+        "content_desc": "Plan Validity",
+        "text": "Valid Till",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Displays the validity of the current plan, including the expiry date and total validity period."
+    },
+    {
+      "element_name": "included_features_section",
+      "type": "container",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/included_features_section",
+        "class": "android.view.ViewGroup",
+        "content_desc": "Included Features",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Section listing the features included in the current plan, such as data, calls but sms is not displayed in this page but present in pack details."
+    },
+    {
+      "element_name": "included_data_feature",
+      "type": "text",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/included_data_feature",
+        "class": "android.widget.TextView",
+        "content_desc": "Included Data",
+        "text": "Data",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Displays the data benefit included in the current plan, such as total allocated GB and remaining balance."
+    },
+    {
+      "element_name": "included_calls_feature",
+      "type": "text",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/included_calls_feature",
+        "class": "android.widget.TextView",
+        "content_desc": "Included Calls",
+        "text": "Unlimited Calls",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Displays the call benefit included in the current plan, such as unlimited calls or specific minute limits."
+    },
+    {
+      "element_name": "included_sms_feature",
+      "type": "text",
+      "locators": {
+        "resource_id": "com.myairtelapp:id/included_sms_feature",
+        "class": "android.widget.TextView",
+        "content_desc": "Included SMS",
+        "text": "100 SMS/day",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Displays the SMS benefit included in the current plan, such as daily or total SMS limits."
+    },
+    {
+      "element_name": "view_details_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "ButtonWidgetContainer_leftCta",
+        "class": "android.view.View",
+        "content_desc": "view details",
+        "text": "View Details",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to navigate to the detailed pack information, including general details, total validity, sms included, calls and additional features."
+    },
+    {
+      "element_name": "recharge_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "ButtonWidgetContainer_rightCta",
+        "class": "android.view.View",
+        "content_desc": "button, recharge",
+        "text": "Recharge",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to recharge the user's prepaid account, driving revenue and retention."
+    }
+  ],
+  "scroll_sections": [
+    {
+      "scroll_index": 0,
+      "section_description": "Header and Navigation",
+      "key_elements": [
+        "back_button",
+        "get_help_button"
+      ],
+      "main_functionality": "Provides navigation and quick access to customer support."
+    },
+    {
+      "scroll_index": 1,
+      "section_description": "Current Plan Overview",
+      "key_elements": [
+        "current_plan_section",
+        "plan_validity_info",
+        "included_features_section"
+      ],
+      "main_functionality": "Displays the user's current plan details, including validity and included features."
+    },
+    {
+      "scroll_index": 2,
+      "section_description": "Action Buttons",
+      "key_elements": [
+        "view_details_button",
+        "recharge_button"
+      ],
+      "main_functionality": "Allows the user to view detailed pack information or recharge their account."
+    }
+  ],
+  "automation_guidance": {
+    "critical_elements": [
+      "view_details_button",
+      "recharge_button",
+      "plan_validity_info"
+    ],
+    "wait_strategies": [
+      "element_to_be_clickable",
+      "element_to_be_visible",
+      "wait_for_presence_of_element_located"
+    ],
+    "test_scenarios": [
+      "Verify the display of current plan validity and remaining days.",
+      "Check the included features such as data, calls, and SMS.",
+      "Navigate to detailed pack information using the 'View Details' button.",
+      "Recharge the account using the 'Recharge' button."
+    ],
+    "fragile_locators": [
+      "included_features_section",
+      "included_data_feature",
+      "plan_validity_info"
+    ]
+  },
+  "generation_metadata": {
+    "source_elements_found": 350,
+    "elements_in_schema": 10,
+    "coverage_percentage": 2.9
+  }
+},
+  {
+  "screen_name": "pack_details",
+  "screen_description": "This screen provides detailed information about the user's prepaid plan, including plan features such as unlimited calls, SMS, and data benefits, along with validity details and additional benefits. Users can also recharge or explore terms and conditions.",
+  "unique_identifier": "pack_details_heading",
+  "total_scroll_positions": 3,
+  "elements": [
+    {
+      "element_name": "back_button",
+      "type": "button",
+      "locators": {
+        "resource_id": ":id/back_button",
+        "class": "android.widget.Button",
+        "content_desc": "back",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to navigate back to the previous screen. Ensures smooth navigation for the user."
+    },
+    {
+      "element_name": "pack_details_heading",
+      "type": "text",
+      "locators": {
+        "resource_id": ":id/home_header_profile_main_page",
+        "class": "android.view.View",
+        "content_desc": "Pack details ",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Heading that indicates the user is viewing detailed information about their prepaid plan."
+    },
+    {
+      "element_name": "get_help_button",
+      "type": "button",
+      "locators": {
+        "resource_id": ":id/home_header_profile_messages_page_notification_cta",
+        "class": "android.widget.Button",
+        "content_desc": "get help",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to access customer support for resolving issues quickly."
+    },
+    {
+      "element_name": "plan_price",
+      "type": "text",
+      "locators": {
+        "resource_id": "CoreBenefitSection_CoreBenefitWidget_planPrice",
+        "class": "android.widget.TextView",
+        "content_desc": "Plan Price",
+        "text": "₹3,599",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Displays the price of the user's prepaid plan."
+    },
+    {
+      "element_name": "unlimited_calls",
+      "type": "text",
+      "locators": {
+        "resource_id": "CoreBenefitSection_CoreBenefitWidgetpackDetailsList_0_title",
+        "class": "android.widget.TextView",
+        "content_desc": "Unlimited calls",
+        "text": "Unlimited calls",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Displays the unlimited call feature included in the current plan."
+    },
+    {
+      "element_name": "daily_data",
+      "type": "text",
+      "locators": {
+        "resource_id": "CoreBenefitSection_CoreBenefitWidgetpackDetailsList_1_title",
+        "class": "android.widget.TextView",
+        "content_desc": "Daily data",
+        "text": "2 GB data per day ",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Displays the daily data benefit included in the current plan."
+    },
+    {
+      "element_name": "validity_days",
+      "type": "text",
+      "locators": {
+        "resource_id": "CoreBenefitSection_CoreBenefitWidgetpackDetailsList_2_title",
+        "class": "android.widget.TextView",
+        "content_desc": "Validity days",
+        "text": "365 days validity",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Displays the validity period of the current plan."
+    },
+    {
+      "element_name": "sms_limit",
+      "type": "text",
+      "locators": {
+        "resource_id": "CoreBenefitSection_CoreBenefitWidgetpackDetailsList_3_title",
+        "class": "android.widget.TextView",
+        "content_desc": "SMS limit",
+        "text": "100 SMS per day",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Displays the daily SMS limit included in the current plan."
+    },
+    {
+      "element_name": "additional_benefits_section",
+      "type": "container",
+      "locators": {
+        "resource_id": "AdditionalBenefitsSection_AdditionalBenefitsWidget",
+        "class": "android.view.ViewGroup",
+        "content_desc": null,
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Container for the additional benefits section, summarizing extra features included in the user's plan."
+    },
+    {
+      "element_name": "additional_benefits_heading",
+      "type": "text",
+      "locators": {
+        "resource_id": "AdditionalBenefitsSection_AdditionalBenefitsWidget_withTitleSection_title",
+        "class": "android.widget.TextView",
+        "content_desc": "More Benefits",
+        "text": "More Benefits",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Heading for the additional benefits section, summarizing extra features included in the user's plan."
+    },
+    {
+      "element_name": "unlimited_5g_data_feature",
+      "type": "container",
+      "locators": {
+        "resource_id": "AdditionalBenefitsSection_AdditionalBenefitsWidget_0",
+        "class": "android.view.ViewGroup",
+        "content_desc": null,
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Container for the Unlimited 5G Data feature included in the user's plan."
+    },
+    {
+      "element_name": "unlimited_5g_data_image",
+      "type": "image",
+      "locators": {
+        "resource_id": "AdditionalBenefitsSection_AdditionalBenefitsWidget_0_imageUrl",
+        "class": "android.widget.ImageView",
+        "content_desc": null,
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Image representing the Unlimited 5G Data feature."
+    },
+    {
+      "element_name": "unlimited_5g_data_heading",
+      "type": "text",
+      "locators": {
+        "resource_id": "AdditionalBenefitsSection_AdditionalBenefitsWidget_0_heading",
+        "class": "android.widget.TextView",
+        "content_desc": "Unlimited 5G Data",
+        "text": "Unlimited 5G Data",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Heading for the Unlimited 5G Data feature included in the user's plan."
+    },
+    {
+      "element_name": "unlimited_5g_data_description",
+      "type": "text",
+      "locators": {
+        "resource_id": "Typography",
+        "class": "android.widget.TextView",
+        "content_desc": null,
+        "text": "Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Description of the Unlimited 5G Data feature, including usage details."
+    },
+    {
+      "element_name": "spam_fighting_network",
+      "type": "text",
+      "locators": {
+        "resource_id": "AdditionalBenefitsSection_AdditionalBenefitsWidget_1_heading",
+        "class": "android.widget.TextView",
+        "content_desc": "India’s 1st Spam Fighting Network",
+        "text": "India’s 1st Spam Fighting Network",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Highlights the spam-fighting network feature included in the plan."
+    },
+    {
+      "element_name": "hellotunes_feature",
+      "type": "text",
+      "locators": {
+        "resource_id": "AdditionalBenefitsSection_AdditionalBenefitsWidget_2_heading",
+        "class": "android.widget.TextView",
+        "content_desc": "Free hellotunes for you",
+        "text": "Free hellotunes for you",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Displays the free hellotunes feature available in the user's plan."
+    },
+    {
+      "element_name": "perplexity_pro_ai",
+      "type": "text",
+      "locators": {
+        "resource_id": "AdditionalBenefitsSection_AdditionalBenefitsWidget_3_heading",
+        "class": "android.widget.TextView",
+        "content_desc": "Perplexity Pro AI",
+        "text": "Perplexity Pro AI",
+        "placeholder": null
+      },
+      "actionable": false,
+      "description": "Details the inclusion of Perplexity Pro AI subscription in the current plan."
+    },
+    {
+      "element_name": "recharge_now_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "OfferBannerSection_FooterWidget_buttons_leftCta_title",
+        "class": "android.widget.TextView",
+        "content_desc": "Recharge Now",
+        "text": "Recharge Now",
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to recharge the user's prepaid account."
+    },
+    {
+      "element_name": "terms_and_conditions_button",
+      "type": "button",
+      "locators": {
+        "resource_id": "TnCSection_TnCWidget_withAccordion",
+        "class": "android.widget.Button",
+        "content_desc": "Terms and Conditions, collapsed, double tap to take action",
+        "text": null,
+        "placeholder": null
+      },
+      "actionable": true,
+      "description": "Button to view the terms and conditions related to the current plan."
+    }
+  ],
+  "scroll_sections": [
+    {
+      "scroll_index": 0,
+      "section_description": "Header and Navigation",
+      "key_elements": [
+        "back_button",
+        "pack_details_heading",
+        "get_help_button"
+      ],
+      "main_functionality": "Provides navigation and quick access to customer support."
+    },
+    {
+      "scroll_index": 1,
+      "section_description": "Current Plan Details",
+      "key_elements": [
+        "plan_price",
+        "unlimited_calls",
+        "daily_data",
+        "validity_days",
+        "sms_limit"
+      ],
+      "main_functionality": "Displays the features and benefits of the user's current plan."
+    },
+    {
+      "scroll_index": 2,
+      "section_description": "Additional Benefits",
+      "key_elements": [
+        "additional_benefits_section",
+        "additional_benefits_heading",
+        "unlimited_5g_data_feature",
+        "unlimited_5g_data_heading",
+        "unlimited_5g_data_description",
+        "spam_fighting_network",
+        "hellotunes_feature",
+        "perplexity_pro_ai"
+      ],
+      "main_functionality": "Highlights the extra benefits included in the user's plan."
+    },
+    {
+      "scroll_index": 3,
+      "section_description": "Action Buttons",
+      "key_elements": [
+        "recharge_now_button",
+        "terms_and_conditions_button"
+      ],
+      "main_functionality": "Allows the user to recharge their account or view terms and conditions."
+    }
+  ],
+  "automation_guidance": {
+    "critical_elements": [
+      "recharge_now_button",
+      "terms_and_conditions_button",
+      "plan_price",
+      "additional_benefits_heading"
+    ],
+    "wait_strategies": [
+      "element_to_be_clickable",
+      "element_to_be_visible",
+      "wait_for_presence_of_element_located"
+    ],
+    "test_scenarios": [
+      "Verify the display of plan price and validity details.",
+      "Ensure additional benefits such as 5G data and hellotunes are displayed.",
+      "Navigate to terms and conditions using the appropriate button.",
+      "Recharge the account using the 'Recharge Now' button.",
+      "Validate the 'More Benefits' heading presence."
+    ],
+    "fragile_locators": [
+      "additional_benefits_heading",
+      "unlimited_5g_data_heading",
+      "hellotunes_feature",
+      "plan_price"
+    ]
+  },
+  "generation_metadata": {
+    "source_elements_found": 350,
+    "elements_in_schema": 20,
+    "coverage_percentage": 5.7
+  }
+}
+]

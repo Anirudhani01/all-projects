@@ -1,0 +1,450 @@
+{
+    "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+    "id": "11047",
+    "self": "https://nomiso.atlassian.net/rest/api/3/issue/11047",
+    "key": "RTLQ-392",
+    "fields": {
+        "statuscategorychangedate": "2025-07-29T17:49:39.795+0530",
+        "issuetype": {
+            "self": "https://nomiso.atlassian.net/rest/api/3/issuetype/10110",
+            "id": "10110",
+            "description": "A small, distinct piece of work.",
+            "iconUrl": "https://nomiso.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+            "name": "Task",
+            "subtask": false,
+            "avatarId": 10318,
+            "entityId": "51e04323-b8cd-4c87-821b-a44a42f9261a",
+            "hierarchyLevel": 0
+        },
+        "components": [],
+        "timespent": null,
+        "timeoriginalestimate": null,
+        "project": {
+            "self": "https://nomiso.atlassian.net/rest/api/3/project/10135",
+            "id": "10135",
+            "key": "RTLQ",
+            "name": "AirtelQA",
+            "projectTypeKey": "business",
+            "simplified": true,
+            "avatarUrls": {
+                "48x48": "https://nomiso.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10404",
+                "24x24": "https://nomiso.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10404?size=small",
+                "16x16": "https://nomiso.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10404?size=xsmall",
+                "32x32": "https://nomiso.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10404?size=medium"
+            }
+        },
+        "description": {
+            "type": "doc",
+            "version": 1,
+            "content": [
+                {
+                    "type": "table",
+                    "attrs": {
+                        "isNumberColumnEnabled": false,
+                        "layout": "default"
+                    },
+                    "content": [
+                        {
+                            "type": "tableRow",
+                            "content": [
+                                {
+                                    "type": "tableHeader",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Step #"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "tableHeader",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Test Step"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "tableHeader",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Expected Output"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "tableRow",
+                            "content": [
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Open the Airtel Thanks web application in a supported browser."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "The login page appears."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "tableRow",
+                            "content": [
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "2"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Log in using a prepaid mobile number associated with an invalid or suspended account."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "The user is logged in and the home page is displayed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "tableRow",
+                            "content": [
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Navigate to the 'Current Plan' card or plan details section."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "The plan details or 'Current Plan' section is visible."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "tableRow",
+                            "content": [
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "4"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Resize the browser window to common breakpoints (e.g., desktop, tablet, mobile view widths) and observe the display of the error message about invalid account state."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "tableCell",
+                                    "attrs": {},
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "The error message related to the invalid account status remains visible and properly formatted at all screen sizes, without truncation or overlap."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "statusCategory": {
+            "self": "https://nomiso.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+        },
+        "resolution": null,
+        "customfield_10015": null,
+        "security": null,
+        "aggregatetimeestimate": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "summary": "error: Test the responsiveness and visibility of invalid account state error messages for prepaid users on the plan details section when viewed in different browser window sizes (web responsiveness check).",
+        "watches": {
+            "self": "https://nomiso.atlassian.net/rest/api/3/issue/RTLQ-392/watchers",
+            "watchCount": 1,
+            "isWatching": false
+        },
+        "lastViewed": null,
+        "creator": {
+            "self": "https://nomiso.atlassian.net/rest/api/3/user?accountId=712020%3A23071784-0250-43e8-9c3f-3a9f719437a6",
+            "accountId": "712020:23071784-0250-43e8-9c3f-3a9f719437a6",
+            "avatarUrls": {
+                "48x48": "https://secure.gravatar.com/avatar/0d58add0d7fc2388e7962f96c1b8bc93?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png",
+                "24x24": "https://secure.gravatar.com/avatar/0d58add0d7fc2388e7962f96c1b8bc93?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png",
+                "16x16": "https://secure.gravatar.com/avatar/0d58add0d7fc2388e7962f96c1b8bc93?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png",
+                "32x32": "https://secure.gravatar.com/avatar/0d58add0d7fc2388e7962f96c1b8bc93?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png"
+            },
+            "displayName": "Anurag Sagta",
+            "active": true,
+            "timeZone": "Asia/Calcutta",
+            "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "created": "2025-07-29T17:49:39.595+0530",
+        "reporter": {
+            "self": "https://nomiso.atlassian.net/rest/api/3/user?accountId=712020%3A23071784-0250-43e8-9c3f-3a9f719437a6",
+            "accountId": "712020:23071784-0250-43e8-9c3f-3a9f719437a6",
+            "avatarUrls": {
+                "48x48": "https://secure.gravatar.com/avatar/0d58add0d7fc2388e7962f96c1b8bc93?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png",
+                "24x24": "https://secure.gravatar.com/avatar/0d58add0d7fc2388e7962f96c1b8bc93?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png",
+                "16x16": "https://secure.gravatar.com/avatar/0d58add0d7fc2388e7962f96c1b8bc93?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png",
+                "32x32": "https://secure.gravatar.com/avatar/0d58add0d7fc2388e7962f96c1b8bc93?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png"
+            },
+            "displayName": "Anurag Sagta",
+            "active": true,
+            "timeZone": "Asia/Calcutta",
+            "accountType": "atlassian"
+        },
+        "aggregateprogress": {
+            "progress": 0,
+            "total": 0
+        },
+        "priority": {
+            "self": "https://nomiso.atlassian.net/rest/api/3/priority/3",
+            "iconUrl": "https://nomiso.atlassian.net/images/icons/priorities/medium_new.svg",
+            "name": "Medium",
+            "id": "3"
+        },
+        "customfield_10001": null,
+        "labels": [],
+        "customfield_10038": null,
+        "environment": null,
+        "customfield_10019": "0|i00453:",
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [],
+        "duedate": null,
+        "progress": {
+            "progress": 0,
+            "total": 0
+        },
+        "issuelinks": [
+            {
+                "id": "10940",
+                "self": "https://nomiso.atlassian.net/rest/api/3/issueLink/10940",
+                "type": {
+                    "id": "10003",
+                    "name": "Relates",
+                    "inward": "relates to",
+                    "outward": "relates to",
+                    "self": "https://nomiso.atlassian.net/rest/api/3/issueLinkType/10003"
+                },
+                "inwardIssue": {
+                    "id": "10646",
+                    "key": "AIR-13",
+                    "self": "https://nomiso.atlassian.net/rest/api/3/issue/10646",
+                    "fields": {
+                        "summary": "CLONE - User Story : View Current Plan in Airtel Thanks Mobile App For Prepaid Customer",
+                        "status": {
+                            "self": "https://nomiso.atlassian.net/rest/api/3/status/10072",
+                            "description": "",
+                            "iconUrl": "https://nomiso.atlassian.net/",
+                            "name": "To Do",
+                            "id": "10072",
+                            "statusCategory": {
+                                "self": "https://nomiso.atlassian.net/rest/api/3/statuscategory/2",
+                                "id": 2,
+                                "key": "new",
+                                "colorName": "blue-gray",
+                                "name": "To Do"
+                            }
+                        },
+                        "priority": {
+                            "self": "https://nomiso.atlassian.net/rest/api/3/priority/3",
+                            "iconUrl": "https://nomiso.atlassian.net/images/icons/priorities/medium_new.svg",
+                            "name": "Medium",
+                            "id": "3"
+                        },
+                        "issuetype": {
+                            "self": "https://nomiso.atlassian.net/rest/api/3/issuetype/10077",
+                            "id": "10077",
+                            "description": "Stories track functionality or features expressed as user goals.",
+                            "iconUrl": "https://nomiso.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                            "name": "Story",
+                            "subtask": false,
+                            "avatarId": 10315,
+                            "entityId": "21d4981f-ced7-4d70-8e05-106c37e2c2cc",
+                            "hierarchyLevel": 0
+                        }
+                    }
+                }
+            }
+        ],
+        "votes": {
+            "self": "https://nomiso.atlassian.net/rest/api/3/issue/RTLQ-392/votes",
+            "votes": 0,
+            "hasVoted": false
+        },
+        "assignee": null,
+        "updated": "2025-07-29T17:49:40.247+0530",
+        "status": {
+            "self": "https://nomiso.atlassian.net/rest/api/3/status/10107",
+            "description": "",
+            "iconUrl": "https://nomiso.atlassian.net/",
+            "name": "To Do",
+            "id": "10107",
+            "statusCategory": {
+                "self": "https://nomiso.atlassian.net/rest/api/3/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "To Do"
+            }
+        }
+    }
+}

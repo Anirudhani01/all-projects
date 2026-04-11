@@ -1,0 +1,67 @@
+{
+  "satisfied": [],
+  "not_satisfied": [
+    {
+      "scenario": "Authenticated user successfully adds a product to the cart",
+      "steps": "1. Register a new user via POST /register with username, email and password.\n2. Login using POST /login with the same credentials to receive a JWT token.\n3. Create a product as the authenticated seller by sending POST /products with name, description, price, category and Authorization header containing the bearer token.\n4. Add the created product to the cart by POSTing to /cart/add with JSON body {\"product_id\": <created_product_id>, \"quantity\": 1} and the same Authorization header.",
+      "expected": "Response status 200 OK with a JSON payload confirming the item was added, and the cart now contains the product with quantity 1.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Adding the same product twice increments its quantity in the cart",
+      "steps": "1. Follow steps 1\u20134 from the previous test case to add a product.\n2. Repeat step 4 with the same product_id and quantity 1.",
+      "expected": "Response status 200 OK; subsequent GET /cart/contents shows the product with quantity 2 instead of two separate entries.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Unauthenticated request to add a product to the cart is rejected",
+      "steps": "1. Register and login as in test case 1.\n2. Create a product using POST /products with Authorization header.\n3. Attempt to add the product to the cart by POSTing to /cart/add without any Authorization header.",
+      "expected": "Response status 401 Unauthorized with an error message indicating authentication is required.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Adding a non\u2011existent product ID results in a not found error",
+      "steps": "1. Register and login to obtain a JWT token.\n2. Attempt to add a product with product_id 9999 (assumed non-existent) by POSTing to /cart/add with JSON body {\"product_id\": 9999, \"quantity\": 1} and the Authorization header.",
+      "expected": "Response status 404 Not Found with an error message such as 'Product not found'.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "User can view cart contents after adding items",
+      "steps": "1. Follow steps 1\u20134 from test case 1 to add a product.\n2. Send GET /cart/contents with the Authorization header.",
+      "expected": "Response status 200 OK and JSON array containing an object for the added product, including its id, name, price, category, seller_id, and quantity 1.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Cart is empty when no items have been added",
+      "steps": "1. Register a new user and login to obtain a JWT token.\n2. Send GET /cart/contents with the Authorization header without adding any products.",
+      "expected": "Response status 200 OK and an empty JSON array [] indicating the cart has no items.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Adding a product with negative quantity is rejected by validation",
+      "steps": "1. Register, login, and create a product as in test case 1.\n2. Attempt to add the product to the cart by POSTing to /cart/add with JSON body {\"product_id\": <created_product_id>, \"quantity\": -3} and the Authorization header.",
+      "expected": "Response status 400 Bad Request with a validation error message such as 'Quantity must be greater than zero'.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    }
+  ],
+  "summary": {
+    "total_test_cases": 7,
+    "satisfied_count": 0,
+    "not_satisfied_count": 7,
+    "satisfaction_rate": "0.0%"
+  }
+}

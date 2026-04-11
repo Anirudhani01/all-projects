@@ -1,0 +1,11 @@
+[2025-09-10T10:19:50.268176] Input validation: SUCCESS - File validated: 232742.pdf
+[2025-09-10T10:19:50.284565] Result folder created: SUCCESS - Folder: result_232742pdf_20250910_101950
+[2025-09-10T10:19:50.284889] Processing started: INFO - Using PDFImageContentProcessor
+[2025-09-10T10:19:50.284982] Starting PDF image content processing: INFO - File: 232742.pdf
+[2025-09-10T10:19:50.285085] Converting PDF to images: INFO - DPI: 300
+[2025-09-10T10:19:56.333801] Converted PDF to 2 images: SUCCESS - 
+[2025-09-10T10:20:01.257073] Found 5 tables on page 1: INFO - 
+[2025-09-10T10:20:01.259897] Processed page 1: INFO - Text: 834 chars, Tables: 5
+[2025-09-10T10:20:08.403863] Found 8 tables on page 2: INFO - 
+[2025-09-10T10:20:08.406799] Processed page 2: INFO - Text: 1365 chars, Tables: 8
+[2025-09-10T10:20:08.408590] PDF image content processing completed: SUCCESS - Extracted 2 pages

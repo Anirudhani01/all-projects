@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Output and build directories
+output/
+build/
+dist/
+
+# OS files
+.DS_Store
+
+# Other common ignores
+*.log
+
+ai_core/*
+
+.env

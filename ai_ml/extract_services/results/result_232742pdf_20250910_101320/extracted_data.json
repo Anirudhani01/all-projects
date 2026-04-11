@@ -1,0 +1,477 @@
+{
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "—.\n7 © #91- 0977030642\nSV MAYURA Om\nS; +91- 8699)\net NS\nalr? AYURVEDA & SIDDHA HOSPITAL\nOK ie\na\nName: 2 Groeten Date:21 [ozl ZOTS .\nUHID No: 2327 UZ Consulting Dr; Dy -povew*\nAge: £5 Gender: F Consultation\nPhone No: AS us ugz5er Expiry Date:\nBP; ¢6(40\nPR: $5 HR: Weight:\noe\nChief Complaints & Duration Past History ©\ncha ’ sa >\n@ “ho Radiating pen Harn Neck upts N [Heh — P| Lato\nthe bo oe\nnc, o L%Ajear\nWwathactacle uptes ory both Lowey\n- © -\nAims, Torotine®, Nuwsws\nPersonal History\nFood! Mrpect . Exercise: -——\nAppetite! Good Allergies: —\nBowel: (¢ Addictions: —\nBladder: Menstruation: 3-veloys ‘\n®) Sleep: Aound Others: RE-30 dows\nFamily History: -———\nInvestigations:\nOcep\n(AM s0rd protle\nMayura Medical Care LLP ~ ABZ- 8362\nICON Plaza, 4th Floor, Allwyn X Roads, Miyapur, Hyderabad - 49\nMobile: 7338830099 | mayurahospitals.com a",
+      "width": 2480,
+      "height": 3509,
+      "tables": [
+        {
+          "type": "opencv_table",
+          "cells": [
+            {
+              "bbox": [
+                0,
+                0,
+                1413,
+                2000
+              ],
+              "area": 2822340.5,
+              "aspect_ratio": 0.7065
+            }
+          ],
+          "confidence": 0.7,
+          "method": "morphological_analysis"
+        },
+        {
+          "type": "ocr_table",
+          "data": [
+            [
+              "+91-",
+              "0977030642"
+            ],
+            [
+              "MAYU",
+              "RA",
+              "©"
+            ],
+            [
+              "AYURVEDA",
+              "&",
+              "SIDDHA",
+              "HOSPITAL"
+            ],
+            [
+              "URID",
+              "No:",
+              "232742",
+              "Dx"
+            ],
+            [
+              "Consulting",
+              "Dr:"
+            ],
+            [
+              "Age:",
+              "£3",
+              "Gender:",
+              "F",
+              "Consultation"
+            ],
+            [
+              "Phone",
+              "Sus",
+              "Expiry",
+              "Date:"
+            ],
+            [
+              "PR:",
+              "$5",
+              "HR:",
+              "Weight:"
+            ],
+            [
+              "Chief",
+              "Complaints",
+              "&",
+              "Duration",
+              "History"
+            ],
+            [
+              "eck",
+              "pte"
+            ],
+            [
+              "fain",
+              "rm",
+              "N"
+            ],
+            [
+              "the",
+              "bond."
+            ],
+            [
+              "Personal",
+              "History"
+            ],
+            [
+              "Food!",
+              "Exercise:"
+            ],
+            [
+              "Appetite!",
+              "Good",
+              "Allergies:",
+              "—"
+            ],
+            [
+              "Bowel:",
+              "Addictions:",
+              "—"
+            ],
+            [
+              "Menstruation:",
+              "‘"
+            ],
+            [
+              "RE-30",
+              "dows"
+            ],
+            [
+              "®)",
+              "Sleep:",
+              "Aound",
+              "Others:"
+            ],
+            [
+              "Family",
+              "History:"
+            ],
+            [
+              "Mayura",
+              "Medleal",
+              "Care",
+              "LLP",
+              "-",
+              "ABZ",
+              "-",
+              "8362"
+            ],
+            [
+              "ICON",
+              "Plaza,",
+              "4th",
+              "Floor,",
+              "Allwyn",
+              "X",
+              "Roads,",
+              "Miyapur,",
+              "Hyderabad",
+              "-",
+              "49"
+            ],
+            [
+              "Mobile:",
+              "7338830099",
+              "|",
+              "mayurahospitals.com"
+            ]
+          ],
+          "confidence": 0.7,
+          "method": "ocr_analysis",
+          "title": "OCR Table 1"
+        }
+      ],
+      "text_regions": [
+        {
+          "bbox": [
+            0,
+            0,
+            1413,
+            2000
+          ],
+          "area": 2826000,
+          "aspect_ratio": 0.7065
+        }
+      ],
+      "confidence": 0.8,
+      "intermediate_file": "page_1_processed.png",
+      "text_stats": {
+        "char_count": 834,
+        "word_count": 151,
+        "line_count": 36,
+        "paragraph_count": 1
+      }
+    },
+    {
+      "page_number": 2,
+      "text": "oe .\na\nff #91 ~8977030Ga2\nff 7 MAY U RA © +91- 9020706099\n' \"LN, Seve AYURVEDA & SIDDHA HOSPITAL\nEW\nName: FB Growecqo. —_ ” ; Dateret(oe VOU <\nUHID No: 2397-427 Consulting Dr: Pripoucnns\nAge: 1S Gender: &\nEmail ID: AUS U Ga SE 2 Counsellor No:\n) ae ET a —\n| Complaints Of (C/o): Temp: ap:72/20 pr: &S Respiration: |\n| Raclioting Pato deamg neck upto\n- De hand -! }YYyeah fi tn Hoight: Weight: = AMI: Pain Score:\n7 tm tril & bol inal Diagnosis: Ce. lat 2 ;\nsty SSCS PLS Look | PE | inst Diasmosis: Conitead (pyndayls\nokd | manny, GU Loubacltacte- |\n. reatment):\nelle oe IESE\n*esent Mealeations in Use: | OT Pera ih\n— 2p covilon 2 |\nPe SRE |\nOn. . (2) Lea, kashowyom EH\nPasnen le [Prasat basbaryam| Poa] hood SIF\nflr nfm, toes We | anata\ns) fe b aptaka tanks bo\njy hied, colonia g bead. [j- —fehna dopa ft fl =\netn Dogue aca EE |e\nSpovckuis 9 ee\nmy ‘ is) PiorGardha china hb im TE:\nvestigations: 6) man by +n rv) rf tl ate\nFan ~\nSe cop. B Macha nasowra fxd Fpl |\nNapach prophe~ he\nTy At the time of Initial assessment the patient has been given the\n; . relevant dict sheot , ao YOU\nCEE) @©@ @® = a Soft Dict _ fon proton pia ~o¢ allan\nsr Sa a Oo Diabetic-Dict | er bee \\ . '\nWed annie oii ~y 4 Isao. :\n8 4 1\nTayua Moon . as\nMayura Medical-Care LLP - ABZ - 8362 j\nICON Plaza, 4th Floor, Allwyn X Roads, Miyapur, Hyderabad - 49\nMobite: 7338830098 | mayurahospitals.com",
+      "width": 2480,
+      "height": 3509,
+      "tables": [
+        {
+          "type": "opencv_table",
+          "cells": [
+            {
+              "bbox": [
+                0,
+                0,
+                1413,
+                2000
+              ],
+              "area": 2812128.0,
+              "aspect_ratio": 0.7065
+            }
+          ],
+          "confidence": 0.7,
+          "method": "morphological_analysis"
+        },
+        {
+          "type": "ocr_table",
+          "data": [
+            [
+              "MAYURA",
+              "©"
+            ],
+            [
+              "AYURVEDA",
+              "&",
+              "SIDDHA",
+              "HOSPITAL"
+            ],
+            [
+              "Name:",
+              "P.",
+              "(oe!"
+            ],
+            [
+              "UHID",
+              "No:",
+              "2397-47,",
+              "«"
+            ],
+            [
+              "Consulting",
+              "Dr;"
+            ],
+            [
+              "Age:",
+              "US"
+            ],
+            [
+              "Email",
+              "iD:"
+            ],
+            [
+              "2",
+              "Counsellor",
+              "No:"
+            ],
+            [
+              "OF",
+              "(C/O):",
+              "Temp:",
+              "PR:@S"
+            ],
+            [
+              "Pato",
+              "neck:",
+              "upte"
+            ],
+            [
+              ",",
+              "Hoight:",
+              "Weight:",
+              "BMI:",
+              "Pain"
+            ],
+            [
+              "foal",
+              "Diagnosis:"
+            ],
+            [
+              "bee.",
+              "|"
+            ],
+            [
+              "MEDICATION"
+            ],
+            [
+              "T-",
+              "|"
+            ],
+            [
+              "©",
+              "Pabinusow"
+            ],
+            [
+              "‘Present",
+              "Medications",
+              "In",
+              "Use:"
+            ],
+            [
+              "(2)",
+              "iLou."
+            ],
+            [
+              "CLK",
+              "pea"
+            ],
+            [
+              "|_|",
+              "|"
+            ],
+            [
+              "On:",
+              ")"
+            ],
+            [
+              "Lderol",
+              "ae",
+              "g",
+              "Ip"
+            ],
+            [
+              "en",
+              "bu"
+            ],
+            [
+              "a",
+              "load"
+            ],
+            [
+              "hind",
+              "Kana"
+            ],
+            [
+              "rovistonal",
+              "Diagnosis:",
+              "(4)",
+              "lag"
+            ],
+            [
+              "+4"
+            ],
+            [
+              "&",
+              "2"
+            ],
+            [
+              "|",
+              "Me"
+            ],
+            [
+              "mandora",
+              "|rltl"
+            ],
+            [
+              "@Q",
+              "Macha"
+            ],
+            [
+              "profile",
+              "—",
+              "“Bi"
+            ],
+            [
+              "At",
+              "the",
+              "time",
+              "of",
+              "Initial",
+              "the",
+              "patient",
+              "has",
+              "been",
+              "given"
+            ],
+            [
+              "dict",
+              "sheot",
+              "YOU"
+            ],
+            [
+              "CJ",
+              "sot",
+              "diet"
+            ],
+            [
+              "‘Napem",
+              "mee",
+              "_-",
+              "bie!"
+            ],
+            [
+              "[=].",
+              "\\"
+            ],
+            [
+              "Mayura",
+              "Medical-Care",
+              "LLP",
+              "-",
+              "ABZ",
+              "-",
+              "8362"
+            ],
+            [
+              "ICON",
+              "Plaza,",
+              "4th",
+              "Floor,",
+              "Allwyn",
+              "X",
+              "Roads,",
+              "-"
+            ],
+            [
+              "Miyapur,",
+              "Hyderabad",
+              "49",
+              "/"
+            ],
+            [
+              "Mobite:",
+              "7338830098",
+              "|",
+              "mayurahospitals.com"
+            ]
+          ],
+          "confidence": 0.7,
+          "method": "ocr_analysis",
+          "title": "OCR Table 2"
+        }
+      ],
+      "text_regions": [
+        {
+          "bbox": [
+            0,
+            1650,
+            60,
+            1684
+          ],
+          "area": 2040,
+          "aspect_ratio": 1.7647058823529411
+        },
+        {
+          "bbox": [
+            0,
+            0,
+            1413,
+            2000
+          ],
+          "area": 2826000,
+          "aspect_ratio": 0.7065
+        }
+      ],
+      "confidence": 0.8,
+      "intermediate_file": "page_2_processed.png",
+      "text_stats": {
+        "char_count": 1364,
+        "word_count": 289,
+        "line_count": 44,
+        "paragraph_count": 1
+      }
+    }
+  ],
+  "metadata": {
+    "processor": "pdf2image + OCR + Table Detection",
+    "total_pages": 2,
+    "file_info": {
+      "filename": "232742.pdf",
+      "file_size": 338585
+    },
+    "extraction_stats": {
+      "total_characters": 2198,
+      "total_words": 440,
+      "total_lines": 80,
+      "total_tables": 4,
+      "total_text_regions": 3,
+      "average_chars_per_page": 1099.0,
+      "average_words_per_page": 220.0,
+      "average_tables_per_page": 2.0,
+      "average_text_regions_per_page": 1.5
+    }
+  }
+}

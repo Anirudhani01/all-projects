@@ -1,0 +1,97 @@
+{
+  "login_page": {
+    "username_field": {
+      "elemnet_type": "input",
+      "value": "body > div.container > form > input:nth-child(2)",
+      "description": "Username input field on login page"
+    },
+    "password_field": {
+      "elemnet_type": "input",
+      "value": "body > div.container > form > input:nth-child(3)",
+      "description": "Password input field on login page"
+    },
+    "login_button": {
+      "elemnet_type": "button",
+      "value": "body > div.container > form > button",
+      "description": "Login button"
+    }
+  },
+  "home_page": {
+    "home_tab": {
+      "elemnet_type": "a tag",
+      "value": "#bs-top-navigation > ul.navbar-nav.mr-auto > li.nav-item.active > a",
+      "description": "Home tab in the main navigation menu"
+    },
+    "products_tab": {
+      "elemnet_type": "a tag",
+      "value": "#bs-top-navigation > ul.navbar-nav.mr-auto > li:nth-child(5) > a",
+      "description": "Products tab in the main navigation menu"
+    }
+  },
+  "products_page": {
+    "search_icon": {
+      "elemnet_type": "button",
+      "value": "#G_0_0_gridMenu > table > tbody > tr > td.gridNavActions > ul > li:nth-child(7) > button",
+      "description": "Search icon button on the Products page"
+    },
+    "search_form_item_number_field": {
+      "elemnet_type": "input",
+      "value": "#searchFormG_0_0\\.itemNumber",
+      "description": "Product number input field on the Products page"
+    },
+    "search_form_product_name_field": {
+      "elemnet_type": "input",
+      "value": "#searchFormG_0_0\\.name",
+      "description": "Product name input field on the Products page"
+    },
+    "search_form_search_button": {
+      "elemnet_type": "button",
+      "value": "#searchFormG_0_0 > fieldset > div > div:nth-child(2) > div > div > div > button:nth-child(2)",
+      "description": "Search button in the search form"
+    },
+    "search_results_table": {
+      "elemnet_type": "div",
+      "value": "#G_0_0_grid > div.table-responsive",
+      "description": "Product results grid table"
+    },
+    "new_button": {
+      "elemnet_type": "button",
+      "value": "#G_0_0_gridMenu > table > tbody > tr > td:nth-child(3) > ul > li:nth-child(1) > div > button",
+      "description": "New button, to open dropdown which has Product creation Page option"
+    },
+    "product_drop_down": {
+      "elemnet_type": "a tag",
+      "value": "#G_0_0_gridMenu > table > tbody > tr > td:nth-child(3) > ul > li:nth-child(1) > div > div > a:nth-child(1)",
+      "description": "Product Dropdown option, to open Product creation Page"
+    },
+    "name_in_table": {
+      "elemnet_type": "td",
+      "value": "#G_0_0_gridTable > tbody > tr:nth-child(1) > td:nth-child(4)",
+      "description": "Product name will be in Product field of Product table"
+    }
+  },
+  "product_creation_page": {
+    "name_field": {
+      "elemnet_type": "input",
+      "value": "#org\\:opencrx\\:kernel\\:product1\\:AbstractProduct\\:name\\[1100\\]",
+      "description": "Product name input field - mandatory field"
+    },
+    "product_number_field": {
+      "elemnet_type": "input",
+      "value": "#org\\:opencrx\\:kernel\\:product1\\:AbstractProduct\\:productNumber\\[1200\\]",
+      "description": "Product number input field"
+    },
+    "new_submit_button": {
+      "elemnet_type": "a tag",
+      "value": "#editCreate-aPanel",
+      "description": "New button to create the product"
+    }
+  },
+  "products_view_page": {
+    "product_breadcrumb": {
+      "elemnet_type": "ol",
+      "value": "#breadcrum > ol",
+      "description": "Breadcrumb will contain Product Name"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+login page is availabe at http://localhost:8080/opencrx-core-CRX/. Login user name is 'admin-Standard' and Password is 'admin-Standard'

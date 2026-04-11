@@ -1,0 +1,3 @@
+[submodule "ai_core"]
+	path = ai_core
+	url = codecommit://ai_core

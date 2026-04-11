@@ -1,0 +1,18 @@
+[2025-09-10T09:46:22.651693] Input validation: SUCCESS - File validated: lab-tests-report.pdf
+[2025-09-10T09:46:22.662989] Result folder created: SUCCESS - Folder: result_lab-tests-reportpdf_20250910_094622
+[2025-09-10T09:46:22.663297] Processing started: INFO - Using PDFPlainTextProcessor
+[2025-09-10T09:46:22.663454] Starting PDF plain text processing: INFO - File: lab-tests-report.pdf
+[2025-09-10T09:46:22.704013] Processed page 1: INFO - Text length: 1414
+[2025-09-10T09:46:22.705496] Processed page 2: INFO - Text length: 91
+[2025-09-10T09:46:22.715523] Processed page 3: INFO - Text length: 776
+[2025-09-10T09:46:22.717176] Processed page 4: INFO - Text length: 91
+[2025-09-10T09:46:22.730676] Processed page 5: INFO - Text length: 1627
+[2025-09-10T09:46:22.732858] Processed page 6: INFO - Text length: 91
+[2025-09-10T09:46:22.744740] Processed page 7: INFO - Text length: 1702
+[2025-09-10T09:46:22.747046] Processed page 8: INFO - Text length: 91
+[2025-09-10T09:46:22.757406] Processed page 9: INFO - Text length: 908
+[2025-09-10T09:46:22.760007] Processed page 10: INFO - Text length: 91
+[2025-09-10T09:46:22.769763] Processed page 11: INFO - Text length: 730
+[2025-09-10T09:46:22.770864] Processed page 12: INFO - Text length: 91
+[2025-09-10T09:46:22.781437] Processed page 13: INFO - Text length: 644
+[2025-09-10T09:46:22.790192] PDF processing completed: SUCCESS - Extracted 13 pages

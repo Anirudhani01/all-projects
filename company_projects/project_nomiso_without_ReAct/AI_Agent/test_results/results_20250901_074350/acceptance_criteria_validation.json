@@ -1,0 +1,68 @@
+{
+  "satisfied": [
+    {
+      "scenario": "Authenticated user successfully adds a product to the shopping cart",
+      "steps": "1. Register a new user via POST /register with unique username and email.\n2. Log in via POST /login to receive a JWT access token.\n3. Create a product via POST /products using the obtained token.\n4. Add the created product to the cart by sending POST /cart/items with body {\"product_id\": <created_product_id>, \"quantity\": 1} and Authorization header containing the bearer token.",
+      "expected": "HTTP 201 Created response with cart item details; cart count increments by one.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "User views shopping cart contents after adding multiple items",
+      "steps": "1. Repeat steps from the previous test to add two distinct products.\n2. Send GET /cart with Authorization header containing the bearer token.",
+      "expected": "HTTP 200 OK response containing an array of cart items, each with product details and quantity matching the additions.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Adding a non-existent product ID to the cart returns an error",
+      "steps": "1. Register and log in as a user to obtain a JWT token.\n2. Send POST /cart/items with body {\"product_id\": 9999, \"quantity\": 1} and Authorization header containing the bearer token.",
+      "expected": "HTTP 404 Not Found response stating that the product does not exist.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Adding the same product multiple times aggregates quantity in the cart",
+      "steps": "1. Register, log in, and create a product.\n2. Add the product to the cart twice with POST /cart/items each time.\n3. Retrieve the cart via GET /cart.",
+      "expected": "Cart contains a single entry for the product with quantity equal to the sum of additions (e.g., 2).",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Shopping cart persists across user sessions until checkout or removal",
+      "steps": "1. Register and log in, then add a product to the cart.\n2. Log out by discarding the token.\n3. Log back in with the same credentials to obtain a new token.\n4. Retrieve the cart via GET /cart using the new token.",
+      "expected": "Cart still contains the previously added item(s) with correct quantities, demonstrating persistence across sessions.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Attempting to remove a non-existent cart item returns an error",
+      "steps": "1. Register and log in.\n2. Attempt to delete cart item with DELETE /cart/items/9999 using the Authorization header.",
+      "expected": "HTTP 404 Not Found response indicating that the cart item does not exist.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    }
+  ],
+  "not_satisfied": [
+    {
+      "scenario": "Unauthenticated request to add a product to the cart is rejected",
+      "steps": "1. Create a product via POST /products without providing an Authorization header.\n2. Attempt to add the product to the cart with POST /cart/items using the same unauthenticated session.",
+      "expected": "HTTP 401 Unauthorized response indicating that authentication credentials are missing or invalid.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    }
+  ],
+  "summary": {
+    "total_test_cases": 7,
+    "satisfied_count": 6,
+    "not_satisfied_count": 1,
+    "satisfaction_rate": "85.7%"
+  }
+}

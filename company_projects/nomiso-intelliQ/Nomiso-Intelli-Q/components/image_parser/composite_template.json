@@ -1,0 +1,74 @@
+{
+  "template": {
+    "page": {
+      "name": "CompositePage",
+      "description": "screen description about what you see",
+      "layout": "vertical | horizontal | grid | freeform — Inferred from the visual arrangement of content blocks.",
+      "theme": "light | dark | mixed",
+      "scrollable": "true | false — Whether vertical or horizontal scrollbars are visible or required.",
+      "has_tabs": "true | false",
+      "has_modal": "true | false",
+      "has_alert_banner": "true | false",
+      "has_sidebar": "true | false",
+      "has_topbar": "true | false",
+
+      "sections": [
+        {
+          "name": "Main Section",
+          "type": "panel",
+          "layout": "vertical",
+          "components": [
+            {
+              "id": "form_001",
+              "type": "form",
+              "label": "User Registration Form",
+              "value": null,
+              "position": {
+                "x": 120,
+                "y": 80,
+                "width": 400,
+                "height": 500
+              },
+              "icon_present": true,
+              "icon_type": "user",
+              "is_visible": true,
+              "is_mandatory": true,
+              "is_highlighted": false,
+              "is_selected": false,
+              "is_disabled": false,
+              "font_size": "14px",
+              "font_color": "#333333",
+              "background_color": "#FFFFFF",
+              "shape": "rectangle",
+              "tooltip": "Enter all mandatory user details",
+              "width": 400,
+              "height": 500,
+              "border": "1px solid #DDDDDD",
+              "hover_color": "#F5F5F5",
+              "alignment": "left"
+            }
+          ]
+        }
+      ],
+
+      "extra_metadata": {
+        "detected_components": [
+          "form", "table", "menu", "list", "card", "diagram", "chart", "other"
+        ],
+        "modal_titles": [],
+        "banner_messages": [],
+        "component_count_summary": {
+          "forms": 1,
+          "tables": 0,
+          "menus": 0,
+          "lists": 0,
+          "cards": 0,
+          "diagrams": 0,
+          "charts": 0,
+          "other": 0
+        },
+        "notes": "This structure supports both multi-section and single-component layouts. Every screen must use page → sections → components, even for single elements. Use layout and style cues to infer positions and groupings."
+      }
+    }
+  }
+}

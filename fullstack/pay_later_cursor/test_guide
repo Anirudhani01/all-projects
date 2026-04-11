@@ -1,0 +1,32 @@
+# Install test dependencies
+pip install pytest pytest-asyncio httpx
+
+# Run all tests
+python run_all_tests.py
+
+# Run specific module tests
+python run_all_tests.py users
+python run_all_tests.py merchants
+python run_all_tests.py transactions
+
+# Run by test type
+python run_all_tests.py unit
+python run_all_tests.py integration
+
+# Run User endpoint tests
+python -m pytest app/tests/test_user/test_user_endpoints.py -v
+
+# Run Merchant endpoint tests
+python -m pytest app/tests/test_merchants/test_merchant_endpoints.py -v
+
+# Run Transaction endpoint tests
+python -m pytest app/tests/test_transactions/test_transaction_endpoints.py -v
+
+
+
+#Run with Coverage
+# Install coverage if not installed
+pip install pytest-cov
+
+# Run tests with coverage
+python -m pytest app/tests/ --cov=app --cov-report=term-missing

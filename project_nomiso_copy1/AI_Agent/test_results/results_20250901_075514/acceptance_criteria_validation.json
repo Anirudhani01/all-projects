@@ -1,0 +1,76 @@
+{
+  "satisfied": [
+    {
+      "scenario": "Adding a valid product to the cart as an authenticated user",
+      "steps": "1. Register a user. 2. Login as the registered user and obtain a JWT token. 3. Get a product ID (e.g., using GET /products). 4. Send a POST request to /cart with the product ID and quantity 1 in the request body with the JWT token in the Authorization header.",
+      "expected": "The product is added to the cart. A successful response (HTTP 201) is returned, including the updated cart contents.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Adding multiple units of the same product to the cart",
+      "steps": "1. Register a user. 2. Login and obtain a JWT token. 3. Get a valid product ID. 4. Send multiple POST requests to /cart with the same product ID and different quantities (e.g., 2, then 3).",
+      "expected": "The total quantity of the product in the cart should reflect the sum of all added quantities.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Adding a product with a zero quantity to the cart",
+      "steps": "1. Register a user. 2. Login and obtain a JWT token. 3. Get a valid product ID. 4. Send a POST request to /cart with quantity 0.",
+      "expected": "The request should fail, and an appropriate error message should be returned (e.g., HTTP 400 Bad Request).  The product should not be added to the cart.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Adding a product with a negative quantity to the cart",
+      "steps": "1. Register a user. 2. Login and obtain a JWT token. 3. Get a valid product ID. 4. Send a POST request to /cart with a negative quantity (e.g., -1).",
+      "expected": "The request should fail, and an appropriate error message should be returned (e.g., HTTP 400 Bad Request). The product should not be added to the cart.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Adding a product with a very large quantity to the cart (edge case)",
+      "steps": "1. Register a user. 2. Login and obtain a JWT token. 3. Get a valid product ID. 4. Send a POST request to /cart with an extremely large quantity (e.g., 100000).",
+      "expected": "The system should handle the request appropriately. Either the product is added (if the system allows such large quantities) or an error is returned (e.g., HTTP 400 Bad Request) indicating that the quantity is too high.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Attempting to add a product with invalid data type in the request body",
+      "steps": "1. Register a user. 2. Login and obtain a JWT token. 3. Get a valid product ID. 4. Send a POST request to /cart with the product ID as a string instead of an integer in the request body.",
+      "expected": "The system should reject the request with an appropriate error message (e.g., HTTP 400 Bad Request) due to invalid input data type.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    }
+  ],
+  "not_satisfied": [
+    {
+      "scenario": "Attempting to add a non-existent product to the cart",
+      "steps": "1. Register a user. 2. Login and obtain a JWT token. 3. Send a POST request to /cart with a non-existent product ID.",
+      "expected": "An error response (e.g., HTTP 404) indicating that the product was not found.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Attempting to add a product to the cart without authentication",
+      "steps": "1. Send a POST request to /cart without JWT token in the Authorization header.",
+      "expected": "An error response (HTTP 401) indicating that authentication is required.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    }
+  ],
+  "summary": {
+    "total_test_cases": 8,
+    "satisfied_count": 6,
+    "not_satisfied_count": 2,
+    "satisfaction_rate": "75.0%"
+  }
+}

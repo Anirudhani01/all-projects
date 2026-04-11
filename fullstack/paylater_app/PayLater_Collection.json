@@ -1,0 +1,208 @@
+{
+  "info": {
+    "name": "PayLater FastAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Merchant",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Flipkart\", \"fee\": 2.5}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/merchants/",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "merchants",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Merchant Fee",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"merchant_id\": 1, \"new_fee\": 3.0}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/merchants/update_fee",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "merchants",
+            "update_fee"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Alice\", \"email\": \"alice@example.com\", \"credit_limit\": 5000}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/users/",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "users",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Make Transaction",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"user_id\": 1, \"merchant_id\": 1, \"amount\": 2000}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/transactions/",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "transactions",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Repay Dues",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"user_id\": 1, \"amount\": 1000}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/repay/",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "repay",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "User Summary Report",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/users/1/summary",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "users",
+            "1",
+            "summary"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Merchant Fees Collected",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/merchants/1/fees_collected",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "merchants",
+            "1",
+            "fees_collected"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Users at Credit Limit",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/users/credit_limit_reached",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "users",
+            "credit_limit_reached"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Total Dues",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/users/total_dues",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "users",
+            "total_dues"
+          ]
+        }
+      }
+    }
+  ]
+}

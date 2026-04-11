@@ -1,0 +1,1 @@
+# MoodBooster Backend Application

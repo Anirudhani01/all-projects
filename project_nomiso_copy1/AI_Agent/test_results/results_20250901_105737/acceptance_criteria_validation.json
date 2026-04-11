@@ -1,0 +1,68 @@
+{
+  "satisfied": [
+    {
+      "scenario": "Successful product purchase with a valid credit card",
+      "steps": "1. Register a new user. 2. Add a product to the cart. 3. Proceed to checkout. 4. Enter valid credit card details. 5. Complete the purchase.",
+      "expected": "Order is placed successfully, and order confirmation is received.  Product is removed from cart.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Failed product purchase with an invalid credit card number",
+      "steps": "1. Register a new user. 2. Add a product to the cart. 3. Proceed to checkout. 4. Enter an invalid credit card number. 5. Attempt to complete the purchase.",
+      "expected": "Purchase fails with an appropriate error message indicating invalid credit card details.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Failed product purchase with expired credit card",
+      "steps": "1. Register a new user. 2. Add a product to the cart. 3. Proceed to checkout. 4. Enter an expired credit card. 5. Attempt to complete the purchase.",
+      "expected": "Purchase fails with an appropriate error message indicating an expired credit card.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Failed purchase attempt with insufficient funds",
+      "steps": "1. Register a new user. 2. Add a product to the cart. 3. Proceed to checkout. 4. Use a card with insufficient funds. 5. Attempt to complete the purchase.",
+      "expected": "Purchase fails with an error message indicating insufficient funds.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Purchase attempt with a very large order exceeding a hypothetical limit",
+      "steps": "1. Register a new user. 2. Add a large quantity of a single high-priced product to the cart. 3. Proceed to checkout and attempt to purchase.",
+      "expected": "Purchase may fail due to exceeding a potential order limit or raise a relevant error. (This is an edge case dependent on whether the backend has any such limit implemented.)",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Purchase with a zero-priced product (edge case)",
+      "steps": "1. Register a new user. 2. Add a product with a price of 0 to the cart. 3. Proceed to checkout and complete the purchase.",
+      "expected": "The order should be processed successfully, even with a price of 0.  This tests handling of edge case values.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": true
+    }
+  ],
+  "not_satisfied": [
+    {
+      "scenario": "Attempt to purchase without being logged in",
+      "steps": "1. Add a product to the cart. 2. Proceed to checkout without logging in.",
+      "expected": "User is redirected to the login page or receives an error message indicating the need for authentication.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    }
+  ],
+  "summary": {
+    "total_test_cases": 7,
+    "satisfied_count": 6,
+    "not_satisfied_count": 1,
+    "satisfaction_rate": 0.8571428571428571
+  }
+}

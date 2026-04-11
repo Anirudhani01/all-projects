@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Checkout</h2>
+<form method="post" action="/payment/checkout">
+  <label>Email:</label>
+  <input type="email" name="email" required><br>
+  <label>Payment Mode:</label>
+  <select name="mode">
+    <option value="UPI">UPI</option>
+    <option value="Card">Card</option>
+    <option value="Cash">Cash</option>
+  </select><br>
+  <button type="submit">Pay & Place Order</button>
+</form>
+{% endblock %}

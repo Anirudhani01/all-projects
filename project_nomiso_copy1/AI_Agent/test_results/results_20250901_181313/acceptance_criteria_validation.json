@@ -1,0 +1,76 @@
+{
+  "satisfied": [
+    {
+      "scenario": "Successful product purchase with valid user credentials",
+      "steps": "1. User logs in with valid credentials. 2. User adds a product to the cart. 3. User proceeds to checkout. 4. User provides valid payment information (simulated). 5. User confirms the order.",
+      "expected": "Order is placed successfully, order confirmation is displayed with order ID, and the order status is 'Pending'.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Failed product purchase due to insufficient stock (edge case)",
+      "steps": "1. User logs in with valid credentials. 2. User adds multiple quantities of a product with a low stock count to the cart. 3. User proceeds to checkout and attempts to confirm the order.",
+      "expected": "Order placement fails, an error message indicating insufficient stock is displayed.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Successful order tracking after order placement",
+      "steps": "1. User places a successful order. 2. User navigates to order tracking section. 3. User enters order ID.",
+      "expected": "Order details and current status are displayed.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Purchase with zero quantity of a product (edge case)",
+      "steps": "1. User adds a product with quantity 0 to the cart. 2. User proceeds to checkout.",
+      "expected": "The product should not be added to the cart or an error message should indicate that the quantity must be greater than zero.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Purchase with a very large quantity of a product (edge case)",
+      "steps": "1. User attempts to add a very large quantity (e.g., 10000) of a product to the cart. 2. User proceeds to checkout.",
+      "expected": "The system should either prevent adding such a large quantity or display an appropriate error message (e.g., quantity exceeds limit).",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": true
+    }
+  ],
+  "not_satisfied": [
+    {
+      "scenario": "Failed product purchase due to invalid payment information",
+      "steps": "1. User logs in with valid credentials. 2. User adds a product to the cart. 3. User proceeds to checkout. 4. User provides invalid payment information (simulated). 5. User attempts to confirm the order.",
+      "expected": "Order placement fails, an error message indicating invalid payment information is displayed.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Failed purchase attempt due to invalid user credentials",
+      "steps": "1. User attempts to log in with invalid credentials. 2. User adds a product to the cart. 3. User proceeds to checkout.",
+      "expected": "User is redirected to the login page or an error message indicates invalid credentials. The cart remains unchanged.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Failed order tracking due to invalid order ID",
+      "steps": "1. User navigates to order tracking section. 2. User enters an invalid order ID.",
+      "expected": "An error message is displayed, indicating an invalid order ID.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    }
+  ],
+  "summary": {
+    "total_test_cases": 8,
+    "satisfied_count": 5,
+    "not_satisfied_count": 3,
+    "satisfaction_rate": 0.625
+  }
+}

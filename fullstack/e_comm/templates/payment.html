@@ -1,0 +1,28 @@
+<form method="post" action="/payment">
+    <label>Email:</label>
+    <input type="email" name="email" required><br><br>
+
+    <label>Payment Method:</label>
+    <select name="payment_method" required onchange="toggleCardFields(this.value)">
+        <option value="Cash on Delivery">Cash on Delivery</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="Credit Card">Credit Card</option>
+    </select><br><br>
+
+    <div id="cardFields" style="display:none;">
+        <label>Card Number:</label>
+        <input type="text" name="card_number"><br><br>
+
+        <label>CVV:</label>
+        <input type="text" name="card_cvv"><br><br>
+    </div>
+
+    <button type="submit">Pay Now</button>
+</form>
+
+<script>
+    function toggleCardFields(method) {
+        const cardFields = document.getElementById("cardFields");
+        cardFields.style.display = (method === "Debit Card" || method === "Credit Card") ? "block" : "none";
+    }
+</script>

@@ -1,0 +1,76 @@
+{
+  "satisfied": [
+    {
+      "scenario": "Successful product purchase as a registered user",
+      "steps": "1. Register a new user. 2. Login with valid credentials. 3. Browse products and select one. 4. Add the product to a cart. 5. Proceed to checkout. 6. Complete the purchase (simulated payment). 7. Verify order confirmation with order details.",
+      "expected": "Order is successfully placed, user receives order confirmation with order ID and details. Order status is 'pending'.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Purchase attempt with a guest user (if applicable)",
+      "steps": "1. Add products to the cart without logging in. 2. Proceed to checkout as a guest. 3. Complete checkout process.",
+      "expected": "Successful order placement with guest user details (if supported by the application).",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Adding a product with a price of zero",
+      "steps": "1. Add a product with a price of 0 to the cart. 2. Proceed to checkout.",
+      "expected": "System handles the scenario gracefully, either preventing the addition or allowing it with appropriate processing.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Attempting to purchase a product that has been deleted",
+      "steps": "1. Add a product to the cart. 2. Delete the product from the system (admin). 3. Attempt to checkout.",
+      "expected": "Appropriate error message or handling showing the product is no longer available.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Order Tracking - Verify order status change after purchase",
+      "steps": "1. Successfully place an order. 2. Check order status after a short period (simulating order processing).",
+      "expected": "Order status changes from 'pending' to 'processing' or a similar status reflecting order progress.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    }
+  ],
+  "not_satisfied": [
+    {
+      "scenario": "Failed purchase attempt due to insufficient funds (simulated)",
+      "steps": "1. Register a new user. 2. Login with valid credentials. 3. Add a product to the cart. 4. Proceed to checkout. 5. Simulate payment failure (e.g., insufficient funds).",
+      "expected": "Payment failure message is displayed. Order is not placed.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Attempting purchase with invalid product ID",
+      "steps": "1. Register and login. 2. Attempt to add a product with an invalid ID to the cart.",
+      "expected": "Appropriate error message indicating that the product with the specified ID is not found.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Purchase attempt with an unregistered user",
+      "steps": "1. Attempt to add products to the cart without logging in.",
+      "expected": "User is redirected to login page or receives a message requiring login before proceeding.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    }
+  ],
+  "summary": {
+    "total_test_cases": 8,
+    "satisfied_count": 5,
+    "not_satisfied_count": 3,
+    "satisfaction_rate": 0.625
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "satisfied": [
+    {
+      "scenario": "Successfully view user profile information after successful login",
+      "steps": "1. Send a POST request to '/login' with valid username and password. 2. Extract the JWT access token from the response. 3. Send a GET request to '/profile' with the JWT access token in the 'Authorization' header.",
+      "expected": "HTTP 200 OK response with the user's profile information (username, email) in the JSON response body.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Successfully update user's email address",
+      "steps": "1. Send a POST request to '/login' with valid credentials and obtain JWT token. 2. Send a PUT request to '/profile' with the JWT token in the 'Authorization' header and a JSON payload containing the new, valid email address.",
+      "expected": "HTTP 200 OK response.  Subsequent GET request to '/profile' should return the updated email address.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Attempt to update with an existing email address",
+      "steps": "1. Send a POST request to '/login' with valid credentials and obtain JWT token. 2. Send a PUT request to '/profile' with the JWT token and a JSON payload containing an email address already in use by another user.",
+      "expected": "HTTP 400 Bad Request response indicating the email is already in use.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    }
+  ],
+  "not_satisfied": [
+    {
+      "scenario": "Attempt to view profile without authentication",
+      "steps": "1. Send a GET request to '/profile' without an 'Authorization' header or with an invalid token.",
+      "expected": "HTTP 401 Unauthorized response.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Attempt to update with an invalid email format",
+      "steps": "1. Send a POST request to '/login' with valid credentials and obtain JWT token. 2. Send a PUT request to '/profile' with the JWT token in the 'Authorization' header and a JSON payload containing an invalid email format (e.g., missing '@' symbol).",
+      "expected": "HTTP 400 Bad Request response with an error message indicating the invalid email format.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Attempt to update profile with an expired token",
+      "steps": "1. Obtain a JWT token. 2. Wait until the token expires. 3. Send a PUT request to '/profile' with the expired token.",
+      "expected": "HTTP 401 Unauthorized response or a response indicating token expiry.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Update with extremely long username (edge case)",
+      "steps": "1. Login successfully and obtain a valid JWT token. 2. Send a PUT request to '/profile' with a JSON payload containing a username exceeding the maximum allowed length (if defined; otherwise, a very long string).",
+      "expected": "Either a HTTP 200 OK if the backend handles long usernames gracefully, or a HTTP 400 Bad Request with an error message specifying the length limitation.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Update with a username containing special characters (edge case)",
+      "steps": "1. Login successfully. 2. Send a PUT request to '/profile' with a JSON payload containing a username with special characters (e.g., !@#$%^&*).",
+      "expected": "HTTP 200 OK if allowed, or HTTP 400 Bad Request if special characters are not permitted, with an appropriate error message.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": false
+    }
+  ],
+  "summary": {
+    "total_test_cases": 8,
+    "satisfied_count": 3,
+    "not_satisfied_count": 5,
+    "satisfaction_rate": "37.5%"
+  }
+}

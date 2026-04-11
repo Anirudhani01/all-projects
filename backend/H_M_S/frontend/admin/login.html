@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - MediCare Hospital</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>MediCare Hospital</span>
+                </div>
+                <h1>Authentication Disabled</h1>
+                <p>Redirecting to dashboard automatically...</p>
+                <div class="loading-spinner" style="margin: 20px 0; text-align: center;">
+                    <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: #2563eb;"></i>
+                </div>
+            </div>
+            
+            <form id="login-form" class="login-form" style="display: none;">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" required>
+                        <button type="button" class="password-toggle" onclick="togglePassword()">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="remember">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <span class="btn-text">Sign In</span>
+                    <span class="btn-loading" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        Signing in...
+                    </span>
+                </button>
+                
+                <div class="form-options" style="margin-top: 15px; text-align: center;">
+                    <button type="button" id="clear-session-btn" class="clear-session-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Clear Session & Start Fresh
+                    </button>
+                    <button type="button" id="go-to-dashboard-btn" class="go-to-dashboard-btn" style="display: none;">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Go to Dashboard
+                    </button>
+                </div>
+            </form>
+            
+            <div class="login-footer">
+                <p>&copy; 2024 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin-auth.js"></script>
+</body>
+</html>

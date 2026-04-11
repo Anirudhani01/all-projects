@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: taskarm
+spec: 
+  replicas: 2
+  selector: 
+    matchLabels: 
+      app: taskarm
+  template: 
+    metadata: 
+      labels: 
+        app: taskarm
+    spec: 
+      containers: 
+        - name: taskarm
+          image: anirudh0707/simple_taskarm:latest
+          ports: 
+            - containerPort: 5000
+          env: 
+            - name: FLASK_ENV
+              value: "production"

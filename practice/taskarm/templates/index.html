@@ -1,0 +1,21 @@
+<!-- File: taskarm/templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Armstrong Number Checker</title>
+    <style>
+        body { font-family: Arial; padding: 40px; background: #f0f0f0; text-align: center; }
+        input, button { padding: 10px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>Armstrong Number Checker</h1>
+    <form method="POST">
+        <input type="text" name="number" placeholder="Enter a number" required>
+        <button type="submit">Check</button>
+    </form>
+    {% if result %}
+        <h2>{{ result }}</h2>
+    {% endif %}
+</body>
+</html>

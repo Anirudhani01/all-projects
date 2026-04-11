@@ -1,0 +1,4 @@
+The organization uses openCRX to manage customer relationships and associated products, with an emphasis on maintaining accurate and comprehensive product records. These records are crucial for enabling product visibility and availability in key business processes such as sales orders, quotes, inventory management, and reporting.
+Upon clicking 'New' dropdown button in the Product Tab, shows Product option, which will take user to Product creation page.
+The Product Creation module in openCRX empowers administrators and product managers to define and centralize critical product information. This include three form sections called 'General', 'Details', 'System'. General section includes 'Name' field of string data type, 'Product number' of number.
+Sample new product 'Name'= 'OpenProductAX', 'Product number' = 556677 can be given. When "New" button is clicked to create a new product, will change Page from create mode to view mode.

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - MediCare Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>MediCare Hospital</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="doctors.html" class="nav-link">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#login" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#signup" class="nav-link nav-cta">Sign Up</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p>Schedule your appointment with our expert doctors</p>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-form-container">
+                    <form id="appointment-form" class="booking-form">
+                        <div class="form-step active" id="step-1">
+                            <h2>Patient Information</h2>
+                            <div class="form-group">
+                                <label for="patient-name">Full Name *</label>
+                                <input type="text" id="patient-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="patient-email">Email Address *</label>
+                                <input type="email" id="patient-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="patient-phone">Phone Number *</label>
+                                <input type="tel" id="patient-phone" name="phone" required>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" id="step-2">
+                            <h2>Select Doctor & Date</h2>
+                            <div class="form-group">
+                                <label for="doctor-select">Select Doctor *</label>
+                                <select id="doctor-select" name="doctor_id" required>
+                                    <option value="">Choose a doctor...</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="appointment-date">Appointment Date *</label>
+                                <input type="date" id="appointment-date" name="appointment_date" required>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline" onclick="prevStep()">Previous</button>
+                                <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" id="step-3">
+                            <h2>Select Time Slot</h2>
+                            <div class="time-slots-container" id="time-slots-container">
+                                <div class="loading">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    <p>Loading available time slots...</p>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline" onclick="prevStep()">Previous</button>
+                                <button type="button" class="btn btn-primary" onclick="nextStep()" id="time-next-btn" disabled>Next</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" id="step-4">
+                            <h2>Additional Information</h2>
+                            <div class="form-group">
+                                <label for="appointment-notes">Notes (Optional)</label>
+                                <textarea id="appointment-notes" name="notes" rows="4" placeholder="Please describe your symptoms or any additional information..."></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline" onclick="prevStep()">Previous</button>
+                                <button type="submit" class="btn btn-primary">Book Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="booking-summary">
+                    <h3>Appointment Summary</h3>
+                    <div class="summary-content" id="summary-content">
+                        <div class="summary-item">
+                            <span class="label">Patient:</span>
+                            <span class="value" id="summary-name">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Email:</span>
+                            <span class="value" id="summary-email">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Phone:</span>
+                            <span class="value" id="summary-phone">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Doctor:</span>
+                            <span class="value" id="summary-doctor">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Date:</span>
+                            <span class="value" id="summary-date">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Time:</span>
+                            <span class="value" id="summary-time">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MediCare Hospital</span>
+                    </div>
+                    <p>Providing exceptional healthcare services with compassion and excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Cardiology</a></li>
+                        <li><a href="#">Neurology</a></li>
+                        <li><a href="#">Orthopedics</a></li>
+                        <li><a href="#">Dermatology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@medicare-hospital.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Health Street, Medical City, MC 12345</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

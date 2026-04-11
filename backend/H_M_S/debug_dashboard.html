@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .debug { background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .error { background: #ffebee; color: #c62828; }
+        .success { background: #e8f5e8; color: #2e7d32; }
+    </style>
+</head>
+<body>
+    <h1>Dashboard Debug Test</h1>
+    
+    <div class="debug">
+        <h3>Test 1: Check if AdminAuth is available</h3>
+        <div id="test1">Loading...</div>
+    </div>
+    
+    <div class="debug">
+        <h3>Test 2: Check API endpoints</h3>
+        <div id="test2">Loading...</div>
+    </div>
+    
+    <div class="debug">
+        <h3>Test 3: Check authentication</h3>
+        <div id="test3">Loading...</div>
+    </div>
+    
+    <div class="debug">
+        <h3>Test 4: Check DOM elements</h3>
+        <div id="test4">Loading...</div>
+    </div>
+    
+    <script src="frontend/admin/js/admin-auth.js"></script>
+    <script>
+        // Test 1: Check AdminAuth availability
+        setTimeout(() => {
+            const test1 = document.getElementById('test1');
+            if (typeof AdminAuth !== 'undefined') {
+                test1.innerHTML = '<span class="success">✅ AdminAuth is available</span>';
+                test1.className = 'debug success';
+            } else {
+                test1.innerHTML = '<span class="error">❌ AdminAuth is not available</span>';
+                test1.className = 'debug error';
+            }
+        }, 1000);
+        
+        // Test 2: Check API endpoints
+        setTimeout(async () => {
+            const test2 = document.getElementById('test2');
+            try {
+                const response = await fetch('http://localhost:8000/api/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username: 'admin', password: 'admin123' })
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    test2.innerHTML = '<span class="success">✅ API is working, token: ' + data.access_token.substring(0, 20) + '...</span>';
+                    test2.className = 'debug success';
+                } else {
+                    test2.innerHTML = '<span class="error">❌ API error: ' + response.status + '</span>';
+                    test2.className = 'debug error';
+                }
+            } catch (error) {
+                test2.innerHTML = '<span class="error">❌ API error: ' + error.message + '</span>';
+                test2.className = 'debug error';
+            }
+        }, 2000);
+        
+        // Test 3: Check authentication
+        setTimeout(() => {
+            const test3 = document.getElementById('test3');
+            if (typeof AdminAuth !== 'undefined') {
+                const isLoggedIn = AdminAuth.isLoggedIn();
+                test3.innerHTML = '<span class="' + (isLoggedIn ? 'success' : 'error') + '">' + 
+                    (isLoggedIn ? '✅ User is logged in' : '❌ User is not logged in') + '</span>';
+                test3.className = 'debug ' + (isLoggedIn ? 'success' : 'error');
+            } else {
+                test3.innerHTML = '<span class="error">❌ Cannot check authentication - AdminAuth not available</span>';
+                test3.className = 'debug error';
+            }
+        }, 3000);
+        
+        // Test 4: Check DOM elements
+        setTimeout(() => {
+            const test4 = document.getElementById('test4');
+            const elements = {
+                'dashboard-stats': document.getElementById('dashboard-stats'),
+                'recent-appointments': document.getElementById('recent-appointments'),
+                'appointmentsChart': document.getElementById('appointmentsChart'),
+                'demographicsChart': document.getElementById('demographicsChart')
+            };
+            
+            let html = '';
+            for (const [name, element] of Object.entries(elements)) {
+                html += '<div>' + (element ? '✅' : '❌') + ' ' + name + '</div>';
+            }
+            
+            test4.innerHTML = html;
+            test4.className = 'debug ' + (Object.values(elements).every(el => el) ? 'success' : 'error');
+        }, 4000);
+    </script>
+</body>
+</html>

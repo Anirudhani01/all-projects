@@ -1,0 +1,16 @@
+{
+  "processor_name": "PDFPlainTextProcessor",
+  "processing_time": 0,
+  "input_file": "/home/anirudh/extract_services/uploads/lab-tests-report.pdf",
+  "output_files": {
+    "json": "extracted_data.json",
+    "csv": "extracted_data.csv"
+  },
+  "extraction_stats": {
+    "total_pages": 13,
+    "total_text_length": 7901,
+    "tables_found": 8,
+    "images_processed": 0
+  },
+  "processing_steps": 19
+}

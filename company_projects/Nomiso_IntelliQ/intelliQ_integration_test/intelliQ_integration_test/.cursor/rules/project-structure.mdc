@@ -1,0 +1,35 @@
+---
+alwaysApply: true
+---
+
+# IntelliQ Integration Test Generator - Project Structure Guide
+
+## Main Entry Point
+The main entry point is [main.py](mdc:main.py), which handles command-line arguments, environment validation, and orchestrates the test generation process.
+
+## Core Architecture
+- **Factory Pattern**: [base_factory/test_generator_factory.py](mdc:base_factory/test_generator_factory.py) creates language-specific agents
+- **Base Interface**: [base_factory/base_agent.py](mdc:base_factory/base_agent.py) defines the abstract base class
+- **Java Implementation**: [java_core/java_test_generator_agent.py](mdc:java_core/java_test_generator_agent.py) contains the LangGraph workflow
+
+## Workflow Nodes
+- **Parse Input**: [java_core/nodes/parse_input.py](mdc:java_core/nodes/parse_input.py) - Java file parsing
+- **Extract Dependencies**: [java_core/nodes/extract_dependencies.py](mdc:java_core/nodes/extract_dependencies.py) - Code analysis
+- **Execute Test**: [java_core/nodes/execute_test.py](mdc:java_core/nodes/execute_test.py) - Gradle test execution
+
+## Common Services
+- **State Management**: [common/agent_state.py](mdc:common/agent_state.py) - TypedDict state definition
+- **Method Analysis**: [common/analyze_method.py](mdc:common/analyze_method.py) - AI-powered analysis
+- **Flow Analysis**: [common/flow_analyzer.py](mdc:common/flow_analyzer.py) - Business flow analysis
+- **Test Generation**: [common/generate_test.py](mdc:common/generate_test.py) - Test code generation
+- **File Operations**: [common/save_test_file.py](mdc:common/save_test_file.py) - File I/O
+- **Method Selection**: [common/select_method.py](mdc:common/select_method.py) - Method orchestration
+
+## Infrastructure
+- **Logging**: [central_logger/logger.py](mdc:central_logger/logger.py) - Centralized logging system
+- **Prompts**: [java_core/prompts.py](mdc:java_core/prompts.py) - OpenAI prompt templates
+
+## Configuration
+- **Dependencies**: [requirements.txt](mdc:requirements.txt) - Python package dependencies
+- **Documentation**: [Readme.md](mdc:Readme.md) - User documentation
+- **Architecture**: [arch.md](mdc:arch.md) - Comprehensive system documentation

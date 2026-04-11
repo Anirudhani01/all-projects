@@ -1,0 +1,47 @@
+#RBAC Service
+from app.auth.rbac_service import RBACService
+from app.auth.models import UserAuth
+from app.auth.rbac_models import Permission,
+
+
+📋 PHASE-WISE IMPLEMENTATION PLAN
+PHASE 1: FOUNDATION (Week 1)
+[ ] Create RBAC models and schemas
+[ ] Set up database collections and indexes
+[ ] Create basic RBAC service
+[ ] Implement role-permission mapping
+
+PHASE 2: CORE RBAC SYSTEM (Week 2)
+[ ] Create permission checking middleware
+[ ] Update authentication dependencies
+[ ] Implement resource ownership validation
+[ ] Add RBAC management endpoints
+
+PHASE 3: ENDPOINT SECURITY (Week 3)
+[ ] Secure all existing endpoints with RBAC
+[ ] Implement data scoping (user/merchant/admin)
+[ ] Add audit logging
+[ ] Create comprehensive tests
+
+PHASE 4: TESTING & OPTIMIZATION (Week 4)
+[ ] Security testing
+[ ] Performance optimization
+[ ] Documentation
+[ ] Production deployment
+
+
+
+Users:
+- John (admin)
+- Alice (merchant) 
+- Bob (user)
+
+Roles:
+- admin: can do everything
+- merchant: can manage transactions, view reports
+- user: can view own data, make purchases, repayment
+
+Permissions:
+- users:read, users:write, users:delete
+- transactions:read, transactions:write
+- reports:read

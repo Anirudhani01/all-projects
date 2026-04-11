@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Records</title>
+    <style>
+        table { border-collapse: collapse; width: 80%; margin: 20px auto; }
+        th, td { border: 1px solid #aaa; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Employee Data from CSV</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Employee ID</th><th>Name</th><th>Department</th><th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for emp in employees %}
+            <tr>
+                <td>{{ emp.EmployeeID }}</td>
+                <td>{{ emp.Name }}</td>
+                <td>{{ emp.Department }}</td>
+                <td>{{ emp.Salary }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

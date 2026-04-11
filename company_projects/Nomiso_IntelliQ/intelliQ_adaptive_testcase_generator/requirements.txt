@@ -1,0 +1,7 @@
+langgraph
+langchain-openai
+openai
+python-docx
+requests
+redis
+python-dotenv

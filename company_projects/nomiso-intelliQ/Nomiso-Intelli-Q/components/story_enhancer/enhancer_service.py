@@ -1,0 +1,183 @@
+import json
+import logging
+from typing import Dict, Any, Optional, List
+from components.common.llm_client import LLMClient
+from components.common.prompts import (
+    get_enhancer_system_prompt, get_enhancer_user_prompt,
+    get_heading_enhancer_system_prompt, get_heading_enhancer_user_prompt
+)
+
+class EnhancerService:
+    """
+    A service for enhancing stories based on feedback.
+    """
+    def __init__(self, llm_client, config):
+        """Initialize the enhancer service."""
+        self.llm_client = llm_client
+        self.config = config
+        self.logger = logging.getLogger(__name__)
+        self.enhancement_failures = []  # Track enhancement failures
+
+    def enhance_story(self, headings: List[Dict[str, Any]], checker_feedback: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Enhance the story based on checker feedback.
+        
+        Args:
+            headings: List of story headings
+            checker_feedback: Feedback from the checker service
+            
+        Returns:
+            Dict containing enhanced headings and enhancement status
+        """
+        # Create a story dict to pass to _enhance_headings
+        story = {"headings": headings}
+        
+        # Extract feedback from checker_feedback
+        feedback = checker_feedback.get('feedback', {})
+        
+        # Process headings that need enhancement
+        result = self._enhance_headings(story, feedback)
+        
+        # Return original story if enhancement fails
+        if result is None:
+            return {"headings": headings}
+            
+        return result
+
+    def _enhance_headings(self, story: Dict[str, Any], 
+                         checker_response: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        """
+        Enhance individual headings based on checker feedback.
+        
+        Args:
+            story: Story containing headings to enhance
+            checker_response: Feedback for each heading
+            
+        Returns:
+            Enhanced story with improved headings
+        """
+        enhanced_story = {"headings": []}
+        enhanced_headings = []
+        headings = story.get("headings", [])
+
+        for i, heading in enumerate(headings):
+            heading_id = heading["heading_id"]
+            self.logger.debug(f"Processing heading {heading_id} ({i+1}/{len(headings)})")
+            self.logger.debug(f"Title: {heading.get('title', 'No title')}")
+            self.logger.info(f"[ENHANCING] Heading: {heading.get('title', '')} ({i+1}/{len(headings)})")
+
+            # Skip if no feedback available
+            if heading_id not in checker_response:
+                self.logger.warning(f"No feedback found for heading {heading_id}, keeping original")
+                enhanced_headings.append(heading)
+                continue
+
+            # Log checker's feedback (structured)
+            feedback = checker_response[heading_id]
+            if 'suggestions' in feedback and feedback['suggestions']:
+                # Log detailed feedback to debug
+                self.logger.debug(f"Detailed feedback for {heading_id}:")
+                for idx, suggestion in enumerate(feedback['suggestions'], 1):
+                    self.logger.debug(f"  {idx}. {suggestion}")
+
+  
+            # Prepare system prompt and user prompt
+            system_prompt = get_heading_enhancer_system_prompt(self.config.domain)
+            user_prompt = get_heading_enhancer_user_prompt(
+                self.config.domain,
+                json.dumps(heading, indent=2),
+                json.dumps(feedback, indent=2)
+            )
+            self.logger.debug(f"Input heading to the enhancer: {json.dumps(heading, indent=2)}")
+            # Get LLM response
+            content = self.llm_client.generate_response(
+                system_prompt,
+                user_prompt
+            )
+            
+            content["heading_id"] = heading_id
+
+            if isinstance(content, dict) and "error" in content:
+                self.logger.error(f"LLM generation failed for heading {heading_id}: {content['error']}")
+                enhanced_headings.append(heading)  # Keep original on error
+                continue
+
+            try:
+                self.logger.debug(f"Raw LLM response for heading {heading_id}: {content}")
+                enhanced_heading = content
+                
+                # Validate enhanced heading format
+                required_fields = ["heading_id", "title", "content", "changes_made"]
+                if not all(k in enhanced_heading for k in required_fields):
+                    missing_fields = [k for k in required_fields if k not in enhanced_heading]
+                    raise ValueError(f"Missing required fields: {missing_fields}")
+
+                # Preserve original position
+                enhanced_heading["position"] = heading.get("position", i)
+                self.logger.debug(f"Output heading generated by the enhancer: \n{enhanced_heading['content']}")
+                # Log the changes made (structured)
+                changes = enhanced_heading["changes_made"]
+                if changes:
+                    self.logger.debug(f"[ENHANCED] changes made: \n {changes}")
+                    # Log detailed changes to debug
+                    self.logger.debug(f"Changes made to {heading_id}:")
+                    for idx, change in enumerate(changes, 1):
+                        self.logger.debug(f"  {idx}. {change}")
+                else:
+                    self.logger.info(f"[NO CHANGES] No modifications needed")
+
+                enhanced_headings.append(enhanced_heading)
+
+            except json.JSONDecodeError as e:
+                self.logger.exception(f"Invalid JSON in LLM response for heading {heading_id}: {e}")
+                self.logger.debug(f"Raw content that failed to parse: {content}")
+                enhanced_headings.append(heading)
+            except ValueError as e:
+                self.logger.exception(f"Failed to validate enhancement for heading {heading_id}: {e}")
+                enhanced_headings.append(heading)
+            except Exception as e:
+                self.logger.exception(f"Unexpected error processing heading {heading_id}: {e}")
+                enhanced_headings.append(heading)
+
+        # Sort headings by their original position
+        enhanced_headings.sort(key=lambda h: h.get("position", 0))
+
+        # Update the story with enhanced headings
+        enhanced_story["headings"] = enhanced_headings
+        return enhanced_story
+    
+    def enhance_complete_document(self, story: Dict[str, Any], checker_feedback: Dict[str, Any], rag_context: str = "") -> Optional[Dict[str, Any]]:
+        """
+        Enhance the complete document based on checker feedback.
+        
+        Args:
+            story: Complete story to enhance
+            checker_feedback: Feedback from the checker service
+            rag_context: RAG context chunks for additional information
+            
+        Returns:
+            Enhanced complete document
+        """
+        try:
+            self.logger.info("[ENHANCER] Enhancing Complete document...")
+            
+            # Extract feedback from checker_feedback
+            feedback = checker_feedback.get('feedback', {}).get('document', {})
+            
+            # Prepare system and user prompts for complete document enhancement
+            system_prompt = get_enhancer_system_prompt(self.config.domain)
+            user_prompt = get_enhancer_user_prompt(
+                self.config.domain,
+                json.dumps(feedback, indent=2),
+                json.dumps(story, indent=2)
+            )
+            self.logger.debug(f"Input doc to the enhancer: {json.dumps(story, indent=2)}")
+            # Get LLM response
+            enhanced_story = self.llm_client.generate_response(
+                system_prompt, user_prompt)  
+            self.logger.debug(f"Output of the enhancer: {enhanced_story}")
+            self.logger.info("[COMPLETED] Document enhancement finished")
+            return enhanced_story 
+        except Exception as e:
+            self.logger.exception(f"Error enhancing complete document: {e}")
+            return None

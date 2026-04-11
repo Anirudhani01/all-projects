@@ -1,0 +1,87 @@
+---
+globs: *.py
+description: Factory pattern implementation and extensibility
+---
+
+# Factory Pattern Implementation
+
+## Base Abstract Class
+Always extend [BaseTestGeneratorAgent](mdc:base_factory/base_agent.py) for new language implementations:
+
+```python
+from abc import ABC, abstractmethod
+from typing import Dict, Any
+
+class BaseTestGeneratorAgent(ABC):
+    """Abstract base class for test generator agents"""
+    
+    @abstractmethod
+    def generate_and_execute(self, file_path: str) -> Dict[str, Any]:
+        """Generate integration test for the given source file"""
+        pass
+```
+
+## Factory Implementation
+Use the factory pattern from [base_factory/test_generator_factory.py](mdc:base_factory/test_generator_factory.py):
+
+```python
+class TestGeneratorFactory:
+    """Factory class to create appropriate test generator agents"""
+    
+    @staticmethod
+    def create_agent(language: str) -> BaseTestGeneratorAgent:
+        language = language.lower()
+        
+        if language == 'java':
+            return JavaTestGeneratorAgent()
+        else:
+            raise ValueError(f"Unsupported language: {language}")
+    
+    @staticmethod
+    def get_supported_languages():
+        """Return list of supported languages"""
+        return ['java']
+```
+
+## Language-Specific Implementation
+Implement the abstract interface for each language:
+
+```python
+class JavaTestGeneratorAgent(BaseTestGeneratorAgent):
+    """Java-specific implementation of test generator agent"""
+    
+    def __init__(self):
+        self.graph = self._build_graph()
+    
+    def generate_and_execute(self, file_path: str) -> Dict[str, Any]:
+        """Generate integration test for the given Java file"""
+        # Implementation specific to Java
+        pass
+```
+
+## Adding New Languages
+To add support for a new language:
+
+1. Create language-specific directory (e.g., `python_core/`)
+2. Implement `BaseTestGeneratorAgent` interface
+3. Add language detection in factory
+4. Update supported languages list
+5. Implement language-specific workflow nodes
+
+## Return Value Contract
+Always return consistent result structure:
+
+```python
+return {
+    "success": True/False,
+    "test_file_path": "path/to/generated/test",
+    "result": state_object,  # Optional: full state for debugging
+    "errors": ["error1", "error2"]  # Only when success=False
+}
+```
+
+## Error Handling
+- Validate language parameter
+- Handle unsupported languages gracefully
+- Log factory operations
+- Provide meaningful error messages

@@ -1,0 +1,76 @@
+{
+  "satisfied": [
+    {
+      "scenario": "Successfully view profile information as a logged-in user",
+      "steps": "1. Login as a registered user. 2. Access the profile endpoint (e.g., GET /profile). 3. Verify the response contains the user's username and email.",
+      "expected": "The API returns a 200 OK status code and a JSON payload containing the user's username and email.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Successfully update profile email address",
+      "steps": "1. Log in as a registered user. 2. Send a PUT request to the profile endpoint (e.g., PUT /profile) with a valid new email address. 3. Verify the response and check if the email was updated in the database.",
+      "expected": "The API returns a 200 OK status code, and the user's email address is successfully updated in the database.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Unsuccessful email update due to duplicate email",
+      "steps": "1. Log in as a registered user. 2. Send a PUT request to the profile endpoint with an email address already in use. 3. Observe the response.",
+      "expected": "The API returns a 400 Bad Request status code, indicating the email is already in use.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Unsuccessful profile update due to invalid email format",
+      "steps": "1. Log in as a registered user. 2. Send a PUT request to the profile endpoint with an invalid email format (e.g., missing @ symbol). 3. Observe the response.",
+      "expected": "The API returns a 400 Bad Request status code, indicating an invalid email format.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    }
+  ],
+  "not_satisfied": [
+    {
+      "scenario": "Unsuccessful profile view attempt due to unauthenticated access",
+      "steps": "1. Access the profile endpoint (e.g., GET /profile) without logging in. 2. Observe the response.",
+      "expected": "The API returns a 401 Unauthorized status code.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Attempt to update profile without authentication",
+      "steps": "1. Send a PUT request to the profile endpoint without a valid JWT token. 2. Observe the response.",
+      "expected": "The API returns a 401 Unauthorized status code.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Successfully update username (with unique username)",
+      "steps": "1. Log in. 2. Send PUT request to /profile with a new, unique username. 3. Verify response and database.",
+      "expected": "200 OK, username updated in database.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Fail to update username (with existing username)",
+      "steps": "1. Log in. 2. Send PUT request to /profile with an existing username. 3. Observe response.",
+      "expected": "400 Bad Request, indicating username already exists.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    }
+  ],
+  "summary": {
+    "total_test_cases": 8,
+    "satisfied_count": 4,
+    "not_satisfied_count": 4,
+    "satisfaction_rate": "50.0%"
+  }
+}

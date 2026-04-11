@@ -1,0 +1,102 @@
+---
+globs: *.py
+description: Test execution and Gradle integration patterns
+---
+
+# Test Execution and Gradle Integration
+
+## Gradle Command Construction
+Always use the cross-platform Gradle wrapper approach:
+
+```python
+import platform
+import subprocess
+
+# Detect OS and select appropriate wrapper
+gradle_cmd = "gradlew.bat" if platform.system() == "Windows" else "./gradlew"
+gradle_cmd = os.path.join(project_root, gradle_cmd)
+
+# Build command with test class
+cmd = [
+    gradle_cmd, "test",
+    f"--tests={test_class_name}",
+    "--info",
+    "--stacktrace",
+    "--offline"
+]
+```
+
+## Test Execution Pattern
+```python
+try:
+    result = subprocess.run(
+        cmd,
+        cwd=project_root,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        timeout=300,  # 5 minutes
+        check=False
+    )
+    
+    # Process results
+    if result.returncode == 0:
+        logger.info(f" Test {test_class_name} passed")
+        state["execution_passed"] = True
+    else:
+        logger.error(f" Test {test_class_name} failed")
+        state["execution_passed"] = False
+        
+except subprocess.TimeoutExpired:
+    logger.error(" Test execution timed out")
+    state["execution_passed"] = False
+except FileNotFoundError:
+    logger.error(" Gradle wrapper not found")
+    state["execution_passed"] = False
+```
+
+## Test Class Name Resolution
+Use the helper function from [java_core/nodes/execute_test.py](mdc:java_core/nodes/execute_test.py):
+
+```python
+def _get_test_class_name(state: AgentState) -> str:
+    # Extract from test_file_path or test_class content
+    # Handle package name resolution
+    # Return fully qualified class name
+```
+
+## Error Summary Extraction
+Extract meaningful error information from Gradle output:
+
+```python
+def _extract_error_summary(gradle_output: str) -> str:
+    lines = gradle_output.splitlines()
+    error_lines = [
+        line for line in lines
+        if any(pattern in line.lower() for pattern in [
+            "failed", "error", "exception", "assertion",
+            "could not resolve", "compilation failed"
+        ])
+    ]
+    return "\n".join(error_lines[:10])
+```
+
+## Retry Logic
+Implement retry logic with state tracking:
+```python
+# Increment retry count
+state["retry_count"] = state.get("retry_count", 0) + 1
+
+# Check retry limit
+if state.get("retry_count", 0) >= 3:
+    # Skip method and continue
+    state.setdefault("skipped_methods", []).append(method_name)
+```
+
+## State Management
+Always update execution state:
+- `execution_passed`: Boolean test result
+- `execution_logs`: Full Gradle output
+- `execution_errors`: List of error messages
+- `execution_error_summary`: Concise error summary
+- `retry_count`: Current retry attempt

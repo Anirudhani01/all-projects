@@ -1,0 +1,42 @@
+# OpenAI Configuration
+OPENAI_API_KEY=xxx
+OPENAI_MODEL=gpt-4.1-mini
+OPENAI_TEMPERATURE=0
+OPENAI_MAX_TOKENS=6000
+OPENAI_TIMEOUT=30
+OPENAI_ENABLE_FALLBACK=true
+
+# Application Under Test Configuration
+BASE_URL=http://localhost:8080/opencrx-core-CRX
+APP_USERNAME=admin-Standard
+APP_PASSWORD=admin-Standard
+
+# WebDriver Configuration
+HEADLESS_MODE=false
+BROWSER_TYPE=chrome
+CHROME_DRIVER_PATH=C:\Users\naave\OneDrive\Desktop\Selenium_automation_script_generator\chromedriver\chromedriver.exe
+WINDOW_SIZE=1920x1080
+
+# Test Configuration
+DEFAULT_TIMEOUT=10
+PAGE_LOAD_TIMEOUT=30
+SCREENSHOT_ON_FAILURE=true
+
+# Output Configuration
+OUTPUT_DIRECTORY=selenium
+REPORTS_DIRECTORY=reports
+SCREENSHOTS_DIRECTORY=screenshots
+LLM_RESPONSES_DIRECTORY=llm_responses
+
+# Jira Configuration (Optional)
+JIRA_DOMAIN=
+EMAIL=
+JIRA_API=
+
+# Logging Configuration  
+LOG_LEVEL=INFO
+LOG_FORMAT=%(asctime)s - %(name)s - %(levelname)s - %(message)s
+
+# Parallel Execution
+MAX_WORKERS=1
+PARALLEL_EXECUTION=false

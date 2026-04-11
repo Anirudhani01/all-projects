@@ -1,0 +1,115 @@
+ [ {
+    "test_case_description": "boundary:Validate plan inclusions boundary: plan with zero or no specific inclusions (e.g., no OTT, no ISD in plan).",
+    "test_steps": [
+      {
+        "step_number": 1,
+        "step": "Login as a prepaid user with a plan that lacks certain inclusions (e.g., no OTT, no ISD benefits).",
+        "expected_output": "Home screen is displayed."
+      },
+      {
+        "step_number": 2,
+        "step": "Tap the hamburger menu on the top-left corner of the home page.",
+        "expected_output": "Menu options are displayed."
+      },
+      {
+        "step_number": 3,
+        "step": "Select 'My Active Services' from the menu.",
+        "expected_output": "'My Active Services' screen is displayed with listed prepaid accounts."
+      },
+      {
+        "step_number": 4,
+        "step": "Tap on the relevant prepaid account to view its details.",
+        "expected_output": "Pack details page is displayed."
+      },
+      {
+        "step_number": 5,
+        "step": "Look for the 'View Pack Details' option in the account details page and tap it.",
+        "expected_output": "Current Plan page is displayed with plan details."
+      },
+      {
+        "step_number": 6,
+        "step": "Check on page for details related to OTT/ISD missing.",
+        "expected_output": "Plan details page either hides absent inclusions or displays a clear message indicating 'No OTT/ISD included', with UI remaining consistent and error-free."
+      }
+    ],
+    "test_case_type": "boundary",
+    "flow_index": 1,
+    "test_case_id": "RTLQ-2326"
+  },
+{
+        "test_case_description": "Prepaid user navigates to usage details from Current Plan page and verifies usage statistics are displayed.",
+        "test_steps": [
+            {
+                "step_number": 1,
+                "step": "Open Airtel Thanks app and log in with your prepaid number and OTP.",
+                "expected_output": "Home screen is displayed."
+            },
+            {
+                "step_number": 2,
+                "step": "Tap hamburger menu on top-left corner.",
+                "expected_output": "Navigation menu appears."
+            },
+            {
+                "step_number": 3,
+                "step": "Tap 'My Active Services'.",
+                "expected_output": "'My Active Services' screen is shown."
+            },
+            {
+                "step_number": 4,
+                "step": "Select your prepaid account from the list.",
+                "expected_output": "Account details are displayed."
+            },
+            {
+                "step_number": 5,
+                "step": "Click 'View Data Usage'.",
+                "expected_output": "Current Plan page with plan balance information under usage appears."
+            },
+            {
+                "step_number": 6,
+                "step": "Verify plan balance and usages for data, call minutes,  and other inclusions are displayed.",
+                "expected_output": "Current data, calls and usage details are correctly shown to the user."
+            }
+        ],
+        "test_case_type": "positive",
+        "flow_index": 1,
+        "test_case_id": "mobile_TC_33"
+    },
+        {
+        "test_case_description": "When viewing Current Plan, plan details (name, type, inclusions, validity, auto-renewal, OTT link if available) refresh and display the most up-to-date status upon navigation.",
+        "test_steps": [
+            {
+                "step_number": 1,
+                "step": "Open Airtel Thanks mobile app and login using prepaid mobile number and OTP.",
+                "expected_output": "Successful login to home screen."
+            },
+            {
+                "step_number": 2,
+                "step": "Tap the hamburger menu on the top-left.",
+                "expected_output": "Navigation drawer displays."
+            },
+            {
+                "step_number": 3,
+                "step": "Tap 'My Active Services'.",
+                "expected_output": "'My Active Services' page is shown."
+            },
+            {
+                "step_number": 4,
+                "step": "Tap the prepaid account to view options.",
+                "expected_output": "Options for selected prepaid account are visible."
+            },
+            {
+                "step_number": 5,
+                "step": "Tap 'View Pack Details'.",
+                "expected_output": "'Current Plan' page fetches and displays up-to-date plan details (plan name, type, validity, inclusions, auto-renewal, and OTT activation link if applicable)."
+            },
+            {
+                "step_number": 6,
+                "step": "Click back  button to  navigate to 'home screen after login' and repeat steps 2-5.",
+                "expected_output": "'Current Plan' page refreshes, displaying the latest available data from backend."
+            }
+        ],
+        "test_case_type": "positive",
+        "flow_index": 1,
+        "test_case_id": "mobile_TC_35"
+    }
+]

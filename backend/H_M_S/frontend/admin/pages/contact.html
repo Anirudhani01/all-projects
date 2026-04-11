@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages - MediCare Hospital</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>MediCare Admin</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">Main</div>
+                    <div class="nav-item">
+                        <a href="../dashboard.html" class="nav-link">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="doctors.html" class="nav-link">
+                            <i class="fas fa-user-md"></i>
+                            Doctors
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="appointments.html" class="nav-link">
+                            <i class="fas fa-calendar-alt"></i>
+                            Appointments
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="patients.html" class="nav-link">
+                            <i class="fas fa-users"></i>
+                            Patients
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Content</div>
+                    <div class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            <i class="fas fa-blog"></i>
+                            Blog Posts
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html" class="nav-link active">
+                            <i class="fas fa-envelope"></i>
+                            Messages
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Settings</div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link" onclick="logout()">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content" id="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="menu-toggle" onclick="toggleSidebar()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 class="header-title">Contact Messages</h1>
+                </div>
+                
+                <div class="header-right">
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge" id="unread-count">0</span>
+                    </button>
+                    
+                    <div class="user-menu">
+                        <button class="user-btn">
+                            <div class="user-avatar" id="user-avatar">A</div>
+                            <div class="user-info">
+                                <div class="user-name" id="user-name">Admin</div>
+                                <div class="user-role" id="user-role">Administrator</div>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Filters and Search -->
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <label for="search-input">Search</label>
+                        <input type="text" id="search-input" placeholder="Search by name, email, or subject...">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="status-filter">Status</label>
+                        <select id="status-filter">
+                            <option value="">All Messages</option>
+                            <option value="unread">Unread</option>
+                            <option value="read">Read</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="date-filter">Date Range</label>
+                        <input type="date" id="date-from" placeholder="From">
+                        <input type="date" id="date-to" placeholder="To">
+                    </div>
+                    
+                    <div class="filter-actions">
+                        <button class="btn btn-outline" onclick="clearFilters()">
+                            <i class="fas fa-times"></i>
+                            Clear
+                        </button>
+                        <button class="btn btn-primary" onclick="applyFilters()">
+                            <i class="fas fa-search"></i>
+                            Filter
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Messages Table -->
+                <div class="data-table-container">
+                    <div class="table-header">
+                        <h3 class="table-title">Contact Messages</h3>
+                        <div class="table-actions">
+                            <button class="btn btn-success" onclick="markAllAsRead()">
+                                <i class="fas fa-check-double"></i>
+                                Mark All Read
+                            </button>
+                            <button class="btn btn-outline" onclick="refreshMessages()">
+                                <i class="fas fa-sync-alt"></i>
+                                Refresh
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="table-content">
+                        <table class="data-table" id="messages-table">
+                            <thead>
+                                <tr>
+                                    <th>Sender</th>
+                                    <th>Subject</th>
+                                    <th>Message</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="6" class="loading">
+                                        <i class="fas fa-spinner fa-spin"></i>
+                                        Loading messages...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination-container" id="pagination-container" style="display: none;">
+                    <div class="pagination">
+                        <button class="btn btn-outline" onclick="previousPage()" id="prev-btn" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <span class="page-info" id="page-info">Page 1 of 1</span>
+                        <button class="btn btn-outline" onclick="nextPage()" id="next-btn" disabled>
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Message Details Modal -->
+    <div class="modal-overlay" id="message-modal" style="display: none;">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Message Details</h3>
+                <button class="modal-close" onclick="closeMessageModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="message-details-content" id="message-details-content">
+                    <!-- Message details will be loaded here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeMessageModal()">Close</button>
+                <button class="btn btn-primary" onclick="replyToMessage()" id="reply-btn">
+                    <i class="fas fa-reply"></i>
+                    Reply
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/admin-auth.js"></script>
+    <script src="../js/admin-contact.js"></script>
+</body>
+</html>

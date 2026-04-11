@@ -1,0 +1,5 @@
+pay_later_frontend/
+venv/
+__pycache__/
+*.pyc
+.cursor/

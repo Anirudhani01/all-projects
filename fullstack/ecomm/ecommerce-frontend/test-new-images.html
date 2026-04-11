@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Images Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .image-test { margin: 20px 0; }
+        img { border: 1px solid #ccc; margin: 10px; max-width: 200px; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>New Fashion Model Images Test</h1>
+    <p>Testing if our new images are accessible:</p>
+    
+    <div class="image-test">
+        <h3>Image 1: Perky Girl</h3>
+        <img src="/images/products/perky-girl-stylish-glasses-stares-amazement-walking-pink-wall-brunette-culottes-orange-blouse-posing-with-red-handbag.jpg" alt="Perky Girl" onload="this.nextElementSibling.textContent='✅ Loaded successfully'" onerror="this.nextElementSibling.textContent='❌ Failed to load'">
+        <span class="status">Loading...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Image 2: Portrait Girl</h3>
+        <img src="/images/products/portrait-young-stylish-girl-model-casual-summer-clothes-brown-hat-with-natural-makeup-glasses-isolated.jpg" alt="Portrait Girl" onload="this.nextElementSibling.textContent='✅ Loaded successfully'" onerror="this.nextElementSibling.textContent='❌ Failed to load'">
+        <span class="status">Loading...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Image 3: Smiling Lady</h3>
+        <img src="/images/products/smiling-lady-model-short-blue-dress-hat-barfoot-white.jpg" alt="Smiling Lady" onload="this.nextElementSibling.textContent='✅ Loaded successfully'" onerror="this.nextElementSibling.textContent='❌ Failed to load'">
+        <span class="status">Loading...</span>
+    </div>
+    
+    <script>
+        console.log('Testing new image accessibility...');
+        
+        const testImages = [
+            '/images/products/perky-girl-stylish-glasses-stares-amazement-walking-pink-wall-brunette-culottes-orange-blouse-posing-with-red-handbag.jpg',
+            '/images/products/portrait-young-stylish-girl-model-casual-summer-clothes-brown-hat-with-natural-makeup-glasses-isolated.jpg',
+            '/images/products/smiling-lady-model-short-blue-dress-hat-barfoot-white.jpg'
+        ];
+        
+        testImages.forEach(async (imagePath) => {
+            try {
+                const response = await fetch(imagePath);
+                if (response.ok) {
+                    console.log(`✅ ${imagePath} - Accessible (${response.status})`);
+                } else {
+                    console.log(`❌ ${imagePath} - Not accessible (${response.status})`);
+                }
+            } catch (error) {
+                console.log(`❌ ${imagePath} - Error: ${error.message}`);
+            }
+        });
+    </script>
+</body>
+</html>

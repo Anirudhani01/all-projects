@@ -1,0 +1,26 @@
+# AI-Powered Unit Test Case Generation System Configuration
+
+# Gemini API Configuration
+GEMINI_API_KEY=AIzaSyB0LYB7g9-Bi8Tx_Leom0huurDlPrqDwcU
+
+# Ollama Configuration
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=phi3:mini
+
+# System Configuration
+DEBUG=false
+LOG_LEVEL=INFO
+ENVIRONMENT=development
+
+# Test Generation Configuration
+DEFAULT_TEST_FRAMEWORK=pytest
+DEFAULT_INCLUDE_MOCKS=true
+DEFAULT_INCLUDE_COVERAGE=true
+
+# Output Configuration
+DEFAULT_OUTPUT_FORMAT=python
+SUPPORTED_OUTPUT_FORMATS=python,json,markdown
+
+# Performance Configuration
+MAX_GENERATION_TIME=300
+BATCH_SIZE=10

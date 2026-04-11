@@ -1,0 +1,3 @@
+"""
+Wallet system test package.
+"""

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laptops</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            box-sizing: border-box;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.02);
+        }
+
+        .product-card h3 {
+            margin-top: 0;
+        }
+
+        .out-of-stock {
+            color: red;
+            font-weight: bold;
+        }
+
+        .add-to-cart {
+            margin-top: 10px;
+        }
+
+        .cart-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .cart-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Available Laptops</h1>
+
+    <a href="/cart" class="cart-button">View Cart</a>
+
+    <div class="container">
+        {% for laptop in laptops %}
+        <div class="product-card">
+            <h3>{{ laptop.name }}</h3>
+            <p>{{ laptop.description }}</p>
+            <p><strong>Price:</strong> ₹{{ laptop.price }}</p>
+
+            {% if laptop.stock > 0 %}
+            <form method="post" action="/cart/add" class="add-to-cart">
+                <input type="hidden" name="product_id" value="{{ laptop.id }}">
+                <button type="submit">Add to Cart</button>
+            </form>
+            {% else %}
+            <p class="out-of-stock">Out of Stock</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

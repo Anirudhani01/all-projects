@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+.env
+nltk_data/
+node_modules/
+*.log
+*.sqlite3

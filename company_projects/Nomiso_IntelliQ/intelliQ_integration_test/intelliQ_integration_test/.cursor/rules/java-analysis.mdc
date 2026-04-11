@@ -1,0 +1,64 @@
+---
+globs: *.py
+description: Java code analysis and parsing patterns
+---
+
+# Java Code Analysis Patterns
+
+## Java Parsing with javalang
+Always use the `javalang` library for Java source code analysis:
+
+```python
+import javalang
+
+# Parse Java code
+tree = javalang.parse.parse(java_code)
+
+# Extract package
+package = tree.package.name if tree.package else ""
+
+# Extract imports
+imports = [f"import {imp.path};" for imp in tree.imports]
+
+# Extract methods from class
+for type_decl in tree.types:
+    if isinstance(type_decl, javalang.tree.ClassDeclaration):
+        for method in type_decl.methods:
+            # Process method
+            pass
+```
+
+## Method Extraction
+Use the enhanced method extraction from [java_core/nodes/extract_dependencies.py](mdc:java_core/nodes/extract_dependencies.py):
+
+```python
+def extract_method_code(file_path, method_name):
+    """Extract specific method code with JavaDoc and annotations"""
+    # Implementation includes JavaDoc, annotations, and method body
+```
+
+## FQN Resolution
+Always implement robust FQN resolution with case correction:
+```python
+def _find_java_file_by_fqn(fqn, current_file_path):
+    # 1. Try as-is
+    # 2. Retry with corrected class case
+    # 3. Recursive fallback search
+```
+
+## Class Name Normalization
+Normalize class names to PascalCase:
+```python
+def normalize_class_name(class_name: str) -> str:
+    """Convert to PascalCase: studentService -> StudentService"""
+    if class_name[0].isupper():
+        return class_name
+    parts = re.findall(r'[A-Z]?[a-z]+|[A-Z]+(?![a-z])', class_name)
+    return ''.join(part.capitalize() for part in parts)
+```
+
+## Error Handling
+- Always handle `javalang` parsing exceptions
+- Provide meaningful error messages
+- Log parsing failures with context
+- Gracefully handle malformed Java code

@@ -1,0 +1,45 @@
+---
+globs: *.py
+description: LangGraph workflow patterns and state management
+---
+
+# LangGraph Workflow Patterns
+
+## State Management
+Always use the [AgentState](mdc:common/agent_state.py) TypedDict for state management. The state object contains:
+- **Input**: `file_path`, `package`, `imports`, `methods`
+- **Processing**: `selected_method`, `analysis`, `flow_analysis`
+- **Output**: `test_class`, `test_file_path`, `execution_passed`
+- **Control**: `retry_count`, `completed_methods`, `skipped_methods`
+
+## Workflow Node Pattern
+```python
+def node_function(state: AgentState) -> AgentState:
+    """Node function that processes state and returns updated state"""
+    logger = get_logger(__name__)
+    
+    try:
+        # Process state
+        # Update state with results
+        return state
+    except Exception as e:
+        logger.error(f"Error in node: {e}")
+        state.setdefault('validation_errors', []).append(str(e))
+        return state
+```
+
+## Conditional Edges
+Use conditional edges for flow control:
+```python
+workflow.add_conditional_edges(
+    "node_name",
+    lambda state: "next_node" if condition else "alternative_node",
+    {"next_node": "next_node", "alternative_node": "alternative_node"}
+)
+```
+
+## State Updates
+- Always use `state.setdefault()` for list initialization
+- Use `state.pop()` to clean up temporary state
+- Reset per-method state when starting new method processing
+- Never mutate state directly, always return updated state

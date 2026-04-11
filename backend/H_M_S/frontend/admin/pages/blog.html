@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Management - MediCare Hospital</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>MediCare Admin</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">Main</div>
+                    <div class="nav-item">
+                        <a href="../dashboard.html" class="nav-link">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="doctors.html" class="nav-link">
+                            <i class="fas fa-user-md"></i>
+                            Doctors
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="appointments.html" class="nav-link">
+                            <i class="fas fa-calendar-alt"></i>
+                            Appointments
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="patients.html" class="nav-link">
+                            <i class="fas fa-users"></i>
+                            Patients
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Content</div>
+                    <div class="nav-item">
+                        <a href="blog.html" class="nav-link active">
+                            <i class="fas fa-blog"></i>
+                            Blog Posts
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <i class="fas fa-envelope"></i>
+                            Messages
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Settings</div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link" onclick="logout()">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content" id="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="menu-toggle" onclick="toggleSidebar()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 class="header-title">Blog Management</h1>
+                </div>
+                
+                <div class="header-right">
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    
+                    <div class="user-menu">
+                        <button class="user-btn">
+                            <div class="user-avatar" id="user-avatar">A</div>
+                            <div class="user-info">
+                                <div class="user-name" id="user-name">Admin</div>
+                                <div class="user-role" id="user-role">Administrator</div>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Add Blog Post Form -->
+                <div class="form-container" id="add-blog-form" style="display: none;">
+                    <div class="form-title">Add New Blog Post</div>
+                    <form id="blog-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="blog-title">Title *</label>
+                                <input type="text" id="blog-title" name="title" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="blog-category">Category *</label>
+                                <select id="blog-category" name="category" required>
+                                    <option value="">Select category...</option>
+                                    <option value="Cardiology">Cardiology</option>
+                                    <option value="Neurology">Neurology</option>
+                                    <option value="Orthopedics">Orthopedics</option>
+                                    <option value="Dermatology">Dermatology</option>
+                                    <option value="Pulmonology">Pulmonology</option>
+                                    <option value="General">General</option>
+                                    <option value="Achievements">Achievements</option>
+                                    <option value="News">News</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="blog-image">Featured Image URL</label>
+                                <input type="url" id="blog-image" name="featured_image" placeholder="https://example.com/image.jpg">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="blog-published">Status</label>
+                                <select id="blog-published" name="is_published">
+                                    <option value="false">Draft</option>
+                                    <option value="true">Published</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="blog-content">Content *</label>
+                            <textarea id="blog-content" name="content" rows="10" required placeholder="Write your blog post content here..."></textarea>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline" onclick="cancelAddBlog()">Cancel</button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i>
+                                Save Blog Post
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Filters and Search -->
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <label for="search-input">Search</label>
+                        <input type="text" id="search-input" placeholder="Search by title or content...">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="category-filter">Category</label>
+                        <select id="category-filter">
+                            <option value="">All Categories</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Pulmonology">Pulmonology</option>
+                            <option value="General">General</option>
+                            <option value="Achievements">Achievements</option>
+                            <option value="News">News</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="status-filter">Status</label>
+                        <select id="status-filter">
+                            <option value="">All Status</option>
+                            <option value="published">Published</option>
+                            <option value="draft">Draft</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-actions">
+                        <button class="btn btn-outline" onclick="clearFilters()">
+                            <i class="fas fa-times"></i>
+                            Clear
+                        </button>
+                        <button class="btn btn-primary" onclick="applyFilters()">
+                            <i class="fas fa-search"></i>
+                            Filter
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Blog Posts Table -->
+                <div class="data-table-container">
+                    <div class="table-header">
+                        <h3 class="table-title">Blog Posts</h3>
+                        <div class="table-actions">
+                            <button class="btn btn-primary" onclick="showAddBlogForm()">
+                                <i class="fas fa-plus"></i>
+                                Add Post
+                            </button>
+                            <button class="btn btn-outline" onclick="refreshBlogPosts()">
+                                <i class="fas fa-sync-alt"></i>
+                                Refresh
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="table-content">
+                        <table class="data-table" id="blog-table">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Status</th>
+                                    <th>Created</th>
+                                    <th>Updated</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="6" class="loading">
+                                        <i class="fas fa-spinner fa-spin"></i>
+                                        Loading blog posts...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination-container" id="pagination-container" style="display: none;">
+                    <div class="pagination">
+                        <button class="btn btn-outline" onclick="previousPage()" id="prev-btn" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <span class="page-info" id="page-info">Page 1 of 1</span>
+                        <button class="btn btn-outline" onclick="nextPage()" id="next-btn" disabled>
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Edit Blog Post Modal -->
+    <div class="modal-overlay" id="edit-modal" style="display: none;">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Edit Blog Post</h3>
+                <button class="modal-close" onclick="closeEditModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="edit-blog-form">
+                    <input type="hidden" id="edit-blog-id" name="id">
+                    
+                    <div class="form-group">
+                        <label for="edit-blog-title">Title *</label>
+                        <input type="text" id="edit-blog-title" name="title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-blog-category">Category *</label>
+                        <select id="edit-blog-category" name="category" required>
+                            <option value="">Select category...</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Pulmonology">Pulmonology</option>
+                            <option value="General">General</option>
+                            <option value="Achievements">Achievements</option>
+                            <option value="News">News</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-blog-image">Featured Image URL</label>
+                        <input type="url" id="edit-blog-image" name="featured_image" placeholder="https://example.com/image.jpg">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-blog-published">Status</label>
+                        <select id="edit-blog-published" name="is_published">
+                            <option value="false">Draft</option>
+                            <option value="true">Published</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-blog-content">Content *</label>
+                        <textarea id="edit-blog-content" name="content" rows="8" required></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeEditModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="saveBlogEdit()">
+                    <i class="fas fa-save"></i>
+                    Save Changes
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/admin-auth.js"></script>
+    <script src="../js/admin-blog.js"></script>
+</body>
+</html>

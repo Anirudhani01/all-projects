@@ -1,0 +1,4342 @@
+[
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622141"
+    },
+    "99popularity": 66.0,
+    "director": "Giovanni Pastrone",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "War"
+    ],
+    "imdb_score": 6.6,
+    "name": "Cabiria",
+    "awards_won": 3,
+    "runtime_minutes": 99
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622142"
+    },
+    "99popularity": 87.0,
+    "director": "Alfred Hitchcock",
+    "genre": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "imdb_score": 8.7,
+    "name": "Psycho",
+    "awards_won": 5,
+    "release_date": "1988-04-12",
+    "language": "Spanish",
+    "runtime_minutes": 137,
+    "box_office_million_usd": 145.59
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622143"
+    },
+    "99popularity": 80.0,
+    "director": "Merian C. Cooper",
+    "genre": [
+      "Adventure",
+      "Fantasy",
+      "Horror"
+    ],
+    "imdb_score": 8.0,
+    "name": "King Kong",
+    "box_office_million_usd": 330.45,
+    "language": "Spanish",
+    "release_date": "2016-09-17",
+    "awards_won": 3,
+    "runtime_minutes": 84
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622144"
+    },
+    "99popularity": 88.0,
+    "director": "George Lucas",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.8,
+    "name": "Star Wars",
+    "box_office_million_usd": 852.09,
+    "language": "Spanish"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622145"
+    },
+    "99popularity": 83.0,
+    "director": "Victor Fleming",
+    "genre": [
+      "Adventure",
+      "Family",
+      "Fantasy",
+      "Musical"
+    ],
+    "imdb_score": 8.3,
+    "name": "The Wizard of Oz",
+    "runtime_minutes": 177,
+    "box_office_million_usd": 686.86
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622146"
+    },
+    "99popularity": 84.0,
+    "director": "Fritz Lang",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.4,
+    "name": "Metropolis",
+    "box_office_million_usd": 251.68,
+    "release_date": "1977-01-18"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622147"
+    },
+    "99popularity": 86.0,
+    "director": "Marc Daniels",
+    "genre": [
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.6,
+    "name": "Star Trek",
+    "language": "Italian",
+    "awards_won": 2,
+    "release_date": "1985-12-16",
+    "box_office_million_usd": 550.86,
+    "runtime_minutes": 136
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622148"
+    },
+    "99popularity": 88.0,
+    "director": "Michael Curtiz",
+    "genre": [
+      "Drama",
+      "Romance",
+      "War"
+    ],
+    "imdb_score": 8.8,
+    "name": "Casablanca",
+    "box_office_million_usd": 448.38,
+    "language": "German",
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622149"
+    },
+    "99popularity": 79.0,
+    "director": "William Cottrell",
+    "genre": [
+      "Animation",
+      "Family",
+      "Fantasy",
+      "Musical",
+      "Romance"
+    ],
+    "imdb_score": 7.9,
+    "name": "Snow White and the Seven Dwarfs",
+    "awards_won": 1,
+    "box_office_million_usd": 717.42,
+    "release_date": "1995-12-04",
+    "language": "English"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62214a"
+    },
+    "99popularity": 84.0,
+    "director": "Stanley Kubrick",
+    "genre": [
+      "Adventure",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.4,
+    "name": "2001 : A Space Odyssey",
+    "runtime_minutes": 105,
+    "language": "English",
+    "box_office_million_usd": 921.13
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62214b"
+    },
+    "99popularity": 83.0,
+    "director": "Steven Spielberg",
+    "genre": [
+      "Thriller"
+    ],
+    "imdb_score": 8.3,
+    "name": "Jaws",
+    "runtime_minutes": 139,
+    "box_office_million_usd": 560.55,
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62214c"
+    },
+    "99popularity": 92.0,
+    "director": "Francis Ford Coppola",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "imdb_score": 9.2,
+    "name": "The Godfather",
+    "awards_won": 1,
+    "release_date": "2020-10-21"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62214d"
+    },
+    "99popularity": 64.0,
+    "director": "J. Searle Dawley",
+    "genre": [
+      "Fantasy",
+      "Romance"
+    ],
+    "imdb_score": 6.4,
+    "name": "Snow White",
+    "runtime_minutes": 76,
+    "language": "German"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62214e"
+    },
+    "99popularity": 71.0,
+    "director": "D.W. Griffith",
+    "genre": [
+      "Drama",
+      "History",
+      "Romance",
+      "War",
+      "Western"
+    ],
+    "imdb_score": 7.1,
+    "name": "The Birth of a Nation",
+    "runtime_minutes": 111,
+    "awards_won": 2,
+    "language": "Spanish"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62214f"
+    },
+    "99popularity": 86.0,
+    "director": "Francis Ford Coppola",
+    "genre": [
+      "Drama",
+      "War"
+    ],
+    "imdb_score": 8.6,
+    "name": "Apocalypse Now",
+    "awards_won": 4,
+    "box_office_million_usd": 797.87
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622150"
+    },
+    "99popularity": 76.0,
+    "director": "Ernst Lubitsch",
+    "genre": [
+      "Musical",
+      "Comedy",
+      "Romance"
+    ],
+    "imdb_score": 7.6,
+    "name": "The Merry Widow",
+    "runtime_minutes": 173,
+    "awards_won": 4,
+    "language": "English",
+    "box_office_million_usd": 989.46,
+    "release_date": "1988-06-02"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622151"
+    },
+    "99popularity": 82.0,
+    "director": "Victor Fleming",
+    "genre": [
+      "Drama",
+      "Romance",
+      "War"
+    ],
+    "imdb_score": 8.2,
+    "name": "Gone with the Wind",
+    "release_date": "1973-02-26",
+    "language": "Spanish",
+    "runtime_minutes": 90,
+    "box_office_million_usd": 389.21,
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622152"
+    },
+    "99popularity": 81.0,
+    "director": "John Ford",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Western"
+    ],
+    "imdb_score": 8.1,
+    "name": "The Searchers",
+    "release_date": "1998-01-23",
+    "box_office_million_usd": 397.39,
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622153"
+    },
+    "99popularity": 81.0,
+    "director": "Alfred Hitchcock",
+    "genre": [
+      "Crime",
+      "Film-Noir",
+      "Mystery",
+      "Thriller"
+    ],
+    "imdb_score": 8.1,
+    "name": "Shadow of a Doubt",
+    "awards_won": 2,
+    "box_office_million_usd": 740.85,
+    "runtime_minutes": 138,
+    "release_date": "1975-07-08"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622154"
+    },
+    "99popularity": 86.0,
+    "director": "Alfred Hitchcock",
+    "genre": [
+      "Crime",
+      "Mystery",
+      "Romance",
+      "Thriller"
+    ],
+    "imdb_score": 8.6,
+    "name": "Vertigo",
+    "language": "French",
+    "release_date": "1979-01-26",
+    "runtime_minutes": 135
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622155"
+    },
+    "99popularity": 81.0,
+    "director": "William Friedkin",
+    "genre": [
+      "Horror"
+    ],
+    "imdb_score": 8.1,
+    "name": "The Exorcist",
+    "box_office_million_usd": 619.51,
+    "awards_won": 0
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622156"
+    },
+    "99popularity": 74.0,
+    "director": "Merian C. Cooper",
+    "genre": [
+      "Adventure",
+      "Documentary"
+    ],
+    "imdb_score": 7.4,
+    "name": "Chang : A Drama of the Wilderness",
+    "language": "Spanish",
+    "runtime_minutes": 113
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622157"
+    },
+    "99popularity": 86.0,
+    "director": "Orson Welles",
+    "genre": [
+      "Drama",
+      "Mystery"
+    ],
+    "imdb_score": 8.6,
+    "name": "Citizen Kane",
+    "awards_won": 2,
+    "language": "Spanish"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622158"
+    },
+    "99popularity": 73.0,
+    "director": "Terence Young",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "imdb_score": 7.3,
+    "name": "Dr. No",
+    "awards_won": 0,
+    "release_date": "1979-06-06",
+    "runtime_minutes": 137,
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622159"
+    },
+    "99popularity": 81.0,
+    "director": "James Cameron",
+    "genre": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 8.1,
+    "name": "The Terminator",
+    "release_date": "1979-01-12",
+    "runtime_minutes": 150,
+    "box_office_million_usd": 382.83,
+    "language": "Italian",
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62215a"
+    },
+    "99popularity": 88.0,
+    "director": "Irvin Kershner",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.8,
+    "name": "Star Wars : Episode V - The Empire Strikes Back",
+    "box_office_million_usd": 592.01,
+    "release_date": "2023-08-07",
+    "awards_won": 4,
+    "runtime_minutes": 149
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62215b"
+    },
+    "99popularity": 81.0,
+    "director": "Roman Polanski",
+    "genre": [
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "imdb_score": 8.1,
+    "name": "Rosemarys Baby",
+    "language": "Spanish",
+    "awards_won": 4,
+    "release_date": "2000-08-10"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62215c"
+    },
+    "99popularity": 81.0,
+    "director": "Sergei M. Eisenstein",
+    "genre": [
+      "Drama",
+      "History",
+      "War"
+    ],
+    "imdb_score": 8.1,
+    "name": "Bronenosets Potyomkin",
+    "box_office_million_usd": 749.61,
+    "runtime_minutes": 78,
+    "release_date": "2017-04-16",
+    "language": "French",
+    "awards_won": 3
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62215d"
+    },
+    "99popularity": 83.0,
+    "director": "Orson Welles",
+    "genre": [
+      "Crime",
+      "Film-Noir",
+      "Thriller"
+    ],
+    "imdb_score": 8.3,
+    "name": "Touch of Evil",
+    "box_office_million_usd": 837.38,
+    "awards_won": 1,
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62215e"
+    },
+    "99popularity": 85.0,
+    "director": "Lisa Simon",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Family",
+      "Fantasy",
+      "Music"
+    ],
+    "imdb_score": 8.5,
+    "name": "Sesame Street",
+    "runtime_minutes": 83,
+    "awards_won": 3,
+    "box_office_million_usd": 371.63,
+    "release_date": "2000-12-03"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62215f"
+    },
+    "99popularity": 85.0,
+    "director": "Stanley Kubrick",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.5,
+    "name": "A Clockwork Orange",
+    "release_date": "1979-01-16",
+    "language": "Spanish",
+    "awards_won": 2,
+    "runtime_minutes": 166
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622160"
+    },
+    "99popularity": 82.0,
+    "director": "Jean Renoir",
+    "genre": [
+      "Drama",
+      "War"
+    ],
+    "imdb_score": 8.2,
+    "name": "La grande illusion",
+    "box_office_million_usd": 296.21,
+    "language": "French",
+    "runtime_minutes": 72
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622161"
+    },
+    "99popularity": 87.0,
+    "director": "Steven Spielberg",
+    "genre": [
+      "Action",
+      "Adventure"
+    ],
+    "imdb_score": 8.7,
+    "name": "Raiders of the Lost Ark",
+    "runtime_minutes": 114,
+    "language": "Italian",
+    "box_office_million_usd": 289.18,
+    "awards_won": 2,
+    "release_date": "1992-06-05"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622162"
+    },
+    "99popularity": 80.0,
+    "director": "George A. Romero",
+    "genre": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdb_score": 8.0,
+    "name": "Night of the Living Dead",
+    "box_office_million_usd": 838.45,
+    "runtime_minutes": 123,
+    "language": "English",
+    "awards_won": 2,
+    "release_date": "1991-12-03"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622163"
+    },
+    "99popularity": 71.0,
+    "director": "Harry O. Hoyt",
+    "genre": [
+      "Adventure",
+      "Fantasy",
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 7.1,
+    "name": "The Lost World",
+    "awards_won": 1,
+    "language": "English",
+    "box_office_million_usd": 705.29,
+    "release_date": "2016-10-19"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622164"
+    },
+    "99popularity": 53.0,
+    "director": "Larry Semon",
+    "genre": [
+      "Comedy",
+      "Family",
+      "Fantasy",
+      "Adventure"
+    ],
+    "imdb_score": 5.3,
+    "name": "The Wizard of Oz",
+    "release_date": "2010-12-28",
+    "awards_won": 5
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622165"
+    },
+    "99popularity": 80.0,
+    "director": "James Whale",
+    "genre": [
+      "Drama",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.0,
+    "name": "Frankenstein",
+    "runtime_minutes": 135,
+    "box_office_million_usd": 290.99,
+    "language": "English",
+    "release_date": "1975-10-14"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622166"
+    },
+    "99popularity": 68.0,
+    "director": "George Lucas",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 6.8,
+    "name": "THX 1138",
+    "awards_won": 3,
+    "language": "German",
+    "release_date": "1992-11-30",
+    "runtime_minutes": 148
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622167"
+    },
+    "99popularity": 69.0,
+    "director": "Maurice Tourneur",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdb_score": 6.9,
+    "name": "The Poor Little Rich Girl",
+    "runtime_minutes": 162,
+    "language": "German",
+    "release_date": "1975-08-06",
+    "awards_won": 2
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622168"
+    },
+    "99popularity": 46.0,
+    "director": "James Parrott",
+    "genre": [
+      "Short",
+      "Adventure",
+      "Comedy"
+    ],
+    "imdb_score": 4.6,
+    "name": "The Tin Man",
+    "awards_won": 1,
+    "runtime_minutes": 183,
+    "language": "German",
+    "release_date": "1994-12-17"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622169"
+    },
+    "99popularity": 86.0,
+    "director": "Martin Scorsese",
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_score": 8.6,
+    "name": "Taxi Driver",
+    "awards_won": 2,
+    "runtime_minutes": 143,
+    "release_date": "2007-08-08"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62216a"
+    },
+    "99popularity": 79.0,
+    "director": "Steven Spielberg",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Family",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "imdb_score": 7.9,
+    "name": "E.T. : The Extra-Terrestrial",
+    "awards_won": 5,
+    "release_date": "1999-01-31",
+    "runtime_minutes": 209,
+    "language": "Spanish",
+    "box_office_million_usd": 541.5
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62216b"
+    },
+    "99popularity": 66.0,
+    "director": "D.W. Griffith",
+    "genre": [
+      "Short",
+      "Action",
+      "Western"
+    ],
+    "imdb_score": 6.6,
+    "name": "The Battle at Elderbush Gulch",
+    "runtime_minutes": 182,
+    "release_date": "2012-08-02"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62216c"
+    },
+    "99popularity": 90.0,
+    "director": "Sergio Leone",
+    "genre": [
+      "Adventure",
+      "Western"
+    ],
+    "imdb_score": 9.0,
+    "name": "Il buono, il brutto, il cattivo.",
+    "runtime_minutes": 170,
+    "release_date": "1978-03-25",
+    "box_office_million_usd": 749.09,
+    "awards_won": 5,
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62216d"
+    },
+    "99popularity": 84.0,
+    "director": "Elia Kazan",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 8.4,
+    "name": "On the Waterfront",
+    "language": "English",
+    "release_date": "1997-03-17"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62216e"
+    },
+    "99popularity": 84.0,
+    "director": "Stanley Donen",
+    "genre": [
+      "Comedy",
+      "Musical",
+      "Romance"
+    ],
+    "imdb_score": 8.4,
+    "name": "Singin in the Rain",
+    "language": "English",
+    "box_office_million_usd": 517.94,
+    "awards_won": 3,
+    "runtime_minutes": 134,
+    "release_date": "2024-08-03"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62216f"
+    },
+    "99popularity": 84.0,
+    "director": "Clyde Bruckman",
+    "genre": [
+      "Comedy",
+      "Romance",
+      "War",
+      "Action"
+    ],
+    "imdb_score": 8.4,
+    "name": "The General",
+    "release_date": "2018-09-27",
+    "runtime_minutes": 149,
+    "box_office_million_usd": 748.21
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622170"
+    },
+    "99popularity": 78.0,
+    "director": "Ivan Reitman",
+    "genre": [
+      "Adventure",
+      "Fantasy",
+      "Mystery"
+    ],
+    "imdb_score": 7.8,
+    "name": "Ghost Busters",
+    "box_office_million_usd": 658.54,
+    "language": "Spanish",
+    "runtime_minutes": 190
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622171"
+    },
+    "99popularity": 71.0,
+    "director": "W.S. Van Dyke",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Romance"
+    ],
+    "imdb_score": 7.1,
+    "name": "Tarzan the Ape Man",
+    "box_office_million_usd": 725.71,
+    "language": "Spanish",
+    "release_date": "2009-06-30",
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622172"
+    },
+    "99popularity": 95.0,
+    "director": "John Brahm",
+    "genre": [
+      "Drama",
+      "Fantasy",
+      "Mystery",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 9.5,
+    "name": "The Twilight Zone",
+    "box_office_million_usd": 946.41,
+    "awards_won": 4,
+    "language": "French",
+    "release_date": "2001-01-05",
+    "runtime_minutes": 79
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622173"
+    },
+    "99popularity": 60.0,
+    "director": "L. Frank Baum",
+    "genre": [
+      "Family",
+      "Fantasy",
+      "Adventure",
+      "Comedy"
+    ],
+    "imdb_score": 6.0,
+    "name": "His Majesty, the Scarecrow of Oz",
+    "box_office_million_usd": 41.38,
+    "language": "German"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622174"
+    },
+    "99popularity": 75.0,
+    "director": "Edwin S. Porter",
+    "genre": [
+      "Short",
+      "Western"
+    ],
+    "imdb_score": 7.5,
+    "name": "The Great Train Robbery",
+    "language": "German",
+    "awards_won": 4,
+    "release_date": "1984-02-06"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622175"
+    },
+    "99popularity": 79.0,
+    "director": "Guy Hamilton",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "imdb_score": 7.9,
+    "name": "Goldfinger",
+    "awards_won": 1,
+    "language": "French",
+    "runtime_minutes": 94
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622176"
+    },
+    "99popularity": 81.0,
+    "director": "Federico Fellini",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdb_score": 8.1,
+    "name": "La dolce vita",
+    "release_date": "1985-02-23",
+    "awards_won": 4,
+    "runtime_minutes": 111
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622177"
+    },
+    "99popularity": 85.0,
+    "director": "Ridley Scott",
+    "genre": [
+      "Adventure",
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 8.5,
+    "name": "Alien",
+    "awards_won": 1,
+    "box_office_million_usd": 55.31
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622178"
+    },
+    "99popularity": 81.0,
+    "director": "F.W. Murnau",
+    "genre": [
+      "Fantasy",
+      "Horror"
+    ],
+    "imdb_score": 8.1,
+    "name": "Nosferatu, eine Symphonie des Grauens",
+    "runtime_minutes": 75,
+    "awards_won": 5,
+    "release_date": "2023-03-15",
+    "box_office_million_usd": 547.29
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622179"
+    },
+    "99popularity": 82.0,
+    "director": "Brian De Palma",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_score": 8.2,
+    "name": "Scarface",
+    "release_date": "1974-09-07",
+    "language": "Italian"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62217a"
+    },
+    "99popularity": 81.0,
+    "director": "John G. Avildsen",
+    "genre": [
+      "Drama",
+      "Romance",
+      "Sport"
+    ],
+    "imdb_score": 8.1,
+    "name": "Rocky",
+    "runtime_minutes": 170,
+    "box_office_million_usd": 736.8,
+    "awards_won": 2,
+    "release_date": "2015-07-04",
+    "language": "English"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62217b"
+    },
+    "99popularity": 86.0,
+    "director": "Stanley Kubrick",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdb_score": 8.6,
+    "name": "Dr. Strangelove or : How I Learned to Stop Worrying and Love the Bomb",
+    "runtime_minutes": 210,
+    "release_date": "1985-09-02",
+    "language": "French",
+    "box_office_million_usd": 768.37
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62217c"
+    },
+    "99popularity": 85.0,
+    "director": "Stanley Kubrick",
+    "genre": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdb_score": 8.5,
+    "name": "The Shining",
+    "release_date": "2002-05-06",
+    "awards_won": 2,
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62217d"
+    },
+    "99popularity": 80.0,
+    "director": "Luis Bu1uel",
+    "genre": [
+      "Short",
+      "Fantasy"
+    ],
+    "imdb_score": 8.0,
+    "name": "Un chien andalou",
+    "box_office_million_usd": 646.7,
+    "release_date": "1970-05-07",
+    "runtime_minutes": 167,
+    "language": "Spanish",
+    "awards_won": 2
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62217e"
+    },
+    "99popularity": 77.0,
+    "director": "Tod Browning",
+    "genre": [
+      "Fantasy",
+      "Horror"
+    ],
+    "imdb_score": 7.7,
+    "name": "Dracula",
+    "release_date": "1981-06-27",
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62217f"
+    },
+    "99popularity": 90.0,
+    "director": "Mark Kirkland",
+    "genre": [
+      "Animation",
+      "Comedy"
+    ],
+    "imdb_score": 9.0,
+    "name": "The Simpsons",
+    "language": "Italian",
+    "release_date": "1998-05-09",
+    "box_office_million_usd": 953.46,
+    "awards_won": 2,
+    "runtime_minutes": 153
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622180"
+    },
+    "99popularity": 75.0,
+    "director": "Ted Kotcheff",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_score": 7.5,
+    "name": "First Blood",
+    "release_date": "1979-12-18",
+    "box_office_million_usd": 449.83,
+    "runtime_minutes": 118,
+    "language": "Italian",
+    "awards_won": 1
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622181"
+    },
+    "99popularity": 80.0,
+    "director": "Joseph Barbera",
+    "genre": [
+      "Animation",
+      "Family",
+      "Comedy"
+    ],
+    "imdb_score": 8.0,
+    "name": "The Flintstones",
+    "awards_won": 5,
+    "release_date": "1999-07-06",
+    "language": "Italian",
+    "box_office_million_usd": 367.7
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622182"
+    },
+    "99popularity": 84.0,
+    "director": "Robert Zemeckis",
+    "genre": [
+      "Adventure",
+      "Family",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.4,
+    "name": "Back to the Future",
+    "language": "Spanish",
+    "release_date": "1984-07-12",
+    "box_office_million_usd": 436.5
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622183"
+    },
+    "99popularity": 70.0,
+    "director": "John Ford",
+    "genre": [
+      "Adventure",
+      "War"
+    ],
+    "imdb_score": 7.0,
+    "name": "The Lost Patrol",
+    "awards_won": 2,
+    "release_date": "2008-12-10",
+    "runtime_minutes": 208,
+    "box_office_million_usd": 930.31
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622184"
+    },
+    "99popularity": 81.0,
+    "director": "Mervyn LeRoy",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Film-Noir"
+    ],
+    "imdb_score": 8.1,
+    "name": "I Am a Fugitive from a Chain Gang",
+    "awards_won": 4,
+    "release_date": "1973-01-16",
+    "box_office_million_usd": 215.9,
+    "runtime_minutes": 153,
+    "language": "German"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622185"
+    },
+    "99popularity": 79.0,
+    "director": "John Boorman",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_score": 7.9,
+    "name": "Deliverance",
+    "box_office_million_usd": 670.69,
+    "awards_won": 1,
+    "runtime_minutes": 107
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622186"
+    },
+    "99popularity": 77.0,
+    "director": "Oscar Rudolph",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Crime",
+      "Family",
+      "Fantasy",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "imdb_score": 7.7,
+    "name": "Batman",
+    "box_office_million_usd": 314.83,
+    "awards_won": 2,
+    "release_date": "2014-08-14",
+    "runtime_minutes": 97
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622187"
+    },
+    "99popularity": 84.0,
+    "director": "Alfred Hitchcock",
+    "genre": [
+      "Mystery",
+      "Romance",
+      "Thriller"
+    ],
+    "imdb_score": 8.4,
+    "name": "Rebecca",
+    "awards_won": 0,
+    "release_date": "1982-11-10",
+    "language": "Spanish"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622188"
+    },
+    "99popularity": 80.0,
+    "director": "Edward F. Cline",
+    "genre": [
+      "Comedy",
+      "Short",
+      "Family"
+    ],
+    "imdb_score": 8.0,
+    "name": "The Scarecrow",
+    "release_date": "2020-04-24",
+    "language": "English",
+    "box_office_million_usd": 54.96,
+    "runtime_minutes": 132
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622189"
+    },
+    "99popularity": 75.0,
+    "director": "Tobe Hooper",
+    "genre": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "imdb_score": 7.5,
+    "name": "The Texas Chain Saw Massacre",
+    "runtime_minutes": 84,
+    "awards_won": 3,
+    "release_date": "1988-04-16"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62218a"
+    },
+    "99popularity": 84.0,
+    "director": "David Lean",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "War"
+    ],
+    "imdb_score": 8.4,
+    "name": "The Bridge on the River Kwai",
+    "language": "Spanish",
+    "awards_won": 0
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62218b"
+    },
+    "99popularity": 79.0,
+    "director": "George Cukor",
+    "genre": [
+      "Drama",
+      "Family",
+      "Musical",
+      "Romance"
+    ],
+    "imdb_score": 7.9,
+    "name": "My Fair Lady",
+    "release_date": "2016-06-29",
+    "language": "German"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62218c"
+    },
+    "99popularity": 75.0,
+    "director": "Samuel Armstrong",
+    "genre": [
+      "Animation",
+      "Family",
+      "Musical"
+    ],
+    "imdb_score": 7.5,
+    "name": "Dumbo",
+    "runtime_minutes": 129,
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62218d"
+    },
+    "99popularity": 71.0,
+    "director": "Steven Soderbergh",
+    "genre": [
+      "Drama"
+    ],
+    "imdb_score": 7.1,
+    "name": "Sex, Lies, and Videotape",
+    "release_date": "1975-10-24",
+    "runtime_minutes": 116
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62218e"
+    },
+    "99popularity": 79.0,
+    "director": "Alfred Hitchcock",
+    "genre": [
+      "Horror",
+      "Romance",
+      "Thriller"
+    ],
+    "imdb_score": 7.9,
+    "name": "The Birds",
+    "awards_won": 4,
+    "release_date": "1981-04-25",
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62218f"
+    },
+    "99popularity": 72.0,
+    "director": "James W. Horne",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Sport"
+    ],
+    "imdb_score": 7.2,
+    "name": "College",
+    "runtime_minutes": 184,
+    "language": "German",
+    "box_office_million_usd": 224.58,
+    "awards_won": 4,
+    "release_date": "1993-05-19"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622190"
+    },
+    "99popularity": 79.0,
+    "director": "Don Siegel",
+    "genre": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdb_score": 7.9,
+    "name": "Dirty Harry",
+    "release_date": "1972-12-28",
+    "language": "French",
+    "runtime_minutes": 82,
+    "awards_won": 0
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622191"
+    },
+    "99popularity": 74.0,
+    "director": "James Cameron",
+    "genre": [
+      "Drama",
+      "History",
+      "Romance"
+    ],
+    "imdb_score": 7.4,
+    "name": "Titanic",
+    "awards_won": 5,
+    "box_office_million_usd": 614.05,
+    "language": "Italian",
+    "release_date": "1972-10-05"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622192"
+    },
+    "99popularity": 90.0,
+    "director": "Quentin Tarantino",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "imdb_score": 9.0,
+    "name": "Pulp Fiction",
+    "runtime_minutes": 183,
+    "awards_won": 1,
+    "release_date": "2018-04-30",
+    "language": "English",
+    "box_office_million_usd": 421.28
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622193"
+    },
+    "99popularity": 82.0,
+    "director": "William Wyler",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "History",
+      "Romance"
+    ],
+    "imdb_score": 8.2,
+    "name": "Ben-Hur",
+    "release_date": "1992-03-01",
+    "language": "English",
+    "awards_won": 2,
+    "runtime_minutes": 70,
+    "box_office_million_usd": 639.27
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622194"
+    },
+    "99popularity": 87.0,
+    "director": "Alfred Hitchcock",
+    "genre": [
+      "Crime",
+      "Mystery",
+      "Romance",
+      "Thriller"
+    ],
+    "imdb_score": 8.7,
+    "name": "Rear Window",
+    "runtime_minutes": 170,
+    "box_office_million_usd": 389.53
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622195"
+    },
+    "99popularity": 85.0,
+    "director": "James Cameron",
+    "genre": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 8.5,
+    "name": "Aliens",
+    "runtime_minutes": 94,
+    "box_office_million_usd": 809.3
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622196"
+    },
+    "99popularity": 87.0,
+    "director": "Frank Capra",
+    "genre": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "imdb_score": 8.7,
+    "name": "Its a Wonderful Life",
+    "box_office_million_usd": 415.44,
+    "awards_won": 2,
+    "language": "German",
+    "release_date": "2022-04-28",
+    "runtime_minutes": 96
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622197"
+    },
+    "99popularity": 70.0,
+    "director": "John Cromwell",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Romance"
+    ],
+    "imdb_score": 7.0,
+    "name": "Algiers",
+    "language": "French",
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622198"
+    },
+    "99popularity": 81.0,
+    "director": "Erich von Stroheim",
+    "genre": [
+      "Drama"
+    ],
+    "imdb_score": 8.1,
+    "name": "Greed",
+    "awards_won": 2,
+    "release_date": "2001-10-12",
+    "runtime_minutes": 113,
+    "language": "English"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622199"
+    },
+    "99popularity": 90.0,
+    "director": "Kim Manners",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 9.0,
+    "name": "The X Files",
+    "release_date": "2019-08-07",
+    "awards_won": 5,
+    "language": "English",
+    "runtime_minutes": 167,
+    "box_office_million_usd": 922.05
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62219a"
+    },
+    "99popularity": 60.0,
+    "director": "Joseph C. Terry",
+    "genre": [
+      "Talk-Show"
+    ],
+    "imdb_score": 6.0,
+    "name": "The Oprah Winfrey Show",
+    "release_date": "2002-04-13",
+    "box_office_million_usd": 428.95,
+    "runtime_minutes": 208,
+    "awards_won": 5
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62219b"
+    },
+    "99popularity": 85.0,
+    "director": "James Cameron",
+    "genre": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 8.5,
+    "name": "Terminator 2 : Judgment Day",
+    "awards_won": 5,
+    "box_office_million_usd": 739.36,
+    "runtime_minutes": 73,
+    "language": "French",
+    "release_date": "2018-10-15"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62219c"
+    },
+    "99popularity": 55.0,
+    "director": "Henry Lehrman",
+    "genre": [
+      "Comedy",
+      "Short"
+    ],
+    "imdb_score": 5.5,
+    "name": "The Bangville Police",
+    "language": "Italian",
+    "runtime_minutes": 97,
+    "box_office_million_usd": 515.75,
+    "release_date": "2023-11-04",
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62219d"
+    },
+    "99popularity": 82.0,
+    "director": "Mike Nichols",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 8.2,
+    "name": "The Graduate",
+    "box_office_million_usd": 566.79,
+    "awards_won": 3,
+    "language": "French",
+    "release_date": "1971-10-09"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62219e"
+    },
+    "99popularity": 87.0,
+    "director": "Andy Wachowski",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.7,
+    "name": "The Matrix",
+    "runtime_minutes": 87,
+    "release_date": "2002-01-04",
+    "language": "Italian",
+    "awards_won": 5,
+    "box_office_million_usd": 271.17
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62219f"
+    },
+    "99popularity": 70.0,
+    "director": "Oscar Rudolph",
+    "genre": [
+      "Comedy",
+      "Family"
+    ],
+    "imdb_score": 7.0,
+    "name": "The Brady Bunch",
+    "language": "French",
+    "box_office_million_usd": 845.56,
+    "release_date": "2014-09-10"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221a0"
+    },
+    "99popularity": 85.0,
+    "director": "David Lean",
+    "genre": [
+      "Adventure",
+      "Biography",
+      "Drama",
+      "History",
+      "War"
+    ],
+    "imdb_score": 8.5,
+    "name": "Lawrence of Arabia",
+    "release_date": "1985-04-06",
+    "runtime_minutes": 127,
+    "language": "English",
+    "awards_won": 1
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221a1"
+    },
+    "99popularity": 79.0,
+    "director": "Charles Chaplin",
+    "genre": [
+      "Comedy",
+      "Family",
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 7.9,
+    "name": "The Circus",
+    "box_office_million_usd": 591.17,
+    "awards_won": 4,
+    "runtime_minutes": 82,
+    "release_date": "1982-03-24"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221a2"
+    },
+    "99popularity": 74.0,
+    "director": "Wes Craven",
+    "genre": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdb_score": 7.4,
+    "name": "A Nightmare on Elm Street",
+    "awards_won": 5,
+    "runtime_minutes": 145,
+    "language": "Spanish",
+    "box_office_million_usd": 886.91,
+    "release_date": "1992-05-13"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221a3"
+    },
+    "99popularity": 79.0,
+    "director": "Robert Wise",
+    "genre": [
+      "Biography",
+      "Drama",
+      "Family",
+      "Musical"
+    ],
+    "imdb_score": 7.9,
+    "name": "The Sound of Music",
+    "runtime_minutes": 161,
+    "release_date": "2009-06-10",
+    "box_office_million_usd": 141.04,
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221a4"
+    },
+    "99popularity": 78.0,
+    "director": "George Schaefer",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdb_score": 7.8,
+    "name": "Pygmalion",
+    "awards_won": 3,
+    "box_office_million_usd": 34.83,
+    "runtime_minutes": 85
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221a5"
+    },
+    "99popularity": 86.0,
+    "director": "Alfred Hitchcock",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Mystery",
+      "Romance",
+      "Thriller"
+    ],
+    "imdb_score": 8.6,
+    "name": "North by Northwest",
+    "language": "French",
+    "awards_won": 1,
+    "runtime_minutes": 136
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221a6"
+    },
+    "99popularity": 87.0,
+    "director": "Jonathan Demme",
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "imdb_score": 8.7,
+    "name": "The Silence of the Lambs",
+    "language": "French",
+    "awards_won": 5,
+    "box_office_million_usd": 650.63,
+    "runtime_minutes": 176
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221a7"
+    },
+    "99popularity": 78.0,
+    "director": "Jack Arnold",
+    "genre": [
+      "Comedy",
+      "Family"
+    ],
+    "imdb_score": 7.8,
+    "name": "Gilligans Island",
+    "release_date": "1977-08-21",
+    "awards_won": 1,
+    "runtime_minutes": 79
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221a8"
+    },
+    "99popularity": 76.0,
+    "director": "James Algar",
+    "genre": [
+      "Animation",
+      "Drama",
+      "Family"
+    ],
+    "imdb_score": 7.6,
+    "name": "Bambi",
+    "box_office_million_usd": 328.18,
+    "awards_won": 3
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221a9"
+    },
+    "99popularity": 90.0,
+    "director": "William Asher",
+    "genre": [
+      "Comedy",
+      "Family"
+    ],
+    "imdb_score": 9.0,
+    "name": "I Love Lucy",
+    "release_date": "2020-02-21",
+    "box_office_million_usd": 534.88,
+    "runtime_minutes": 72
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221aa"
+    },
+    "99popularity": 78.0,
+    "director": "Jerome Robbins",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    "imdb_score": 7.8,
+    "name": "West Side Story",
+    "language": "English",
+    "awards_won": 2,
+    "box_office_million_usd": 773.68,
+    "runtime_minutes": 128
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ab"
+    },
+    "99popularity": 74.0,
+    "director": "Karl Freund",
+    "genre": [
+      "Romance",
+      "Horror"
+    ],
+    "imdb_score": 7.4,
+    "name": "Mad Love",
+    "awards_won": 5,
+    "box_office_million_usd": 658.53,
+    "runtime_minutes": 71,
+    "language": "French",
+    "release_date": "1993-07-04"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ac"
+    },
+    "99popularity": 83.0,
+    "director": "Ridley Scott",
+    "genre": [
+      "Drama",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 8.3,
+    "name": "Blade Runner",
+    "runtime_minutes": 203,
+    "language": "Spanish"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ad"
+    },
+    "99popularity": 79.0,
+    "director": "John Carpenter",
+    "genre": [
+      "Horror",
+      "Thriller"
+    ],
+    "imdb_score": 7.9,
+    "name": "Halloween",
+    "release_date": "2008-08-06",
+    "language": "Italian",
+    "awards_won": 4,
+    "box_office_million_usd": 512.62,
+    "runtime_minutes": 170
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ae"
+    },
+    "99popularity": 77.0,
+    "director": "Robert Stevenson",
+    "genre": [
+      "Comedy",
+      "Family",
+      "Fantasy",
+      "Musical"
+    ],
+    "imdb_score": 7.7,
+    "name": "Mary Poppins",
+    "release_date": "1977-09-09",
+    "awards_won": 0,
+    "language": "Italian"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221af"
+    },
+    "99popularity": 83.0,
+    "director": "Richard Marquand",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.3,
+    "name": "Star Wars : Episode VI - Return of the Jedi",
+    "awards_won": 2,
+    "runtime_minutes": 127,
+    "language": "Spanish",
+    "box_office_million_usd": 949.62
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221b0"
+    },
+    "99popularity": 88.0,
+    "director": "Akira Kurosawa",
+    "genre": [
+      "Adventure",
+      "Drama"
+    ],
+    "imdb_score": 8.8,
+    "name": "Shichinin no samurai",
+    "awards_won": 3,
+    "release_date": "2022-01-06",
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221b1"
+    },
+    "99popularity": 78.0,
+    "director": "Steven Spielberg",
+    "genre": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "imdb_score": 7.8,
+    "name": "Close Encounters of the Third Kind",
+    "release_date": "2008-11-16",
+    "awards_won": 0,
+    "box_office_million_usd": 118.76,
+    "runtime_minutes": 146,
+    "language": "Italian"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221b2"
+    },
+    "99popularity": 79.0,
+    "director": "Fred Zinnemann",
+    "genre": [
+      "Drama",
+      "Romance",
+      "War"
+    ],
+    "imdb_score": 7.9,
+    "name": "From Here to Eternity",
+    "language": "German",
+    "runtime_minutes": 122
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221b3"
+    },
+    "99popularity": 80.0,
+    "director": "James Whale",
+    "genre": [
+      "Horror",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.0,
+    "name": "Bride of Frankenstein",
+    "release_date": "1990-02-02",
+    "runtime_minutes": 89
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221b4"
+    },
+    "99popularity": 60.0,
+    "director": "Phil Karlson",
+    "genre": [
+      "Drama",
+      "Crime",
+      "Film-Noir"
+    ],
+    "imdb_score": 6.0,
+    "name": "5 Against the House",
+    "runtime_minutes": 97,
+    "box_office_million_usd": 885.76,
+    "language": "Spanish",
+    "release_date": "1986-12-18"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221b5"
+    },
+    "99popularity": 85.0,
+    "director": "John Huston",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Western",
+      "Action"
+    ],
+    "imdb_score": 8.5,
+    "name": "The Treasure of the Sierra Madre",
+    "box_office_million_usd": 755.68,
+    "runtime_minutes": 162,
+    "language": "German",
+    "release_date": "2016-06-03",
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221b6"
+    },
+    "99popularity": 47.0,
+    "director": "D.W. Griffith",
+    "genre": [
+      "Short",
+      "Drama"
+    ],
+    "imdb_score": 4.7,
+    "name": "His Trust Fulfilled",
+    "language": "German",
+    "release_date": "1994-05-05",
+    "runtime_minutes": 170
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221b7"
+    },
+    "99popularity": 53.0,
+    "director": "D.W. Griffith",
+    "genre": [
+      "Short",
+      "Drama",
+      "War"
+    ],
+    "imdb_score": 5.3,
+    "name": "His Trust",
+    "runtime_minutes": 70,
+    "awards_won": 1,
+    "box_office_million_usd": 343.23,
+    "language": "English",
+    "release_date": "2008-12-13"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221b8"
+    },
+    "99popularity": 73.0,
+    "director": "Ishirccab Honda",
+    "genre": [
+      "Drama",
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 7.3,
+    "name": "Gojira",
+    "runtime_minutes": 123,
+    "awards_won": 4,
+    "language": "English",
+    "release_date": "2011-06-29"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221b9"
+    },
+    "99popularity": 71.0,
+    "director": "Winsor McCay",
+    "genre": [
+      "Animation",
+      "Short"
+    ],
+    "imdb_score": 7.1,
+    "name": "Dreams of the Rarebit Fiend : The Pet",
+    "awards_won": 2,
+    "runtime_minutes": 151,
+    "release_date": "2024-07-24",
+    "language": "English",
+    "box_office_million_usd": 80.85
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ba"
+    },
+    "99popularity": 80.0,
+    "director": "Stanley Kubrick",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "imdb_score": 8.0,
+    "name": "Spartacus",
+    "language": "Spanish",
+    "awards_won": 3,
+    "release_date": "1997-07-16"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221bb"
+    },
+    "99popularity": 72.0,
+    "director": "Frank Lloyd",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 7.2,
+    "name": "The Sea Hawk",
+    "release_date": "2001-02-25",
+    "runtime_minutes": 143,
+    "awards_won": 3,
+    "language": "French",
+    "box_office_million_usd": 872.75
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221bc"
+    },
+    "99popularity": 80.0,
+    "director": "Franklin J. Schaffner",
+    "genre": [
+      "Adventure",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.0,
+    "name": "Planet of the Apes",
+    "release_date": "1977-09-01",
+    "box_office_million_usd": 69.65,
+    "runtime_minutes": 156,
+    "language": "Italian",
+    "awards_won": 5
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221bd"
+    },
+    "99popularity": 84.0,
+    "director": "John Huston",
+    "genre": [
+      "Crime",
+      "Film-Noir",
+      "Mystery"
+    ],
+    "imdb_score": 8.4,
+    "name": "The Maltese Falcon",
+    "awards_won": 1,
+    "release_date": "1986-11-19",
+    "language": "English",
+    "runtime_minutes": 96,
+    "box_office_million_usd": 767.13
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221be"
+    },
+    "99popularity": 79.0,
+    "director": "Akira Kurosawa",
+    "genre": [
+      "Drama",
+      "History",
+      "War"
+    ],
+    "imdb_score": 7.9,
+    "name": "Kagemusha",
+    "runtime_minutes": 177,
+    "awards_won": 5,
+    "language": "English"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221bf"
+    },
+    "99popularity": 74.0,
+    "director": "Leo McCarey",
+    "genre": [
+      "Drama",
+      "Family"
+    ],
+    "imdb_score": 7.4,
+    "name": "The Bells of St. Marys",
+    "release_date": "2023-02-14",
+    "language": "German",
+    "runtime_minutes": 188,
+    "awards_won": 4,
+    "box_office_million_usd": 573.93
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221c0"
+    },
+    "99popularity": 77.0,
+    "director": "Steven Spielberg",
+    "genre": [
+      "Mystery",
+      "Thriller"
+    ],
+    "imdb_score": 7.7,
+    "name": "Duel",
+    "release_date": "2016-02-13",
+    "awards_won": 3,
+    "box_office_million_usd": 681.93
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221c1"
+    },
+    "99popularity": 78.0,
+    "director": "Sergei M. Eisenstein",
+    "genre": [
+      "Drama"
+    ],
+    "imdb_score": 7.8,
+    "name": "Stachka",
+    "release_date": "2015-01-25",
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221c2"
+    },
+    "99popularity": 71.0,
+    "director": "Fred Zinnemann",
+    "genre": [
+      "Musical",
+      "Romance",
+      "Western"
+    ],
+    "imdb_score": 7.1,
+    "name": "Oklahoma!",
+    "release_date": "2016-12-05",
+    "box_office_million_usd": 563.51,
+    "awards_won": 5
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221c3"
+    },
+    "99popularity": 59.0,
+    "director": "Gordon Douglas",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "imdb_score": 5.9,
+    "name": "In Like Flint",
+    "runtime_minutes": 96,
+    "release_date": "1987-05-05",
+    "box_office_million_usd": 93.8,
+    "awards_won": 4,
+    "language": "German"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221c4"
+    },
+    "99popularity": 74.0,
+    "director": "Carl Boese",
+    "genre": [
+      "Fantasy",
+      "Horror"
+    ],
+    "imdb_score": 7.4,
+    "name": "Der Golem, wie er in die Welt kam",
+    "release_date": "1998-12-30",
+    "box_office_million_usd": 865.63,
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221c5"
+    },
+    "99popularity": 74.0,
+    "director": "Maya Deren",
+    "genre": [
+      "Short"
+    ],
+    "imdb_score": 7.4,
+    "name": "At Land",
+    "runtime_minutes": 167,
+    "awards_won": 4,
+    "box_office_million_usd": 737.19,
+    "release_date": "1976-12-01",
+    "language": "English"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221c6"
+    },
+    "99popularity": 79.0,
+    "director": "Steven Spielberg",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Family",
+      "Sci-Fi"
+    ],
+    "imdb_score": 7.9,
+    "name": "Jurassic Park",
+    "box_office_million_usd": 540.97,
+    "runtime_minutes": 161,
+    "language": "Italian",
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221c7"
+    },
+    "99popularity": 82.0,
+    "director": "Lewis Milestone",
+    "genre": [
+      "Action",
+      "Drama",
+      "History",
+      "War"
+    ],
+    "imdb_score": 8.2,
+    "name": "All Quiet on the Western Front",
+    "awards_won": 1,
+    "language": "German",
+    "box_office_million_usd": 458.28,
+    "release_date": "1983-05-04"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221c8"
+    },
+    "99popularity": 79.0,
+    "director": "John Ford",
+    "genre": [
+      "Action",
+      "Drama",
+      "Romance",
+      "Western"
+    ],
+    "imdb_score": 7.9,
+    "name": "Stagecoach",
+    "release_date": "1982-01-29",
+    "runtime_minutes": 106,
+    "box_office_million_usd": 105.85,
+    "awards_won": 5,
+    "language": "Spanish"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221c9"
+    },
+    "99popularity": 68.0,
+    "director": "John Badham",
+    "genre": [
+      "Drama",
+      "Music",
+      "Romance"
+    ],
+    "imdb_score": 6.8,
+    "name": "Saturday Night Fever",
+    "box_office_million_usd": 936.01,
+    "language": "Italian"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ca"
+    },
+    "99popularity": 81.0,
+    "director": "George Cukor",
+    "genre": [
+      "Comedy",
+      "Romance"
+    ],
+    "imdb_score": 8.1,
+    "name": "The Philadelphia Story",
+    "language": "German",
+    "runtime_minutes": 161
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221cb"
+    },
+    "99popularity": 82.0,
+    "director": "Federico Fellini",
+    "genre": [
+      "Drama",
+      "Fantasy"
+    ],
+    "imdb_score": 8.2,
+    "name": "8xe5",
+    "box_office_million_usd": 577.05,
+    "language": "German",
+    "awards_won": 2
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221cc"
+    },
+    "99popularity": 86.0,
+    "director": "Douglas Camfield",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.6,
+    "name": "Doctor Who",
+    "runtime_minutes": 73,
+    "awards_won": 2,
+    "release_date": "2002-08-10",
+    "language": "Italian"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221cd"
+    },
+    "99popularity": 86.0,
+    "director": "Fritz Lang",
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "imdb_score": 8.6,
+    "name": "M",
+    "awards_won": 0,
+    "release_date": "1970-04-16",
+    "box_office_million_usd": 85.5,
+    "runtime_minutes": 210,
+    "language": "Spanish"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ce"
+    },
+    "99popularity": 74.0,
+    "director": "John Huston",
+    "genre": [
+      "Adventure",
+      "Drama"
+    ],
+    "imdb_score": 7.4,
+    "name": "Moby Dick",
+    "release_date": "1987-09-28",
+    "runtime_minutes": 120,
+    "awards_won": 5,
+    "language": "Italian"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221cf"
+    },
+    "99popularity": 86.0,
+    "director": "Stanley Kubrick",
+    "genre": [
+      "Crime",
+      "Drama",
+      "War"
+    ],
+    "imdb_score": 8.6,
+    "name": "Paths of Glory",
+    "release_date": "2017-01-05",
+    "runtime_minutes": 202,
+    "awards_won": 3,
+    "box_office_million_usd": 463.6
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221d0"
+    },
+    "99popularity": 74.0,
+    "director": "Brian De Palma",
+    "genre": [
+      "Horror",
+      "Thriller"
+    ],
+    "imdb_score": 7.4,
+    "name": "Carrie",
+    "runtime_minutes": 180,
+    "awards_won": 0,
+    "language": "Italian"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221d1"
+    },
+    "99popularity": 77.0,
+    "director": "Jerry Paris",
+    "genre": [
+      "Comedy",
+      "Family",
+      "Music"
+    ],
+    "imdb_score": 7.7,
+    "name": "Happy Days",
+    "awards_won": 1,
+    "box_office_million_usd": 627.4,
+    "release_date": "1994-12-20"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221d2"
+    },
+    "99popularity": 79.0,
+    "director": "Nicholas Ray",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 7.9,
+    "name": "Rebel Without a Cause",
+    "awards_won": 5,
+    "language": "Italian",
+    "release_date": "1976-01-29",
+    "runtime_minutes": 182,
+    "box_office_million_usd": 418.59
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221d3"
+    },
+    "99popularity": 73.0,
+    "director": "Richard Donner",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Family",
+      "Sci-Fi"
+    ],
+    "imdb_score": 7.3,
+    "name": "Superman",
+    "runtime_minutes": 98,
+    "awards_won": 4,
+    "language": "English",
+    "release_date": "2002-12-27"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221d4"
+    },
+    "99popularity": 88.0,
+    "director": "Peter Harris",
+    "genre": [
+      "Comedy",
+      "Family",
+      "Music"
+    ],
+    "imdb_score": 8.8,
+    "name": "The Muppet Show",
+    "runtime_minutes": 136,
+    "awards_won": 3,
+    "box_office_million_usd": 381.87,
+    "release_date": "2019-05-05",
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221d5"
+    },
+    "99popularity": 81.0,
+    "director": "Joseph Barbera",
+    "genre": [
+      "Animation",
+      "Family",
+      "Mystery",
+      "Comedy",
+      "Adventure"
+    ],
+    "imdb_score": 8.1,
+    "name": "Scooby Doo, Where Are You!",
+    "language": "Spanish",
+    "awards_won": 0,
+    "box_office_million_usd": 337.43
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221d6"
+    },
+    "99popularity": 71.0,
+    "director": "Joy Batchelor",
+    "genre": [
+      "Animation",
+      "Drama"
+    ],
+    "imdb_score": 7.1,
+    "name": "Animal Farm",
+    "box_office_million_usd": 963.41,
+    "release_date": "1985-10-28",
+    "language": "Italian",
+    "runtime_minutes": 149
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221d7"
+    },
+    "99popularity": 77.0,
+    "director": "Norman Ferguson",
+    "genre": [
+      "Animation",
+      "Drama",
+      "Family",
+      "Fantasy",
+      "Music"
+    ],
+    "imdb_score": 7.7,
+    "name": "Pinocchio",
+    "box_office_million_usd": 381.34,
+    "awards_won": 0,
+    "language": "Italian",
+    "release_date": "1987-08-18",
+    "runtime_minutes": 83
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221d8"
+    },
+    "99popularity": 78.0,
+    "director": "George Stevens",
+    "genre": [
+      "Drama",
+      "Western"
+    ],
+    "imdb_score": 7.8,
+    "name": "Shane",
+    "language": "French",
+    "awards_won": 0
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221d9"
+    },
+    "99popularity": 48.0,
+    "director": "Ray Enright",
+    "genre": [
+      "Comedy",
+      "Music",
+      "Romance",
+      "Sport"
+    ],
+    "imdb_score": 4.8,
+    "name": "Swing Your Lady",
+    "awards_won": 0,
+    "language": "English",
+    "box_office_million_usd": 411.47,
+    "release_date": "2018-07-06"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221da"
+    },
+    "99popularity": 86.0,
+    "director": "Kevin McCarthy",
+    "genre": [
+      "Game-Show"
+    ],
+    "imdb_score": 8.6,
+    "name": "Jeopardy!",
+    "box_office_million_usd": 315.32,
+    "language": "English"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221db"
+    },
+    "99popularity": 75.0,
+    "director": "Arthur Lipsett",
+    "genre": [
+      "Short"
+    ],
+    "imdb_score": 7.5,
+    "name": "21-87",
+    "release_date": "2019-06-04",
+    "box_office_million_usd": 694.37,
+    "runtime_minutes": 121,
+    "language": "French",
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221dc"
+    },
+    "99popularity": 69.0,
+    "director": "John G. Avildsen",
+    "genre": [
+      "Drama",
+      "Family",
+      "Sport"
+    ],
+    "imdb_score": 6.9,
+    "name": "The Karate Kid",
+    "runtime_minutes": 186,
+    "release_date": "2011-04-17",
+    "language": "German",
+    "awards_won": 5,
+    "box_office_million_usd": 411.24
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221dd"
+    },
+    "99popularity": 82.0,
+    "director": "Norman Tokar",
+    "genre": [
+      "Comedy",
+      "Family"
+    ],
+    "imdb_score": 8.2,
+    "name": "Leave It to Beaver",
+    "awards_won": 3,
+    "language": "French",
+    "box_office_million_usd": 354.22
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221de"
+    },
+    "99popularity": 89.0,
+    "director": "Milos Forman",
+    "genre": [
+      "Drama"
+    ],
+    "imdb_score": 8.9,
+    "name": "One Flew Over the Cuckoos Nest",
+    "runtime_minutes": 97,
+    "awards_won": 4,
+    "release_date": "2024-10-25",
+    "box_office_million_usd": 202.22
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221df"
+    },
+    "99popularity": 80.0,
+    "director": "Arthur Penn",
+    "genre": [
+      "Biography",
+      "Crime",
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 8.0,
+    "name": "Bonnie and Clyde",
+    "runtime_minutes": 109,
+    "release_date": "2019-05-19"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221e0"
+    },
+    "99popularity": 81.0,
+    "director": "Dave Wilson",
+    "genre": [
+      "Comedy",
+      "Music"
+    ],
+    "imdb_score": 8.1,
+    "name": "Saturday Night Live",
+    "awards_won": 1,
+    "runtime_minutes": 192,
+    "release_date": "2004-08-12"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221e1"
+    },
+    "99popularity": 88.0,
+    "director": "Sergio Leone",
+    "genre": [
+      "Western"
+    ],
+    "imdb_score": 8.8,
+    "name": "Cera una volta il West",
+    "release_date": "2012-03-23",
+    "runtime_minutes": 159,
+    "language": "Italian",
+    "awards_won": 2
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221e2"
+    },
+    "99popularity": 75.0,
+    "director": "Walt Disney",
+    "genre": [
+      "Animation",
+      "Family",
+      "Comedy",
+      "Short"
+    ],
+    "imdb_score": 7.5,
+    "name": "Plane Crazy",
+    "runtime_minutes": 126,
+    "language": "German"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221e3"
+    },
+    "99popularity": 64.0,
+    "director": "Rob Klug",
+    "genre": [
+      "Documentary",
+      "News"
+    ],
+    "imdb_score": 6.4,
+    "name": "60 Minutes",
+    "box_office_million_usd": 952.48,
+    "language": "French",
+    "awards_won": 5
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221e4"
+    },
+    "99popularity": 77.0,
+    "director": "Stanley Kubrick",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 7.7,
+    "name": "Lolita",
+    "language": "Italian",
+    "awards_won": 0,
+    "runtime_minutes": 92,
+    "release_date": "1989-01-18",
+    "box_office_million_usd": 353.83
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221e5"
+    },
+    "99popularity": 83.0,
+    "director": "John McTiernan",
+    "genre": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdb_score": 8.3,
+    "name": "Die Hard",
+    "awards_won": 5,
+    "release_date": "2012-01-08",
+    "runtime_minutes": 146,
+    "box_office_million_usd": 797.7
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221e6"
+    },
+    "99popularity": 82.0,
+    "director": "Roger Allers",
+    "genre": [
+      "Animation",
+      "Adventure",
+      "Drama",
+      "Family",
+      "Musical"
+    ],
+    "imdb_score": 8.2,
+    "name": "The Lion King",
+    "box_office_million_usd": 49.2,
+    "runtime_minutes": 210,
+    "awards_won": 5,
+    "release_date": "2019-06-03",
+    "language": "Italian"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221e7"
+    },
+    "99popularity": 73.0,
+    "director": "Dennis Hopper",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "imdb_score": 7.3,
+    "name": "Easy Rider",
+    "box_office_million_usd": 48.76,
+    "awards_won": 2,
+    "runtime_minutes": 157
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221e8"
+    },
+    "99popularity": 82.0,
+    "director": "Otto Preminger",
+    "genre": [
+      "Crime",
+      "Film-Noir",
+      "Mystery",
+      "Romance",
+      "Thriller"
+    ],
+    "imdb_score": 8.2,
+    "name": "Laura",
+    "language": "Italian",
+    "release_date": "1987-02-24",
+    "awards_won": 3,
+    "runtime_minutes": 120,
+    "box_office_million_usd": 931.0
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221e9"
+    },
+    "99popularity": 80.0,
+    "director": "Don Siegel",
+    "genre": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 8.0,
+    "name": "Invasion of the Body Snatchers",
+    "release_date": "1997-03-07",
+    "runtime_minutes": 146,
+    "box_office_million_usd": 277.38
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ea"
+    },
+    "99popularity": 84.0,
+    "director": "F.W. Murnau",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 8.4,
+    "name": "Sunrise : A Song of Two Humans",
+    "release_date": "2017-10-12",
+    "box_office_million_usd": 416.88,
+    "runtime_minutes": 152
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221eb"
+    },
+    "99popularity": 83.0,
+    "director": "Bobby Quinn",
+    "genre": [
+      "Comedy",
+      "Music",
+      "Talk-Show"
+    ],
+    "imdb_score": 8.3,
+    "name": "The Tonight Show Starring Johnny Carson",
+    "awards_won": 5,
+    "box_office_million_usd": 235.73
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ec"
+    },
+    "99popularity": 66.0,
+    "director": "Tony Scott",
+    "genre": [
+      "Action",
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 6.6,
+    "name": "Top Gun",
+    "release_date": "1970-05-17",
+    "awards_won": 5,
+    "box_office_million_usd": 927.34,
+    "runtime_minutes": 158
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ed"
+    },
+    "99popularity": 68.0,
+    "director": "Walter Grauman",
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_score": 6.8,
+    "name": "Lady in a Cage",
+    "release_date": "2008-01-17",
+    "box_office_million_usd": 194.15,
+    "awards_won": 2,
+    "runtime_minutes": 95,
+    "language": "Spanish"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ee"
+    },
+    "99popularity": 76.0,
+    "director": "Sam Raimi",
+    "genre": [
+      "Horror"
+    ],
+    "imdb_score": 7.6,
+    "name": "The Evil Dead",
+    "language": "French",
+    "awards_won": 3,
+    "runtime_minutes": 182,
+    "box_office_million_usd": 117.19
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ef"
+    },
+    "99popularity": 69.0,
+    "director": "Lewis Gilbert",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 6.9,
+    "name": "You Only Live Twice",
+    "box_office_million_usd": 391.55,
+    "runtime_minutes": 77
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221f0"
+    },
+    "99popularity": 75.0,
+    "director": "Terence Young",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Romance",
+      "Thriller"
+    ],
+    "imdb_score": 7.5,
+    "name": "From Russia with Love",
+    "box_office_million_usd": 832.21,
+    "language": "English"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221f1"
+    },
+    "99popularity": 78.0,
+    "director": "Alain Resnais",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Romance"
+    ],
+    "imdb_score": 7.8,
+    "name": "Lanncca9e derniccacre ccca Marienbad",
+    "release_date": "2007-06-10",
+    "language": "German"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221f2"
+    },
+    "99popularity": 81.0,
+    "director": "Hollingsworth Morse",
+    "genre": [
+      "Adventure",
+      "Western",
+      "Family"
+    ],
+    "imdb_score": 8.1,
+    "name": "The Lone Ranger",
+    "language": "German",
+    "runtime_minutes": 96,
+    "awards_won": 3,
+    "box_office_million_usd": 34.85,
+    "release_date": "1985-01-03"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221f3"
+    },
+    "99popularity": 52.0,
+    "director": "Gerard Damiano",
+    "genre": [
+      "Adult",
+      "Comedy"
+    ],
+    "imdb_score": 5.2,
+    "name": "Deep Throat",
+    "awards_won": 3,
+    "release_date": "1997-10-13",
+    "runtime_minutes": 204
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221f4"
+    },
+    "99popularity": 77.0,
+    "director": "Josef von Sternberg",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "imdb_score": 7.7,
+    "name": "Underworld",
+    "release_date": "1984-09-12",
+    "box_office_million_usd": 781.66,
+    "awards_won": 1,
+    "runtime_minutes": 183,
+    "language": "Italian"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221f5"
+    },
+    "99popularity": 76.0,
+    "director": "Samuel Fuller",
+    "genre": [
+      "Drama",
+      "Mystery"
+    ],
+    "imdb_score": 7.6,
+    "name": "Shock Corridor",
+    "awards_won": 4,
+    "box_office_million_usd": 473.77,
+    "language": "German",
+    "release_date": "1999-07-19"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221f6"
+    },
+    "99popularity": 76.0,
+    "director": "Robert Clouse",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_score": 7.6,
+    "name": "Enter the Dragon",
+    "awards_won": 0,
+    "language": "Italian",
+    "box_office_million_usd": 241.46
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221f7"
+    },
+    "99popularity": 73.0,
+    "director": "John Ford",
+    "genre": [
+      "Western"
+    ],
+    "imdb_score": 7.3,
+    "name": "She Wore a Yellow Ribbon",
+    "release_date": "2025-02-12",
+    "language": "Italian",
+    "runtime_minutes": 185,
+    "box_office_million_usd": 132.58,
+    "awards_won": 1
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221f8"
+    },
+    "99popularity": 78.0,
+    "director": "John Sturges",
+    "genre": [
+      "Western",
+      "Adventure",
+      "Drama"
+    ],
+    "imdb_score": 7.8,
+    "name": "The Magnificent Seven",
+    "release_date": "2004-04-15",
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221f9"
+    },
+    "99popularity": 67.0,
+    "director": "Edouard Molinaro",
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_score": 6.7,
+    "name": "Un dans la ville",
+    "runtime_minutes": 173,
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221fa"
+    },
+    "99popularity": 76.0,
+    "director": "Tim Burton",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_score": 7.6,
+    "name": "Batman",
+    "awards_won": 2,
+    "language": "French",
+    "box_office_million_usd": 927.31,
+    "runtime_minutes": 72
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221fb"
+    },
+    "99popularity": 55.0,
+    "director": "Lee Sholem",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Romance"
+    ],
+    "imdb_score": 5.5,
+    "name": "Tarzans Magic Fountain",
+    "language": "German",
+    "box_office_million_usd": 422.7,
+    "release_date": "2007-05-02",
+    "awards_won": 2,
+    "runtime_minutes": 83
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221fc"
+    },
+    "99popularity": 74.0,
+    "director": "Clyde Geronimi",
+    "genre": [
+      "Animation",
+      "Family",
+      "Fantasy",
+      "Musical",
+      "Romance"
+    ],
+    "imdb_score": 7.4,
+    "name": "Cinderella",
+    "awards_won": 5,
+    "language": "Italian",
+    "box_office_million_usd": 899.88
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221fd"
+    },
+    "99popularity": 77.0,
+    "director": "Leni Riefenstahl",
+    "genre": [
+      "Documentary",
+      "War"
+    ],
+    "imdb_score": 7.7,
+    "name": "Triumph des Willens",
+    "language": "English",
+    "release_date": "1974-09-18",
+    "runtime_minutes": 107,
+    "box_office_million_usd": 566.2
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221fe"
+    },
+    "99popularity": 70.0,
+    "director": "Randal Kleiser",
+    "genre": [
+      "Musical",
+      "Romance"
+    ],
+    "imdb_score": 7.0,
+    "name": "Grease",
+    "runtime_minutes": 148,
+    "language": "Italian"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d6221ff"
+    },
+    "99popularity": 83.0,
+    "director": "Fred Zinnemann",
+    "genre": [
+      "Drama",
+      "Western"
+    ],
+    "imdb_score": 8.3,
+    "name": "High Noon",
+    "release_date": "2008-11-11",
+    "runtime_minutes": 165,
+    "awards_won": 3,
+    "box_office_million_usd": 125.95
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622200"
+    },
+    "99popularity": 84.0,
+    "director": "Quentin Tarantino",
+    "genre": [
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
+    "imdb_score": 8.4,
+    "name": "Reservoir Dogs",
+    "runtime_minutes": 87,
+    "release_date": "2000-07-15",
+    "box_office_million_usd": 212.94,
+    "awards_won": 2
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622201"
+    },
+    "99popularity": 84.0,
+    "director": "Frank Capra",
+    "genre": [
+      "Drama"
+    ],
+    "imdb_score": 8.4,
+    "name": "Mr. Smith Goes to Washington",
+    "runtime_minutes": 71,
+    "language": "Spanish",
+    "box_office_million_usd": 315.77
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622202"
+    },
+    "99popularity": 78.0,
+    "director": "George Stevens",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 7.8,
+    "name": "A Place in the Sun",
+    "awards_won": 0,
+    "box_office_million_usd": 543.49,
+    "release_date": "2007-07-13",
+    "language": "French",
+    "runtime_minutes": 81
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622203"
+    },
+    "99popularity": 81.0,
+    "director": "D.W. Griffith",
+    "genre": [
+      "Drama",
+      "History",
+      "Romance"
+    ],
+    "imdb_score": 8.1,
+    "name": "Intolerance : Loves Struggle Throughout the Ages",
+    "runtime_minutes": 192,
+    "box_office_million_usd": 143.3
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622204"
+    },
+    "99popularity": 85.0,
+    "director": "Carol Reed",
+    "genre": [
+      "Film-Noir",
+      "Mystery",
+      "Thriller"
+    ],
+    "imdb_score": 8.5,
+    "name": "The Third Man",
+    "runtime_minutes": 195,
+    "language": "French",
+    "release_date": "1979-06-09"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622205"
+    },
+    "99popularity": 83.0,
+    "director": "Charles Chaplin",
+    "genre": [
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Romance",
+      "Western"
+    ],
+    "imdb_score": 8.3,
+    "name": "The Gold Rush",
+    "release_date": "1994-03-02",
+    "language": "Italian",
+    "awards_won": 2,
+    "runtime_minutes": 102
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622206"
+    },
+    "99popularity": 63.0,
+    "director": "Sean S. Cunningham",
+    "genre": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "imdb_score": 6.3,
+    "name": "Friday the 13th",
+    "box_office_million_usd": 507.17,
+    "runtime_minutes": 155,
+    "release_date": "1997-05-03",
+    "language": "English",
+    "awards_won": 1
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622207"
+    },
+    "99popularity": 83.0,
+    "director": "John Sturges",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "History",
+      "War"
+    ],
+    "imdb_score": 8.3,
+    "name": "The Great Escape",
+    "language": "German",
+    "box_office_million_usd": 688.21,
+    "runtime_minutes": 190,
+    "awards_won": 2,
+    "release_date": "1971-05-07"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622208"
+    },
+    "99popularity": 79.0,
+    "director": "John Ford",
+    "genre": [
+      "Drama",
+      "Western"
+    ],
+    "imdb_score": 7.9,
+    "name": "My Darling Clementine",
+    "release_date": "1987-06-13",
+    "awards_won": 1,
+    "language": "German",
+    "box_office_million_usd": 279.21,
+    "runtime_minutes": 127
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622209"
+    },
+    "99popularity": 87.0,
+    "director": "Billy Wilder",
+    "genre": [
+      "Drama",
+      "Film-Noir"
+    ],
+    "imdb_score": 8.7,
+    "name": "Sunset Blvd.",
+    "release_date": "2003-08-06",
+    "awards_won": 2
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62220a"
+    },
+    "99popularity": 70.0,
+    "director": "Clint Eastwood",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Romance",
+      "Thriller"
+    ],
+    "imdb_score": 7.0,
+    "name": "Play Misty for Me",
+    "box_office_million_usd": 223.55,
+    "release_date": "2012-09-20",
+    "runtime_minutes": 128
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62220b"
+    },
+    "99popularity": 79.0,
+    "director": "Cecil B. DeMille",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "History"
+    ],
+    "imdb_score": 7.9,
+    "name": "The Ten Commandments",
+    "awards_won": 4,
+    "box_office_million_usd": 270.56,
+    "language": "German",
+    "release_date": "1999-11-20",
+    "runtime_minutes": 181
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62220c"
+    },
+    "99popularity": 73.0,
+    "director": "Bretaigne Windust",
+    "genre": [
+      "Drama",
+      "Crime",
+      "Film-Noir"
+    ],
+    "imdb_score": 7.3,
+    "name": "The Enforcer",
+    "language": "German",
+    "release_date": "2010-01-13",
+    "box_office_million_usd": 749.7,
+    "runtime_minutes": 167
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62220d"
+    },
+    "99popularity": 73.0,
+    "director": "Cameron Crowe",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Romance",
+      "Sport"
+    ],
+    "imdb_score": 7.3,
+    "name": "Jerry Maguire",
+    "language": "German",
+    "runtime_minutes": 179,
+    "box_office_million_usd": 874.95,
+    "awards_won": 2
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62220e"
+    },
+    "99popularity": 68.0,
+    "director": "Richard Fleischer",
+    "genre": [
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "imdb_score": 6.8,
+    "name": "Fantastic Voyage",
+    "awards_won": 2,
+    "runtime_minutes": 79,
+    "release_date": "2008-03-21"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62220f"
+    },
+    "99popularity": 86.0,
+    "director": "Robert Zemeckis",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 8.6,
+    "name": "Forrest Gump",
+    "runtime_minutes": 124,
+    "box_office_million_usd": 629.17
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622210"
+    },
+    "99popularity": 86.0,
+    "director": "Bob Sweeney",
+    "genre": [
+      "Comedy",
+      "Family"
+    ],
+    "imdb_score": 8.6,
+    "name": "The Andy Griffith Show",
+    "runtime_minutes": 152,
+    "release_date": "2016-01-06",
+    "box_office_million_usd": 73.55,
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622211"
+    },
+    "99popularity": 82.0,
+    "director": "George Roy Hill",
+    "genre": [
+      "Adventure",
+      "Crime",
+      "Drama",
+      "Western"
+    ],
+    "imdb_score": 8.2,
+    "name": "Butch Cassidy and the Sundance Kid",
+    "box_office_million_usd": 458.51,
+    "language": "Spanish",
+    "release_date": "1970-03-01",
+    "runtime_minutes": 157
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622212"
+    },
+    "99popularity": 84.0,
+    "director": "Billy Wilder",
+    "genre": [
+      "Comedy"
+    ],
+    "imdb_score": 8.4,
+    "name": "Some Like It Hot",
+    "language": "French",
+    "release_date": "2013-05-08",
+    "awards_won": 0,
+    "box_office_million_usd": 699.57,
+    "runtime_minutes": 71
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622213"
+    },
+    "99popularity": 79.0,
+    "director": "John Landis",
+    "genre": [
+      "Action",
+      "Comedy",
+      "Music",
+      "Musical"
+    ],
+    "imdb_score": 7.9,
+    "name": "The Blues Brothers",
+    "release_date": "1975-05-03",
+    "awards_won": 2,
+    "runtime_minutes": 102,
+    "language": "English",
+    "box_office_million_usd": 635.54
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622214"
+    },
+    "99popularity": 51.0,
+    "director": "Jack Arnold",
+    "genre": [
+      "Horror",
+      "Sci-Fi"
+    ],
+    "imdb_score": 5.1,
+    "name": "Revenge of the Creature",
+    "runtime_minutes": 199,
+    "release_date": "2008-05-09",
+    "awards_won": 2,
+    "box_office_million_usd": 64.15
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622215"
+    },
+    "99popularity": 88.0,
+    "director": "David Fincher",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
+    "imdb_score": 8.8,
+    "name": "Fight Club",
+    "release_date": "2014-01-13",
+    "language": "English",
+    "box_office_million_usd": 583.22,
+    "awards_won": 5
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622216"
+    },
+    "99popularity": 48.0,
+    "director": "Bruce Gowers",
+    "genre": [
+      "Game-Show",
+      "Music",
+      "Reality-TV"
+    ],
+    "imdb_score": 4.8,
+    "name": "American Idol : The Search for a Superstar",
+    "awards_won": 3,
+    "release_date": "1983-07-17"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622217"
+    },
+    "99popularity": 85.0,
+    "director": "Roman Polanski",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
+    "imdb_score": 8.5,
+    "name": "Chinatown",
+    "runtime_minutes": 188,
+    "language": "Spanish",
+    "release_date": "2021-06-12",
+    "box_office_million_usd": 743.27,
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622218"
+    },
+    "99popularity": 78.0,
+    "director": "Luis el",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 7.8,
+    "name": "El",
+    "runtime_minutes": 170,
+    "box_office_million_usd": 209.08
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622219"
+    },
+    "99popularity": 84.0,
+    "director": "Stanley Kubrick",
+    "genre": [
+      "Drama",
+      "War"
+    ],
+    "imdb_score": 8.4,
+    "name": "Full Metal Jacket",
+    "release_date": "2011-08-03",
+    "awards_won": 1,
+    "language": "French",
+    "runtime_minutes": 154
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62221a"
+    },
+    "99popularity": 88.0,
+    "director": "Peter Jackson",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "imdb_score": 8.8,
+    "name": "The Lord of the Rings : The Fellowship of the Ring",
+    "awards_won": 5,
+    "language": "Spanish",
+    "release_date": "1990-09-25",
+    "runtime_minutes": 194
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62221b"
+    },
+    "99popularity": 81.0,
+    "director": "Sam Peckinpah",
+    "genre": [
+      "Action",
+      "Western"
+    ],
+    "imdb_score": 8.1,
+    "name": "The Wild Bunch",
+    "release_date": "1973-02-01",
+    "awards_won": 0,
+    "runtime_minutes": 184,
+    "box_office_million_usd": 426.37
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62221c"
+    },
+    "99popularity": 79.0,
+    "director": "Frank Lloyd",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "History"
+    ],
+    "imdb_score": 7.9,
+    "name": "Mutiny on the Bounty",
+    "release_date": "2006-12-18",
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62221d"
+    },
+    "99popularity": 80.0,
+    "director": "Rob Reiner",
+    "genre": [
+      "Comedy",
+      "Music"
+    ],
+    "imdb_score": 8.0,
+    "name": "This Is Spinal Tap",
+    "language": "English",
+    "box_office_million_usd": 177.82
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62221e"
+    },
+    "99popularity": 55.0,
+    "director": "Stanley Kramer",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Romance",
+      "War"
+    ],
+    "imdb_score": 5.5,
+    "name": "The Pride and the Passion",
+    "release_date": "1996-01-20",
+    "language": "Spanish",
+    "awards_won": 0,
+    "box_office_million_usd": 406.57,
+    "runtime_minutes": 160
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62221f"
+    },
+    "99popularity": 78.0,
+    "director": "Anthony Mann",
+    "genre": [
+      "Western"
+    ],
+    "imdb_score": 7.8,
+    "name": "Winchester 73",
+    "awards_won": 0,
+    "runtime_minutes": 138,
+    "release_date": "1975-10-18",
+    "language": "German",
+    "box_office_million_usd": 10.07
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622220"
+    },
+    "99popularity": 88.0,
+    "director": "Cliff Bole",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "imdb_score": 8.8,
+    "name": "Star Trek : The Next Generation",
+    "box_office_million_usd": 552.47,
+    "awards_won": 0,
+    "language": "Italian"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622221"
+    },
+    "99popularity": 64.0,
+    "director": "Gerald Potterton",
+    "genre": [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Crime",
+      "Fantasy",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "imdb_score": 6.4,
+    "name": "Heavy Metal",
+    "runtime_minutes": 196,
+    "language": "Spanish",
+    "release_date": "1993-09-19"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622222"
+    },
+    "99popularity": 74.0,
+    "director": "Yevgeni Bauer",
+    "genre": [
+      "Drama",
+      "Short"
+    ],
+    "imdb_score": 7.4,
+    "name": "Gryozy",
+    "box_office_million_usd": 589.37,
+    "release_date": "2019-04-18",
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622223"
+    },
+    "99popularity": 49.0,
+    "director": "Gregory J. Bonann",
+    "genre": [
+      "Drama",
+      "Action",
+      "Adventure"
+    ],
+    "imdb_score": 4.9,
+    "name": "Baywatch",
+    "runtime_minutes": 142,
+    "release_date": "1995-10-31",
+    "awards_won": 2,
+    "language": "Spanish",
+    "box_office_million_usd": 696.35
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622224"
+    },
+    "99popularity": 80.0,
+    "director": "Robert Wise",
+    "genre": [
+      "Drama",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdb_score": 8.0,
+    "name": "The Day the Earth Stood Still",
+    "box_office_million_usd": 78.79,
+    "release_date": "1989-07-25",
+    "runtime_minutes": 104,
+    "awards_won": 3,
+    "language": "English"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622225"
+    },
+    "99popularity": 73.0,
+    "director": "Charles S. Dubin",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "imdb_score": 7.3,
+    "name": "Kojak",
+    "language": "English",
+    "release_date": "1988-05-17",
+    "awards_won": 0
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622226"
+    },
+    "99popularity": 71.0,
+    "director": "Jim Sharman",
+    "genre": [
+      "Comedy",
+      "Musical"
+    ],
+    "imdb_score": 7.1,
+    "name": "The Rocky Horror Picture Show",
+    "runtime_minutes": 146,
+    "awards_won": 1,
+    "language": "Italian",
+    "release_date": "2013-05-21",
+    "box_office_million_usd": 62.87
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622227"
+    },
+    "99popularity": 78.0,
+    "director": "William A. Wellman",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "imdb_score": 7.8,
+    "name": "The Public Enemy",
+    "runtime_minutes": 151,
+    "release_date": "1981-09-23"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622228"
+    },
+    "99popularity": 77.0,
+    "director": "Burt Gillett",
+    "genre": [
+      "Animation",
+      "Musical",
+      "Family",
+      "Comedy",
+      "Short"
+    ],
+    "imdb_score": 7.7,
+    "name": "Three Little Pigs",
+    "language": "Italian",
+    "runtime_minutes": 122,
+    "release_date": "2002-08-22",
+    "awards_won": 1
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622229"
+    },
+    "99popularity": 80.0,
+    "director": "Barry Levinson",
+    "genre": [
+      "Drama"
+    ],
+    "imdb_score": 8.0,
+    "name": "Rain Man",
+    "release_date": "2017-10-31",
+    "box_office_million_usd": 173.38,
+    "language": "English",
+    "awards_won": 3,
+    "runtime_minutes": 94
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62222a"
+    },
+    "99popularity": 74.0,
+    "director": "William F. Claxton",
+    "genre": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Romance",
+      "War",
+      "Western"
+    ],
+    "imdb_score": 7.4,
+    "name": "Bonanza",
+    "runtime_minutes": 99,
+    "box_office_million_usd": 999.5
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62222b"
+    },
+    "99popularity": 82.0,
+    "director": "Ingmar Bergman",
+    "genre": [
+      "Drama",
+      "Fantasy"
+    ],
+    "imdb_score": 8.2,
+    "name": "Persona",
+    "release_date": "1970-04-27",
+    "runtime_minutes": 185
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62222c"
+    },
+    "99popularity": 80.0,
+    "director": "George A. Romero",
+    "genre": [
+      "Action",
+      "Horror"
+    ],
+    "imdb_score": 8.0,
+    "name": "Dawn of the Dead",
+    "language": "English",
+    "box_office_million_usd": 661.22,
+    "awards_won": 3,
+    "runtime_minutes": 110
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62222d"
+    },
+    "99popularity": 80.0,
+    "director": "Jean Vigo",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "imdb_score": 8.0,
+    "name": "Latalante",
+    "awards_won": 4,
+    "language": "French"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62222e"
+    },
+    "99popularity": 68.0,
+    "director": "Adrian Lyne",
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_score": 6.8,
+    "name": "Fatal Attraction",
+    "awards_won": 4,
+    "box_office_million_usd": 95.23,
+    "language": "German"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d62222f"
+    },
+    "99popularity": 60.0,
+    "director": "Edward L. Cahn",
+    "genre": [
+      "Horror",
+      "Sci-Fi"
+    ],
+    "imdb_score": 6.0,
+    "name": "It! The Terror from Beyond Space",
+    "language": "Italian",
+    "release_date": "1997-05-13",
+    "box_office_million_usd": 695.89,
+    "runtime_minutes": 195,
+    "awards_won": 5
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622230"
+    },
+    "99popularity": 83.0,
+    "director": "John Moffitt",
+    "genre": [
+      "Comedy",
+      "Music"
+    ],
+    "imdb_score": 8.3,
+    "name": "Toast of the Town",
+    "language": "English",
+    "release_date": "1988-11-27",
+    "awards_won": 4
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622231"
+    },
+    "99popularity": 79.0,
+    "director": "William Friedkin",
+    "genre": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdb_score": 7.9,
+    "name": "The French Connection",
+    "release_date": "2016-03-12",
+    "awards_won": 4,
+    "box_office_million_usd": 815.21,
+    "language": "Italian",
+    "runtime_minutes": 131
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622232"
+    },
+    "99popularity": 73.0,
+    "director": "Clyde Geronimi",
+    "genre": [
+      "Animation",
+      "Adventure",
+      "Family",
+      "Fantasy",
+      "Music"
+    ],
+    "imdb_score": 7.3,
+    "name": "Peter Pan",
+    "awards_won": 1,
+    "box_office_million_usd": 366.26,
+    "release_date": "2005-10-04"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622233"
+    },
+    "99popularity": 78.0,
+    "director": "John Nicolella",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_score": 7.8,
+    "name": "Miami Vice",
+    "box_office_million_usd": 859.97,
+    "awards_won": 2,
+    "language": "German"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622234"
+    },
+    "99popularity": 88.0,
+    "director": "Martin Scorsese",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_score": 8.8,
+    "name": "Goodfellas",
+    "awards_won": 5,
+    "release_date": "1992-01-29",
+    "runtime_minutes": 106,
+    "language": "Italian",
+    "box_office_million_usd": 767.71
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622235"
+    },
+    "99popularity": 76.0,
+    "director": "Michael OHerlihy",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "imdb_score": 7.6,
+    "name": "Hawaii Five-O",
+    "awards_won": 0,
+    "language": "German"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622236"
+    },
+    "99popularity": 66.0,
+    "director": "Dennis Donnelly",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "imdb_score": 6.6,
+    "name": "Charlies Angels",
+    "box_office_million_usd": 77.05,
+    "runtime_minutes": 76,
+    "release_date": "2018-01-06"
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622237"
+    },
+    "99popularity": 64.0,
+    "director": "George Lucas",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "imdb_score": 6.4,
+    "name": "Star Wars : Episode I - The Phantom Menace",
+    "language": "Italian",
+    "box_office_million_usd": 59.29
+  },
+  {
+    "_id": {
+      "$oid": "5cbf35b84af12ce16d622238"
+    },
+    "99popularity": 62.0,
+    "director": "Michael Curtiz",
+    "genre": [
+      "Drama",
+      "History"
+    ],
+    "imdb_score": 6.2,
+    "name": "The Egyptian",
+    "awards_won": 0,
+    "box_office_million_usd": 439.65
+  }
+]

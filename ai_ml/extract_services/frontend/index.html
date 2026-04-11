@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Processing System</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-file-alt"></i> Document Processing System</h1>
+            <p>Extract text and structured data from various document types</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <div class="upload-card">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-content">
+                            <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                            <h3>Drop your file here or click to browse</h3>
+                            <p>Supported formats: PDF, PNG, JPG, JPEG, TIFF, BMP</p>
+                            <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg,.tiff,.bmp" hidden>
+                            <button class="browse-btn" onclick="document.getElementById('fileInput').click()">
+                                <i class="fas fa-folder-open"></i> Browse Files
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="file-info" id="fileInfo" style="display: none;">
+                        <div class="file-details">
+                            <i class="fas fa-file"></i>
+                            <div class="file-text">
+                                <span class="file-name" id="fileName"></span>
+                                <span class="file-size" id="fileSize"></span>
+                            </div>
+                            <button class="remove-btn" onclick="removeFile()">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Processor Selection -->
+                <div class="processor-selection">
+                    <h3><i class="fas fa-cogs"></i> Processing Options</h3>
+                    <div class="processor-options">
+                        <label class="processor-option">
+                            <input type="radio" name="processor" value="auto" checked>
+                            <span class="radio-custom"></span>
+                            <div class="option-content">
+                                <strong>Auto Detect</strong>
+                                <small>Automatically choose the best processor</small>
+                            </div>
+                        </label>
+                        
+                        <label class="processor-option">
+                            <input type="radio" name="processor" value="pdf_plain">
+                            <span class="radio-custom"></span>
+                            <div class="option-content">
+                                <strong>PDF Plain Text</strong>
+                                <small>For PDFs with plain text content</small>
+                            </div>
+                        </label>
+                        
+                        <label class="processor-option">
+                            <input type="radio" name="processor" value="pdf_mixed">
+                            <span class="radio-custom"></span>
+                            <div class="option-content">
+                                <strong>PDF Mixed Content</strong>
+                                <small>For PDFs with text and images</small>
+                            </div>
+                        </label>
+                        
+                        <label class="processor-option">
+                            <input type="radio" name="processor" value="pdf_image">
+                            <span class="radio-custom"></span>
+                            <div class="option-content">
+                                <strong>PDF Image Content</strong>
+                                <small>For PDFs with image content containing tables</small>
+                            </div>
+                        </label>
+                        
+                        <label class="processor-option">
+                            <input type="radio" name="processor" value="pdf_handwritten">
+                            <span class="radio-custom"></span>
+                            <div class="option-content">
+                                <strong>PDF Handwritten</strong>
+                                <small>For PDFs with plain text + handwritten content</small>
+                            </div>
+                        </label>
+                        
+                        <label class="processor-option">
+                            <input type="radio" name="processor" value="image">
+                            <span class="radio-custom"></span>
+                            <div class="option-content">
+                                <strong>Image Files</strong>
+                                <small>For image files with text/tables</small>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Process Button -->
+                <div class="action-section">
+                    <button class="process-btn" id="processBtn" onclick="processFile()" disabled>
+                        <i class="fas fa-play"></i>
+                        <span>Process Document</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <h3><i class="fas fa-chart-line"></i> Processing Results</h3>
+                <div class="results-content">
+                    <div class="loading" id="loading" style="display: none;">
+                        <div class="spinner"></div>
+                        <p>Processing your document...</p>
+                    </div>
+                    
+                    <div class="results-data" id="resultsData">
+                        <!-- Results will be displayed here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Results -->
+            <section class="recent-results" id="recentResults" style="display: none;">
+                <h3><i class="fas fa-history"></i> Recent Results</h3>
+                <div class="results-list" id="resultsList">
+                    <!-- Recent results will be displayed here -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Document Processing System. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+---
+globs: *.py
+description: Logging patterns and error handling
+---
+
+# Logging and Error Handling Patterns
+
+## Centralized Logging
+Always use the centralized logger from [central_logger/logger.py](mdc:central_logger/logger.py):
+
+```python
+from central_logger.logger import get_logger
+logger = get_logger(__name__)
+```
+
+## Logging Levels
+- **INFO**: Normal operation flow, method selection, completion status
+- **DEBUG**: Detailed processing information, code previews
+- **WARNING**: Non-fatal issues, fallback behavior, retry attempts
+- **ERROR**: Fatal errors, exceptions, validation failures
+
+## Logging Patterns
+```python
+# Method start
+logger.info(f" Processing method: {method_name}")
+
+# Success completion
+logger.info(f" Method {method_name} completed successfully")
+
+# Warning with context
+logger.warning(f" Could not parse analysis as JSON, storing raw response")
+
+# Error with exception
+logger.error(f" Error analyzing method {method_name}: {e}")
+```
+
+## Error Handling Strategy
+Always implement comprehensive error handling:
+
+```python
+try:
+    # Main processing logic
+    result = process_data()
+    logger.info(" Processing completed successfully")
+    return result
+except SpecificException as e:
+    logger.error(f" Specific error: {e}")
+    state.setdefault('validation_errors', []).append(f"Specific error: {str(e)}")
+    return state
+except Exception as e:
+    logger.error(f" Unexpected error: {e}")
+    state.setdefault('validation_errors', []).append(f"Unexpected error: {str(e)}")
+    return state
+```
+
+## State Error Tracking
+Use the `validation_errors` list in state for error accumulation:
+```python
+state.setdefault('validation_errors', []).append(error_message)
+```
+
+## Safe Logging
+Use `safe_log` for emoji-safe logging on Windows:
+```python
+from central_logger.logger import safe_log
+safe_log(logger, logging.INFO, "Message with emojis ✓")
+```
+
+## Progress Reporting
+Always log progress for long-running operations:
+```python
+logger.info(f" Progress: {completed} completed, {skipped} skipped, {remaining} remaining")
+```

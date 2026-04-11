@@ -1,0 +1,24 @@
+[
+  {
+    "chunk_id": "28380236-ec7a-49c8-b966-60e25f0dea0a",
+    "content": "Example table \nThis is an example of a data table. \nDisability \nCategory \nParticipants \nBallots \nCompleted \nBallots \nIncomplete/ \nTerminated \nResults \nAccuracy \nTime to \ncomplete \nBlind \n5 \n1 \n4 \n34.5%, n=1 \n1199 sec, n=1 \nLow Vision \n5 \n2 \n3 \n98.3% n=2 \n(97.7%, n=3) \n1716 sec, n=3 \n(1934 sec, n=2) \nDexterity \n5 \n4 \n1 \n98.3%, n=4 \n1672.1 sec, n=4 \nMobility \n3 \n3 \n0 \n95.4%, n=3 \n1416 sec, n=3",
+    "content_type": "text",
+    "source_doc": "table.pdf",
+    "page": 1,
+    "metadata": {
+      "chunk_index": 0,
+      "total_chunks_on_page": 1
+    }
+  },
+  {
+    "chunk_id": "0d3d4136-2efc-4ef8-a6f6-725571769078",
+    "content": "\"Disability \nCategory\",\"Participants\",\"Ballots \nCompleted\",\"Ballots \nIncomplete/ \nTerminated\",\"Results\",\"\"\n\"\",\"\",\"\",\"\",\"Accuracy\",\"Time to \ncomplete\"\n\"Blind\",\"5\",\"1\",\"4\",\"34.5%, n=1\",\"1199 sec, n=1\"\n\"Low Vision\",\"5\",\"2\",\"3\",\"98.3% n=2 \n(97.7%, n=3)\",\"1716 sec, n=3 \n(1934 sec, n=2)\"\n\"Dexterity\",\"5\",\"4\",\"1\",\"98.3%, n=4\",\"1672.1 sec, n=4\"\n\"Mobility\",\"3\",\"3\",\"0\",\"95.4%, n=3\",\"1416 sec, n=3\"\n",
+    "content_type": "table",
+    "source_doc": "table.pdf",
+    "page": 1,
+    "metadata": {
+      "table_id": 1,
+      "csv_path": "output/tables/table_page1_table1.csv"
+    }
+  }
+]

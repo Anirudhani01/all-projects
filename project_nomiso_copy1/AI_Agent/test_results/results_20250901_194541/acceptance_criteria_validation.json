@@ -1,0 +1,76 @@
+{
+  "satisfied": [
+    {
+      "scenario": "Successful product purchase with valid user credentials",
+      "steps": "1. User logs in with valid credentials. 2. User browses products and adds a product to the cart. 3. User proceeds to checkout. 4. User provides valid payment information (simulated). 5. User confirms the order.",
+      "expected": "Order is placed successfully, order confirmation is displayed, and an order ID is generated.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Failed product purchase due to invalid payment information (simulated)",
+      "steps": "1. User logs in with valid credentials. 2. User adds a product to the cart. 3. User proceeds to checkout and provides invalid payment information. 4. User attempts to confirm the order.",
+      "expected": "System displays an error message indicating invalid payment information. User is unable to proceed.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Successful order tracking after purchase",
+      "steps": "1. User purchases a product successfully. 2. User accesses order history. 3. User selects the order.",
+      "expected": "Order details including status (e.g., 'Processing', 'Shipped', 'Delivered') are displayed.",
+      "type": "Happy",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Attempt to purchase a product with a price of zero or negative value (edge case)",
+      "steps": "1. User logs in with valid credentials. 2. User attempts to purchase a product with a price of 0 or -1 (assuming such a product exists in the system).",
+      "expected": "System either prevents the purchase or displays an error message about an invalid product price.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": true
+    },
+    {
+      "scenario": "Attempt to purchase product with an invalid product ID (edge case)",
+      "steps": "1. User logs in with valid credentials. 2. User attempts to purchase a product using an invalid or non-existent product ID.",
+      "expected": "The system returns an appropriate error message indicating the product does not exist.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": true
+    }
+  ],
+  "not_satisfied": [
+    {
+      "scenario": "Failed product purchase due to invalid credentials",
+      "steps": "1. User attempts to login with invalid credentials. 2. User tries to add a product to the cart. 3. User proceeds to checkout.",
+      "expected": "User is prompted with an error message indicating invalid credentials, and they are unable to proceed with the purchase.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Failed product purchase due to insufficient product stock (edge case - not implemented in current API)",
+      "steps": "1. User logs in with valid credentials. 2. User adds a product with quantity exceeding available stock (assuming stock management was implemented). 3. User proceeds to checkout.",
+      "expected": "System displays an error message indicating that the requested quantity is not available. User is unable to proceed.",
+      "type": "Edge",
+      "status": "Pending",
+      "satisfies_criteria": false
+    },
+    {
+      "scenario": "Attempt to access order tracking without login",
+      "steps": "1. User attempts to access order tracking without logging in.",
+      "expected": "User is redirected to the login page or receives an error message indicating the need to log in.",
+      "type": "Negative",
+      "status": "Pending",
+      "satisfies_criteria": false
+    }
+  ],
+  "summary": {
+    "total_test_cases": 8,
+    "satisfied_count": 5,
+    "not_satisfied_count": 3,
+    "satisfaction_rate": 0.625
+  }
+}

@@ -1,0 +1,55 @@
+---
+globs: *.py
+description: OpenCRX domain knowledge and business rules
+---
+
+# OpenCRX Domain Knowledge
+
+## Core Business Entities
+The system is designed for **OpenCRX** enterprise CRM with these key entities:
+
+### Database Schema
+- **oocke1_contract**: Customer agreements
+  - Required: `object_id`, `modified_at`, `dtype`, `customer` (FK)
+- **oocke1_account**: Customers and suppliers  
+  - Required: `object_id`, `modified_at`, `dtype`
+- **oocke1_activity**: Business process tracking
+  - Required: `object_id`, `modified_at`, `dtype`, `assigned_to` (FK)
+- **oocke1_product**: Product catalog
+  - Required: `object_id`, `modified_at`, `dtype`, `supplier` (FK)
+
+## Test Generation Patterns
+
+### Service Tests (JDO Integration)
+- Use raw SQL with `PersistenceManager`
+- Insert parent rows first (account before contract)
+- Generate unique IDs with `UUID.randomUUID()`
+- Always commit/rollback transactions
+- Close all resources in finally blocks
+
+### Controller Tests (Spring Boot)
+- Use `@SpringBootTest` and `@AutoConfigureMockMvc`
+- Test HTTP endpoints with JSON validation
+- Validate both response and database state
+- Use descriptive test method names
+
+## Business Rules
+- All entities require `object_id` (VARCHAR, primary key)
+- All entities require `modified_at` (TIMESTAMPTZ)
+- All entities require `dtype` (VARCHAR, discriminator)
+- Foreign key relationships must be valid
+- Use JDO/DataNucleus for persistence
+- PostgreSQL database integration
+
+## Domain Terminology
+- **FQN**: Fully Qualified Name resolution
+- **Dtype**: Discriminator type for JDO inheritance
+- **PersistenceManager**: JDO interface for database operations
+- **Integration Test**: End-to-end business flow validation
+- **Flow Analysis**: Business process understanding for test generation
+
+## Code Patterns
+- Always use `javax.jdo.*` imports for JDO operations
+- Use `JDOHelper.getPersistenceManagerFactory("Test")` for test setup
+- Implement proper resource cleanup in `@AfterEach`
+- Use `PreparedStatement` for all SQL operations

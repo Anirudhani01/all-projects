@@ -1,0 +1,75 @@
+---
+globs: *.py
+description: OpenAI API integration patterns and prompt engineering
+---
+
+# OpenAI Integration Patterns
+
+## Environment Variables
+Always validate required environment variables:
+```python
+required_vars = ["MODEL", "TEMPERATURE", "MAX_TOKENS"]
+for var in required_vars:
+    if var not in os.environ:
+        raise RuntimeError(f"Missing required env variable: {var}")
+```
+
+## Client Initialization
+```python
+from openai import OpenAI
+client = OpenAI()
+```
+
+## API Call Pattern
+```python
+response = client.chat.completions.create(
+    model=MODEL,
+    temperature=TEMPERATURE,
+    max_tokens=MAX_TOKENS,
+    messages=[
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ],
+)
+```
+
+## JSON Response Parsing
+Always use robust JSON extraction with fallback strategies:
+```python
+def _extract_json_from_response(text: str):
+    try:
+        return json.loads(text.strip())
+    except Exception:
+        pass
+    
+    # Look for ```json blocks
+    match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.DOTALL)
+    if match:
+        try:
+            return json.loads(match.group(1))
+        except Exception:
+            pass
+    
+    # Fallback: first {...} block
+    match = re.search(r"\{.*\}", text, re.DOTALL)
+    if match:
+        try:
+            return json.loads(match.group(0))
+        except Exception:
+            pass
+    
+    return None
+```
+
+## Prompt Templates
+Store prompts in [java_core/prompts.py](mdc:java_core/prompts.py) with structured format:
+- `CONFIG`: Method analysis prompts
+- `FLOW_ANALYSIS_PROMPT`: Business flow analysis
+- `CONTROLLER_CONFIG`: Spring Boot test generation
+- `SERVICE_CONFIG`: OpenCRX JDO test generation
+
+## Error Handling
+- Always wrap OpenAI calls in try-catch
+- Log errors with context
+- Provide fallback behavior for API failures
+- Store raw responses when JSON parsing fails

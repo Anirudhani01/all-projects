@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .image-test { margin: 20px 0; }
+        img { border: 1px solid #ccc; margin: 10px; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>SVG Image Test</h1>
+    <p>Testing if our SVG images are accessible:</p>
+    
+    <div class="image-test">
+        <h3>Floral Dress</h3>
+        <img src="/images/products/floral-dress.svg" alt="Floral Dress" width="200" height="200" onload="this.nextElementSibling.textContent='✅ Loaded successfully'" onerror="this.nextElementSibling.textContent='❌ Failed to load'">
+        <span class="status">Loading...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>White Blouse</h3>
+        <img src="/images/products/white-blouse.svg" alt="White Blouse" width="200" height="200" onload="this.nextElementSibling.textContent='✅ Loaded successfully'" onerror="this.nextElementSibling.textContent='❌ Failed to load'">
+        <span class="status">Loading...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Denim Jacket</h3>
+        <img src="/images/products/denim-jacket.svg" alt="Denim Jacket" width="200" height="200" onload="this.nextElementSibling.textContent='✅ Loaded successfully'" onerror="this.nextElementSibling.textContent='❌ Failed to load'">
+        <span class="status">Loading...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Maxi Dress</h3>
+        <img src="/images/products/maxi-dress.svg" alt="Maxi Dress" width="200" height="200" onload="this.nextElementSibling.textContent='✅ Loaded successfully'" onerror="this.nextElementSibling.textContent='❌ Failed to load'">
+        <span class="status">Loading...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Pencil Skirt</h3>
+        <img src="/images/products/pencil-skirt.svg" alt="Pencil Skirt" width="200" height="200" onload="this.nextElementSibling.textContent='✅ Loaded successfully'" onerror="this.nextElementSibling.textContent='❌ Failed to load'">
+        <span class="status">Loading...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Knit Sweater</h3>
+        <img src="/images/products/knit-sweater.svg" alt="Knit Sweater" width="200" height="200" onload="this.nextElementSibling.textContent='✅ Loaded successfully'" onerror="this.nextElementSibling.textContent='❌ Failed to load'">
+        <span class="status">Loading...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Placeholder</h3>
+        <img src="/images/products/placeholder.svg" alt="Placeholder" width="200" height="200" onload="this.nextElementSibling.textContent='✅ Loaded successfully'" onerror="this.nextElementSibling.textContent='❌ Failed to load'">
+        <span class="status">Loading...</span>
+    </div>
+    
+    <script>
+        // Additional debugging
+        console.log('Testing image accessibility...');
+        
+        // Test if we can fetch the images
+        const testImages = [
+            '/images/products/floral-dress.svg',
+            '/images/products/white-blouse.svg',
+            '/images/products/denim-jacket.svg',
+            '/images/products/maxi-dress.svg',
+            '/images/products/pencil-skirt.svg',
+            '/images/products/knit-sweater.svg',
+            '/images/products/placeholder.svg'
+        ];
+        
+        testImages.forEach(async (imagePath) => {
+            try {
+                const response = await fetch(imagePath);
+                if (response.ok) {
+                    console.log(`✅ ${imagePath} - Accessible (${response.status})`);
+                } else {
+                    console.log(`❌ ${imagePath} - Not accessible (${response.status})`);
+                }
+            } catch (error) {
+                console.log(`❌ ${imagePath} - Error: ${error.message}`);
+            }
+        });
+    </script>
+</body>
+</html>

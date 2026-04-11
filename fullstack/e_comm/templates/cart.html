@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f8f8f8;
+            margin: 20px;
+        }
+        h1 {
+            color: #111;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #eee;
+        }
+        .btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #2196F3;
+            color: white;
+        }
+        .btn-red {
+            background-color: #f44336;
+        }
+        .btn-green {
+            background-color: #4CAF50;
+        }
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Shopping Cart</h1>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price (₹)</th>
+            <th>Quantity</th>
+            <th>Total (₹)</th>
+            <th>Actions</th>
+        </tr>
+        {% for item in cart_items %}
+        <tr>
+            <td>{{ item.product.name }}</td>
+            <td>{{ item.product.description }}</td>
+            <td>{{ item.product.price }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.total_price }}</td>
+            <td>
+                <form action="/cart/decrease/{{ item.id }}" method="post" style="display:inline;">
+                  <button type="submit">-</button>
+                </form>
+              
+                <form action="/cart/remove/{{ item.id }}" method="post" style="display:inline;">
+                  <button type="submit">Remove</button>
+                </form>
+              </td>
+              
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h3>Grand Total: ₹{{ total }}</h3>
+
+<form action="/payment" method="get">
+  <button type="submit">Pay Now</button>
+</form>
+
+<br>
+<a href="/products/laptops">← Back to Products</a>
+
+</body>
+</html>
